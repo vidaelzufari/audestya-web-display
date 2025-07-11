@@ -1,5 +1,6 @@
 
 import { useState } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Menu, X, Phone, Mail, LinkedinIcon, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -11,8 +12,27 @@ import {
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+
+  const isActive = (path: string) => {
+    if (path === '#accueil') return location.pathname === '/';
+    if (path === '/actualites') return location.pathname === '/actualites';
+    if (path.startsWith('#')) return location.pathname === '/' && location.hash === path;
+    return false;
+  };
+
+  const getNavLinkClass = (path: string) => {
+    const baseClass = "transition-colors font-medium relative";
+    const inactiveClass = "text-primary-foreground hover:text-secondary";
+    const activeClass = "text-secondary";
+    
+    if (isActive(path)) {
+      return `${baseClass} ${activeClass} after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-secondary`;
+    }
+    return `${baseClass} ${inactiveClass}`;
+  };
 
   return (
     <nav className="bg-gradient-primary shadow-elegant sticky top-0 z-50">
@@ -55,35 +75,35 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#accueil" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <a href="/" className={getNavLinkClass('#accueil')}>
               ACCUEIL
             </a>
-            <a href="#presentation" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <a href="/#presentation" className={getNavLinkClass('#presentation')}>
               PRÉSENTATION
             </a>
-            <a href="#domaines" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <a href="/#domaines" className={getNavLinkClass('#domaines')}>
               DOMAINES D'INTERVENTION
             </a>
-            <a href="/actualites" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <a href="/actualites" className={getNavLinkClass('/actualites')}>
               ACTUALITÉS
             </a>
-            <a href="#contact" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+            <a href="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
             </a>
             
             {/* Language selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary">
                   <Globe size={16} className="mr-1" />
                   FR
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent>
-                <DropdownMenuItem>
+              <DropdownMenuContent className="bg-background border shadow-lg z-50">
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                   🇫🇷 Français
                 </DropdownMenuItem>
-                <DropdownMenuItem>
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                   🇬🇧 English
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -105,36 +125,36 @@ const Navigation = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4">
-            <div className="flex flex-col space-y-3">
-              <a href="#accueil" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+          <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
+            <div className="flex flex-col space-y-1 p-4">
+              <a href="/" className={`${getNavLinkClass('#accueil')} py-3 px-2 rounded`}>
                 ACCUEIL
               </a>
-              <a href="#presentation" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+              <a href="/#presentation" className={`${getNavLinkClass('#presentation')} py-3 px-2 rounded`}>
                 PRÉSENTATION
               </a>
-              <a href="#domaines" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+              <a href="/#domaines" className={`${getNavLinkClass('#domaines')} py-3 px-2 rounded`}>
                 DOMAINES D'INTERVENTION
               </a>
-              <a href="/actualites" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+              <a href="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
                 ACTUALITÉS
               </a>
-              <a href="#contact" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
                 CONTACT
               </a>
-              <div className="py-2">
+              <div className="py-2 px-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
+                    <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary">
                       <Globe size={16} className="mr-1" />
                       FR
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent>
-                    <DropdownMenuItem>
+                  <DropdownMenuContent className="bg-background border shadow-lg z-50">
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                       🇫🇷 Français
                     </DropdownMenuItem>
-                    <DropdownMenuItem>
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                       🇬🇧 English
                     </DropdownMenuItem>
                   </DropdownMenuContent>
