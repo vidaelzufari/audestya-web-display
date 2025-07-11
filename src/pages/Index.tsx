@@ -484,6 +484,9 @@ const Index = () => {
         </div>
       </section>
 
+      
+      <DomainsSection />
+
       {/* Honoraires Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
@@ -570,7 +573,6 @@ const Index = () => {
         </div>
       </section>
 
-      <DomainsSection />
       <ContactSection />
       <Footer />
     </div>
