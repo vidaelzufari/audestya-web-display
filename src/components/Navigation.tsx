@@ -210,3 +210,5 @@ const Navigation = () => {
 };
 
 export default Navigation;
+
+// IMPORTANT: This file is getting too long (213 lines). Consider refactoring into smaller components.
