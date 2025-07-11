@@ -53,8 +53,8 @@ const DomainsSection = () => {
         "Garanties légales",
         "Médiation consommateur"
       ],
-      link: "#contact",
-      hasPage: false
+      link: "/protection-consommateur",
+      hasPage: true
     },
     {
       icon: Scale,
@@ -66,8 +66,8 @@ const DomainsSection = () => {
         "Contrats cadres",
         "Négociation commerciale"
       ],
-      link: "#contact",
-      hasPage: false
+      link: "/negociation-contrats",
+      hasPage: true
     },
     {
       icon: Gavel,
@@ -79,8 +79,8 @@ const DomainsSection = () => {
         "Outils juridiques",
         "Politique commerciale"
       ],
-      link: "#contact",
-      hasPage: false
+      link: "/securisation-contractuelle",
+      hasPage: true
     }
   ];
 

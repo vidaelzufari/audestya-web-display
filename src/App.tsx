@@ -8,6 +8,9 @@ import Presentation from "./pages/Presentation";
 import ReseauxDistribution from "./pages/ReseauxDistribution";
 import RelationsCommerciales from "./pages/RelationsCommerciales";
 import AccompagnementJuridique from "./pages/AccompagnementJuridique";
+import ProtectionConsommateur from "./pages/ProtectionConsommateur";
+import NegociationContrats from "./pages/NegociationContrats";
+import SecurisationContractuelle from "./pages/SecurisationContractuelle";
 import Actualites from "./pages/Actualites";
 import NotFound from "./pages/NotFound";
 
@@ -25,6 +28,9 @@ const App = () => (
           <Route path="/reseaux-distribution" element={<ReseauxDistribution />} />
           <Route path="/relations-commerciales" element={<RelationsCommerciales />} />
           <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
+          <Route path="/protection-consommateur" element={<ProtectionConsommateur />} />
+          <Route path="/negociation-contrats" element={<NegociationContrats />} />
+          <Route path="/securisation-contractuelle" element={<SecurisationContractuelle />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
