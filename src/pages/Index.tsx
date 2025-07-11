@@ -99,19 +99,58 @@ const Index = () => {
                     Avocate indépendante spécialisée en droit des affaires
                   </p>
                   <p className="text-left leading-relaxed">
-                    Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
-                    j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
-                    juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
+                    Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                   </p>
+                  <div className="text-left leading-relaxed">
+                    <p className="mb-3">Ce choix repose sur :</p>
+                    <ul className="space-y-2 ml-4">
+                      <li>– Une conviction forte : le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;</li>
+                      <li>– Une ambition claire : accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.</li>
+                    </ul>
+                  </div>
                   <p className="text-left leading-relaxed">
-                    Ma spécialisation en droit de la distribution, des contrats et de la consommation 
-                    me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
-                    juridiques que rencontrent les entreprises dans leurs activités commerciales.
+                    J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                   </p>
-                  <p className="text-left leading-relaxed">
-                    Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
-                    opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
-                    développement de vos activités.
+                </div>
+              </div>
+              
+              {/* Informations professionnelles */}
+              <div className="grid md:grid-cols-2 gap-8 mt-8 pt-8 border-t">
+                <div>
+                  <h4 className="font-serif text-xl font-bold text-primary mb-4">
+                    Principaux domaines d'intervention
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Distribution, Contrat, Consommation.
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-serif text-xl font-bold text-primary mb-4">
+                    Formation
+                  </h4>
+                  <div className="space-y-2 text-muted-foreground">
+                    <p>Master II en droit européen des affaires, Université Paris XI – Jean Monnet</p>
+                    <p>Maîtrise en droit européen, Université Paris II – Panthéon Assas</p>
+                    <p>Maîtrise en droit international, Université Paris II – Panthéon Assas</p>
+                  </div>
+                </div>
+                
+                <div>
+                  <h4 className="font-serif text-xl font-bold text-primary mb-4">
+                    Inscription au barreau
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Paris 2025
+                  </p>
+                </div>
+                
+                <div>
+                  <h4 className="font-serif text-xl font-bold text-primary mb-4">
+                    Langues
+                  </h4>
+                  <p className="text-muted-foreground">
+                    Français – Anglais – Arabe
                   </p>
                 </div>
               </div>
