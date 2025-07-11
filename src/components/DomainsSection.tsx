@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight } from 'lucide-react';
+import { Scale, FileText, ShieldCheck, Users, Building, Gavel } from 'lucide-react';
 
 const DomainsSection = () => {
   const domains = [
@@ -13,9 +12,7 @@ const DomainsSection = () => {
         "Distribution sélective",
         "Distribution exclusive",
         "Réseaux intégrés"
-      ],
-      link: "/reseaux-distribution",
-      hasPage: true
+      ]
     },
     {
       icon: FileText,
@@ -26,22 +23,18 @@ const DomainsSection = () => {
         "Pratiques promotionnelles",
         "Relations fournisseurs",
         "Contentieux commerciaux"
-      ],
-      link: "/relations-commerciales",
-      hasPage: true
+      ]
     },
     {
       icon: Users,
-      title: "Accompagnement Juridique Personnalisé",
+      title: "Accompagnement Juridique Externalisé",
       description: "Pilotage juridique de projets structurants et missions ponctuelles adaptées aux besoins spécifiques de votre entreprise.",
       details: [
         "Direction juridique externalisée",
         "Missions ponctuelles",
         "Audits juridiques",
         "Formation équipes"
-      ],
-      link: "/accompagnement-juridique",
-      hasPage: true
+      ]
     },
     {
       icon: ShieldCheck,
@@ -52,9 +45,7 @@ const DomainsSection = () => {
         "Pratiques déloyales",
         "Garanties légales",
         "Médiation consommateur"
-      ],
-      link: "#contact",
-      hasPage: false
+      ]
     },
     {
       icon: Scale,
@@ -65,9 +56,7 @@ const DomainsSection = () => {
         "Accords de distribution",
         "Contrats cadres",
         "Négociation commerciale"
-      ],
-      link: "#contact",
-      hasPage: false
+      ]
     },
     {
       icon: Gavel,
@@ -78,9 +67,7 @@ const DomainsSection = () => {
         "Optimisation CGV",
         "Outils juridiques",
         "Politique commerciale"
-      ],
-      link: "#contact",
-      hasPage: false
+      ]
     }
   ];
 
@@ -116,7 +103,7 @@ const DomainsSection = () => {
                   <p className="text-muted-foreground mb-6 leading-relaxed">
                     {domain.description}
                   </p>
-                  <div className="space-y-2 mb-6">
+                  <div className="space-y-2">
                     {domain.details.map((detail, detailIndex) => (
                       <div key={detailIndex} className="flex items-center text-sm text-muted-foreground">
                         <div className="w-2 h-2 bg-secondary rounded-full mr-3 flex-shrink-0"></div>
@@ -124,21 +111,6 @@ const DomainsSection = () => {
                       </div>
                     ))}
                   </div>
-                  
-                  {domain.hasPage ? (
-                    <Button asChild className="w-full group/btn">
-                      <a href={domain.link}>
-                        En savoir plus
-                        <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover/btn:translate-x-1" />
-                      </a>
-                    </Button>
-                  ) : (
-                    <Button asChild variant="outline" className="w-full">
-                      <a href={domain.link}>
-                        Me contacter
-                      </a>
-                    </Button>
-                  )}
                 </CardContent>
               </Card>
             );
