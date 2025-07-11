@@ -64,13 +64,6 @@ const AboutSection = () => {
               et opérationnelle concrète, alignée avec vos objectifs.
             </p>
           </div>
-          <Button 
-            variant="outline" 
-            size="lg" 
-            className="mt-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-          >
-            Découvrir mes services
-          </Button>
         </div>
 
         {/* Expertise areas */}
@@ -116,9 +109,6 @@ const AboutSection = () => {
                 Une connaissance approfondie du droit de la distribution et des contrats, 
                 acquise par une expérience solide et une formation continue.
               </p>
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                En savoir plus
-              </Button>
             </CardContent>
           </Card>
 
@@ -138,9 +128,6 @@ const AboutSection = () => {
                 Des solutions juridiques adaptées à la réalité de votre entreprise, 
                 alliant rigueur juridique et efficacité opérationnelle.
               </p>
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                En savoir plus
-              </Button>
             </CardContent>
           </Card>
 
@@ -160,9 +147,6 @@ const AboutSection = () => {
                 Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
                 pour une collaboration durable et fructueuse.
               </p>
-              <Button variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
-                En savoir plus
-              </Button>
             </CardContent>
           </Card>
         </div>
