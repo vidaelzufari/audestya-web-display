@@ -1,5 +1,5 @@
+
 import { Card, CardContent } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
@@ -105,7 +105,7 @@ const AboutSection = () => {
               <h4 className="font-serif text-xl font-bold text-primary mb-4">
                 Une expertise confirmée
               </h4>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground">
                 Une connaissance approfondie du droit de la distribution et des contrats, 
                 acquise par une expérience solide et une formation continue.
               </p>
@@ -124,7 +124,7 @@ const AboutSection = () => {
               <h4 className="font-serif text-xl font-bold text-primary mb-4">
                 Une approche pragmatique
               </h4>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground">
                 Des solutions juridiques adaptées à la réalité de votre entreprise, 
                 alliant rigueur juridique et efficacité opérationnelle.
               </p>
@@ -143,7 +143,7 @@ const AboutSection = () => {
               <h4 className="font-serif text-xl font-bold text-primary mb-4">
                 Une relation de confiance
               </h4>
-              <p className="text-muted-foreground mb-6">
+              <p className="text-muted-foreground">
                 Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
                 pour une collaboration durable et fructueuse.
               </p>

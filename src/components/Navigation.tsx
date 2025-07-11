@@ -1,5 +1,6 @@
+
 import { useState } from 'react';
-import { Menu, X, Phone, Mail } from 'lucide-react';
+import { Menu, X, Phone, Mail, LinkedinIcon } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
 const Navigation = () => {
@@ -23,6 +24,14 @@ const Navigation = () => {
                 haia.elzufari@audestya-avocat.com
               </a>
             </div>
+            <a 
+              href="https://www.linkedin.com/in/haia-elzufari/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-secondary transition-colors"
+            >
+              <LinkedinIcon size={20} />
+            </a>
           </div>
         </div>
       </div>
