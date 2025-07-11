@@ -6,7 +6,7 @@ import trustIcon from '@/assets/trust-icon.jpg';
 
 const AboutSection = () => {
   return (
-    <section id="presentation" className="py-20 bg-muted">
+    <section id="presentation" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         {/* Mon intervention section */}
         <div className="max-w-4xl mx-auto text-center mb-20">

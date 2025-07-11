@@ -14,7 +14,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-white">
+        <div className="max-w-4xl mx-auto text-center text-foreground">
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
             AVOCATE INDÉPENDANTE
           </h1>
@@ -27,13 +27,13 @@ const HeroSection = () => {
           </div>
 
           {/* Inspirational quote */}
-          <div className="bg-white/10 backdrop-blur-sm rounded-lg p-8 mb-12 border border-white/20 animate-scale-in" style={{ animationDelay: '0.4s' }}>
-            <blockquote className="text-lg md:text-xl italic mb-4 text-secondary-light">
+          <div className="bg-card/20 backdrop-blur-sm rounded-lg p-8 mb-12 border border-border/30 animate-scale-in" style={{ animationDelay: '0.4s' }}>
+            <blockquote className="text-lg md:text-xl italic mb-4 text-secondary">
               « L'excellence n'est jamais le fruit du hasard. Elle est toujours le résultat d'une intention noble, 
               d'un effort sincère et d'une exécution intelligente. Elle reflète un choix réfléchi parmi de nombreuses 
               possibilités – c'est le choix, et non le hasard, qui détermine votre destin. »
             </blockquote>
-            <cite className="text-sm font-medium text-white">Inspirée de la pensée d'Aristote</cite>
+            <cite className="text-sm font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
           </div>
 
           {/* CTA buttons */}
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-white text-white hover:bg-white hover:text-primary font-semibold px-8 py-4 text-lg"
+              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-4 text-lg"
             >
               Découvrir Mon Approche
             </Button>
@@ -56,9 +56,9 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-white animate-bounce">
-        <div className="w-6 h-10 border-2 border-white rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-white rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-foreground animate-bounce">
+        <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-foreground rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>
