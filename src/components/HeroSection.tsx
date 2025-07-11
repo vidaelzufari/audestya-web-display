@@ -42,7 +42,7 @@ const HeroSection = () => {
               size="lg" 
               className="bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-glow font-semibold px-8 py-4 text-lg"
             >
-              Consultation Gratuite
+              Prendre Rendez-vous
             </Button>
             <Button 
               variant="outline" 

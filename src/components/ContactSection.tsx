@@ -90,18 +90,18 @@ const ContactSection = () => {
             <Card className="bg-gradient-primary text-primary-foreground shadow-elegant">
               <CardContent className="p-8 text-center">
                 <h3 className="font-serif text-xl font-bold mb-4">
-                  Consultation Gratuite
+                  Prendre Rendez-vous
                 </h3>
                 <p className="mb-6 opacity-90">
-                  Bénéficiez d'un premier échange gratuit pour évaluer vos besoins 
-                  et définir la stratégie juridique adaptée.
+                  Contactez-moi pour un premier échange et définir ensemble 
+                  la stratégie juridique adaptée à vos besoins.
                 </p>
                 <Button 
                   variant="secondary" 
                   size="lg"
                   className="bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-glow"
                 >
-                  Prendre Rendez-vous
+                  Me Contacter
                 </Button>
               </CardContent>
             </Card>

@@ -25,7 +25,7 @@ const Navigation = () => {
             </div>
             <div className="hidden md:block">
               <Button variant="secondary" size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary-light">
-                Consultation Gratuite
+                Prendre Rendez-vous
               </Button>
             </div>
           </div>
@@ -89,7 +89,7 @@ const Navigation = () => {
                 CONTACT
               </a>
               <Button variant="secondary" size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary-light mt-4">
-                Consultation Gratuite
+                Prendre Rendez-vous
               </Button>
             </div>
           </div>
