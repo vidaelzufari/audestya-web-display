@@ -16,17 +16,17 @@ const Index = () => {
       <HeroSection />
       
       {/* Mon Intervention Section */}
-      <section className="py-20 bg-gradient-accent relative overflow-hidden">
+      <section className="py-32 bg-gradient-accent relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-32 h-32 border border-primary rounded-full"></div>
           <div className="absolute bottom-20 right-10 w-24 h-24 border border-secondary rounded-full"></div>
         </div>
         
-        <div className="container mx-auto px-4 relative z-10">
+        <div className="container mx-auto px-6 relative z-10">
           {/* Hero content */}
           <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
+            <div className="text-center mb-20">
               <h2 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-8 leading-tight">
                 Mon Intervention
               </h2>

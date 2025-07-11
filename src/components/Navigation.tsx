@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -76,13 +76,13 @@ const Navigation = () => {
           </a>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className={getNavLinkClass('/')}>
+          <div className="hidden md:flex items-center space-x-8">
+            <Link to="/" className={getNavLinkClass('/')}>
               ACCUEIL
-            </a>
-            <a href="/#presentation" className={getNavLinkClass('#presentation')}>
+            </Link>
+            <Link to="/#presentation" className={getNavLinkClass('#presentation')}>
               PRÉSENTATION
-            </a>
+            </Link>
             
             {/* Dropdown for Domaines */}
             <DropdownMenu>
@@ -92,31 +92,31 @@ const Navigation = () => {
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border shadow-lg z-50 w-64">
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/reseaux-distribution" className="w-full">
+              <DropdownMenuContent className="bg-background border shadow-lg z-50 w-64 p-2">
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer rounded-md p-3">
+                  <Link to="/reseaux-distribution" className="w-full text-foreground">
                     Réseaux de Distribution
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/relations-commerciales" className="w-full">
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer rounded-md p-3">
+                  <Link to="/relations-commerciales" className="w-full text-foreground">
                     Relations et Pratiques Commerciales
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/accompagnement-juridique" className="w-full">
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer rounded-md p-3">
+                  <Link to="/accompagnement-juridique" className="w-full text-foreground">
                     Accompagnement Juridique Externalisé
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <a href="/actualites" className={getNavLinkClass('/actualites')}>
+            <Link to="/actualites" className={getNavLinkClass('/actualites')}>
               ACTUALITÉS
-            </a>
-            <a href="/#contact" className={getNavLinkClass('#contact')}>
+            </Link>
+            <Link to="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
-            </a>
+            </Link>
             
             {/* Language selector */}
             <DropdownMenu>
@@ -126,11 +126,11 @@ const Navigation = () => {
                   FR
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border shadow-lg z-50">
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+              <DropdownMenuContent className="bg-background border shadow-lg z-50 p-2">
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer rounded-md p-3">
                   🇫🇷 Français
                 </DropdownMenuItem>
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer rounded-md p-3">
                   🇬🇧 English
                 </DropdownMenuItem>
               </DropdownMenuContent>
@@ -153,37 +153,37 @@ const Navigation = () => {
         {/* Mobile menu */}
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
-            <div className="flex flex-col space-y-1 p-4">
-              <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
+            <div className="flex flex-col space-y-2 p-6">
+              <Link to="/" className={`${getNavLinkClass('/')} py-4 px-3 rounded`}>
                 ACCUEIL
-              </a>
-              <a href="/#presentation" className={`${getNavLinkClass('#presentation')} py-3 px-2 rounded`}>
+              </Link>
+              <Link to="/#presentation" className={`${getNavLinkClass('#presentation')} py-4 px-3 rounded`}>
                 PRÉSENTATION
-              </a>
+              </Link>
               
               {/* Mobile Domaines section */}
-              <div className="py-2">
-                <p className="text-primary-foreground font-medium px-2 mb-2">DOMAINES D'INTERVENTION</p>
-                <div className="ml-4 space-y-2">
-                  <a href="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+              <div className="py-3">
+                <p className="text-primary-foreground font-medium px-3 mb-3 text-lg">DOMAINES D'INTERVENTION</p>
+                <div className="ml-4 space-y-3">
+                  <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-2 px-3 text-base rounded">
                     Réseaux de Distribution
-                  </a>
-                  <a href="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  </Link>
+                  <Link to="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-2 px-3 text-base rounded">
                     Relations et Pratiques Commerciales
-                  </a>
-                  <a href="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  </Link>
+                  <Link to="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-2 px-3 text-base rounded">
                     Accompagnement Juridique Externalisé
-                  </a>
+                  </Link>
                 </div>
               </div>
               
-              <a href="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
+              <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-4 px-3 rounded`}>
                 ACTUALITÉS
-              </a>
-              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
+              </Link>
+              <Link to="/#contact" className={`${getNavLinkClass('#contact')} py-4 px-3 rounded`}>
                 CONTACT
-              </a>
-              <div className="py-2 px-2">
+              </Link>
+              <div className="py-3 px-3">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary">
@@ -191,11 +191,11 @@ const Navigation = () => {
                       FR
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="bg-background border shadow-lg z-50">
-                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                  <DropdownMenuContent className="bg-background border shadow-lg z-50 p-2">
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer rounded-md p-3">
                       🇫🇷 Français
                     </DropdownMenuItem>
-                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer rounded-md p-3">
                       🇬🇧 English
                     </DropdownMenuItem>
                   </DropdownMenuContent>
