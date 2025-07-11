@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, LinkedinIcon, Globe } from 'lucide-react';
+import { Menu, X, Phone, Mail, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -76,16 +76,56 @@ const Navigation = () => {
           </div>
 
           {/* Desktop menu */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-6">
             <a href="/" className={getNavLinkClass('/')}>
               ACCUEIL
             </a>
             <a href="/#presentation" className={getNavLinkClass('#presentation')}>
               PRÉSENTATION
             </a>
-            <a href="/#domaines" className={getNavLinkClass('#domaines')}>
-              DOMAINES D'INTERVENTION
-            </a>
+            
+            {/* Dropdown for Domaines */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" className="text-primary-foreground hover:text-secondary font-medium">
+                  DOMAINES D'INTERVENTION
+                  <ChevronDown className="ml-1 h-4 w-4" />
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background border shadow-lg z-50 w-64">
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/reseaux-distribution" className="w-full">
+                    Réseaux de Distribution
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/relations-commerciales" className="w-full">
+                    Relations et Pratiques Commerciales
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/accompagnement-juridique" className="w-full">
+                    Accompagnement Juridique Externalisé
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/protection-consommateur" className="w-full">
+                    Protection du Consommateur
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/negociation-contrats" className="w-full">
+                    Négociation de Contrats
+                  </a>
+                </DropdownMenuItem>
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href="/securisation-contractuelle" className="w-full">
+                    Sécurisation Contractuelle
+                  </a>
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
+            
             <a href="/actualites" className={getNavLinkClass('/actualites')}>
               ACTUALITÉS
             </a>
@@ -135,9 +175,32 @@ const Navigation = () => {
               <a href="/#presentation" className={`${getNavLinkClass('#presentation')} py-3 px-2 rounded`}>
                 PRÉSENTATION
               </a>
-              <a href="/#domaines" className={`${getNavLinkClass('#domaines')} py-3 px-2 rounded`}>
-                DOMAINES D'INTERVENTION
-              </a>
+              
+              {/* Mobile Domaines section */}
+              <div className="py-2">
+                <p className="text-primary-foreground font-medium px-2 mb-2">DOMAINES D'INTERVENTION</p>
+                <div className="ml-4 space-y-2">
+                  <a href="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Réseaux de Distribution
+                  </a>
+                  <a href="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Relations et Pratiques Commerciales
+                  </a>
+                  <a href="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Accompagnement Juridique Externalisé
+                  </a>
+                  <a href="/protection-consommateur" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Protection du Consommateur
+                  </a>
+                  <a href="/negociation-contrats" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Négociation de Contrats
+                  </a>
+                  <a href="/securisation-contractuelle" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    Sécurisation Contractuelle
+                  </a>
+                </div>
+              </div>
+              
               <a href="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
                 ACTUALITÉS
               </a>
