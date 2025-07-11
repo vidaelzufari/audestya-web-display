@@ -259,6 +259,126 @@ const Presentation = () => {
         </div>
       </section>
 
+      {/* Mon Intervention Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
+              Mon Intervention
+            </h2>
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
+                <div className="space-y-8 text-lg text-muted-foreground">
+                  <div className="text-center space-y-4">
+                    <p className="text-xl font-medium text-primary">
+                      Une collaboration sur mesure, adaptée à vos enjeux
+                    </p>
+                    <p className="text-xl font-medium text-primary">
+                      Une approche concrète, à vos côtés à chaque étape
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <p className="text-lg font-medium text-primary">
+                      J'interviens pour répondre à vos besoins variés :
+                    </p>
+                    
+                    <ul className="space-y-4 text-muted-foreground">
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Structuration, sécurisation et accompagnement juridique de réseaux de distribution</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Audits contractuels adaptés à vos enjeux du moment</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <span className="text-primary font-bold mt-1">•</span>
+                        <span>Encadrement de vos pratiques promotionnelles et protection du consommateur</span>
+                      </li>
+                    </ul>
+                    
+                    <p className="text-center leading-relaxed max-w-3xl mx-auto font-medium">
+                      Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
+                      et opérationnelle concrète, alignée avec vos objectifs.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Honoraires Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
+              Honoraires
+            </h2>
+            <Card className="bg-background shadow-soft border-0">
+              <CardContent className="p-12">
+                <div className="space-y-8 text-lg text-muted-foreground">
+                  <div className="text-center">
+                    <p className="text-xl font-medium text-primary mb-6">
+                      Des honoraires fondées sur la réalité de vos enjeux
+                    </p>
+                    <p className="leading-relaxed max-w-3xl mx-auto">
+                      Les modalités d'intervention et les honoraires sont définis en amont, avec clarté et sérénité.
+                    </p>
+                  </div>
+                  
+                  <div className="space-y-6">
+                    <p className="leading-relaxed">
+                      Les honoraires sont fixés en fonction de plusieurs critères : nature et complexité du dossier, 
+                      volume des diligences, et usages de la profession.
+                    </p>
+                    
+                    <div>
+                      <p className="text-lg font-medium text-primary mb-4">
+                        Trois modes de facturation peuvent être proposés :
+                      </p>
+                      <ul className="space-y-3 text-muted-foreground">
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary font-bold mt-1">•</span>
+                          <span>Forfait (avec ou sans honoraire de résultat)</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary font-bold mt-1">•</span>
+                          <span>Temps passé, sur la base d'un taux horaire</span>
+                        </li>
+                        <li className="flex items-start gap-3">
+                          <span className="text-primary font-bold mt-1">•</span>
+                          <span>Abonnement, pour un accompagnement régulier</span>
+                        </li>
+                      </ul>
+                    </div>
+                    
+                    <p className="leading-relaxed">
+                      Sauf urgence, les modalités sont définies d'un commun accord au début de la mission, 
+                      via une convention d'honoraires. Les honoraires ne couvrent pas les frais externes.
+                    </p>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* Actualités Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
