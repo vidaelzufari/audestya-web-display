@@ -3,6 +3,7 @@ import { Button } from '@/components/ui/button';
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
+import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
 
 const AboutSection = () => {
   return (
@@ -14,10 +15,18 @@ const AboutSection = () => {
             À Propos
           </h2>
           <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-            <div className="space-y-6 text-lg text-muted-foreground">
-              <p className="text-xl font-medium text-primary mb-6">
-                Avocate indépendante spécialisée en droit des affaires
-              </p>
+            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+              <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0">
+                <img 
+                  src={lawyerPortrait} 
+                  alt="Portrait de l'avocate" 
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="flex-1 space-y-6 text-lg text-muted-foreground">
+                <p className="text-xl font-medium text-primary">
+                  Avocate indépendante spécialisée en droit des affaires
+                </p>
               <p className="text-left leading-relaxed">
                 Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
                 j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
@@ -28,11 +37,12 @@ const AboutSection = () => {
                 me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
                 juridiques que rencontrent les entreprises dans leurs activités commerciales.
               </p>
-              <p className="text-left leading-relaxed">
-                Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
-                opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
-                développement de vos activités.
-              </p>
+                <p className="text-left leading-relaxed">
+                  Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
+                  opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
+                  développement de vos activités.
+                </p>
+              </div>
             </div>
           </div>
         </div>
