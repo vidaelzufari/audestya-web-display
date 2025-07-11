@@ -15,50 +15,8 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       
-      {/* Bio Section */}
-      <section id="presentation" className="py-20 bg-gradient-accent">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-20">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-              À Propos
-            </h2>
-            <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-                <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0">
-                  <img 
-                    src={lawyerPortrait} 
-                    alt="Portrait de l'avocate" 
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
-                  <p className="text-xl font-medium text-primary">
-                    Avocate indépendante spécialisée en droit des affaires
-                  </p>
-                  <p className="text-left leading-relaxed">
-                    Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
-                    j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
-                    juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
-                  </p>
-                  <p className="text-left leading-relaxed">
-                    Ma spécialisation en droit de la distribution, des contrats et de la consommation 
-                    me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
-                    juridiques que rencontrent les entreprises dans leurs activités commerciales.
-                  </p>
-                  <p className="text-left leading-relaxed">
-                    Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
-                    opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
-                    développement de vos activités.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Mon Intervention Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-accent">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
@@ -116,6 +74,48 @@ const Index = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Bio Section */}
+      <section id="presentation" className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center mb-20">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
+              À Propos
+            </h2>
+            <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
+              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+                <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0">
+                  <img 
+                    src={lawyerPortrait} 
+                    alt="Portrait de l'avocate" 
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
+                  <p className="text-xl font-medium text-primary">
+                    Avocate indépendante spécialisée en droit des affaires
+                  </p>
+                  <p className="text-left leading-relaxed">
+                    Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
+                    j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
+                    juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
+                  </p>
+                  <p className="text-left leading-relaxed">
+                    Ma spécialisation en droit de la distribution, des contrats et de la consommation 
+                    me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
+                    juridiques que rencontrent les entreprises dans leurs activités commerciales.
+                  </p>
+                  <p className="text-left leading-relaxed">
+                    Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
+                    opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
+                    développement de vos activités.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
