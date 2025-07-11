@@ -83,7 +83,7 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-              À Propos
+              Bio
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
               <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
