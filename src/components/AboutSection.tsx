@@ -6,7 +6,7 @@ import trustIcon from '@/assets/trust-icon.jpg';
 
 const AboutSection = () => {
   return (
-    <section id="presentation" className="py-20 bg-muted/50">
+    <section id="presentation" className="py-20 bg-gradient-accent">
       <div className="container mx-auto px-4">
         {/* Mon intervention section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
@@ -61,7 +61,7 @@ const AboutSection = () => {
 
         {/* Three pillars */}
         <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-          <Card className="bg-gradient-card shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
             <CardContent className="p-8 text-center">
               <div className="mb-6">
                 <img 
@@ -83,7 +83,7 @@ const AboutSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-card shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
             <CardContent className="p-8 text-center">
               <div className="mb-6">
                 <img 
@@ -105,7 +105,7 @@ const AboutSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-card shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2">
+          <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
             <CardContent className="p-8 text-center">
               <div className="mb-6">
                 <img 

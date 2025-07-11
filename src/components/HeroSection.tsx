@@ -14,7 +14,7 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-foreground">
+        <div className="max-w-4xl mx-auto text-center text-background">
           <h1 className="font-serif text-5xl md:text-7xl font-bold mb-8 animate-fade-in">
             AVOCATE INDÉPENDANTE
           </h1>
@@ -27,8 +27,8 @@ const HeroSection = () => {
           </div>
 
           {/* Inspirational quote */}
-          <div className="bg-card/20 backdrop-blur-sm rounded-lg p-8 mb-12 border border-border/30 animate-scale-in" style={{ animationDelay: '0.4s' }}>
-            <blockquote className="text-lg md:text-xl italic mb-4 text-secondary">
+          <div className="bg-background/95 backdrop-blur-sm rounded-xl p-8 mb-12 border border-border shadow-soft animate-scale-in" style={{ animationDelay: '0.4s' }}>
+            <blockquote className="text-lg md:text-xl italic mb-4 text-primary">
               « L'excellence n'est jamais le fruit du hasard. Elle est toujours le résultat d'une intention noble, 
               d'un effort sincère et d'une exécution intelligente. Elle reflète un choix réfléchi parmi de nombreuses 
               possibilités – c'est le choix, et non le hasard, qui détermine votre destin. »
@@ -47,7 +47,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-semibold px-8 py-4 text-lg"
+              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-8 py-4 text-lg"
             >
               Découvrir Mon Approche
             </Button>
@@ -56,9 +56,9 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-foreground animate-bounce">
-        <div className="w-6 h-10 border-2 border-foreground rounded-full flex justify-center">
-          <div className="w-1 h-3 bg-foreground rounded-full mt-2 animate-pulse"></div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-background animate-bounce">
+        <div className="w-6 h-10 border-2 border-background rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-background rounded-full mt-2 animate-pulse"></div>
         </div>
       </div>
     </section>

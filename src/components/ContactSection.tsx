@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Clock } from 'lucide-react';
 
 const ContactSection = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-20 bg-gradient-accent">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
@@ -22,7 +22,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8">
-            <Card className="bg-gradient-card shadow-card">
+            <Card className="bg-background shadow-soft border-0">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                   Informations de Contact
@@ -108,7 +108,7 @@ const ContactSection = () => {
           </div>
 
           {/* Contact Form */}
-          <Card className="bg-gradient-card shadow-card">
+          <Card className="bg-background shadow-soft border-0">
             <CardContent className="p-8">
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                 Envoyez-moi un message

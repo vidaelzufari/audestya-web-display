@@ -89,7 +89,7 @@ const DomainsSection = () => {
             return (
               <Card 
                 key={index}
-                className="bg-gradient-card shadow-card hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group"
+                className="bg-background shadow-soft hover:shadow-elegant transition-all duration-300 hover:-translate-y-2 group border-0"
               >
                 <CardHeader className="text-center pb-4">
                   <div className="mx-auto mb-4 p-4 bg-gradient-secondary rounded-full w-fit group-hover:shadow-glow transition-shadow duration-300">
