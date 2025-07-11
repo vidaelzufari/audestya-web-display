@@ -17,10 +17,12 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const isActive = (path: string) => {
-    if (path === '#accueil') return location.pathname === '/';
+    if (path === '/' || path === '#accueil') return location.pathname === '/' && (!location.hash || location.hash === '#accueil');
     if (path === '/actualites') return location.pathname === '/actualites';
-    if (path.startsWith('#')) return location.pathname === '/' && location.hash === path;
-    return false;
+    if (path.startsWith('#')) {
+      return location.pathname === '/' && location.hash === path;
+    }
+    return location.pathname === path;
   };
 
   const getNavLinkClass = (path: string) => {
@@ -75,7 +77,7 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="/" className={getNavLinkClass('#accueil')}>
+            <a href="/" className={getNavLinkClass('/')}>
               ACCUEIL
             </a>
             <a href="/#presentation" className={getNavLinkClass('#presentation')}>
@@ -127,7 +129,7 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
-              <a href="/" className={`${getNavLinkClass('#accueil')} py-3 px-2 rounded`}>
+              <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
                 ACCUEIL
               </a>
               <a href="/#presentation" className={`${getNavLinkClass('#presentation')} py-3 px-2 rounded`}>
