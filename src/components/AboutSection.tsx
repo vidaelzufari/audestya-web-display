@@ -8,11 +8,40 @@ const AboutSection = () => {
   return (
     <section id="presentation" className="py-20 bg-gradient-accent">
       <div className="container mx-auto px-4">
-        {/* Mon intervention section */}
+        {/* Bio personnelle */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
-            Mon Intervention
+            À Propos
           </h2>
+          <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
+            <div className="space-y-6 text-lg text-muted-foreground">
+              <p className="text-xl font-medium text-primary mb-6">
+                Avocate indépendante spécialisée en droit des affaires
+              </p>
+              <p className="text-left leading-relaxed">
+                Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
+                j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
+                juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
+              </p>
+              <p className="text-left leading-relaxed">
+                Ma spécialisation en droit de la distribution, des contrats et de la consommation 
+                me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
+                juridiques que rencontrent les entreprises dans leurs activités commerciales.
+              </p>
+              <p className="text-left leading-relaxed">
+                Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
+                opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
+                développement de vos activités.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        {/* Mon intervention section */}
+        <div className="max-w-4xl mx-auto text-center mb-20">
+          <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+            Mon Intervention
+          </h3>
           <div className="space-y-6 text-lg text-muted-foreground">
             <p className="text-xl font-medium text-primary">
               Une collaboration sur mesure, adaptée à vos enjeux
@@ -30,7 +59,7 @@ const AboutSection = () => {
             size="lg" 
             className="mt-8 border-primary text-primary hover:bg-primary hover:text-primary-foreground"
           >
-            En savoir plus
+            Découvrir mes services
           </Button>
         </div>
 
