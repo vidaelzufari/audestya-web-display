@@ -23,11 +23,6 @@ const Navigation = () => {
                 haia.elzufari@audestya-avocat.com
               </a>
             </div>
-            <div className="hidden md:block">
-              <Button variant="secondary" size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary-light">
-                Prendre Rendez-vous
-              </Button>
-            </div>
           </div>
         </div>
       </div>
@@ -88,9 +83,6 @@ const Navigation = () => {
               <a href="#contact" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
                 CONTACT
               </a>
-              <Button variant="secondary" size="sm" className="bg-secondary text-secondary-foreground hover:bg-secondary-light mt-4">
-                Prendre Rendez-vous
-              </Button>
             </div>
           </div>
         )}

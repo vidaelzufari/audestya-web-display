@@ -37,13 +37,7 @@ const HeroSection = () => {
           </div>
 
           {/* CTA buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <Button 
-              size="lg" 
-              className="bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-glow font-semibold px-8 py-4 text-lg"
-            >
-              Prendre Rendez-vous
-            </Button>
+          <div className="flex justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
             <Button 
               variant="outline" 
               size="lg"

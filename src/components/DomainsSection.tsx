@@ -121,13 +121,7 @@ const DomainsSection = () => {
           <p className="text-lg text-muted-foreground mb-8">
             Besoin d'un accompagnement spécifique ? Contactez-moi pour discuter de vos enjeux.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href="#contact" 
-              className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-glow transition-all duration-300 inline-block"
-            >
-              Prendre Rendez-vous
-            </a>
+          <div className="flex justify-center">
             <a 
               href="tel:+33685353781" 
               className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 inline-block"

@@ -87,24 +87,6 @@ const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant">
-              <CardContent className="p-8 text-center">
-                <h3 className="font-serif text-xl font-bold mb-4">
-                  Prendre Rendez-vous
-                </h3>
-                <p className="mb-6 opacity-90">
-                  Contactez-moi pour un premier échange et définir ensemble 
-                  la stratégie juridique adaptée à vos besoins.
-                </p>
-                <Button 
-                  variant="secondary" 
-                  size="lg"
-                  className="bg-secondary text-secondary-foreground hover:bg-secondary-light shadow-glow"
-                >
-                  Me Contacter
-                </Button>
-              </CardContent>
-            </Card>
           </div>
 
           {/* Contact Form */}
