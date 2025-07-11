@@ -1,7 +1,13 @@
 
 import { useState } from 'react';
-import { Menu, X, Phone, Mail, LinkedinIcon } from 'lucide-react';
+import { Menu, X, Phone, Mail, LinkedinIcon, Globe } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -58,9 +64,30 @@ const Navigation = () => {
             <a href="#domaines" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
               DOMAINES D'INTERVENTION
             </a>
+            <a href="/actualites" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
+              ACTUALITÉS
+            </a>
             <a href="#contact" className="text-primary-foreground hover:text-secondary transition-colors font-medium">
               CONTACT
             </a>
+            
+            {/* Language selector */}
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
+                  <Globe size={16} className="mr-1" />
+                  FR
+                </Button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent>
+                <DropdownMenuItem>
+                  🇫🇷 Français
+                </DropdownMenuItem>
+                <DropdownMenuItem>
+                  🇬🇧 English
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Mobile menu button */}
@@ -89,9 +116,30 @@ const Navigation = () => {
               <a href="#domaines" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
                 DOMAINES D'INTERVENTION
               </a>
+              <a href="/actualites" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
+                ACTUALITÉS
+              </a>
               <a href="#contact" className="text-primary-foreground hover:text-secondary transition-colors font-medium py-2">
                 CONTACT
               </a>
+              <div className="py-2">
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary">
+                      <Globe size={16} className="mr-1" />
+                      FR
+                    </Button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent>
+                    <DropdownMenuItem>
+                      🇫🇷 Français
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      🇬🇧 English
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
+              </div>
             </div>
           </div>
         )}

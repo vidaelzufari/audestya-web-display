@@ -8,6 +8,7 @@ import Presentation from "./pages/Presentation";
 import ReseauxDistribution from "./pages/ReseauxDistribution";
 import RelationsCommerciales from "./pages/RelationsCommerciales";
 import AccompagnementJuridique from "./pages/AccompagnementJuridique";
+import Actualites from "./pages/Actualites";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +25,7 @@ const App = () => (
           <Route path="/reseaux-distribution" element={<ReseauxDistribution />} />
           <Route path="/relations-commerciales" element={<RelationsCommerciales />} />
           <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
+          <Route path="/actualites" element={<Actualites />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
