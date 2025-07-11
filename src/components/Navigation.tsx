@@ -68,12 +68,12 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="flex items-center">
+          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
             <h1 className="font-serif text-2xl font-bold text-primary-foreground">
               AUDESTYA
             </h1>
             <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
-          </div>
+          </a>
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
