@@ -42,45 +42,6 @@ const DomainsSection = () => {
       ],
       link: "/accompagnement-juridique",
       hasPage: true
-    },
-    {
-      icon: ShieldCheck,
-      title: "Protection du Consommateur",
-      description: "Mise en conformité avec les réglementations de protection du consommateur et gestion des litiges.",
-      details: [
-        "Droit de la consommation",
-        "Pratiques déloyales",
-        "Garanties légales",
-        "Médiation consommateur"
-      ],
-      link: "/protection-consommateur",
-      hasPage: true
-    },
-    {
-      icon: Scale,
-      title: "Négociation de Contrats",
-      description: "Négociation et rédaction de contrats commerciaux sécurisés, adaptés aux enjeux de votre activité.",
-      details: [
-        "Contrats de partenariat",
-        "Accords de distribution",
-        "Contrats cadres",
-        "Négociation commerciale"
-      ],
-      link: "/negociation-contrats",
-      hasPage: true
-    },
-    {
-      icon: Gavel,
-      title: "Sécurisation Contractuelle",
-      description: "Audit et optimisation de vos outils juridiques existants pour une sécurisation maximale de vos relations d'affaires.",
-      details: [
-        "Audit contractuel",
-        "Optimisation CGV",
-        "Outils juridiques",
-        "Politique commerciale"
-      ],
-      link: "/securisation-contractuelle",
-      hasPage: true
     }
   ];
 
@@ -96,7 +57,7 @@ const DomainsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {domains.map((domain, index) => {
             const IconComponent = domain.icon;
             return (

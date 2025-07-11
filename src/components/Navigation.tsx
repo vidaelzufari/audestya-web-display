@@ -108,21 +108,6 @@ const Navigation = () => {
                     Accompagnement Juridique Externalisé
                   </a>
                 </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/protection-consommateur" className="w-full">
-                    Protection du Consommateur
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/negociation-contrats" className="w-full">
-                    Négociation de Contrats
-                  </a>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/securisation-contractuelle" className="w-full">
-                    Sécurisation Contractuelle
-                  </a>
-                </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
@@ -188,15 +173,6 @@ const Navigation = () => {
                   </a>
                   <a href="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Accompagnement Juridique Externalisé
-                  </a>
-                  <a href="/protection-consommateur" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Protection du Consommateur
-                  </a>
-                  <a href="/negociation-contrats" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Négociation de Contrats
-                  </a>
-                  <a href="/securisation-contractuelle" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Sécurisation Contractuelle
                   </a>
                 </div>
               </div>
