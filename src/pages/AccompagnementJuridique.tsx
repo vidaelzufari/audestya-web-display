@@ -6,13 +6,13 @@ const AccompagnementJuridique = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
       {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
+      <section className="py-32 bg-gradient-hero text-primary-foreground">
+        <div className="container mx-auto px-6">
+          <div className="max-w-5xl mx-auto text-center">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-8">
               Accompagnement Juridique Externalisé
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
+            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
               Souplesse, proximité, pragmatisme. Chaque mission est construite sur-mesure, en lien direct avec vos enjeux concrets.
             </p>
           </div>
@@ -20,13 +20,13 @@ const AccompagnementJuridique = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto">
+      <section className="py-32">
+        <div className="container mx-auto px-6">
+          <div className="max-w-7xl mx-auto">
             
             {/* Introduction */}
-            <Card className="bg-background shadow-soft border-0 mb-16">
-              <CardContent className="p-12 text-center">
+            <Card className="bg-background shadow-soft border-0 mb-24">
+              <CardContent className="p-16 text-center">
                 <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Handshake className="w-10 h-10 text-secondary-foreground" />
                 </div>
@@ -40,9 +40,9 @@ const AccompagnementJuridique = () => {
             </Card>
 
             {/* Types d'accompagnement */}
-            <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            <div className="grid lg:grid-cols-2 gap-12 mb-24">
               <Card className="bg-gradient-primary text-primary-foreground shadow-elegant">
-                <CardContent className="p-10">
+                <CardContent className="p-12">
                   <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
                     <Target className="w-8 h-8 text-white" />
                   </div>
@@ -71,7 +71,7 @@ const AccompagnementJuridique = () => {
               </Card>
 
               <Card className="bg-background shadow-soft border-0">
-                <CardContent className="p-10">
+                <CardContent className="p-12">
                   <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
                     <Users className="w-8 h-8 text-secondary-foreground" />
                   </div>
