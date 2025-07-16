@@ -4,6 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import DomainsSection from '@/components/DomainsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
+import { Award, Target, Users } from 'lucide-react';
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
@@ -526,11 +527,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <img 
-                            src={expertiseIcon} 
-                            alt="Expertise confirmée" 
-                            className="w-16 h-16 rounded-xl object-cover"
-                          />
+                          <Award className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
@@ -557,11 +554,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-secondary to-secondary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <img 
-                            src={pragmaticIcon} 
-                            alt="Approche pragmatique" 
-                            className="w-16 h-16 rounded-xl object-cover"
-                          />
+                          <Target className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-secondary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
@@ -588,11 +581,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <img 
-                            src={trustIcon} 
-                            alt="Relation de confiance" 
-                            className="w-16 h-16 rounded-xl object-cover"
-                          />
+                          <Users className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
