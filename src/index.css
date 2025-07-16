@@ -23,10 +23,10 @@ All colors MUST be HSL.
     --primary-foreground: 31 14% 92%;
     --primary-light: 15 21% 39%;
 
-    /* Couleur teal/background de l'image */
-    --secondary: 180 100% 25%; /* #008080 converti en HSL */
-    --secondary-foreground: 31 14% 92%;
-    --secondary-light: 180 100% 35%;
+    /* Couleur neutre claire */
+    --secondary: 0 0% 98%; /* Blanc cassé */
+    --secondary-foreground: 0 0% 17%;
+    --secondary-light: 0 0% 95%;
 
     /* Couleur background ocre de l'image */
     --accent: 35 28% 51%; /* #907354 converti en HSL */
@@ -44,7 +44,7 @@ All colors MUST be HSL.
 
     /* Gradients avec les nouvelles couleurs */
     --gradient-primary: linear-gradient(135deg, hsl(15 21% 25%), hsl(15 21% 35%));
-    --gradient-secondary: linear-gradient(135deg, hsl(180 100% 20%), hsl(180 100% 30%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 96%), hsl(0 0% 98%));
     --gradient-hero: linear-gradient(135deg, hsl(15 21% 20%) 0%, hsl(15 21% 30%) 100%);
     --gradient-card: linear-gradient(145deg, hsl(31 14% 95%), hsl(31 14% 92%));
     --gradient-accent: linear-gradient(135deg, hsl(35 28% 45%), hsl(35 28% 55%));
@@ -52,7 +52,7 @@ All colors MUST be HSL.
     /* Shadows harmonisées */
     --shadow-elegant: 0 20px 60px -10px hsl(15 21% 29% / 0.15);
     --shadow-card: 0 8px 32px -8px hsl(15 21% 29% / 0.1);
-    --shadow-glow: 0 0 40px hsl(180 100% 25% / 0.2);
+    --shadow-glow: 0 0 40px hsl(0 0% 80% / 0.2);
     --shadow-soft: 0 2px 16px hsl(15 21% 29% / 0.08);
 
     /* Smooth animations */
@@ -92,9 +92,9 @@ All colors MUST be HSL.
     --primary-foreground: 31 14% 92%;
     --primary-light: 15 21% 49%;
 
-    --secondary: 180 100% 35%;
-    --secondary-foreground: 15 21% 8%;
-    --secondary-light: 180 100% 45%;
+    --secondary: 0 0% 95%;
+    --secondary-foreground: 0 0% 17%;
+    --secondary-light: 0 0% 92%;
 
     --accent: 35 28% 61%;
     --accent-foreground: 15 21% 8%;
@@ -107,11 +107,11 @@ All colors MUST be HSL.
 
     --border: 15 21% 20%;
     --input: 15 21% 20%;
-    --ring: 180 100% 35%;
+    --ring: 0 0% 80%;
 
     /* Dark mode gradients */
     --gradient-primary: linear-gradient(135deg, hsl(15 21% 12%), hsl(15 21% 22%));
-    --gradient-secondary: linear-gradient(135deg, hsl(180 100% 25%), hsl(180 100% 35%));
+    --gradient-secondary: linear-gradient(135deg, hsl(0 0% 92%), hsl(0 0% 95%));
     --gradient-hero: linear-gradient(135deg, hsl(15 21% 5%), hsl(15 21% 15%));
     --gradient-card: linear-gradient(145deg, hsl(15 21% 10%), hsl(15 21% 12%));
     --gradient-accent: linear-gradient(135deg, hsl(35 28% 45%), hsl(35 28% 55%));
