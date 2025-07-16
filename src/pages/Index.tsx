@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import DomainsSection from '@/components/DomainsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { Scale, ShieldCheck, Handshake } from 'lucide-react';
+import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
@@ -353,11 +353,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={expertiseIcon} 
-                      alt="Excellence" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-yellow-500 to-orange-500 rounded-full flex items-center justify-center shadow-md">
+                      <Award className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Excellence
@@ -373,11 +371,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={pragmaticIcon} 
-                      alt="Intégrité" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-blue-600 to-blue-800 rounded-full flex items-center justify-center shadow-md">
+                      <Shield className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Intégrité
@@ -393,11 +389,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={trustIcon} 
-                      alt="Pragmatisme" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-green-600 to-green-800 rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Pragmatisme
@@ -413,11 +407,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={expertiseIcon} 
-                      alt="Proximité" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-purple-600 to-purple-800 rounded-full flex items-center justify-center shadow-md">
+                      <Users className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Proximité
@@ -433,11 +425,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={pragmaticIcon} 
-                      alt="Innovation" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-cyan-600 to-cyan-800 rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Innovation
@@ -453,11 +443,9 @@ const Index = () => {
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <img 
-                      src={trustIcon} 
-                      alt="Engagement" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-red-600 to-red-800 rounded-full flex items-center justify-center shadow-md">
+                      <Heart className="w-10 h-10 text-white" />
+                    </div>
                   </div>
                   <h3 className="font-serif text-xl font-bold text-primary mb-4">
                     Engagement
