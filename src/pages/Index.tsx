@@ -490,69 +490,135 @@ const Index = () => {
       </section>
 
       {/* Mon Approche Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Mon Approche
-            </h2>
-            <div className="grid md:grid-cols-3 gap-8">
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <img 
-                      src={expertiseIcon} 
-                      alt="Expertise confirmée" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Une expertise confirmée
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Une connaissance approfondie du droit de la distribution et des contrats, 
-                    acquise par une expérience solide et une formation continue.
-                  </p>
-                </CardContent>
-              </Card>
+      <section className="py-24 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-40 h-40 border-2 border-primary/30 rounded-full animate-pulse"></div>
+          <div className="absolute bottom-20 right-10 w-32 h-32 border-2 border-secondary/30 rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/2 left-1/4 w-24 h-24 border border-accent/20 rounded-full animate-pulse" style={{ animationDelay: '2s' }}></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-6xl mx-auto">
+            {/* Header */}
+            <div className="text-center mb-20">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+              </div>
+              <h2 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+                Mon Approche
+              </h2>
+              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+                Trois piliers fondamentaux pour un accompagnement juridique d'excellence, 
+                adapté aux réalités de votre entreprise
+              </p>
+            </div>
 
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <img 
-                      src={pragmaticIcon} 
-                      alt="Approche pragmatique" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Une approche pragmatique
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Des solutions juridiques adaptées à la réalité de votre entreprise, 
-                    alliant rigueur juridique et efficacité opérationnelle.
-                  </p>
-                </CardContent>
-              </Card>
+            {/* Cards grid */}
+            <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
+              {/* Expertise Card */}
+              <div className="group">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="mb-8 flex justify-center">
+                      <div className="relative">
+                        <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <img 
+                            src={expertiseIcon} 
+                            alt="Expertise confirmée" 
+                            className="w-16 h-16 rounded-xl object-cover"
+                          />
+                        </div>
+                        <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                      </div>
+                    </div>
+                    <div className="text-center space-y-4">
+                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-primary-light transition-colors duration-300">
+                        Une expertise confirmée
+                      </h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
+                      <p className="text-muted-foreground leading-relaxed text-lg">
+                        Une connaissance approfondie du droit de la distribution et des contrats, 
+                        acquise par une expérience solide et une formation continue.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
 
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <img 
-                      src={trustIcon} 
-                      alt="Relation de confiance" 
-                      className="w-20 h-20 mx-auto rounded-full object-cover shadow-md"
-                    />
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Une relation de confiance
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
-                    pour une collaboration durable et fructueuse.
-                  </p>
-                </CardContent>
-              </Card>
+              {/* Pragmatic Card */}
+              <div className="group">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative lg:mt-8">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="mb-8 flex justify-center">
+                      <div className="relative">
+                        <div className="w-24 h-24 bg-gradient-to-br from-secondary to-secondary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <img 
+                            src={pragmaticIcon} 
+                            alt="Approche pragmatique" 
+                            className="w-16 h-16 rounded-xl object-cover"
+                          />
+                        </div>
+                        <div className="absolute -inset-2 bg-gradient-to-br from-secondary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                      </div>
+                    </div>
+                    <div className="text-center space-y-4">
+                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                        Une approche pragmatique
+                      </h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
+                      <p className="text-muted-foreground leading-relaxed text-lg">
+                        Des solutions juridiques adaptées à la réalité de votre entreprise, 
+                        alliant rigueur juridique et efficacité opérationnelle.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+
+              {/* Trust Card */}
+              <div className="group">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="mb-8 flex justify-center">
+                      <div className="relative">
+                        <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                          <img 
+                            src={trustIcon} 
+                            alt="Relation de confiance" 
+                            className="w-16 h-16 rounded-xl object-cover"
+                          />
+                        </div>
+                        <div className="absolute -inset-2 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
+                      </div>
+                    </div>
+                    <div className="text-center space-y-4">
+                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                        Une relation de confiance
+                      </h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
+                      <p className="text-muted-foreground leading-relaxed text-lg">
+                        Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
+                        pour une collaboration durable et fructueuse.
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+
+            {/* Bottom decoration */}
+            <div className="flex justify-center mt-16">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              </div>
             </div>
           </div>
         </div>
