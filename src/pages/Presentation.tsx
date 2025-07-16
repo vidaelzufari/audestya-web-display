@@ -34,7 +34,7 @@ const Presentation = () => {
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
-                  <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0 mx-auto md:mx-0">
+                  <div className="w-40 h-56 rounded-lg overflow-hidden shadow-card flex-shrink-0 mx-auto md:mx-0">
                     <img 
                       src={lawyerPortrait} 
                       alt="Portrait de l'avocate" 
@@ -145,7 +145,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Award className="w-10 h-10 text-white" />
+                      <Award className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -163,7 +163,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Shield className="w-10 h-10 text-white" />
+                      <Shield className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -181,7 +181,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-white" />
+                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -199,7 +199,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Users className="w-10 h-10 text-white" />
+                      <Users className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -217,7 +217,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" />
+                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -235,7 +235,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Heart className="w-10 h-10 text-white" />
+                      <Heart className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
