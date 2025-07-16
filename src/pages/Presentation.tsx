@@ -38,7 +38,7 @@ const Presentation = () => {
                     <img 
                       src={lawyerPortrait} 
                       alt="Portrait de l'avocate" 
-                      className="w-full h-full object-cover object-[center_20%]"
+                      className="w-full h-full object-cover object-[40%_20%]"
                     />
                   </div>
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
