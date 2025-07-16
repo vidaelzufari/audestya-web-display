@@ -204,15 +204,15 @@ const Index = () => {
               Bio
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-                <div className="w-full md:w-80 h-60 rounded-lg overflow-hidden shadow-card flex-shrink-0">
+              <div className="flex flex-col gap-8 mb-8">
+                <div className="w-full h-60 rounded-lg overflow-hidden shadow-card">
                   <img 
                     src={lawyerPortrait} 
                     alt="Portrait de l'avocate" 
                     className="w-full h-full object-cover object-[40%_20%]"
                   />
                 </div>
-                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
+                <div className="space-y-6 text-lg text-muted-foreground">
                   <p className="text-xl font-medium text-primary">
                     Avocate indépendante spécialisée en droit des affaires
                   </p>
