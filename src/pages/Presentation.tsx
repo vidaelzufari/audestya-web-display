@@ -2,7 +2,7 @@
 import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { LinkedinIcon } from 'lucide-react';
+import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
 import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
 
 const Presentation = () => {
@@ -143,6 +143,11 @@ const Presentation = () => {
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Award className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Excellence
                   </h3>
@@ -156,6 +161,11 @@ const Presentation = () => {
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Shield className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Intégrité
                   </h3>
@@ -169,6 +179,11 @@ const Presentation = () => {
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Pragmatisme
                   </h3>
@@ -182,6 +197,11 @@ const Presentation = () => {
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Users className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Proximité
                   </h3>
@@ -195,6 +215,11 @@ const Presentation = () => {
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Innovation
                   </h3>
@@ -208,6 +233,11 @@ const Presentation = () => {
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Heart className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Engagement
                   </h3>
