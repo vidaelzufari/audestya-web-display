@@ -8,13 +8,13 @@ const Actualites = () => {
       <Navigation />
 
       {/* Hero Section */}
-      <section className="py-32 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-8">
+      <section className="py-20 bg-gradient-hero text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Actualités
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Restez informé des dernières évolutions juridiques
             </p>
           </div>
@@ -22,11 +22,11 @@ const Actualites = () => {
       </section>
 
       {/* Actualités Content */}
-      <section className="py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto">
-            <Card className="bg-background shadow-soft border-0 mb-16">
-              <CardContent className="p-16 text-center">
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <Card className="bg-background shadow-soft border-0 mb-8">
+              <CardContent className="p-12 text-center">
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p className="text-xl font-medium text-primary">
                     Actualités juridiques à venir

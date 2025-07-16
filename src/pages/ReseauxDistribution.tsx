@@ -6,13 +6,13 @@ const ReseauxDistribution = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
       {/* Hero Section */}
-      <section className="py-32 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-6">
-          <div className="max-w-5xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-8">
+      <section className="py-20 bg-gradient-hero text-primary-foreground">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Réseaux de Distribution
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl opacity-90 max-w-3xl mx-auto">
               Je vous accompagne à chaque étape de la création ou de la vie de votre réseau de distribution.
             </p>
           </div>
@@ -20,13 +20,13 @@ const ReseauxDistribution = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-32">
-        <div className="container mx-auto px-6">
-          <div className="max-w-7xl mx-auto">
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-6xl mx-auto">
             
             {/* Introduction */}
-            <Card className="bg-background shadow-soft border-0 mb-24">
-              <CardContent className="p-16 text-center">
+            <Card className="bg-background shadow-soft border-0 mb-16">
+              <CardContent className="p-12 text-center">
                 <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
                   <Network className="w-10 h-10 text-secondary-foreground" />
                 </div>
@@ -40,8 +40,8 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Volet BtoB */}
-            <Card className="bg-background shadow-soft border-0 mb-24">
-              <CardContent className="p-16">
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="p-4 bg-gradient-secondary rounded-full">
                     <Shield className="w-8 h-8 text-secondary-foreground" />
@@ -130,8 +130,8 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Volet BtoC */}
-            <Card className="bg-background shadow-soft border-0 mb-24">
-              <CardContent className="p-16">
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="p-4 bg-gradient-secondary rounded-full">
                     <Users className="w-8 h-8 text-secondary-foreground" />
@@ -171,8 +171,8 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Méthodologie */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-24">
-              <CardContent className="p-16">
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
+              <CardContent className="p-12">
                 <div className="text-center mb-12">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
                     <Target className="w-10 h-10 text-white" />

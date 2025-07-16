@@ -47,10 +47,10 @@ const Presentation = () => {
       </nav>
 
       {/* Hero Section */}
-      <section className="py-32 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-8">
+      <section className="py-20 bg-gradient-hero text-primary-foreground">
+        <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-12">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Présentation
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto">
@@ -61,15 +61,15 @@ const Presentation = () => {
       </section>
 
       {/* Bio Section */}
-      <section className="py-32">
-        <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Bio
             </h2>
-            <Card className="bg-background shadow-soft border-0 mb-20">
-              <CardContent className="p-16">
-                <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
+                <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
                   <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0">
                     <img 
                       src={lawyerPortrait} 
@@ -77,7 +77,7 @@ const Presentation = () => {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <div className="flex-1 space-y-8 text-lg text-muted-foreground">
+                  <div className="flex-1 space-y-6 text-lg text-muted-foreground">
                     <p className="text-xl font-medium text-primary">
                       Avocate indépendante spécialisée en droit des affaires
                     </p>
@@ -178,8 +178,8 @@ const Presentation = () => {
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Excellence
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -191,8 +191,8 @@ const Presentation = () => {
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Intégrité
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -204,8 +204,8 @@ const Presentation = () => {
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Pragmatisme
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -217,8 +217,8 @@ const Presentation = () => {
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Proximité
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -230,8 +230,8 @@ const Presentation = () => {
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Innovation
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -243,8 +243,8 @@ const Presentation = () => {
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-12 text-center">
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-8">
+                <CardContent className="p-8 text-center">
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                     Engagement
                   </h3>
                   <p className="text-muted-foreground leading-relaxed">
@@ -260,16 +260,16 @@ const Presentation = () => {
       </section>
 
       {/* Mon Intervention Section */}
-      <section className="py-32">
-        <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Mon Intervention
             </h2>
-            <Card className="bg-background shadow-soft border-0 mb-20">
-              <CardContent className="p-16">
-                <div className="space-y-12 text-lg text-muted-foreground">
-                  <div className="text-center space-y-6">
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
+                <div className="space-y-8 text-lg text-muted-foreground">
+                  <div className="text-center space-y-4">
                     <p className="text-xl font-medium text-primary">
                       Une collaboration sur mesure, adaptée à vos enjeux
                     </p>
@@ -278,33 +278,33 @@ const Presentation = () => {
                     </p>
                   </div>
                   
-                  <div className="space-y-8">
+                  <div className="space-y-6">
                     <p className="text-lg font-medium text-primary">
                       J'interviens pour répondre à vos besoins variés :
                     </p>
                     
-                    <ul className="space-y-6 text-muted-foreground">
-                      <li className="flex items-start gap-4">
+                    <ul className="space-y-4 text-muted-foreground">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques</span>
                       </li>
-                      <li className="flex items-start gap-4">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Structuration, sécurisation et accompagnement juridique de réseaux de distribution</span>
                       </li>
-                      <li className="flex items-start gap-4">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)</span>
                       </li>
-                      <li className="flex items-start gap-4">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Audits contractuels adaptés à vos enjeux du moment</span>
                       </li>
-                      <li className="flex items-start gap-4">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires</span>
                       </li>
-                      <li className="flex items-start gap-4">
+                      <li className="flex items-start gap-3">
                         <span className="text-primary font-bold mt-1">•</span>
                         <span>Encadrement de vos pratiques promotionnelles et protection du consommateur</span>
                       </li>
@@ -323,14 +323,14 @@ const Presentation = () => {
       </section>
 
       {/* Honoraires Section */}
-      <section className="py-32 bg-muted/30">
-        <div className="container mx-auto px-8">
-          <div className="max-w-5xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-20 text-center">
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Honoraires
             </h2>
             <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-16">
+              <CardContent className="p-12">
                 <div className="space-y-8 text-lg text-muted-foreground">
                   <div className="text-center">
                     <p className="text-xl font-medium text-primary mb-6">
