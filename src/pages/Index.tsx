@@ -207,7 +207,7 @@ const Index = () => {
               <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-8">
                 <div className="flex-1 space-y-6 text-lg text-muted-foreground">
                   <p className="text-xl font-medium text-primary">
-                    Avocate individuelle spécialisée en droit des affaires
+                    Avocate indépendante spécialisée en droit des affaires
                   </p>
                   <p className="text-left leading-relaxed">
                     Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
