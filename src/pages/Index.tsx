@@ -17,7 +17,7 @@ const Index = () => {
       <HeroSection />
       
       {/* Mon Intervention Section */}
-      <section className="py-20 bg-gradient-accent relative overflow-hidden">
+      <section className="py-20 bg-background relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-5">
           <div className="absolute top-20 left-10 w-32 h-32 border border-primary rounded-full"></div>
@@ -185,10 +185,19 @@ const Index = () => {
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
                             Une relation de confiance
                           </h4>
-                          <p className="text-muted-foreground text-sm leading-relaxed">
+                          <p className="text-muted-foreground text-sm leading-relaxed mb-4">
                             Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
                             pour une collaboration durable et fructueuse.
                           </p>
+                          <a 
+                            href="#contact" 
+                            className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors text-sm group"
+                          >
+                            En savoir plus
+                            <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                            </svg>
+                          </a>
                         </div>
                       </div>
                     </CardContent>
@@ -479,7 +488,7 @@ const Index = () => {
       </section>
 
       {/* Mon Approche Section */}
-      <section className="py-24 bg-gradient-to-br from-background via-muted/20 to-background relative overflow-hidden">
+      <section className="py-20 bg-muted/30 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-40 h-40 border-2 border-primary/30 rounded-full animate-pulse"></div>
