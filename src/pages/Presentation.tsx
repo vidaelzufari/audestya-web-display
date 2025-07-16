@@ -145,7 +145,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Award className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Award className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -163,7 +163,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Shield className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Shield className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -181,7 +181,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Target className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -199,7 +199,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Users className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Users className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -217,7 +217,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
@@ -235,7 +235,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Heart className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Heart className="w-10 h-10 text-white" strokeWidth={1} />
                     </div>
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-primary mb-6">
