@@ -34,7 +34,7 @@ const Presentation = () => {
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
                 <div className="flex flex-col gap-6 mb-6">
-                  <div className="w-full h-48 rounded-lg overflow-hidden shadow-card">
+                  <div className="w-full h-80 rounded-lg overflow-hidden shadow-card">
                     <img 
                       src={lawyerPortrait} 
                       alt="Portrait de l'avocate" 

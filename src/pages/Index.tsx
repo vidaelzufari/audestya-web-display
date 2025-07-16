@@ -205,7 +205,7 @@ const Index = () => {
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
               <div className="flex flex-col gap-8 mb-8">
-                <div className="w-full h-60 rounded-lg overflow-hidden shadow-card">
+                <div className="w-full h-96 rounded-lg overflow-hidden shadow-card">
                   <img 
                     src={lawyerPortrait} 
                     alt="Portrait de l'avocate" 
