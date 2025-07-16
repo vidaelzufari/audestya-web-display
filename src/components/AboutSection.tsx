@@ -25,7 +25,7 @@ const AboutSection = () => {
               </div>
               <div className="flex-1 space-y-6 text-lg text-muted-foreground">
                 <p className="text-xl font-medium text-primary">
-                  Avocate indépendante spécialisée en droit des affaires
+                  Avocate individuelle spécialisée en droit des affaires
                 </p>
               <p className="text-left leading-relaxed">
                 Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
