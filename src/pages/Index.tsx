@@ -209,7 +209,7 @@ const Index = () => {
                   <img 
                     src={lawyerPortrait} 
                     alt="Portrait de l'avocate" 
-                    className="w-full h-full object-cover object-center"
+                    className="w-full h-full object-cover object-[center_20%]"
                   />
                 </div>
                 <div className="flex-1 space-y-6 text-lg text-muted-foreground">
