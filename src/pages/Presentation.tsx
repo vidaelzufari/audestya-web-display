@@ -3,7 +3,7 @@ import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
-import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
+import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
 
 const Presentation = () => {
   return (

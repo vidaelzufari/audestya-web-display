@@ -8,7 +8,7 @@ import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb,
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
-import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
+import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
 
 const Index = () => {
   return (
