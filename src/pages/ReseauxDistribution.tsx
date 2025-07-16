@@ -1,3 +1,4 @@
+import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Network, Shield, Users, FileText, Handshake, Target } from 'lucide-react';
@@ -5,6 +6,7 @@ import { Network, Shield, Users, FileText, Handshake, Target } from 'lucide-reac
 const ReseauxDistribution = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
+      <Navigation />
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">

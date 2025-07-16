@@ -1,4 +1,5 @@
 
+import Navigation from '@/components/Navigation';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { LinkedinIcon } from 'lucide-react';
@@ -7,44 +8,7 @@ import lawyerPortrait from '@/assets/lawyer-portrait.jpg';
 const Presentation = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
-      {/* Navigation */}
-      <nav className="bg-gradient-primary shadow-elegant sticky top-0 z-50">
-        <div className="bg-primary">
-          <div className="container mx-auto px-4 py-2">
-            <div className="flex justify-between items-center text-sm text-primary-foreground">
-              <div className="flex items-center gap-6">
-                <a href="tel:+33685353781" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                  <span>📞</span>
-                  +33 6 85 35 37 81
-                </a>
-                <a href="mailto:haia.elzufari@audestya-avocat.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                  <span>✉️</span>
-                  haia.elzufari@audestya-avocat.com
-                </a>
-              </div>
-              <a 
-                href="https://www.linkedin.com/in/haia-elzufari/" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 hover:text-secondary transition-colors"
-              >
-                <LinkedinIcon size={20} />
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div className="container mx-auto px-4">
-          <div className="flex justify-between items-center py-4">
-            <div className="flex items-center">
-              <h1 className="font-serif text-2xl font-bold text-primary-foreground">
-                AUDESTYA
-              </h1>
-              <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
-            </div>
-          </div>
-        </div>
-      </nav>
+      <Navigation />
 
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
