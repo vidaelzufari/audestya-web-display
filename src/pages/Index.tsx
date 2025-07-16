@@ -118,7 +118,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-md mb-4">
-                      <Scale className="w-8 h-8 text-white" strokeWidth={1} />
+                      <Scale className="w-8 h-8 text-white" strokeWidth={0.5} />
                     </div>
                     <h4 className="font-serif text-xl font-bold text-primary mb-3">
                       Une expertise confirmée
@@ -144,7 +144,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-xl flex items-center justify-center shadow-md mb-4">
-                      <ShieldCheck className="w-8 h-8 text-white" strokeWidth={1} />
+                      <ShieldCheck className="w-8 h-8 text-white" strokeWidth={0.5} />
                     </div>
                     <h4 className="font-serif text-xl font-bold text-primary mb-3">
                       Une approche pragmatique
@@ -170,7 +170,7 @@ const Index = () => {
                 <CardContent className="p-6">
                   <div className="flex flex-col items-center text-center">
                     <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-md mb-4">
-                      <Handshake className="w-8 h-8 text-white" strokeWidth={1} />
+                      <Handshake className="w-8 h-8 text-white" strokeWidth={0.5} />
                     </div>
                     <h4 className="font-serif text-xl font-bold text-primary mb-3">
                       Une relation de confiance
