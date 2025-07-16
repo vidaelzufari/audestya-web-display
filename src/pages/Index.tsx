@@ -28,18 +28,18 @@ const Index = () => {
           {/* Hero content */}
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-8 leading-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 leading-tight">
                 Mon Intervention
               </h2>
               <div className="max-w-4xl mx-auto space-y-6">
-                <p className="text-2xl md:text-3xl font-light text-primary leading-relaxed">
+                <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                   Une collaboration sur mesure, adaptée à vos enjeux
                 </p>
-                <p className="text-2xl md:text-3xl font-light text-primary leading-relaxed">
+                <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                   Une approche concrète, à vos côtés à chaque étape
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto my-8"></div>
-                <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                   Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
                   et opérationnelle concrète, alignée avec vos objectifs.
                 </p>
@@ -204,7 +204,7 @@ const Index = () => {
       <section id="presentation" className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-20">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
               Bio
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
@@ -496,7 +496,7 @@ const Index = () => {
                 <div className="w-3 h-3 bg-primary rounded-full"></div>
                 <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
               </div>
-              <h2 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
                 Mon Approche
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
