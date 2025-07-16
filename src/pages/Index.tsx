@@ -122,12 +122,8 @@ const Index = () => {
                   <Card className="bg-background/80 backdrop-blur-sm shadow-soft border-0 overflow-hidden group hover:shadow-card hover:-translate-y-1 transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md flex-shrink-0">
-                          <img 
-                            src={expertiseIcon} 
-                            alt="Expertise confirmée" 
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                          <Award className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
@@ -154,12 +150,8 @@ const Index = () => {
                   <Card className="bg-background/80 backdrop-blur-sm shadow-soft border-0 overflow-hidden group hover:shadow-card hover:-translate-y-1 transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md flex-shrink-0">
-                          <img 
-                            src={pragmaticIcon} 
-                            alt="Approche pragmatique" 
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                          <Target className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
@@ -186,12 +178,8 @@ const Index = () => {
                   <Card className="bg-background/80 backdrop-blur-sm shadow-soft border-0 overflow-hidden group hover:shadow-card hover:-translate-y-1 transition-all duration-300">
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-16 h-16 rounded-xl overflow-hidden shadow-md flex-shrink-0">
-                          <img 
-                            src={trustIcon} 
-                            alt="Relation de confiance" 
-                            className="w-full h-full object-cover"
-                          />
+                        <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
+                          <Users className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
