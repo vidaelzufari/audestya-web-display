@@ -204,15 +204,8 @@ const Index = () => {
               Bio
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-              <div className="flex flex-col gap-8 mb-8">
-                <div className="w-full h-96 rounded-lg overflow-hidden shadow-card">
-                  <img 
-                    src={lawyerPortrait} 
-                    alt="Portrait de l'avocate" 
-                    className="w-full h-full object-cover object-[40%_20%]"
-                  />
-                </div>
-                <div className="space-y-6 text-lg text-muted-foreground">
+              <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-8">
+                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
                   <p className="text-xl font-medium text-primary">
                     Avocate indépendante spécialisée en droit des affaires
                   </p>
@@ -229,6 +222,13 @@ const Index = () => {
                   <p className="text-left leading-relaxed">
                     J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                   </p>
+                </div>
+                <div className="w-full md:w-80 h-96 rounded-lg overflow-hidden shadow-card flex-shrink-0">
+                  <img 
+                    src={lawyerPortrait} 
+                    alt="Portrait de l'avocate" 
+                    className="w-full h-full object-cover object-[40%_20%]"
+                  />
                 </div>
               </div>
               

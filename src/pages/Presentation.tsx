@@ -33,15 +33,8 @@ const Presentation = () => {
             </h2>
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
-                <div className="flex flex-col gap-6 mb-6">
-                  <div className="w-full h-80 rounded-lg overflow-hidden shadow-card">
-                    <img 
-                      src={lawyerPortrait} 
-                      alt="Portrait de l'avocate" 
-                      className="w-full h-full object-cover object-[40%_20%]"
-                    />
-                  </div>
-                  <div className="space-y-4 text-base text-muted-foreground">
+                <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
+                  <div className="flex-1 space-y-4 text-base text-muted-foreground">
                     <p className="text-lg font-medium text-primary">
                       Avocate indépendante spécialisée en droit des affaires
                     </p>
@@ -60,6 +53,13 @@ const Presentation = () => {
                       opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
                       développement de vos activités.
                     </p>
+                  </div>
+                  <div className="w-full md:w-64 h-80 rounded-lg overflow-hidden shadow-card flex-shrink-0">
+                    <img 
+                      src={lawyerPortrait} 
+                      alt="Portrait de l'avocate" 
+                      className="w-full h-full object-cover object-[40%_20%]"
+                    />
                   </div>
                 </div>
               </CardContent>
