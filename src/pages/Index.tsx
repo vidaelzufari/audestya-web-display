@@ -4,7 +4,7 @@ import { Card, CardContent } from '@/components/ui/card';
 import DomainsSection from '@/components/DomainsSection';
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { Award, Target, Users } from 'lucide-react';
+import { Scale, ShieldCheck, Handshake } from 'lucide-react';
 import expertiseIcon from '@/assets/expertise-icon.jpg';
 import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
@@ -123,7 +123,7 @@ const Index = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className="w-16 h-16 bg-gradient-to-br from-primary to-primary-light rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                          <Award className="w-8 h-8 text-white" />
+                          <Scale className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
@@ -151,7 +151,7 @@ const Index = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary-light rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                          <Target className="w-8 h-8 text-white" />
+                          <ShieldCheck className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
@@ -179,7 +179,7 @@ const Index = () => {
                     <CardContent className="p-6">
                       <div className="flex items-start gap-4">
                         <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-md flex-shrink-0">
-                          <Users className="w-8 h-8 text-white" />
+                          <Handshake className="w-8 h-8 text-white" />
                         </div>
                         <div className="flex-1">
                           <h4 className="font-serif text-xl font-bold text-primary mb-3">
@@ -515,7 +515,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-primary to-primary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <Award className="w-12 h-12 text-white" />
+                          <Scale className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-primary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
@@ -542,7 +542,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-secondary to-secondary-light rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <Target className="w-12 h-12 text-white" />
+                          <ShieldCheck className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-secondary/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
@@ -569,7 +569,7 @@ const Index = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <Users className="w-12 h-12 text-white" />
+                          <Handshake className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
