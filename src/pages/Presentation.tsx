@@ -34,11 +34,11 @@ const Presentation = () => {
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
-                  <div className="w-32 h-32 rounded-full overflow-hidden shadow-card flex-shrink-0">
+                  <div className="w-32 h-32 rounded-full overflow-hidden shadow-card flex-shrink-0 mx-auto md:mx-0">
                     <img 
                       src={lawyerPortrait} 
                       alt="Portrait de l'avocate" 
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-center"
                     />
                   </div>
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
