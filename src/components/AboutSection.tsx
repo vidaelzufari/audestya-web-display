@@ -141,8 +141,7 @@ const AboutSection = () => {
                 Une relation de confiance
               </h4>
               <p className="text-muted-foreground">
-                Un accompagnement basé sur l'écoute, la transparence et l'engagement, 
-                pour une collaboration durable et fructueuse.
+                Je m'investis avec loyauté, clarté et exigence. Je vous informe en toute transparence lorsque vos besoins sortent de mon domaine de compétence, et je m'attache à construire avec vous une relation de proximité, fondée sur l'écoute et l'anticipation.
               </p>
             </CardContent>
           </Card>
