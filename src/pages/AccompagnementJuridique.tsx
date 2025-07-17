@@ -33,7 +33,7 @@ const AccompagnementJuridique = () => {
                   <Handshake className="w-10 h-10 text-secondary-foreground" />
                 </div>
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
-                  Une collaboration exigeante et fluide
+                  Une collaboration juridique agile et structurante
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-justify text-left">
                    J'interviens en autonomie ou en lien étroit avec vos équipes, selon vos priorités stratégiques ou opérationnelles.
