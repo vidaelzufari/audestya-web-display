@@ -218,7 +218,7 @@ const AccompagnementJuridique = () => {
                   Besoin d'un accompagnement juridique externalisé ?
                 </h2>
                 <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-                  Discutons de vos besoins pour définir ensemble la solution la plus adaptée à votre entreprise.
+                  Discutons de la solution juridique la plus utile à vos enjeux.
                 </p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <a 
