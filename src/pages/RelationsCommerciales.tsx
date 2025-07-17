@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Handshake, FileText, Shield, Target, Users, AlertTriangle } from 'lucide-react';
@@ -233,6 +234,8 @@ const RelationsCommerciales = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

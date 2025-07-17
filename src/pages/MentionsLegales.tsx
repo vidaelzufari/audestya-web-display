@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 
 const MentionsLegales = () => {
@@ -88,6 +89,8 @@ const MentionsLegales = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

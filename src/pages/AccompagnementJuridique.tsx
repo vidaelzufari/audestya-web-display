@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight } from 'lucide-react';
@@ -239,6 +240,8 @@ const AccompagnementJuridique = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };

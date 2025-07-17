@@ -1,5 +1,6 @@
 
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
@@ -398,29 +399,8 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Footer */}
-      <footer className="bg-gradient-primary text-primary-foreground py-12">
-        <div className="container mx-auto px-4">
-          <div className="text-center">
-            <div className="flex items-center justify-center mb-6">
-              <h3 className="font-serif text-2xl font-bold">AUDESTYA</h3>
-              <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
-            </div>
-            <div className="space-y-2 text-sm opacity-90">
-              <p>
-                <a href="tel:+33685353781" className="hover:text-secondary transition-colors">
-                  +33 6 85 35 37 81
-                </a>
-              </p>
-              <p>
-                <a href="mailto:haia.elzufari@audestya-avocat.com" className="hover:text-secondary transition-colors">
-                  haia.elzufari@audestya-avocat.com
-                </a>
-              </p>
-            </div>
-          </div>
-        </div>
-      </footer>
+      
+      <Footer />
     </div>
   );
 };

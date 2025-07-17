@@ -1,4 +1,5 @@
 import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Network, Shield, Users, FileText, Handshake, Target } from 'lucide-react';
@@ -252,6 +253,8 @@ const ReseauxDistribution = () => {
           </div>
         </div>
       </section>
+      
+      <Footer />
     </div>
   );
 };
