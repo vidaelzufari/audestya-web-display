@@ -142,21 +142,7 @@ const Index = () => {
                         <div className="flex items-start gap-3">
                           <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                            Missions ponctuelles adaptées à vos besoins spécifiques
-                          </p>
-                        </div>
-                      </div>
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                            Direction juridique externalisée temporaire ou permanente
-                          </p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                            Formation et accompagnement de vos équipes opérationnelles
+                            Missions ponctuelles
                           </p>
                         </div>
                       </div>
