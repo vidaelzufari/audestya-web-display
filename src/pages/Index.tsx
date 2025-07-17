@@ -29,7 +29,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 leading-tight">
-                Mon Intervention
+                Structurer, sécuriser, accompagner vos décisions
               </h2>
               <div className="max-w-4xl mx-auto space-y-6">
                 <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">

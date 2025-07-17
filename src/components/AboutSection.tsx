@@ -50,7 +50,7 @@ const AboutSection = () => {
         {/* Mon intervention section */}
         <div className="max-w-4xl mx-auto text-center mb-20">
           <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
-            Mon Intervention
+            Structurer, sécuriser, accompagner vos décisions
           </h3>
           <div className="space-y-6 text-lg text-muted-foreground">
             <p className="text-xl font-medium text-primary">

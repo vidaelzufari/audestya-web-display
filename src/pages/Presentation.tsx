@@ -258,7 +258,7 @@ const Presentation = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Mon Intervention
+              Structurer, sécuriser, accompagner vos décisions
             </h2>
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
