@@ -61,7 +61,7 @@ const Footer = () => {
         <div className="border-t border-primary-foreground/20 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
             <p>
-              © 2024 Audestya Avocat. Tous droits réservés.
+              © 2025 Audestya Avocat. Tous droits réservés.
             </p>
             <div className="flex gap-6">
               <a href="/mentions-legales" className="hover:text-secondary transition-colors">
