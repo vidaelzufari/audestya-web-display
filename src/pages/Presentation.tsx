@@ -265,7 +265,7 @@ const Presentation = () => {
                 <div className="space-y-8 text-lg text-muted-foreground">
                   <div className="text-center space-y-4">
                     <p className="text-xl font-medium text-primary">
-                      Une collaboration sur-mesure, adaptée à vos priorités juridiques, commerciales et contractuelles
+                      Structurer, sécuriser, accompagner vos décisions
                     </p>
                     <p className="text-xl font-medium text-primary">
                       Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
