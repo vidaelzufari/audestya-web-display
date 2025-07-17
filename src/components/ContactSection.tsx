@@ -1,4 +1,3 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -12,11 +11,10 @@ const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Contactez-moi
+            Échangeons sur vos enjeux juridiques.
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Prenons rendez-vous pour discuter de vos enjeux juridiques et définir ensemble 
-            la meilleure stratégie d'accompagnement.
+            Un premier contact pour poser les bases d'un accompagnement utile et structurant.
           </p>
         </div>
 
