@@ -15,7 +15,7 @@ const AccompagnementJuridique = () => {
               Accompagnement Juridique Externalisé
             </h1>
             <p className="text-xl opacity-90 max-w-3xl mx-auto text-justify text-left">
-              Chaque mission est conçue sur-mesure, dans une logique de résultat, de proximité et d'alignement avec vos enjeux réels.
+              Un appui juridique intégré à vos enjeux business, pour structurer, fluidifier et faire avancer vos projets.
             </p>
           </div>
         </div>
