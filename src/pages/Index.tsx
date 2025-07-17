@@ -141,7 +141,7 @@ const Index = () => {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 leading-tight">
-                Les trois piliers de mon approche
+                Mon approche
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                 Une approche structurée autour de trois fondamentaux pour un accompagnement juridique d'excellence
