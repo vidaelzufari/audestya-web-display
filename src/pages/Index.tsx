@@ -184,8 +184,7 @@ const Index = () => {
                       Une approche pragmatique
                     </h4>
                     <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                      Des solutions juridiques adaptées à la réalité de votre entreprise, 
-                      alliant rigueur juridique et efficacité opérationnelle.
+                      Je ne me contente pas de vous exposer des règles de droit, je les mets en perspective avec votre environnement, vos objectifs et vos contraintes, pour vous apporter des solutions concrètes.
                     </p>
                     <a 
                       href="#contact" 
@@ -568,8 +567,7 @@ const Index = () => {
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
                       <p className="text-muted-foreground leading-relaxed text-lg">
-                        Des solutions juridiques adaptées à la réalité de votre entreprise, 
-                        alliant rigueur juridique et efficacité opérationnelle.
+                        Je ne me contente pas de vous exposer des règles de droit, je les mets en perspective avec votre environnement, vos objectifs et vos contraintes, pour vous apporter des solutions concrètes.
                       </p>
                     </div>
                   </CardContent>

@@ -123,8 +123,7 @@ const AboutSection = () => {
                 Une approche pragmatique
               </h4>
               <p className="text-muted-foreground">
-                Des solutions juridiques adaptées à la réalité de votre entreprise, 
-                alliant rigueur juridique et efficacité opérationnelle.
+                Je ne me contente pas de vous exposer des règles de droit, je les mets en perspective avec votre environnement, vos objectifs et vos contraintes, pour vous apporter des solutions concrètes.
               </p>
             </CardContent>
           </Card>
