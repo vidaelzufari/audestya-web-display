@@ -131,35 +131,33 @@ const Index = () => {
                     <p className="text-muted-foreground italic mb-4 text-base">
                       Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
                     </p>
-                    <div className="prose prose-sm max-w-none">
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                        <div className="space-y-3">
-                          <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                              Pilotage juridique de projets structurants
-                            </p>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                              Missions ponctuelles adaptées à vos besoins spécifiques
-                            </p>
-                          </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                            Pilotage juridique de projets structurants
+                          </p>
                         </div>
-                        <div className="space-y-3">
-                          <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                              Direction juridique externalisée temporaire ou permanente
-                            </p>
-                          </div>
-                          <div className="flex items-start gap-3">
-                            <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                            <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                              Formation et accompagnement de vos équipes opérationnelles
-                            </p>
-                          </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                            Missions ponctuelles adaptées à vos besoins spécifiques
+                          </p>
+                        </div>
+                      </div>
+                      <div className="space-y-3">
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                            Direction juridique externalisée temporaire ou permanente
+                          </p>
+                        </div>
+                        <div className="flex items-start gap-3">
+                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                            Formation et accompagnement de vos équipes opérationnelles
+                          </p>
                         </div>
                       </div>
                     </div>
