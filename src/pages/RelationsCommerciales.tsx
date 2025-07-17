@@ -26,6 +26,19 @@ const RelationsCommerciales = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">
             
+            {/* Introduction Section */}
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12">
+                <h2 className="font-serif text-3xl font-bold text-primary mb-6 text-left">
+                  Sécurisation de vos relations et pratiques commerciales
+                </h2>
+                <p className="text-lg font-bold text-primary text-justify">
+                  Dans un environnement commercial en mutation rapide, la solidité de vos relations commerciales conditionne la performance, la résilience et l'image de votre entreprise.
+                  J'interviens pour sécuriser, structurer et renforcer vos relations commerciales à forts enjeux, à chaque étape de la vie de votre activité.
+                </p>
+              </CardContent>
+            </Card>
+            
             {/* BtoB - Négociation et rédaction */}
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
