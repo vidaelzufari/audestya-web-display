@@ -45,18 +45,18 @@ const AboutSection = () => {
         </div>
 
         {/* Mon intervention section */}
-        <div className="max-w-4xl mx-auto text-center mb-20">
-          <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+        <div className="max-w-4xl mx-auto mb-20">
+          <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 text-left">
             Structurer, sécuriser, accompagner vos décisions
           </h3>
           <div className="space-y-6 text-lg text-muted-foreground">
-            <p className="text-xl font-medium text-primary">
+            <p className="text-xl font-medium text-primary text-left">
               Des solutions juridiques ancrées dans vos enjeux business
             </p>
-            <p className="text-xl font-medium text-primary">
+            <p className="text-xl font-medium text-primary text-left">
               Clarté, méthode, exigence à chaque étape
             </p>
-            <p className="text-lg leading-relaxed max-w-3xl mx-auto">
+            <p className="text-lg leading-relaxed text-left">
               Le droit n'a d'impact que s'il éclaire l'action.
             </p>
           </div>
@@ -64,11 +64,11 @@ const AboutSection = () => {
 
         {/* Expertise areas */}
         <div className="mb-20">
-          <h3 className="font-serif text-3xl font-bold text-primary text-center mb-12">
+          <h3 className="font-serif text-3xl font-bold text-primary mb-12 text-left">
             Distribution - Contrats - Consommation
           </h3>
           <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed text-center">
+            <p className="text-lg text-muted-foreground leading-relaxed text-left">
               Négociation de contrats – Sécurisation contractuelle – Réseaux de distribution – 
               Structuration juridique – Contrats cadres – CGV – Politiques commerciales – 
               Outils juridiques – Audits contractuels – Relations commerciales – 
@@ -78,11 +78,11 @@ const AboutSection = () => {
         </div>
 
         {/* Accompaniment section */}
-        <div className="text-center mb-20">
-          <h3 className="font-serif text-3xl font-bold text-primary mb-6">
+        <div className="mb-20">
+          <h3 className="font-serif text-3xl font-bold text-primary mb-6 text-left">
             Accompagnement Juridique Externalisé
           </h3>
-          <p className="text-lg text-muted-foreground">
+          <p className="text-lg text-muted-foreground text-left">
             Pilotage juridique de projets structurants – Missions ponctuelles
           </p>
         </div>
