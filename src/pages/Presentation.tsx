@@ -35,9 +35,6 @@ const Presentation = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
-                    <p className="text-lg font-medium text-primary">
-                      Avocate en droit de la distribution, des contrats et de la consommation spécialisée en droit des affaires
-                    </p>
                     <p className="leading-relaxed">
                       Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
                       j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
