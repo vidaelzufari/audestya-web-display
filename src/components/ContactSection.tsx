@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -176,7 +177,13 @@ const ContactSection = () => {
                 </Button>
 
                 <p className="text-sm text-muted-foreground text-center">
-                  * Champs obligatoires. Vos données sont protégées et ne seront jamais partagées.
+                  * Champs obligatoires. Vos données à caractère personnel seront traités conformément à la{" "}
+                  <a 
+                    href="/politique-confidentialite" 
+                    className="text-primary hover:text-secondary underline"
+                  >
+                    politique de confidentialité
+                  </a>.
                 </p>
               </form>
             </CardContent>
