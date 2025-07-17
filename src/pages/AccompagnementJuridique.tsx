@@ -42,65 +42,57 @@ const AccompagnementJuridique = () => {
             </Card>
 
             {/* Types d'accompagnement */}
-            <div className="grid lg:grid-cols-2 gap-8 mb-16">
-              <Card className="bg-gradient-primary text-primary-foreground shadow-elegant">
-                <CardContent className="p-10">
-                  <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-6">
-                    <Target className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-bold mb-6">
-                    Pilotage juridique de projets structurants
-                  </h3>
-                  <div className="space-y-4 text-lg opacity-90">
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                      <p>Accompagnement dans les phases de croissance ou de transformation</p>
+            <Card className="bg-background shadow-soft border-0 mb-16">
+              <CardContent className="p-12">
+                <h2 className="font-serif text-4xl font-bold text-primary mb-12 text-center">
+                  Mes domaines d'intervention
+                </h2>
+                
+                <div className="space-y-8">
+                  <div className="flex items-start gap-6">
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Target className="w-8 h-8 text-primary-foreground" />
                     </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                      <p>Restructuration juridique d'activités existantes</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                      <p>Lancement de nouveaux produits ou services</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                      <p>Mise en conformité réglementaire</p>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Pilotage juridique de projets structurants
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Réorganisation, développement de réseau, lancement de nouveaux modèles ou outils contractuels
+                      </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background shadow-soft border-0">
-                <CardContent className="p-10">
-                  <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center mb-6">
-                    <Users className="w-8 h-8 text-secondary-foreground" />
-                  </div>
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Support juridique ponctuel
-                  </h3>
-                  <div className="space-y-4 text-lg text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Renfort de votre direction juridique en cas de surcharge</p>
+                  
+                  <div className="flex items-start gap-6">
+                    <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Users className="w-8 h-8 text-secondary-foreground" />
                     </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Expertise spécialisée sur des dossiers ponctuels</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Support des équipes opérationnelles</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Conseil juridique ad hoc</p>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Renfort ponctuel ou continu
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Auprès de directions juridiques ou d'équipes opérationnelles, selon vos besoins spécifiques
+                      </p>
                     </div>
                   </div>
-                </CardContent>
-              </Card>
-            </div>
+                  
+                  <div className="flex items-start gap-6">
+                    <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center flex-shrink-0 border-2 border-primary">
+                      <Handshake className="w-8 h-8 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Appui transversal aux dirigeants
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Ou responsables métiers, sur des enjeux contractuels, commerciaux ou concurrentiels
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
 
             {/* Avantages */}
             <Card className="bg-background shadow-soft border-0 mb-16">
