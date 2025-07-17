@@ -126,22 +126,18 @@ const AccompagnementJuridique = () => {
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
                     <h3 className="font-semibold text-primary mb-2">Textile et Mode</h3>
-                    <p className="text-sm text-muted-foreground">Distribution, e-commerce, licences</p>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
                     <h3 className="font-semibold text-primary mb-2">Restauration</h3>
-                    <p className="text-sm text-muted-foreground">Franchises, baux commerciaux</p>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
                     <h3 className="font-semibold text-primary mb-2">Cinéma et Loisirs</h3>
-                    <p className="text-sm text-muted-foreground">Exploitation, partenariats</p>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
                     <h3 className="font-semibold text-primary mb-2">Sport et Bien-être</h3>
-                    <p className="text-sm text-muted-foreground">Réseaux, abonnements</p>
                   </div>
                 </div>
               </CardContent>
