@@ -103,41 +103,34 @@ const RelationsCommerciales = () => {
             {/* BtoC Section */}
             <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
               <CardContent className="p-12">
-                <div className="text-center mb-12">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Users className="w-10 h-10 text-white" />
+                <div className="flex items-center gap-4 mb-8">
+                  <div className="p-4 bg-white/20 rounded-full">
+                    <Users className="w-8 h-8 text-white" />
                   </div>
-                  <h2 className="font-serif text-4xl font-bold mb-6">
-                    BtoC - Protection du consommateur et pratiques commerciales
+                  <h2 className="font-serif text-3xl font-bold">
+                    BtoC – Sécurisation des offres, supports & campagnes
                   </h2>
-                  <p className="text-xl opacity-90 max-w-3xl mx-auto">
-                    Sécurisation de vos relations avec les consommateurs finaux
-                  </p>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <FileText className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3">Documentation légale</h3>
-                    <p className="text-sm opacity-90">CGV, CGU, mentions légales, politique de confidentialité</p>
+                <p className="text-lg font-bold mb-8 text-justify">
+                  Dans un contexte de vigilance accrue sur les droits des consommateurs et la transparence commerciale, chaque offre mal encadrée, chaque support imprécis, chaque campagne non conforme peut exposer votre marque à un risque juridique ou réputationnel.
+                </p>
+                <p className="text-lg font-bold mb-8 text-justify">
+                  J'interviens pour sécuriser juridiquement votre relation client, protéger votre image et fiabiliser vos actions commerciales.
+                </p>
+
+                <div className="space-y-4 text-primary-foreground">
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Rédaction ou validation de vos CGV, CGU, politiques de confidentialité, pour garantir la conformité et la lisibilité de votre offre.</p>
                   </div>
-                  
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Shield className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3">Conformité e-commerce</h3>
-                    <p className="text-sm opacity-90">Sécurisation des sites web et plateformes de vente</p>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc.</p>
                   </div>
-                  
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3">Pratiques promotionnelles</h3>
-                    <p className="text-sm opacity-90">Conseil sur les campagnes marketing et opérations commerciales</p>
+                  <div className="flex items-start gap-3">
+                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                    <p>Audit juridique et encadrement de vos campagnes commerciales, incluant vos messages, supports et mécaniques promotionnelles (publicités, jeux-concours, cadeaux, etc.), afin de prévenir les pratiques commerciales trompeuses, déloyales ou à risque réputationnel.</p>
                   </div>
                 </div>
               </CardContent>
