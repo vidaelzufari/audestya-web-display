@@ -102,13 +102,75 @@ const AccompagnementJuridique = () => {
                   Processus de collaboration
                 </h2>
                 
-                <div className="max-w-4xl mx-auto text-center">
-                  <p className="text-xl text-muted-foreground leading-relaxed text-justify text-left">
+                <div className="max-w-5xl mx-auto">
+                  <p className="text-xl text-muted-foreground leading-relaxed text-left mb-4">
                     Chaque mission s'ouvre sur une phase d'échange approfondi.
                   </p>
-                  <p className="text-xl text-muted-foreground leading-relaxed mt-4 text-justify text-left">
+                  <p className="text-xl text-muted-foreground leading-relaxed mb-12 text-left">
                     <strong className="text-primary">Objectif :</strong> cerner vos besoins, définir un périmètre d'action précis, et mettre en œuvre une collaboration utile, lisible et alignée.
                   </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                          1
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                            Écoute & analyse
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            Compréhension de vos besoins, enjeux stratégiques et contextes opérationnels.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                          2
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                            Proposition sur-mesure
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            Définition du périmètre, du calendrier et des modalités d'intervention.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                    <div className="space-y-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                          3
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                            Mise en œuvre
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            Déploiement de la mission, en lien étroit avec vos équipes internes ou partenaires.
+                          </p>
+                        </div>
+                      </div>
+                      
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                          4
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                            Suivi & ajustement
+                          </h3>
+                          <p className="text-muted-foreground leading-relaxed">
+                            Points d'étape réguliers et adaptations selon l'évolution de vos priorités.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
