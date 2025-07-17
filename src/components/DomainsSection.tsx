@@ -31,12 +31,11 @@ const DomainsSection = () => {
     {
       icon: Users,
       title: "Accompagnement Juridique Externalisé",
-      description: "Pilotage juridique de projets structurants et missions ponctuelles adaptées aux besoins spécifiques de votre entreprise.",
+      description: "Un appui juridique structuré et aligné sur vos priorités.\nJe vous accompagne en autonomie ou aux côtés de vos équipes, pour :",
       details: [
-        "Direction juridique externalisée",
-        "Missions ponctuelles",
-        "Audits juridiques",
-        "Formation équipes"
+        "Piloter des projets structurants",
+        "Absorber les pics d'activité",
+        "Sécuriser des décisions clés"
       ],
       link: "/accompagnement-juridique",
       hasPage: true
