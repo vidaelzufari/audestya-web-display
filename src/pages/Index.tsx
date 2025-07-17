@@ -312,22 +312,27 @@ const Index = () => {
               Ma Mission
             </h2>
             <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-center">
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p className="text-xl font-medium text-primary">
-                    Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Ma mission est de fournir un conseil juridique de qualité, adapté aux réalités économiques 
-                    et opérationnelles de chaque entreprise. Je m'engage à être un partenaire de confiance 
-                    dans le développement de vos projets, en apportant des solutions juridiques concrètes 
-                    et efficaces.
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Mon objectif est de transformer la complexité juridique en opportunités business, 
-                    en vous permettant de vous concentrer sur votre cœur de métier tout en sécurisant 
-                    vos activités.
-                  </p>
+              <CardContent className="p-12">
+                <div className="space-y-8 text-lg text-muted-foreground">
+                  <div className="text-left">
+                    <h3 className="text-xl font-medium text-primary mb-6">
+                      Accompagner les entreprises dans la structuration et la sécurisation juridique de leur activité avec une vision claire et porteuse de sens.
+                    </h3>
+                    <div className="space-y-4">
+                      <div className="flex items-start gap-4">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                        <p className="leading-relaxed text-justify">
+                          <span className="font-medium text-primary">Mon objectif :</span> faire du droit un véritable allié de leur développement.
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
+                        <p className="leading-relaxed text-justify">
+                          <span className="font-medium text-primary">Ma méthode :</span> transformer la complexité juridique en solutions concrètes et opérationnelles pour sécuriser et structurer votre activité.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </CardContent>
             </Card>
