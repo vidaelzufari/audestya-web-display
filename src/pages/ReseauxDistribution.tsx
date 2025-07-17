@@ -57,6 +57,10 @@ const ReseauxDistribution = () => {
                     Volet BtoB – Sécuriser votre réseau
                   </h2>
                 </div>
+                
+                <p className="text-lg text-muted-foreground mb-8 text-left">
+                  Je vous accompagne dans la conception, l'ajustement ou l'optimisation de votre modèle de distribution :
+                </p>
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-6">
