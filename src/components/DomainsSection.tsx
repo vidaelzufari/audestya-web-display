@@ -7,13 +7,8 @@ const DomainsSection = () => {
     {
       icon: Building,
       title: "Réseaux de Distribution",
-      description: "Structuration et accompagnement juridique des réseaux de distribution, contrats de franchise, de distribution sélective et exclusive.",
-      details: [
-        "Contrats de franchise",
-        "Distribution sélective",
-        "Distribution exclusive",
-        "Réseaux intégrés"
-      ],
+      description: "Structurer un réseau, c'est construire un cadre juridique robuste, évolutif et aligné sur votre stratégie. Je vous accompagne à chaque étape : choix du modèle (franchise, licence, commission-affiliation…), rédaction des documents clés (DIP, contrats, CGV…), sécurisation des supports et prévention des risques commerciaux ou concurrentiels.",
+      details: [],
       link: "/reseaux-distribution",
       hasPage: true
     },
