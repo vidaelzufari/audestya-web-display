@@ -39,7 +39,7 @@ const RelationsCommerciales = () => {
               </CardContent>
             </Card>
             
-            {/* BtoB - Négociation et rédaction */}
+            {/* BtoB - Encadrement contractuel & prévention des risques commerciaux */}
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
@@ -47,120 +47,53 @@ const RelationsCommerciales = () => {
                     <FileText className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
-                    BtoB - Négociation et rédaction de vos contrats
+                    BtoB – Encadrement contractuel & prévention des risques commerciaux
                   </h2>
                 </div>
 
-                <div className="mb-8">
-                  <h3 className="text-xl font-semibold text-primary mb-6">
-                    Relations fournisseurs, distributeurs, partenaires :
+                <p className="text-lg text-primary mb-8 text-justify">
+                  Vos relations commerciales structurent votre modèle économique.
+                  J'interviens pour encadrer vos contrats stratégiques, fiabiliser vos pratiques et anticiper les situations à risque.
+                </p>
+
+                <div className="mb-12">
+                  <h3 className="text-2xl font-semibold text-primary mb-6">
+                    Structuration contractuelle
                   </h3>
                   
-                  <div className="grid md:grid-cols-2 gap-8">
-                    <div className="space-y-4">
-                      <h4 className="font-semibold text-primary">Contrats commerciaux</h4>
-                      <div className="space-y-3 text-muted-foreground">
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>CGV, CGA, contrat d'achat ou de vente</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Convention unique, contrat de prestation</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Contrat de référencement, de sous-traitance</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Partenariat complexe</p>
-                        </div>
-                      </div>
+                  <div className="space-y-3 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>CGV, CGA, contrat d'achat ou de vente, convention unique, contrat de prestation, de référencement, de sous-traitance, partenariat complexe, etc.</p>
                     </div>
-
-                    <div className="space-y-4">
-                      <h4 className="font-semibold text-primary">Contrats de distribution</h4>
-                      <div className="space-y-3 text-muted-foreground">
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Franchise, concession</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Distribution exclusive ou sélective</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>Agents commerciaux, commissionnaires</p>
-                        </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p>E-commerce, plateformes</p>
-                        </div>
-                      </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>Contrats de distribution : franchise, concession, distribution exclusive ou sélective, agents commerciaux, commissionnaires, e-commerce, plateformes, etc.</p>
+                    </div>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>Accompagnement dans la négociation de vos baux commerciaux.</p>
                     </div>
                   </div>
-                </div>
-
-                <div className="p-6 bg-gradient-accent rounded-lg">
-                  <div className="flex items-center gap-3 mb-4">
-                    <Handshake className="w-6 h-6 text-secondary" />
-                    <h4 className="font-semibold text-primary">Accompagnement spécialisé</h4>
-                  </div>
-                  <p className="text-muted-foreground">
-                    Accompagnement dans la négociation de vos baux commerciaux
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* BtoB - Audit et conseil */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
-                <div className="flex items-center gap-4 mb-8">
-                  <div className="p-4 bg-gradient-secondary rounded-full">
-                    <Shield className="w-8 h-8 text-secondary-foreground" />
-                  </div>
-                  <h2 className="font-serif text-3xl font-bold text-primary">
-                    BtoB - Audit et conseil sur vos pratiques
-                  </h2>
                 </div>
 
                 <div className="mb-8">
-                  <h3 className="text-xl font-semibold text-primary mb-6">
-                    Relations fournisseurs, distributeurs, partenaires :
+                  <h3 className="text-2xl font-semibold text-primary mb-6">
+                    Prévention des risques commerciaux
                   </h3>
                   
-                  <div className="grid md:grid-cols-3 gap-6">
-                    <div className="p-6 bg-gradient-accent rounded-lg">
-                      <div className="flex items-center gap-3 mb-4">
-                        <AlertTriangle className="w-6 h-6 text-secondary" />
-                        <h4 className="font-semibold text-primary">Anticipation des risques</h4>
-                      </div>
-                      <p className="text-muted-foreground text-sm">
-                        Anticipation des risques liés à la rupture des relations établies
-                      </p>
+                  <div className="space-y-3 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>Anticipation des risques liés à la rupture des relations commerciales établies</p>
                     </div>
-
-                    <div className="p-6 bg-gradient-accent rounded-lg">
-                      <div className="flex items-center gap-3 mb-4">
-                        <Target className="w-6 h-6 text-secondary" />
-                        <h4 className="font-semibold text-primary">Audit des pratiques</h4>
-                      </div>
-                      <p className="text-muted-foreground text-sm">
-                        Audit de vos pratiques tarifaires, délais de paiement, politique commerciale
-                      </p>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>Audit de vos pratiques commerciales : politique tarifaire, remises, délais de paiement, remises</p>
                     </div>
-
-                    <div className="p-6 bg-gradient-accent rounded-lg">
-                      <div className="flex items-center gap-3 mb-4">
-                        <Shield className="w-6 h-6 text-secondary" />
-                        <h4 className="font-semibold text-primary">Prévention</h4>
-                      </div>
-                      <p className="text-muted-foreground text-sm">
-                        Prévention des pratiques restrictives de concurrence
-                      </p>
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p>Prévention des pratiques restrictives de concurrence et déséquilibres significatifs</p>
                     </div>
                   </div>
                 </div>
