@@ -79,6 +79,9 @@ const Index = () => {
                       Distribution - Contrats - Consommation
                     </h3>
                   </div>
+                  <p className="text-muted-foreground italic mb-4 text-base">
+                    J'interviens sur l'ensemble des problématiques contractuelles, commerciales et réglementaires qui structurent vos activités
+                  </p>
                   <div className="prose prose-sm max-w-none">
                     <p className="text-muted-foreground leading-relaxed text-base">
                       <span className="font-medium text-primary">Négociation de contrats</span> – 
