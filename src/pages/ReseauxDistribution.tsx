@@ -32,7 +32,18 @@ const ReseauxDistribution = () => {
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
                   Structuration de votre réseau de distribution
                 </h2>
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+                <div className="space-y-4 max-w-4xl mx-auto text-left">
+                  <p className="text-lg text-muted-foreground">
+                    <strong>Créer un réseau est une chose. Le structurer pour durer, scaler et incarner la marque en est une autre.</strong>
+                  </p>
+                  <p className="text-lg text-muted-foreground">
+                    <strong>Mon rôle :</strong> sécuriser juridiquement et accompagner stratégiquement chaque étape de votre trajectoire de développement.
+                  </p>
+                  <p className="text-lg text-muted-foreground">
+                    <strong>Objectif :</strong> poser les fondations juridiques solides d'un modèle de réseau pérenne, aligné avec vos ambitions de croissance et vos contraintes opérationnelles.
+                  </p>
+                </div>
+                <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-6">
                   Un accompagnement complet pour sécuriser et développer votre réseau, du choix du modèle à la mise en œuvre opérationnelle.
                 </p>
               </CardContent>
