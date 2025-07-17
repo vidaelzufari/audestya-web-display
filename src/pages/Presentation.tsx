@@ -23,19 +23,19 @@ const Presentation = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
-                    <p className="leading-relaxed" style={{ textAlign: 'justify' }}>
+                    <p className="leading-relaxed text-justify-force">
                       Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                     </p>
-                    <p className="leading-relaxed" style={{ textAlign: 'justify' }}>
+                    <p className="leading-relaxed text-justify-force">
                       Ce choix repose sur :
                     </p>
-                    <p className="leading-relaxed" style={{ textAlign: 'justify' }}>
+                    <p className="leading-relaxed text-justify-force">
                       – Une conviction forte : le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;
                     </p>
-                    <p className="leading-relaxed" style={{ textAlign: 'justify' }}>
+                    <p className="leading-relaxed text-justify-force">
                       – Une ambition claire : accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.
                     </p>
-                    <p className="leading-relaxed" style={{ textAlign: 'justify' }}>
+                    <p className="leading-relaxed text-justify-force">
                       J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                     </p>
                   </div>

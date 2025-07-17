@@ -138,4 +138,10 @@ All colors MUST be HSL.
   body {
     @apply bg-background text-foreground;
   }
+
+  .text-justify-force {
+    text-align: justify !important;
+    text-align-last: left !important;
+    text-justify: inter-word !important;
+  }
 }
