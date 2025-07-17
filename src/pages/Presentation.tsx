@@ -25,7 +25,7 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Bio Section - Moved to the beginning */}
+      {/* Bio Section - Now at the beginning */}
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
