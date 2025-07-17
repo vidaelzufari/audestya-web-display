@@ -11,19 +11,6 @@ const Presentation = () => {
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
 
-      {/* Hero Section */}
-      <section className="py-20 bg-gradient-hero text-primary-foreground">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-3xl md:text-4xl font-bold mb-6">
-              Présentation
-            </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Découvrez mon parcours, ma mission et mes valeurs
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Bio Section - Now at the beginning */}
       <section className="py-20">
