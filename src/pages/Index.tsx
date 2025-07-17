@@ -44,17 +44,6 @@ const Index = () => {
                   Le droit n'a d'impact que s'il éclaire l'action.
                 </p>
               </div>
-              <div className="mt-10">
-                <a 
-                  href="#contact" 
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-soft"
-                >
-                  En savoir plus
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
             </div>
 
             {/* Main content */}
@@ -151,6 +140,19 @@ const Index = () => {
                   </CardContent>
                 </Card>
               </div>
+              
+              {/* Button moved here */}
+              <div className="mt-10 text-center">
+                <a 
+                  href="#contact" 
+                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-soft"
+                >
+                  En savoir plus
+                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                  </svg>
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -226,30 +228,37 @@ const Index = () => {
                 </CardContent>
               </Card>
 
-              <Card className="bg-background/80 backdrop-blur-sm shadow-soft border-0 overflow-hidden group hover:shadow-card hover:-translate-y-1 transition-all duration-300">
-                <CardContent className="p-6">
-                  <div className="flex flex-col items-center text-center">
-                    <div className="w-16 h-16 bg-gradient-to-br from-accent to-accent/80 rounded-xl flex items-center justify-center shadow-md mb-4">
-                      <Handshake className="w-8 h-8 text-white" strokeWidth={0.5} />
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-10 relative z-10">
+                  <div className="mb-8 flex justify-center">
+                    <div className="relative">
+                      <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
+                        <Handshake className="w-12 h-12 text-white" />
+                      </div>
+                      <div className="absolute -inset-2 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                     </div>
-                    <h4 className="font-serif text-xl font-bold text-primary mb-3">
+                  </div>
+                  <div className="text-center space-y-4">
+                    <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
                       Une relation de confiance
-                    </h4>
-                    <p className="text-muted-foreground text-sm leading-relaxed mb-4">
+                    </h3>
+                    <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
+                    <p className="text-muted-foreground leading-relaxed text-lg">
                       Je m'investis avec loyauté, clarté et exigence. Je vous informe en toute transparence lorsque vos besoins sortent de mon domaine de compétence, et je m'attache à construire avec vous une relation de proximité, fondée sur l'écoute et l'anticipation.
                     </p>
-                    <a 
-                      href="#contact" 
-                      className="inline-flex items-center text-primary font-medium hover:text-primary/80 transition-colors text-sm group"
-                    >
-                      En savoir plus
-                      <svg className="ml-1 w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </a>
                   </div>
                 </CardContent>
               </Card>
+            </div>
+
+            {/* Bottom decoration */}
+            <div className="flex justify-center mt-16">
+              <div className="flex items-center gap-2">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
+                <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
+              </div>
             </div>
           </div>
         </div>
