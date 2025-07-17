@@ -12,21 +12,12 @@ const Footer = () => {
               <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Avocate en droit de la distribution, des contrats et de la consommation. 
-              Accompagnement juridique avec pragmatisme, méthode et clarté.
+              Haia EL ZUFARI<br/>
+              Avocat au Barreau de Paris
             </p>
             <div className="flex space-x-4">
-              <a href="#" className="text-primary-foreground/60 hover:text-secondary transition-colors">
-                <Facebook size={20} />
-              </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-secondary transition-colors">
+              <a href="https://www.linkedin.com/in/haia-elzufari/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-secondary transition-colors">
                 <Linkedin size={20} />
-              </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-secondary transition-colors">
-                <Instagram size={20} />
-              </a>
-              <a href="#" className="text-primary-foreground/60 hover:text-secondary transition-colors">
-                <Twitter size={20} />
               </a>
             </div>
           </div>
