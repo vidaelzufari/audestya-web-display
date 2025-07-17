@@ -63,9 +63,6 @@ const Index = () => {
                 <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
                   Deux leviers d'intervention complémentaires
                 </h3>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Je vous accompagne à la fois sur vos enjeux juridiques quotidiens et vos projets structurants.
-                </p>
               </div>
               <Card className="bg-background/80 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-card transition-all duration-500">
                 <CardContent className="p-8">
