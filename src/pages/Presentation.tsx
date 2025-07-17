@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -399,7 +398,6 @@ const Presentation = () => {
         </div>
       </section>
 
-      
       <Footer />
     </div>
   );
