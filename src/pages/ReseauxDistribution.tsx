@@ -126,11 +126,11 @@ const ReseauxDistribution = () => {
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-center gap-3">
                         <FileText className="w-5 h-5 text-secondary" />
-                        <p>Contrats informatiques, d'approvisionnement, de partenariat</p>
+                        <p>Contrats d'approvisionnement, informatiques, logistiques, partenariats</p>
                       </div>
                       <div className="flex items-center gap-3">
                         <FileText className="w-5 h-5 text-secondary" />
-                        <p>Relecture de vos supports de prospection et recrutement</p>
+                        <p>Supports de prospection et documents de recrutement réseau</p>
                       </div>
                     </div>
                   </div>
