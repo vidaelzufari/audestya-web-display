@@ -112,6 +112,9 @@ const Index = () => {
                         Accompagnement Juridique Externalisé
                       </h3>
                     </div>
+                    <p className="text-muted-foreground italic mb-4 text-base">
+                      Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
+                    </p>
                     <div className="prose prose-sm max-w-none">
                       <p className="text-muted-foreground leading-relaxed text-base">
                         <span className="font-medium text-primary">Pilotage juridique de projets structurants</span> – 
