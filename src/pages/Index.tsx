@@ -88,6 +88,30 @@ const Index = () => {
                   </div>
                 </CardContent>
               </Card>
+
+              {/* Accompaniment section */}
+              <div className="mt-8">
+                <Card className="bg-background/80 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-card transition-all duration-500">
+                  <CardContent className="p-8">
+                    <div className="flex items-center mb-6">
+                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/80 rounded-xl flex items-center justify-center mr-4">
+                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
+                        </svg>
+                      </div>
+                      <h3 className="font-serif text-2xl font-bold text-primary">
+                        Accompagnement Juridique Externalisé
+                      </h3>
+                    </div>
+                    <div className="prose prose-sm max-w-none">
+                      <p className="text-muted-foreground leading-relaxed text-base">
+                        <span className="font-medium text-primary">Pilotage juridique de projets structurants</span> – 
+                        <span className="font-medium text-primary"> Missions ponctuelles</span>
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              </div>
             </div>
           </div>
         </div>
