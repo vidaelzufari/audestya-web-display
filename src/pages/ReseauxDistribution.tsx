@@ -43,9 +43,6 @@ const ReseauxDistribution = () => {
                     <strong>Objectif :</strong> poser les fondations juridiques solides d'un modèle de réseau pérenne, aligné avec vos ambitions de croissance et vos contraintes opérationnelles.
                   </p>
                 </div>
-                <p className="text-xl text-muted-foreground max-w-3xl mx-auto mt-6">
-                  Un accompagnement complet pour sécuriser et développer votre réseau, du choix du modèle à la mise en œuvre opérationnelle.
-                </p>
               </CardContent>
             </Card>
 
