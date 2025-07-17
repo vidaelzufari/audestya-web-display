@@ -1,10 +1,9 @@
-
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Phone, Mail, MapPin, Clock } from 'lucide-react';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactSection = () => {
   return (
@@ -68,19 +67,6 @@ const ContactSection = () => {
                       <p className="text-muted-foreground">
                         France - Consultations sur rendez-vous
                       </p>
-                    </div>
-                  </div>
-
-                  <div className="flex items-start gap-4">
-                    <div className="p-3 bg-gradient-secondary rounded-full">
-                      <Clock className="w-5 h-5 text-secondary-foreground" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Horaires</h4>
-                      <div className="text-muted-foreground space-y-1">
-                        <p>Lundi - Vendredi : 9h00 - 18h00</p>
-                        <p>Disponible sur rendez-vous</p>
-                      </div>
                     </div>
                   </div>
                 </div>
