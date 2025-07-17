@@ -7,8 +7,12 @@ const DomainsSection = () => {
     {
       icon: Building,
       title: "Réseaux de Distribution",
-      description: "Structurer un réseau, c'est construire un cadre juridique robuste, évolutif et aligné sur votre stratégie. Je vous accompagne à chaque étape : choix du modèle (franchise, licence, commission-affiliation…), rédaction des documents clés (DIP, contrats, CGV…), sécurisation des supports et prévention des risques commerciaux ou concurrentiels.",
-      details: [],
+      description: "Structurer un réseau, c'est construire un cadre juridique robuste, évolutif et aligné sur votre stratégie.\nJe vous accompagne à chaque étape :",
+      details: [
+        "Choix du modèle (franchise, licence, commission-affiliation…)",
+        "Rédaction des documents clés (DIP, contrats, CGV…)",
+        "Sécurisation des supports et prévention des risques commerciaux ou concurrentiels"
+      ],
       link: "/reseaux-distribution",
       hasPage: true
     },
