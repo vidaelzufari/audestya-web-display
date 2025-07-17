@@ -36,8 +36,9 @@ const AccompagnementJuridique = () => {
                   Un partenaire juridique flexible et expérimenté
                 </h2>
                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                  Je peux prendre en charge, en toute autonomie ou en collaboration étroite avec vos équipes internes ou externes, le pilotage juridique de projets structurants ou le support juridique ponctuel de votre direction juridique ou de vos directions opérationnelles.
-                </p>
+                   J'interviens en toute autonomie ou en collaboration étroite avec vos équipes internes ou externes, pour répondre à vos besoins stratégiques comme opérationnels.
+                   Mon approche s'adapte à vos cycles d'activité, à la maturité de votre organisation et à la nature des projets en cours.
+                 </p>
               </CardContent>
             </Card>
 
