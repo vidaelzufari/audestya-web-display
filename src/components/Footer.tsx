@@ -77,7 +77,7 @@ const Footer = () => {
               © 2024 Audestya Avocat. Tous droits réservés.
             </p>
             <div className="flex gap-6">
-              <a href="#" className="hover:text-secondary transition-colors">
+              <a href="/mentions-legales" className="hover:text-secondary transition-colors">
                 Mentions légales
               </a>
               <a href="#" className="hover:text-secondary transition-colors">
