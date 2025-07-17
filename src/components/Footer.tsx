@@ -1,4 +1,5 @@
-import { Facebook, Linkedin, Instagram, Twitter, Phone, Mail } from 'lucide-react';
+
+import { Facebook, Linkedin, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -53,6 +54,10 @@ const Footer = () => {
                 <Mail size={16} />
                 haia.elzufari@audestya-avocat.com
               </a>
+              <div className="flex items-center gap-3 text-primary-foreground/80">
+                <MapPin size={16} />
+                Paris - France
+              </div>
             </div>
           </div>
         </div>
