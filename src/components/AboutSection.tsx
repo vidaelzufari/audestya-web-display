@@ -105,8 +105,7 @@ const AboutSection = () => {
                 Une expertise confirmée
               </h4>
               <p className="text-muted-foreground">
-                Une connaissance approfondie du droit de la distribution et des contrats, 
-                acquise par une expérience solide et une formation continue.
+                Mon parcours en entreprise m'a permis de développer une solide culture business, une compréhension fine des enjeux métiers et une capacité à dialoguer avec les directions générales, les directions juridiques qu'avec les équipes opérationnelles.
               </p>
             </CardContent>
           </Card>
