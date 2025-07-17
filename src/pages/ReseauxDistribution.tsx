@@ -149,6 +149,10 @@ const ReseauxDistribution = () => {
                     Volet BtoC – Sécuriser la relation client-consommateur
                   </h2>
                 </div>
+                
+                <p className="text-lg text-muted-foreground mb-8 text-left">
+                  Parce que la solidité de votre réseau repose aussi sur la conformité de votre offre vis-à-vis du consommateur, j'interviens également sur :
+                </p>
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-4 text-muted-foreground">
