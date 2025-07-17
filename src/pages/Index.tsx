@@ -79,21 +79,47 @@ const Index = () => {
                   <p className="text-muted-foreground italic mb-4 text-base">
                     Structurer l'action, prévenir le risque, accompagner vos activités.
                   </p>
-                  <div className="prose prose-sm max-w-none">
-                    <p className="text-muted-foreground leading-relaxed text-base">
-                      <span className="font-medium text-primary">Négociation de contrats</span> – 
-                      <span className="font-medium text-primary"> Sécurisation contractuelle</span> – 
-                      <span className="font-medium text-primary"> Réseaux de distribution</span> – 
-                      <span className="font-medium text-primary"> Structuration juridique</span> – 
-                      <span className="font-medium text-primary"> Contrats cadres</span> – 
-                      <span className="font-medium text-primary"> CGV</span> – 
-                      <span className="font-medium text-primary"> Politiques commerciales</span> – 
-                      <span className="font-medium text-primary"> Outils juridiques</span> – 
-                      <span className="font-medium text-primary"> Audits contractuels</span> – 
-                      <span className="font-medium text-primary"> Relations commerciales</span> – 
-                      <span className="font-medium text-primary"> Pratiques promotionnelles</span> – 
-                      <span className="font-medium text-primary"> Protection du consommateur</span>
-                    </p>
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Structuration, sécurisation et accompagnement juridique de réseaux de distribution
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)
+                        </p>
+                      </div>
+                    </div>
+                    <div className="space-y-3">
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Audits contractuels adaptés à vos enjeux du moment
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                          Encadrement de vos pratiques promotionnelles et protection du consommateur
+                        </p>
+                      </div>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
