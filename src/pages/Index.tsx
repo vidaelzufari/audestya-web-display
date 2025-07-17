@@ -36,7 +36,7 @@ const Index = () => {
                   Une collaboration sur-mesure, adaptée à vos priorités juridiques, commerciales et contractuelles
                 </p>
                 <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                  Une approche concrète, à vos côtés à chaque étape
+                  Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto my-8"></div>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">

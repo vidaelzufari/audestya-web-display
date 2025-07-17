@@ -268,7 +268,7 @@ const Presentation = () => {
                       Une collaboration sur-mesure, adaptée à vos priorités juridiques, commerciales et contractuelles
                     </p>
                     <p className="text-xl font-medium text-primary">
-                      Une approche concrète, à vos côtés à chaque étape
+                      Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
                     </p>
                   </div>
                   

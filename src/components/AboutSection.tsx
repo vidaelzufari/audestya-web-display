@@ -57,7 +57,7 @@ const AboutSection = () => {
               Une collaboration sur-mesure, adaptée à vos priorités juridiques, commerciales et contractuelles
             </p>
             <p className="text-xl font-medium text-primary">
-              Une approche concrète, à vos côtés à chaque étape
+              Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
             </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
               Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
