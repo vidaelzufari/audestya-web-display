@@ -395,75 +395,67 @@ const Index = () => {
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Mes Valeurs
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Award className="w-10 h-10 text-white" />
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Heart className="w-10 h-10 text-white" />
                     </div>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Excellence
+                  <h3 className="font-serif text-xl font-bold text-primary mb-4 text-left">
+                    Authenticité
                   </h3>
-                  <p className="text-muted-foreground">
-                    Recherche constante de la qualité dans chaque mission, 
-                    formation continue et veille juridique permanente pour 
-                    offrir le meilleur service à mes clients.
+                  <p className="text-muted-foreground text-left text-justify leading-relaxed">
+                    Une relation simple, directe, sans jargon inutile.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
                       <Shield className="w-10 h-10 text-white" />
                     </div>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Intégrité
+                  <h3 className="font-serif text-xl font-bold text-primary mb-4 text-left">
+                    Confiance
                   </h3>
-                  <p className="text-muted-foreground">
-                    Transparence, honnêteté et respect des règles déontologiques 
-                    dans toutes mes relations professionnelles. La confiance 
-                    est la base de tout accompagnement réussi.
+                  <p className="text-muted-foreground text-left text-justify leading-relaxed">
+                    Un engagement loyal et transparent.
                   </p>
                 </CardContent>
               </Card>
 
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Pragmatisme
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Solutions concrètes et adaptées à la réalité de votre entreprise. 
-                    Le droit doit servir votre business, pas le contraindre 
-                    inutilement.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
                       <Users className="w-10 h-10 text-white" />
                     </div>
                   </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
+                  <h3 className="font-serif text-xl font-bold text-primary mb-4 text-left">
                     Proximité
                   </h3>
-                  <p className="text-muted-foreground">
-                    Écoute active, disponibilité et réactivité. Chaque client 
-                    mérite une attention personnalisée et un service adapté 
-                    à ses besoins spécifiques.
+                  <p className="text-muted-foreground text-left text-justify leading-relaxed">
+                    Une compréhension fine de votre réalité et de vos besoins.
+                  </p>
+                </CardContent>
+              </Card>
+
+              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
+                <CardContent className="p-8">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Award className="w-10 h-10 text-white" />
+                    </div>
+                  </div>
+                  <h3 className="font-serif text-xl font-bold text-primary mb-4 text-left">
+                    Excellence
+                  </h3>
+                  <p className="text-muted-foreground text-left text-justify leading-relaxed">
+                    Une exigence constante dans la qualité des prestations et des conseils.
                   </p>
                 </CardContent>
               </Card>
