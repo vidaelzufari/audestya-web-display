@@ -12,7 +12,7 @@ const Footer = () => {
               <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
-              Avocate indépendante spécialisée en droit de la distribution, des contrats et de la consommation. 
+              Avocate en droit de la distribution, des contrats et de la consommation. 
               Accompagnement juridique avec pragmatisme, méthode et clarté.
             </p>
             <div className="flex space-x-4">

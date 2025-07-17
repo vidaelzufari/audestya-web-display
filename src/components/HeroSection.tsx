@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="inline-flex items-center gap-3 mb-8 animate-fade-in">
             <div className="h-px bg-background/40 w-12"></div>
             <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 py-2 text-sm font-medium tracking-wider">
-              AVOCATE INDÉPENDANTE
+              AVOCATE EN DROIT DE LA DISTRIBUTION, DES CONTRATS ET DE LA CONSOMMATION
             </span>
             <div className="h-px bg-background/40 w-12"></div>
           </div>
