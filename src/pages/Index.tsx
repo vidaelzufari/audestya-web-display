@@ -33,7 +33,7 @@ const Index = () => {
               </h2>
               <div className="max-w-4xl mx-auto space-y-6">
                 <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                  Une collaboration sur mesure, adaptée à vos enjeux
+                  Une collaboration sur-mesure, adaptée à vos priorités juridiques, commerciales et contractuelles
                 </p>
                 <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                   Une approche concrète, à vos côtés à chaque étape
