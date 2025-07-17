@@ -1,4 +1,3 @@
-
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -10,7 +9,6 @@ const Presentation = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
-
 
       {/* Bio Section - Now at the beginning */}
       <section className="py-20">
