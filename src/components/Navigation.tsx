@@ -41,17 +41,7 @@ const Navigation = () => {
       {/* Top contact bar */}
       <div className="bg-primary">
         <div className="container mx-auto px-4 py-2">
-          <div className="flex justify-between items-center text-sm text-primary-foreground">
-            <div className="flex items-center gap-6">
-              <a href="tel:+33685353781" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                <Phone size={14} />
-                +33 6 85 35 37 81
-              </a>
-              <a href="mailto:haia.elzufari@audestya-avocat.com" className="flex items-center gap-2 hover:text-secondary transition-colors">
-                <Mail size={14} />
-                haia.elzufari@audestya-avocat.com
-              </a>
-            </div>
+          <div className="flex justify-end items-center text-sm text-primary-foreground">
             <a 
               href="https://www.linkedin.com/in/haia-elzufari/" 
               target="_blank" 
