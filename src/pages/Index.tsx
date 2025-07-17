@@ -144,7 +144,7 @@ const Index = () => {
               {/* Button moved here */}
               <div className="mt-10 text-center">
                 <a 
-                  href="#contact" 
+                  href="#domaines" 
                   className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-soft"
                 >
                   En savoir plus
