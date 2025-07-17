@@ -26,7 +26,7 @@ const PolitiqueConfidentialite = () => {
             {/* Introduction */}
             <Card className="bg-background shadow-soft border-0 mb-8">
               <CardContent className="p-8">
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
                     La présente politique (ci-après « Politique ») a pour objet de vous donner plus de visibilité sur le traitement 
                     de vos données à caractère personnel (ci-après « Données »). Il est rappelé que conformément à la réglementation 
@@ -50,7 +50,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   1. Qui est le responsable de traitement ?
                 </h2>
-                <div className="space-y-2 text-muted-foreground">
+                <div className="space-y-2 text-muted-foreground text-justify">
                   <p><strong className="text-primary">Haia El Zufari</strong></p>
                   <p>Avocat au Barreau de Paris</p>
                   <p>Entrepreneur individuel</p>
@@ -65,7 +65,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   2. Comment les Données sont-elles collectées ?
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Je suis amenée à collecter des Données :</p>
                   <ul className="space-y-2 ml-4">
                     <li>• Lorsque vous êtes un prospect ou un client potentiel et vous me contactez directement pour demander des informations ou des conseils ou via le formulaire contact du Site ;</li>
@@ -83,7 +83,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   3. Quelles sont les Données collectées ?
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Je collecte et traite notamment :</p>
                   <ul className="space-y-3 ml-4">
                     <li>• <strong className="text-primary">Lors de la prise de contact</strong>, des Données d'identification prospect ou client potentiel qui demande des informations : les données nécessaires à la prise de contact notamment nom, prénom, adresse électronique, numéro de téléphone ;</li>
@@ -100,7 +100,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   4. Pour quelles finalités sont collectées vos Données
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Vos Données peuvent être traitées pour les finalités suivantes :</p>
                   <ul className="space-y-3 ml-4">
                     <li>• <strong className="text-primary">Si vous êtes un prospect ou un client potentiel</strong> : Vos Données sont traitées à des fins de traitement des demandes : répondre à vos questions.</li>
@@ -118,7 +118,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   5. Avec qui sont partagées vos Données ?
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Dans la limite des finalités et des traitements définis à l'article 4, je pourrai être amenée à partager vos Données :</p>
                   <ul className="space-y-2 ml-4">
                     <li>• Avec des partenaires avec votre consentement explicite.</li>
@@ -136,7 +136,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   6. Quelle est la durée de conservation de vos Données ?
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
                     Pour les clients et les partenaires, les Données sont conservées pendant toute la durée de la relation contractuelle 
                     puis pendant toute la durée de prescription légale (soit cinq (5) ans) qui court à compter du dernier échange avec 
@@ -160,7 +160,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   7. Vos Données sont-elles transférées en dehors de l'Union Européenne ?
                 </h2>
-                <p className="text-muted-foreground leading-relaxed">
+                <p className="text-muted-foreground leading-relaxed text-justify">
                   Les Données sont hébergées au sein de l'Union Européenne et ne font l'objet d'aucun transfert en dehors 
                   de l'Union Européenne.
                 </p>
@@ -173,7 +173,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   8. Quels sont vos droits
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Conformément à la réglementation en vigueur, vous disposez des droits suivants :</p>
                   <ul className="space-y-3 ml-4">
                     <li>• <strong className="text-primary">Le droit d'accès</strong> : Vous avez le droit d'obtenir (i) la confirmation que des Données vous concernant sont ou ne sont pas traitées et, lorsqu'elles le sont, d'obtenir (ii) l'accès auxdites Données et une copie de ces dernières.</li>
@@ -206,7 +206,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   9. Cookies (traceurs)
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
                     Le Site utilise des cookies, petits fichiers textes déposés sur votre ordinateur lors de la visite d'un site internet.
                   </p>
@@ -234,7 +234,7 @@ const PolitiqueConfidentialite = () => {
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
                   10. Contact
                 </h2>
-                <div className="space-y-4 text-muted-foreground leading-relaxed">
+                <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
                     Pour toute question relative à la présente politique de confidentialité ou pour toute demande relative à vos Données, 
                     vous pouvez me contacter en :
