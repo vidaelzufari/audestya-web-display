@@ -236,7 +236,7 @@ const Index = () => {
               Bio
             </h2>
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-              <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-8">
+              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
                 <div className="flex-1 space-y-6 text-lg text-muted-foreground">
                   <p className="text-left leading-relaxed">
                     Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.

@@ -15,7 +15,7 @@ const AboutSection = () => {
             À Propos
           </h2>
           <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-            <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+            <div className="flex flex-col md:flex-row-reverse items-center gap-8 mb-8">
               <div className="w-48 h-48 rounded-full overflow-hidden shadow-card flex-shrink-0">
                 <img 
                   src={lawyerPortrait} 
