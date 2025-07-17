@@ -9,6 +9,7 @@ import ReseauxDistribution from "./pages/ReseauxDistribution";
 import RelationsCommerciales from "./pages/RelationsCommerciales";
 import AccompagnementJuridique from "./pages/AccompagnementJuridique";
 import MentionsLegales from "./pages/MentionsLegales";
+import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import Actualites from "./pages/Actualites";
 import NotFound from "./pages/NotFound";
 
@@ -28,6 +29,7 @@ const App = () => (
           <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
           <Route path="/actualites" element={<Actualites />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
+          <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </BrowserRouter>
