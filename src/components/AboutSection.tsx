@@ -54,7 +54,7 @@ const AboutSection = () => {
           </h3>
           <div className="space-y-6 text-lg text-muted-foreground">
             <p className="text-xl font-medium text-primary">
-              Structurer, sécuriser, accompagner vos décisions
+              Des solutions juridiques ancrées dans vos enjeux business
             </p>
             <p className="text-xl font-medium text-primary">
               Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
