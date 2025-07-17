@@ -348,25 +348,39 @@ const Index = () => {
               Ma Vision
             </h2>
             <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-center">
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p className="text-xl font-medium text-primary">
-                    Un droit des affaires accessible, pragmatique et créateur de valeur
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Je crois en un accompagnement juridique qui va au-delà du simple conseil : 
-                    un véritable partenariat stratégique qui contribue à la croissance et au 
-                    succès de votre entreprise.
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Ma vision est celle d'un droit des affaires moderne, où l'expertise juridique 
-                    s'allie à la compréhension des enjeux business pour créer des solutions 
-                    innovantes et durables.
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    L'avenir du conseil juridique réside dans l'adaptabilité, la proximité 
-                    avec les clients et la capacité à anticiper les évolutions du marché.
-                  </p>
+              <CardContent className="p-12">
+                <div className="space-y-8 text-lg text-muted-foreground">
+                  <div className="text-left">
+                    <p className="leading-relaxed text-justify mb-6">
+                      <span className="font-medium text-primary">Audestya</span> est née d'un choix audacieux : sortir de ma zone de confort, reprendre mon destin professionnel en main.
+                    </p>
+                    <p className="leading-relaxed text-justify mb-6">
+                      Ce nom symbolise une conviction profonde :
+                    </p>
+                    <div className="space-y-4 ml-4">
+                      <div className="flex items-start gap-4">
+                        <div className="text-primary font-bold">–</div>
+                        <p className="leading-relaxed text-justify">
+                          oser prendre sa place ;
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <div className="text-primary font-bold">–</div>
+                        <p className="leading-relaxed text-justify">
+                          se réinventer quand tout semble figé ;
+                        </p>
+                      </div>
+                      <div className="flex items-start gap-4">
+                        <div className="text-primary font-bold">–</div>
+                        <p className="leading-relaxed text-justify">
+                          et croire que la maîtrise juridique de leur activité est un levier de transformation et de croissance.
+                        </p>
+                      </div>
+                    </div>
+                    <p className="leading-relaxed text-justify mt-6">
+                      C'est cette énergie que je souhaite transmettre à mes clients.
+                    </p>
+                  </div>
                 </div>
               </CardContent>
             </Card>
