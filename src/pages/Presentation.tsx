@@ -21,17 +21,17 @@ const Presentation = () => {
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed text-justify">
                       Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
                       j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
                       juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
                     </p>
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed text-justify">
                       Ma spécialisation en droit de la distribution, des contrats et de la consommation 
                       me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
                       juridiques que rencontrent les entreprises dans leurs activités commerciales.
                     </p>
-                    <p className="leading-relaxed">
+                    <p className="leading-relaxed text-justify">
                       Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
                       opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
                       développement de vos activités.
