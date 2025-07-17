@@ -144,7 +144,7 @@ const Index = () => {
                 Mon approche
               </h2>
               <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                Une approche structurée autour de trois fondamentaux pour un accompagnement juridique d'excellence
+                Une démarche structurée, articulée autour de trois principes d'intervention.
               </p>
             </div>
             
