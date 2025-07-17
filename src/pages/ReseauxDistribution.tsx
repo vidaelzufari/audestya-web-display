@@ -64,7 +64,6 @@ const ReseauxDistribution = () => {
 
                 <div className="grid md:grid-cols-2 gap-8">
                   <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-primary mb-4">Structuration juridique</h3>
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
@@ -86,7 +85,6 @@ const ReseauxDistribution = () => {
                   </div>
 
                   <div className="space-y-6">
-                    <h3 className="text-xl font-semibold text-primary mb-4">Accompagnement opérationnel</h3>
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
