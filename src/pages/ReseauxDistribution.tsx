@@ -158,25 +158,19 @@ const ReseauxDistribution = () => {
                   <div className="space-y-4 text-muted-foreground">
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Analyse juridique de votre offre commerciale</p>
+                      <p>Analyse juridique de vos offres commerciales (produits, services, abonnements…)</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Sécurisation de votre site e-commerce</p>
+                      <p>Sécurisation de votre site e-commerce (vente, livraison, service après-vente)</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Rédaction des CGV, CGU, politique de confidentialité</p>
-                    </div>
-                  </div>
-                  <div className="space-y-4 text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Validation de vos supports de communication</p>
+                      <p>Rédaction ou validation de vos CGV, CGU, politique de confidentialité</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Conseil sur vos campagnes et opérations promotionnelles</p>
+                      <p>Validation juridique de vos supports de communication et de vos campagnes promotionnelles</p>
                     </div>
                   </div>
                 </div>
