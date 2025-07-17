@@ -459,42 +459,6 @@ const Index = () => {
                   </p>
                 </CardContent>
               </Card>
-
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Innovation
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Anticipation des évolutions juridiques et adoption des 
-                    nouvelles technologies pour optimiser la qualité du 
-                    service et l'efficacité des missions.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Heart className="w-10 h-10 text-white" />
-                    </div>
-                  </div>
-                  <h3 className="font-serif text-xl font-bold text-primary mb-4">
-                    Engagement
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Implication totale dans chaque dossier et engagement 
-                    personnel dans la réussite de vos projets. Votre succès 
-                    est ma priorité.
-                  </p>
-                </CardContent>
-              </Card>
             </div>
           </div>
         </div>
