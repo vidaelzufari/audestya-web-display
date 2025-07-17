@@ -67,13 +67,49 @@ const AboutSection = () => {
           <h3 className="font-serif text-3xl font-bold text-primary mb-12 text-left">
             Distribution - Contrats - Consommation
           </h3>
-          <div className="max-w-4xl mx-auto">
-            <p className="text-lg text-muted-foreground leading-relaxed text-left">
-              Négociation de contrats – Sécurisation contractuelle – Réseaux de distribution – 
-              Structuration juridique – Contrats cadres – CGV – Politiques commerciales – 
-              Outils juridiques – Audits contractuels – Relations commerciales – 
-              Pratiques promotionnelles – Protection du consommateur
-            </p>
+          <div className="max-w-6xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Structuration, sécurisation et accompagnement juridique de réseaux de distribution
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)
+                  </p>
+                </div>
+              </div>
+              <div className="space-y-4">
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Audits contractuels adaptés à vos enjeux du moment
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires
+                  </p>
+                </div>
+                <div className="flex items-start gap-3">
+                  <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
+                  <p className="text-lg text-muted-foreground leading-relaxed text-justify">
+                    Encadrement de vos pratiques promotionnelles et protection du consommateur
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
