@@ -532,8 +532,7 @@ const Index = () => {
                 Mon Approche
               </h2>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Trois piliers fondamentaux pour un accompagnement juridique d'excellence, 
-                adapté aux réalités de votre entreprise
+                Une démarche structurée, articulée autour de trois principes d'intervention.
               </p>
             </div>
 
