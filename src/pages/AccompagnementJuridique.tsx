@@ -98,42 +98,17 @@ const AccompagnementJuridique = () => {
             {/* Processus de collaboration */}
             <Card className="bg-gradient-accent rounded-lg mb-16">
               <CardContent className="p-12">
-                <h2 className="font-serif text-4xl font-bold text-primary mb-12 text-center">
+                <h2 className="font-serif text-4xl font-bold text-primary mb-8 text-center">
                   Processus de collaboration
                 </h2>
                 
-                <div className="grid md:grid-cols-4 gap-6">
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
-                      1
-                    </div>
-                    <h3 className="font-semibold text-primary mb-3">Écoute et analyse</h3>
-                    <p className="text-sm text-muted-foreground">Compréhension de vos besoins et enjeux spécifiques</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
-                      2
-                    </div>
-                    <h3 className="font-semibold text-primary mb-3">Proposition sur-mesure</h3>
-                    <p className="text-sm text-muted-foreground">Définition du périmètre d'intervention et des modalités</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
-                      3
-                    </div>
-                    <h3 className="font-semibold text-primary mb-3">Mise en œuvre</h3>
-                    <p className="text-sm text-muted-foreground">Exécution de la mission en collaboration avec vos équipes</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 text-primary-foreground font-bold text-lg">
-                      4
-                    </div>
-                    <h3 className="font-semibold text-primary mb-3">Suivi et ajustement</h3>
-                    <p className="text-sm text-muted-foreground">Adaptation continue selon l'évolution de vos besoins</p>
-                  </div>
+                <div className="max-w-4xl mx-auto text-center">
+                  <p className="text-xl text-muted-foreground leading-relaxed text-justify text-left">
+                    Chaque mission s'ouvre sur une phase d'échange approfondi.
+                  </p>
+                  <p className="text-xl text-muted-foreground leading-relaxed mt-4 text-justify text-left">
+                    <strong className="text-primary">Objectif :</strong> cerner vos besoins, définir un périmètre d'action précis, et mettre en œuvre une collaboration utile, lisible et alignée.
+                  </p>
                 </div>
               </CardContent>
             </Card>
