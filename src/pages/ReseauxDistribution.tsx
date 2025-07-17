@@ -158,19 +158,21 @@ const ReseauxDistribution = () => {
                   <div className="space-y-4 text-muted-foreground">
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Analyse juridique de vos offres commerciales (produits, services, abonnements…)</p>
+                      <p className="text-justify">Analyse juridique de vos offres commerciales (produits, services, abonnements…)</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Sécurisation de votre site e-commerce (vente, livraison, service après-vente)</p>
+                      <p className="text-justify">Sécurisation de votre site e-commerce (vente, livraison, service après-vente)</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4 text-muted-foreground">
+                    <div className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-justify">Rédaction ou validation de vos CGV, CGU, politique de confidentialité</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Rédaction ou validation de vos CGV, CGU, politique de confidentialité</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Validation juridique de vos supports de communication et de vos campagnes promotionnelles</p>
+                      <p className="text-justify">Validation juridique de vos supports de communication et de vos campagnes promotionnelles</p>
                     </div>
                   </div>
                 </div>
