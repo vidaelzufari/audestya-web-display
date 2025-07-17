@@ -14,9 +14,6 @@ const ReseauxDistribution = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Réseaux de Distribution
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Je vous accompagne à chaque étape de la création ou de la vie de votre réseau de distribution.
-            </p>
           </div>
         </div>
       </section>
