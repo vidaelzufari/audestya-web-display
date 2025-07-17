@@ -270,9 +270,6 @@ const Presentation = () => {
                     <p className="text-xl font-medium text-primary">
                       Clarté, méthode, exigence à chaque étape
                     </p>
-                    <p className="text-xl font-medium text-primary">
-                      Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
-                    </p>
                   </div>
                   
                   <div className="space-y-6">

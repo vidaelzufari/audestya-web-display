@@ -59,9 +59,6 @@ const AboutSection = () => {
             <p className="text-xl font-medium text-primary">
               Clarté, méthode, exigence à chaque étape
             </p>
-            <p className="text-xl font-medium text-primary">
-              Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
-            </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
               L'exigence juridique n'a de sens que si elle crée de la valeur, protège votre modèle et fluidifie vos décisions.
             </p>
