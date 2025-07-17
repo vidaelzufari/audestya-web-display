@@ -305,7 +305,7 @@ const Presentation = () => {
                     </ul>
                     
                     <p className="text-center leading-relaxed max-w-3xl mx-auto font-medium">
-                      L'exigence juridique n'a de sens que si elle crée de la valeur, protège votre modèle et fluidifie vos décisions.
+                      Le droit n'a d'impact que s'il éclaire l'action.
                     </p>
                   </div>
                 </div>

@@ -60,7 +60,7 @@ const AboutSection = () => {
               Clarté, méthode, exigence à chaque étape
             </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-              L'exigence juridique n'a de sens que si elle crée de la valeur, protège votre modèle et fluidifie vos décisions.
+              Le droit n'a d'impact que s'il éclaire l'action.
             </p>
           </div>
         </div>
