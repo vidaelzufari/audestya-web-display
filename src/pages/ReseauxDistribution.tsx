@@ -67,7 +67,7 @@ const ReseauxDistribution = () => {
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Choix du modèle : licence, franchise, commission-affiliation, concession</p>
+                        <p>Choix du cadre juridique adapté à votre stratégie : licence, franchise, commission-affiliation, concession</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
@@ -75,11 +75,11 @@ const ReseauxDistribution = () => {
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Sécurisation de la relation précontractuelle avec les membres du réseau</p>
+                        <p>Encadrement de la phase précontractuelle : prévention des risques et construction de la relation de confiance</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Relecture du Manuel opératoire</p>
+                        <p>Relecture stratégique de votre manuel opératoire : cohérence, articulation avec les contrats</p>
                       </div>
                     </div>
                   </div>
@@ -88,19 +88,19 @@ const ReseauxDistribution = () => {
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Définition du mode d'approvisionnement entre tête de réseau et ses membres</p>
+                        <p>Définition des flux d'approvisionnement entre la tête de réseau et ses membres</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Accompagnement juridique dans la stratégie de développement</p>
+                        <p>Conseil juridique dans votre stratégie d'expansion (multisites, master-franchise, …)</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Formations sur les fondamentaux du modèle choisi</p>
+                        <p>Formations sur les fondamentaux du modèle à destination des équipes opérationnelles</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Conseil pour prévenir les pratiques anticoncurrentielles ou restrictives</p>
+                        <p>Prévention des pratiques anticoncurrentielles et des risques de déséquilibre significatif</p>
                       </div>
                     </div>
                   </div>
