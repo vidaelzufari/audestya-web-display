@@ -94,46 +94,6 @@ const AccompagnementJuridique = () => {
               </CardContent>
             </Card>
 
-            {/* Avantages */}
-            <Card className="bg-background shadow-soft border-0 mb-16">
-              <CardContent className="p-12">
-                <h2 className="font-serif text-4xl font-bold text-primary mb-12 text-center">
-                  Les avantages de l'externalisation juridique
-                </h2>
-                
-                <div className="grid md:grid-cols-3 gap-8">
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Clock className="w-10 h-10 text-secondary-foreground" />
-                    </div>
-                    <h3 className="font-serif text-xl font-bold text-primary mb-4">Souplesse</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Intervention adaptée à vos besoins ponctuels ou récurrents, sans engagement long terme.
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Users className="w-10 h-10 text-secondary-foreground" />
-                    </div>
-                    <h3 className="font-serif text-xl font-bold text-primary mb-4">Proximité</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Collaboration étroite avec vos équipes, compréhension de votre culture d'entreprise.
-                    </p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Target className="w-10 h-10 text-secondary-foreground" />
-                    </div>
-                    <h3 className="font-serif text-xl font-bold text-primary mb-4">Pragmatisme</h3>
-                    <p className="text-muted-foreground leading-relaxed">
-                      Solutions concrètes alignées avec vos objectifs business et vos contraintes opérationnelles.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
 
             {/* Processus de collaboration */}
             <Card className="bg-gradient-accent rounded-lg mb-16">
