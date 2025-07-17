@@ -63,8 +63,7 @@ const AboutSection = () => {
               Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
             </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
-              Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
-              et opérationnelle concrète, alignée avec vos objectifs.
+              L'exigence juridique n'a de sens que si elle crée de la valeur, protège votre modèle et fluidifie vos décisions.
             </p>
           </div>
         </div>

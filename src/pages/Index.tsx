@@ -43,8 +43,7 @@ const Index = () => {
                 </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto my-8"></div>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
-                  et opérationnelle concrète, alignée avec vos objectifs.
+                  L'exigence juridique n'a de sens que si elle crée de la valeur, protège votre modèle et fluidifie vos décisions.
                 </p>
               </div>
               <div className="mt-10">
