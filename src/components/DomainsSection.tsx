@@ -19,12 +19,11 @@ const DomainsSection = () => {
     {
       icon: FileText,
       title: "Relations et Pratiques Commerciales",
-      description: "Sécurisation des relations commerciales et conformité des pratiques promotionnelles dans le respect du droit de la concurrence.",
+      description: "Vos relations contractuelles structurent la solidité et la performance de votre activité.\nJ'interviens pour :",
       details: [
-        "Conditions générales de vente",
-        "Pratiques promotionnelles",
-        "Relations fournisseurs",
-        "Contentieux commerciaux"
+        "Encadrer juridiquement vos relations fournisseurs, distributeurs ou partenaires",
+        "Auditer vos pratiques commerciales",
+        "Sécuriser vos supports et campagnes à destination des consommateurs"
       ],
       link: "/relations-commerciales",
       hasPage: true
