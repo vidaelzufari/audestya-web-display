@@ -319,7 +319,7 @@ const Index = () => {
                   
                   <Card className="bg-muted/30 border-0 p-6">
                     <h5 className="font-medium text-primary mb-3">Formation</h5>
-                    <div className="space-y-1 text-muted-foreground text-sm">
+                    <div className="space-y-1 text-muted-foreground text-sm text-left">
                       <p>Master II Droit européen des affaires</p>
                       <p className="text-xs">Université Paris XI – Jean Monnet</p>
                       <p>Maîtrise Droit européen & international</p>
