@@ -1,3 +1,4 @@
+
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
@@ -22,19 +23,19 @@ const Presentation = () => {
                 <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
-                      j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
-                      juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
+                      Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                     </p>
                     <p className="leading-relaxed text-justify">
-                      Ma spécialisation en droit de la distribution, des contrats et de la consommation 
-                      me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
-                      juridiques que rencontrent les entreprises dans leurs activités commerciales.
+                      Ce choix repose sur :
                     </p>
                     <p className="leading-relaxed text-justify">
-                      Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
-                      opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
-                      développement de vos activités.
+                      – Une conviction forte : le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      – Une ambition claire : accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                     </p>
                   </div>
                   <div className="w-full md:w-64 h-80 rounded-lg overflow-hidden shadow-card flex-shrink-0">
