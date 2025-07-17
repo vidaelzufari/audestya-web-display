@@ -57,7 +57,7 @@ const AboutSection = () => {
               Des solutions juridiques ancrées dans vos enjeux business
             </p>
             <p className="text-xl font-medium text-primary">
-              Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
+              Clarté, méthode, exigence à chaque étape
             </p>
             <p className="text-xl font-medium text-primary">
               Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
