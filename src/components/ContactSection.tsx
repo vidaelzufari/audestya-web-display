@@ -93,7 +93,7 @@ const ContactSection = () => {
           <Card className="bg-background shadow-soft border-0">
             <CardContent className="p-8">
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                Envoyez-moi un message
+                Formulaire de contact
               </h3>
               
               <form className="space-y-6">
