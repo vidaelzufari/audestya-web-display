@@ -71,7 +71,7 @@ const Footer = () => {
                 Politique de confidentialité
               </a>
               <a href="/conditions-generales-vente" className="hover:text-secondary transition-colors">
-                CGV
+                Honoraires
               </a>
             </div>
           </div>
