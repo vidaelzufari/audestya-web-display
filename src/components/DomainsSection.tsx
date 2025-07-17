@@ -53,7 +53,7 @@ const DomainsSection = () => {
             Domaines d'Intervention
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Une expertise spécialisée au service de vos enjeux juridiques et commerciaux
+            Une expertise juridique alignée sur vos enjeux business et opérationnels.
           </p>
         </div>
 
