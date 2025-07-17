@@ -53,10 +53,6 @@ const Footer = () => {
                 <Mail size={16} />
                 haia.elzufari@audestya-avocat.com
               </a>
-              <p className="text-primary-foreground/60 text-sm">
-                Consultations sur rendez-vous<br />
-                Lundi - Vendredi : 9h00 - 18h00
-              </p>
             </div>
           </div>
         </div>
