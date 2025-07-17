@@ -38,6 +38,9 @@ const Index = () => {
                 <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                   Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
                 </p>
+                <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
+                  Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
+                </p>
                 <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto my-8"></div>
                 <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
                   Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 

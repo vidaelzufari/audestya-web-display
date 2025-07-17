@@ -59,6 +59,9 @@ const AboutSection = () => {
             <p className="text-xl font-medium text-primary">
               Un accompagnement pragmatique, à chaque étape de vos projets, décisions ou transformations
             </p>
+            <p className="text-xl font-medium text-primary">
+              Clarté, méthode et exigence : une approche alignée sur vos réalités d'entreprise
+            </p>
             <p className="text-lg leading-relaxed max-w-3xl mx-auto">
               Chaque intervention que je mènerai sera pensée pour générer une valeur juridique 
               et opérationnelle concrète, alignée avec vos objectifs.
