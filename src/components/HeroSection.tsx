@@ -37,9 +37,7 @@ const HeroSection = () => {
           {/* Inspirational quote */}
           <div className="bg-background/95 backdrop-blur-sm rounded-xl p-8 mb-12 border border-border shadow-soft animate-scale-in" style={{ animationDelay: '0.4s' }}>
             <blockquote className="text-base md:text-lg italic mb-4 text-primary">
-              « L'excellence n'est jamais le fruit du hasard. Elle est toujours le résultat d'une intention noble, 
-              d'un effort sincère et d'une exécution intelligente. Elle reflète un choix réfléchi parmi de nombreuses 
-              possibilités – c'est le choix, et non le hasard, qui détermine votre destin. »
+              « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
             </blockquote>
             <cite className="text-sm font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
           </div>
