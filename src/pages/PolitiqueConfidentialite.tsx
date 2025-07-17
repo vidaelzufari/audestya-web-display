@@ -14,9 +14,6 @@ const PolitiqueConfidentialite = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Politique de Confidentialité
             </h1>
-            <p className="text-xl opacity-90">
-              Protection et traitement de vos données personnelles
-            </p>
           </div>
         </div>
       </section>
