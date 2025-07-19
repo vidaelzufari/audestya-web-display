@@ -65,8 +65,8 @@ const AccompagnementJuridique = () => {
                   </div>
                   
                   <div className="flex items-start gap-6">
-                    <div className="w-16 h-16 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0">
-                      <Users className="w-8 h-8 text-secondary-foreground" />
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Users className="w-8 h-8 text-primary-foreground" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
@@ -79,8 +79,8 @@ const AccompagnementJuridique = () => {
                   </div>
                   
                   <div className="flex items-start gap-6">
-                    <div className="w-16 h-16 bg-gradient-accent rounded-full flex items-center justify-center flex-shrink-0 border-2 border-primary">
-                      <Handshake className="w-8 h-8 text-primary" />
+                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
+                      <Handshake className="w-8 h-8 text-primary-foreground" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
