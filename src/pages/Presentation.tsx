@@ -1,6 +1,7 @@
 
 
 import Navigation from '@/components/Navigation';
+import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -377,6 +378,8 @@ const Presentation = () => {
           </div>
         </div>
       </section>
+
+      <DomainsSection />
 
       {/* Mon Intervention Section */}
       <section className="py-20">

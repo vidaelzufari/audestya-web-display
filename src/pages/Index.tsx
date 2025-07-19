@@ -1,7 +1,7 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
-import DomainsSection from '@/components/DomainsSection';
+
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
@@ -172,7 +172,7 @@ const Index = () => {
 
 
 
-      <DomainsSection />
+      
 
       {/* Honoraires Section */}
       <section className="py-20 bg-muted/30">
