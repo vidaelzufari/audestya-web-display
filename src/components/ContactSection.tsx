@@ -65,7 +65,7 @@ const ContactSection = () => {
                     <div>
                       <h4 className="font-semibold text-primary mb-1">Localisation</h4>
                       <p className="text-muted-foreground">
-                        France - Consultations sur rendez-vous
+                        Paris-France
                       </p>
                     </div>
                   </div>
