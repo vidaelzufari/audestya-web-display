@@ -349,67 +349,6 @@ const Presentation = () => {
 
       <DomainsSection />
 
-      {/* Mon Intervention Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Structurer, sécuriser, accompagner vos décisions
-            </h2>
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
-                <div className="space-y-8 text-lg text-muted-foreground">
-                  <div className="text-center space-y-4">
-                    <p className="text-xl font-medium text-primary">
-                      Des solutions juridiques ancrées dans vos enjeux business
-                    </p>
-                    <p className="text-xl font-medium text-primary">
-                      Clarté, méthode, exigence à chaque étape
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <p className="text-lg font-medium text-primary">
-                      J'interviens pour répondre à vos besoins variés :
-                    </p>
-                    
-                    <ul className="space-y-4 text-muted-foreground">
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Structuration, sécurisation et accompagnement juridique de réseaux de distribution</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Audits contractuels adaptés à vos enjeux du moment</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires</span>
-                      </li>
-                      <li className="flex items-start gap-3">
-                        <span className="text-primary font-bold mt-1">•</span>
-                        <span>Encadrement de vos pratiques promotionnelles et protection du consommateur</span>
-                      </li>
-                    </ul>
-                    
-                    <p className="text-center leading-relaxed max-w-3xl mx-auto font-medium">
-                      Le droit n'a d'impact que s'il éclaire l'action.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Honoraires Section */}
       <section className="py-20 bg-muted/30">
