@@ -98,35 +98,35 @@ const RelationsCommerciales = () => {
             </Card>
 
             {/* BtoC Section */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
+            <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="p-4 bg-white/20 rounded-full">
-                    <Users className="w-8 h-8 text-white" />
+                  <div className="p-4 bg-gradient-secondary rounded-full">
+                    <Users className="w-8 h-8 text-secondary-foreground" />
                   </div>
-                  <h2 className="font-serif text-3xl font-bold">
+                  <h2 className="font-serif text-3xl font-bold text-primary">
                     BtoC – Sécurisation des offres, supports & campagnes
                   </h2>
                 </div>
 
-                <p className="text-lg font-bold mb-8 text-justify">
+                <p className="text-lg font-bold mb-8 text-justify text-primary">
                   Dans un contexte de vigilance accrue sur les droits des consommateurs et la transparence commerciale, chaque offre mal encadrée, chaque support imprécis, chaque campagne non conforme peut exposer votre marque à un risque juridique ou réputationnel.
                 </p>
-                <p className="text-lg font-bold mb-8 text-justify">
+                <p className="text-lg font-bold mb-8 text-justify text-primary">
                   J'interviens pour sécuriser juridiquement votre relation client, protéger votre image et fiabiliser vos actions commerciales.
                 </p>
 
-                <div className="space-y-4 text-primary-foreground">
+                <div className="space-y-4 text-muted-foreground">
                    <div className="flex items-start gap-3">
-                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                      <p className="text-justify">Rédaction ou validation de vos CGV, CGU, politiques de confidentialité, pour garantir la conformité et la lisibilité de votre offre</p>
                    </div>
                    <div className="flex items-start gap-3">
-                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                      <p className="text-justify">Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc.</p>
                    </div>
                    <div className="flex items-start gap-3">
-                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
                      <p className="text-justify">Audit juridique et encadrement de vos campagnes commerciales, incluant vos messages, supports et mécaniques promotionnelles (publicités, jeux-concours, cadeaux, etc.), afin de prévenir les pratiques commerciales trompeuses, déloyales ou à risque réputationnel</p>
                    </div>
                 </div>
@@ -134,9 +134,9 @@ const RelationsCommerciales = () => {
             </Card>
 
             {/* Méthodologie */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
               <CardContent className="p-12">
-                <h2 className="font-serif text-3xl font-bold text-primary mb-8 text-center">
+                <h2 className="font-serif text-3xl font-bold text-white mb-8 text-center">
                   Une approche sur-mesure
                 </h2>
                 
@@ -147,8 +147,8 @@ const RelationsCommerciales = () => {
                         <span className="text-secondary-foreground font-bold text-sm">1</span>
                       </div>
                        <div>
-                         <h3 className="font-semibold text-primary mb-2">Analyse de vos besoins</h3>
-                         <p className="text-muted-foreground text-justify">Compréhension fine de votre activité et de vos enjeux commerciaux</p>
+                         <h3 className="font-semibold text-white mb-2">Analyse de vos besoins</h3>
+                         <p className="text-white/80 text-justify">Compréhension fine de votre activité et de vos enjeux commerciaux</p>
                        </div>
                      </div>
                      
@@ -157,8 +157,8 @@ const RelationsCommerciales = () => {
                          <span className="text-secondary-foreground font-bold text-sm">2</span>
                        </div>
                        <div>
-                         <h3 className="font-semibold text-primary mb-2">Audit juridique</h3>
-                         <p className="text-muted-foreground text-justify">Évaluation de vos pratiques actuelles et identification des risques</p>
+                         <h3 className="font-semibold text-white mb-2">Audit juridique</h3>
+                         <p className="text-white/80 text-justify">Évaluation de vos pratiques actuelles et identification des risques</p>
                        </div>
                      </div>
                      
@@ -167,8 +167,8 @@ const RelationsCommerciales = () => {
                          <span className="text-secondary-foreground font-bold text-sm">3</span>
                        </div>
                        <div>
-                         <h3 className="font-semibold text-primary mb-2">Solutions personnalisées</h3>
-                         <p className="text-muted-foreground text-justify">Rédaction et négociation adaptées à votre secteur d'activité</p>
+                         <h3 className="font-semibold text-white mb-2">Solutions personnalisées</h3>
+                         <p className="text-white/80 text-justify">Rédaction et négociation adaptées à votre secteur d'activité</p>
                        </div>
                     </div>
                   </div>
