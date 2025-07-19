@@ -30,7 +30,7 @@ const Presentation = () => {
         <div className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full blur-xl"></div>
         <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-lg"></div>
         <div className="container mx-auto px-4">
-          <div className="max-w-6xl mx-auto text-center mb-20">
+          <div className="max-w-7xl mx-auto text-center mb-20">
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
               <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
                 <div className="flex-1 space-y-6 text-lg text-muted-foreground">
