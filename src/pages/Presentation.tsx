@@ -27,12 +27,21 @@ const Presentation = () => {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
-              Bio
-            </h2>
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
                 <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
+                  <div className="w-full md:w-64 flex-shrink-0">
+                    <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                      Bio
+                    </h3>
+                    <div className="w-full h-80 rounded-lg overflow-hidden shadow-card">
+                      <img 
+                        src={lawyerPortrait} 
+                        alt="Portrait de l'avocate" 
+                        className="w-full h-full object-cover object-[40%_20%]"
+                      />
+                    </div>
+                  </div>
                   <div className="flex-1 space-y-4 text-base text-muted-foreground">
                     <p className="leading-relaxed text-justify-force">
                       Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
@@ -49,13 +58,6 @@ const Presentation = () => {
                     <p className="leading-relaxed text-justify-force">
                       J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                     </p>
-                  </div>
-                  <div className="w-full md:w-64 h-80 rounded-lg overflow-hidden shadow-card flex-shrink-0">
-                    <img 
-                      src={lawyerPortrait} 
-                      alt="Portrait de l'avocate" 
-                      className="w-full h-full object-cover object-[40%_20%]"
-                    />
                   </div>
                 </div>
               </CardContent>
