@@ -180,7 +180,7 @@ const AccompagnementJuridique = () => {
                   Secteurs d'activité
                 </h2>
                 <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-                  Forte de mon expérience en entreprise, j'interviens dans des secteurs variés.
+                  Forte de mon expérience en entreprise, j'interviens dans les principaux secteurs du retail. 
                 </p>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
@@ -202,7 +202,7 @@ const AccompagnementJuridique = () => {
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                       <Film className="w-6 h-6 text-primary-foreground" />
                     </div>
-                    <h3 className="font-semibold text-primary mb-2">Cinéma et Loisirs</h3>
+                    <h3 className="font-semibold text-primary mb-2">Loisirs</h3>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
