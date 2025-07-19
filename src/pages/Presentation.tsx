@@ -164,7 +164,7 @@ const Presentation = () => {
                       • se réinventer quand tout semble figé
                     </p>
                     <p className="leading-relaxed text-justify">
-                      • et croire que la maîtrise juridique des activités est un levier de transformation et de croissance
+                      • croire que la maîtrise juridique des activités est un levier de transformation et de croissance
                     </p>
                     <p className="leading-relaxed text-justify">
                       C'est cette énergie que je souhaite transmettre à mes clients.
