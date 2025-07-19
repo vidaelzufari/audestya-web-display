@@ -107,8 +107,7 @@ const Presentation = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-left">
+            <div className="bg-background shadow-soft border-0 rounded-xl p-12 text-left">
                 <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
                   Ma Mission
                 </h2>
@@ -128,8 +127,7 @@ const Presentation = () => {
                     vos activités.
                   </p>
                 </div>
-              </CardContent>
-            </Card>
+            </div>
           </div>
         </div>
       </section>
