@@ -31,7 +31,7 @@ const HeroSection = () => {
           
           <div className="space-y-6 mb-12">
             <p className="text-lg md:text-xl font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
-              Une expertise pragmatique, stratégique et alignée sur vos enjeux concrets.
+              Une expertise pragmatique, stratégique et alignée sur vos enjeux concrets
             </p>
           </div>
 
