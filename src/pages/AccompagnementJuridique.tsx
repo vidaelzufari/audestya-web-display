@@ -46,7 +46,7 @@ const AccompagnementJuridique = () => {
             <Card className="bg-background shadow-soft border-0 mb-16">
               <CardContent className="p-12">
                 <h2 className="font-serif text-4xl font-bold text-primary mb-12 text-center">
-                  Mes domaines d'intervention
+                  Mes interventions couvrent
                 </h2>
                 
                 <div className="space-y-8">
