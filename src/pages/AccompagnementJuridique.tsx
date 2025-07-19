@@ -15,9 +15,6 @@ const AccompagnementJuridique = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Accompagnement Juridique Externalisé
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto text-justify text-left">
-              Un appui juridique intégré à vos enjeux business, pour structurer, fluidifier et faire avancer vos projets.
-            </p>
           </div>
         </div>
       </section>
