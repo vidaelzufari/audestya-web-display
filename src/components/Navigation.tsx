@@ -94,7 +94,7 @@ const Navigation = () => {
             
             {/* LinkedIn icon */}
             <a 
-              href="https://www.linkedin.com/in/haia-elzufari/" 
+              href="https://www.linkedin.com/in/haiaelzufari" 
               target="_blank" 
               rel="noopener noreferrer"
               className="text-primary-foreground hover:text-secondary transition-colors"

@@ -17,7 +17,7 @@ const Footer = () => {
               Avocat au Barreau de Paris
             </p>
             <div className="flex space-x-4">
-              <a href="https://www.linkedin.com/in/haia-elzufari/" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-secondary transition-colors">
+              <a href="https://www.linkedin.com/in/haiaelzufari" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-secondary transition-colors">
                 <Linkedin size={20} />
               </a>
             </div>
