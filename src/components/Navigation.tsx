@@ -70,7 +70,7 @@ const Navigation = () => {
             <a href="/" className={getNavLinkClass('/')}>
               ACCUEIL
             </a>
-            <a href="/#presentation" className={getNavLinkClass('#presentation')}>
+            <a href="/presentation" className={getNavLinkClass('/presentation')}>
               PRÉSENTATION
             </a>
             
@@ -147,7 +147,7 @@ const Navigation = () => {
               <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
                 ACCUEIL
               </a>
-              <a href="/#presentation" className={`${getNavLinkClass('#presentation')} py-3 px-2 rounded`}>
+              <a href="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
                 PRÉSENTATION
               </a>
               
