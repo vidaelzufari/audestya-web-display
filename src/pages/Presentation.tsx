@@ -115,13 +115,13 @@ const Presentation = () => {
                   <p className="text-xl font-medium text-primary">
                     Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
                   </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
+                  <p className="leading-relaxed">
                     Ma mission est de fournir un conseil juridique de qualité, adapté aux réalités économiques 
                     et opérationnelles de chaque entreprise. Je m'engage à être un partenaire de confiance 
                     dans le développement de vos projets, en apportant des solutions juridiques concrètes 
                     et efficaces.
                   </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
+                  <p className="leading-relaxed">
                     Mon objectif est de transformer la complexité juridique en opportunités business, 
                     en vous permettant de vous concentrer sur votre cœur de métier tout en sécurisant 
                     vos activités.
