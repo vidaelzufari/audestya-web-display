@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell } from 'lucide-react';
+import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell, Network, FileText } from 'lucide-react';
 
 const AccompagnementJuridique = () => {
   return (
@@ -224,6 +224,64 @@ const AccompagnementJuridique = () => {
               </CardContent>
             </Card>
 
+          </div>
+        </div>
+      </section>
+
+      {/* Related Services Section */}
+      <section className="py-24 bg-gradient-to-br from-background via-background/95 to-secondary/5">
+        <div className="container mx-auto px-4">
+          <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
+            {/* Réseaux de Distribution */}
+            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <CardContent className="text-center p-12 relative z-10">
+                <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
+                  <Network className="w-10 h-10 text-secondary-foreground" />
+                </div>
+                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
+                  Réseaux de Distribution
+                </h3>
+                
+                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
+                  <a href="/reseaux-distribution">
+                    En savoir plus
+                    <Target className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
+                  </a>
+                </Button>
+              </CardContent>
+              
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Relations et Pratiques Commerciales */}
+            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              
+              <CardContent className="text-center p-12 relative z-10">
+                <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
+                  <FileText className="w-10 h-10 text-secondary-foreground" />
+                </div>
+                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
+                  Relations et Pratiques Commerciales
+                </h3>
+                
+                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
+                  <a href="/relations-commerciales">
+                    En savoir plus
+                    <Target className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
+                  </a>
+                </Button>
+              </CardContent>
+              
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+          </div>
+
+          {/* Decorative elements */}
+          <div className="relative mt-16">
+            <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 w-32 h-1 bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
           </div>
         </div>
       </section>
