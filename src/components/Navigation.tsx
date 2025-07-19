@@ -27,11 +27,11 @@ const Navigation = () => {
 
   const getNavLinkClass = (path: string) => {
     const baseClass = "transition-colors font-medium relative";
-    const inactiveClass = "text-primary-foreground hover:text-secondary";
-    const activeClass = "text-secondary";
+    const inactiveClass = "text-primary-foreground/90 hover:text-white";
+    const activeClass = "text-white font-semibold";
     
     if (isActive(path)) {
-      return `${baseClass} ${activeClass} after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-secondary`;
+      return `${baseClass} ${activeClass} after:content-[''] after:absolute after:bottom-[-4px] after:left-0 after:w-full after:h-0.5 after:bg-white`;
     }
     return `${baseClass} ${inactiveClass}`;
   };
