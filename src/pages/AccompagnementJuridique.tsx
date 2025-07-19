@@ -183,7 +183,7 @@ const AccompagnementJuridique = () => {
                   Secteurs d'activité
                 </h2>
                 <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
-                  Fort de mon expérience en entreprise, j'interviens dans des secteurs variés.
+                  Forte de mon expérience en entreprise, j'interviens dans des secteurs variés.
                 </p>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
