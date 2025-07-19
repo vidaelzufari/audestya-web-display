@@ -38,22 +38,6 @@ const Navigation = () => {
 
   return (
     <nav className="bg-gradient-primary shadow-elegant sticky top-0 z-50">
-      {/* Top contact bar */}
-      <div className="bg-primary">
-        <div className="container mx-auto px-4 py-2">
-          <div className="flex justify-end items-center text-sm text-primary-foreground">
-            <a 
-              href="https://www.linkedin.com/in/haia-elzufari/" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 hover:text-secondary transition-colors"
-            >
-              <LinkedinIcon size={20} />
-            </a>
-          </div>
-        </div>
-      </div>
-
       {/* Main navigation */}
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
