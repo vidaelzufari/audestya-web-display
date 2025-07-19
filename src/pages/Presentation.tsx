@@ -238,7 +238,7 @@ const Presentation = () => {
         </div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             {/* Header */}
             <div className="text-center mb-20">
               <div className="inline-flex items-center gap-3 mb-6">
@@ -274,7 +274,7 @@ const Presentation = () => {
                         Une expertise confirmée
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
-                      <p className="text-muted-foreground leading-relaxed text-lg">
+                      <p className="text-muted-foreground leading-relaxed text-lg text-justify text-left">
                         Mon parcours en entreprise m'a permis de développer une solide culture business, une compréhension fine des enjeux métiers et une capacité à dialoguer avec les directions générales, les directions juridiques qu'avec les équipes opérationnelles.
                       </p>
                     </div>
@@ -300,7 +300,7 @@ const Presentation = () => {
                         Une approche pragmatique
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
-                      <p className="text-muted-foreground leading-relaxed text-lg">
+                      <p className="text-muted-foreground leading-relaxed text-lg text-justify text-left">
                         Je ne me contente pas de vous exposer des règles de droit, je les mets en perspective avec votre environnement, vos objectifs et vos contraintes, pour vous apporter des solutions concrètes.
                       </p>
                     </div>
@@ -326,7 +326,7 @@ const Presentation = () => {
                         Une relation de confiance
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
-                      <p className="text-muted-foreground leading-relaxed text-lg">
+                      <p className="text-muted-foreground leading-relaxed text-lg text-justify text-left">
                         Je m'investis avec loyauté, clarté et exigence. Je vous informe en toute transparence lorsque vos besoins sortent de mon domaine de compétence, et je m'attache à construire avec vous une relation de proximité, fondée sur l'écoute et l'anticipation.
                       </p>
                     </div>
