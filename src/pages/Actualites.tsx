@@ -14,9 +14,6 @@ const Actualites = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Actualités
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Restez informé des dernières évolutions juridiques
-            </p>
           </div>
         </div>
       </section>
