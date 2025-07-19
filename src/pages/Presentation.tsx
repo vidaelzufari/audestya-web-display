@@ -140,30 +140,31 @@ const Presentation = () => {
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
                       <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
-                  </div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
-                    Ma Vision
-                  </h2>
-                  <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="text-xl font-medium text-primary">
-                      Un droit des affaires accessible, pragmatique et créateur de valeur
-                    </p>
-                    <p className="leading-relaxed">
-                      Je crois en un accompagnement juridique qui va au-delà du simple conseil : 
-                      un véritable partenariat stratégique qui contribue à la croissance et au 
-                      succès de votre entreprise.
-                    </p>
-                    <p className="leading-relaxed">
-                      Ma vision est celle d'un droit des affaires moderne, où l'expertise juridique 
-                      s'allie à la compréhension des enjeux business pour créer des solutions 
-                      innovantes et durables.
-                    </p>
-                    <p className="leading-relaxed">
-                      L'avenir du conseil juridique réside dans l'adaptabilité, la proximité 
-                      avec les clients et la capacité à anticiper les évolutions du marché.
-                    </p>
-                  </div>
-                </CardContent>
+                </div>
+                <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                  Ma Vision
+                </h2>
+                <div className="space-y-6 text-lg text-muted-foreground">
+                  <p className="text-xl font-bold text-primary text-justify">
+                    Audestya est née d'un choix audacieux : sortir de ma zone de confort, reprendre mon destin professionnel en main.
+                  </p>
+                  <p className="leading-relaxed text-justify">
+                    Ce nom symbolise une conviction profonde :
+                  </p>
+                  <p className="leading-relaxed text-justify">
+                    • oser prendre sa place ;
+                  </p>
+                  <p className="leading-relaxed text-justify">
+                    • se réinventer quand tout semble figé ;
+                  </p>
+                  <p className="leading-relaxed text-justify">
+                    • et croire que la maîtrise juridique de leur activité est un levier de transformation et de croissance.
+                  </p>
+                  <p className="leading-relaxed text-justify">
+                    C'est cette énergie que je souhaite transmettre à mes clients.
+                  </p>
+                </div>
+              </CardContent>
               </Card>
             </div>
           </div>
