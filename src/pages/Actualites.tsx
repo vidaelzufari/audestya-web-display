@@ -33,17 +33,8 @@ const Actualites = () => {
                   </p>
                   <p className="leading-relaxed max-w-3xl mx-auto">
                     Cette section sera prochainement enrichie d'actualités juridiques, 
-                    d'analyses des dernières réformes et de conseils pratiques pour 
-                    vous aider à naviguer dans l'environnement juridique en constante évolution.
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Suivez les dernières nouveautés en droit de la distribution, 
+                    d'analyses des dernières réformes et de conseils pratiques en droit de la distribution, 
                     des contrats et de la consommation qui peuvent impacter votre activité.
-                  </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez régulièrement des articles d'analyse, des commentaires sur les évolutions 
-                    législatives et réglementaires, ainsi que des conseils pratiques pour anticiper 
-                    et gérer les enjeux juridiques de votre entreprise.
                   </p>
                 </div>
               </CardContent>
