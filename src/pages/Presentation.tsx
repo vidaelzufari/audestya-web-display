@@ -15,7 +15,7 @@ const Presentation = () => {
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
+          <div className="max-w-7xl mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               PRÉSENTATION
             </h1>
@@ -106,7 +106,7 @@ const Presentation = () => {
       {/* Ma Mission Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <Card className="bg-background shadow-soft border-0">
               <CardContent className="p-12 text-left">
                 <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
@@ -137,7 +137,7 @@ const Presentation = () => {
       {/* Ma Vision Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Ma Vision
             </h2>
@@ -175,7 +175,7 @@ const Presentation = () => {
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
         
         <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <div className="inline-block p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full mb-6 backdrop-blur-sm">
                 <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
@@ -267,7 +267,7 @@ const Presentation = () => {
       {/* Mon Intervention Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Structurer, sécuriser, accompagner vos décisions
             </h2>
@@ -329,7 +329,7 @@ const Presentation = () => {
       {/* Honoraires Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Honoraires
             </h2>
@@ -386,7 +386,7 @@ const Presentation = () => {
       {/* Actualités Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-7xl mx-auto">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Actualités
             </h2>
