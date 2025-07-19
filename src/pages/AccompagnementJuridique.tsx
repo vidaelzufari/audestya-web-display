@@ -244,7 +244,7 @@ const AccompagnementJuridique = () => {
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/reseaux-distribution">
                     En savoir plus
-                    <Target className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
                   </a>
                 </Button>
               </CardContent>
@@ -267,7 +267,7 @@ const AccompagnementJuridique = () => {
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/relations-commerciales">
                     En savoir plus
-                    <Target className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
+                    <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
                   </a>
                 </Button>
               </CardContent>
