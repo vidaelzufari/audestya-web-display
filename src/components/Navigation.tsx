@@ -27,7 +27,7 @@ const Navigation = () => {
 
   const getNavLinkClass = (path: string) => {
     const baseClass = "transition-colors font-medium relative";
-    const inactiveClass = "text-primary-foreground/90 hover:text-white";
+    const inactiveClass = "text-primary-foreground/90 hover:text-secondary hover:font-semibold";
     const activeClass = "text-white font-semibold";
     
     if (isActive(path)) {
