@@ -164,7 +164,7 @@ const Presentation = () => {
                       • se réinventer quand tout semble figé ;
                     </p>
                     <p className="leading-relaxed text-justify">
-                      • et croire que la maîtrise juridique des activités est un levier de transformation et de croissance.
+                      • et croire que la maîtrise juridique des activités est un levier de transformation et de croissance
                     </p>
                     <p className="leading-relaxed text-justify">
                       C'est cette énergie que je souhaite transmettre à mes clients.
@@ -190,7 +190,7 @@ const Presentation = () => {
                         Authenticité
                       </h4>
                       <p className="leading-relaxed text-justify">
-                        une relation simple, directe, sans jargon inutile.
+                        Une relation simple, directe, sans jargon inutile.
                       </p>
                     </div>
                     
@@ -199,7 +199,7 @@ const Presentation = () => {
                         Confiance
                       </h4>
                       <p className="leading-relaxed text-justify">
-                        un engagement loyal et transparent.
+                        Un engagement loyal et transparent.
                       </p>
                     </div>
                     
@@ -208,7 +208,7 @@ const Presentation = () => {
                         Proximité
                       </h4>
                       <p className="leading-relaxed text-justify">
-                        une compréhension fine de votre réalité et de vos besoins.
+                        Une compréhension fine de votre réalité et de vos besoins.
                       </p>
                     </div>
                     
@@ -217,7 +217,7 @@ const Presentation = () => {
                         Excellence
                       </h4>
                       <p className="leading-relaxed text-justify">
-                        une exigence constante dans la qualité des prestations et des conseils.
+                        Une exigence constante dans la qualité des prestations et des conseils.
                       </p>
                     </div>
                   </div>
