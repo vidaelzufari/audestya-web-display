@@ -237,18 +237,6 @@ const ReseauxDistribution = () => {
       {/* Related Services Section */}
       <section className="py-24 bg-gradient-to-br from-background via-background/95 to-secondary/5">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-20">
-            <div className="inline-block p-3 bg-gradient-secondary rounded-full mb-6">
-              <Handshake className="w-8 h-8 text-secondary-foreground" />
-            </div>
-            <h2 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
-              Services Complémentaires
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Découvrez nos autres domaines d'expertise pour accompagner votre développement.
-            </p>
-          </div>
 
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
             {/* Relations et Pratiques Commerciales */}
