@@ -27,121 +27,137 @@ const Index = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           {/* Hero content */}
-          <div className="max-w-6xl mx-auto">
-            <div className="text-center mb-16">
-              <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8 leading-tight">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-20">
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
                 Structurer, sécuriser, accompagner vos décisions
               </h2>
-              <div className="max-w-4xl mx-auto space-y-6">
-                <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                  Des solutions juridiques ancrées dans vos enjeux business
-                </p>
-                <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                  Clarté, méthode, exigence à chaque étape
-                </p>
-                <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto my-8"></div>
-                <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                  Le droit n'a d'impact que s'il éclaire l'action.
-                </p>
+              <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
+                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl">
+                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
+                    Des solutions juridiques ancrées dans vos enjeux business
+                  </p>
+                </div>
+                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl">
+                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
+                    Clarté, méthode, exigence à chaque étape
+                  </p>
+                </div>
               </div>
+              <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-medium italic">
+                Le droit n'a d'impact que s'il éclaire l'action.
+              </p>
             </div>
 
-            {/* Main content */}
-            <div className="max-w-4xl mx-auto">
-              {/* Intervention sections title */}
-              <div className="text-center mb-12">
-                <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
+            {/* Main content - Single flowing section */}
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
                   Deux leviers d'intervention complémentaires
                 </h3>
               </div>
-              <Card className="bg-background/80 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-card transition-all duration-500">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center mr-4">
-                      <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-                      </svg>
-                    </div>
-                    <h3 className="font-serif text-2xl font-bold text-primary">
-                      Distribution - Contrats - Consommation
-                    </h3>
-                  </div>
-                  <p className="text-muted-foreground italic mb-4 text-base">
-                    Structurer l'action, prévenir le risque, accompagner vos activités.
-                  </p>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques
-                        </p>
+              
+              {/* Combined content in a flowing layout */}
+              <div className="space-y-8">
+                {/* First section - Distribution Contrats Consommation */}
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="flex items-center justify-center mb-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Structuration, sécurisation et accompagnement juridique de réseaux de distribution
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)
+                      <div className="text-center">
+                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                          Distribution - Contrats - Consommation
+                        </h3>
+                        <p className="text-muted-foreground italic mt-2 text-lg">
+                          Structurer l'action, prévenir le risque, accompagner vos activités.
                         </p>
                       </div>
                     </div>
-                    <div className="space-y-3">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Audits contractuels adaptés à vos enjeux du moment
-                        </p>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques
+                          </p>
+                        </div>
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Structuration, sécurisation et accompagnement juridique de réseaux de distribution
+                          </p>
+                        </div>
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)
+                          </p>
+                        </div>
                       </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-muted-foreground leading-relaxed text-justify text-base">
-                          Encadrement de vos pratiques promotionnelles et protection du consommateur
-                        </p>
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Audits contractuels adaptés à vos enjeux du moment
+                          </p>
+                        </div>
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires
+                          </p>
+                        </div>
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
+                            Encadrement de vos pratiques promotionnelles et protection du consommateur
+                          </p>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
+                  </CardContent>
+                </Card>
 
-              {/* Accompaniment section */}
-              <div className="mt-8">
-                <Card className="bg-background/80 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-card transition-all duration-500">
-                  <CardContent className="p-8">
-                    <div className="flex items-center mb-6">
-                      <div className="w-12 h-12 bg-gradient-to-br from-secondary to-secondary/80 rounded-xl flex items-center justify-center mr-4">
-                        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                {/* Second section - Accompagnement */}
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="flex items-center justify-center mb-8">
+                      <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                      <h3 className="font-serif text-2xl font-bold text-primary">
-                        Accompagnement Juridique Externalisé
-                      </h3>
+                      <div className="text-center">
+                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                          Accompagnement Juridique Externalisé
+                        </h3>
+                        <p className="text-muted-foreground italic mt-2 text-lg">
+                          Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
+                        </p>
+                      </div>
                     </div>
-                    <p className="text-muted-foreground italic mb-4 text-base">
-                      Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
-                    </p>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left">
-                      <div className="space-y-3">
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
                             Pilotage juridique de projets structurants
                           </p>
                         </div>
-                        <div className="flex items-start gap-3">
-                          <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify text-base">
+                      </div>
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4">
+                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
+                          <p className="text-muted-foreground leading-relaxed text-justify">
                             Missions ponctuelles
                           </p>
                         </div>
@@ -151,14 +167,14 @@ const Index = () => {
                 </Card>
               </div>
               
-              {/* Button moved here */}
-              <div className="mt-10 text-center">
+              {/* Call to action */}
+              <div className="mt-16 text-center">
                 <a 
                   href="#domaines" 
-                  className="inline-flex items-center px-8 py-4 bg-gradient-to-r from-primary to-primary/80 text-primary-foreground font-semibold rounded-full hover:shadow-lg hover:scale-105 transition-all duration-300 shadow-soft"
+                  className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300 shadow-elegant text-lg"
                 >
                   En savoir plus
-                  <svg className="ml-2 w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                   </svg>
                 </a>
