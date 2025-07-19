@@ -145,17 +145,17 @@ const Presentation = () => {
                   <p className="text-xl font-medium text-primary">
                     Un droit des affaires accessible, pragmatique et créateur de valeur
                   </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
+                  <p className="leading-relaxed">
                     Je crois en un accompagnement juridique qui va au-delà du simple conseil : 
                     un véritable partenariat stratégique qui contribue à la croissance et au 
                     succès de votre entreprise.
                   </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
+                  <p className="leading-relaxed">
                     Ma vision est celle d'un droit des affaires moderne, où l'expertise juridique 
                     s'allie à la compréhension des enjeux business pour créer des solutions 
                     innovantes et durables.
                   </p>
-                  <p className="leading-relaxed max-w-3xl mx-auto">
+                  <p className="leading-relaxed">
                     L'avenir du conseil juridique réside dans l'adaptabilité, la proximité 
                     avec les clients et la capacité à anticiper les évolutions du marché.
                   </p>
