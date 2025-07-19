@@ -34,8 +34,8 @@ const AccompagnementJuridique = () => {
                   Une collaboration juridique agile et structurante
                 </h2>
                  <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-justify">
-                    J'interviens en autonomie ou en lien étroit avec vos équipes, selon vos priorités stratégiques ou opérationnelles.
-                  </p>
+                     Intervention en autonomie ou en lien étroit avec vos équipes, selon vos priorités stratégiques ou opérationnelles, pour structurer, fluidifier et faire avancer vos projets.
+                   </p>
               </CardContent>
             </Card>
 
