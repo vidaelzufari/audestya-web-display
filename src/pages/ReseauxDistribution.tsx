@@ -194,36 +194,33 @@ const ReseauxDistribution = () => {
                 </div>
 
                 <div className="relative">
-                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-                    <div className="text-center relative">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  {/* Lignes de connexion - placées en arrière-plan */}
+                  <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-white/30 z-0"></div>
+                  
+                  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
                         <Handshake className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Réunions de co-construction</h3>
-                      {/* Ligne de connexion vers la droite */}
-                      <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-white/30"></div>
-                    </div>
-                    
-                    <div className="text-center relative">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Target className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="font-semibold text-lg mb-3">Identification des points-clés stratégiques</h3>
-                      {/* Ligne de connexion vers la droite */}
-                      <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-white/30"></div>
-                    </div>
-                    
-                    <div className="text-center relative">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                        <Users className="w-8 h-8 text-white" />
-                      </div>
-                      <h3 className="font-semibold text-lg mb-3">Entretiens avec les opérationnels</h3>
-                      {/* Ligne de connexion vers la droite */}
-                      <div className="hidden lg:block absolute top-8 left-[calc(50%+2rem)] w-[calc(100%-4rem)] h-0.5 bg-white/30"></div>
                     </div>
                     
                     <div className="text-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
+                        <Target className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-lg mb-3">Identification des points-clés stratégiques</h3>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
+                        <Users className="w-8 h-8 text-white" />
+                      </div>
+                      <h3 className="font-semibold text-lg mb-3">Entretiens avec les opérationnels</h3>
+                    </div>
+                    
+                    <div className="text-center">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
                         <FileText className="w-8 h-8 text-white" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Conception de packs contractuels personnalisés</h3>
