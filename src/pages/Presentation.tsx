@@ -100,7 +100,7 @@ const Presentation = () => {
               Ma Mission
             </h2>
             <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-center">
+              <CardContent className="p-12 text-left">
                 <div className="space-y-6 text-lg text-muted-foreground">
                   <p className="text-xl font-medium text-primary">
                     Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
