@@ -108,6 +108,16 @@ const Navigation = () => {
               CONTACT
             </a>
             
+            {/* LinkedIn icon */}
+            <a 
+              href="https://www.linkedin.com/in/haia-elzufari/" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-primary-foreground hover:text-secondary transition-colors"
+            >
+              <LinkedinIcon size={20} />
+            </a>
+            
             {/* Language selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
