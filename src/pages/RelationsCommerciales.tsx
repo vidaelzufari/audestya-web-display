@@ -174,7 +174,7 @@ const RelationsCommerciales = () => {
                   </div>
                   
                   <div className="bg-gradient-accent p-8 rounded-lg">
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-6">Secteurs d'expertise</h3>
+                    <h3 className="font-serif text-2xl font-bold text-primary mb-6">Secteurs d'activité</h3>
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-center gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full"></div>
