@@ -29,7 +29,7 @@ const Presentation = () => {
           <div className="max-w-4xl mx-auto">
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-8">
-                <div className="flex flex-col md:flex-row-reverse items-center gap-6 mb-6">
+                <div className="flex flex-col md:flex-row items-center gap-6 mb-6">
                   <div className="w-full md:w-64 flex-shrink-0">
                     <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
                       Bio
@@ -62,6 +62,32 @@ const Presentation = () => {
                 </div>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Informations Professionnelles Section */}
+      <section className="py-20 bg-muted/30">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-12 text-center">
+              Informations Professionnelles
+            </h2>
+            <div className="grid md:grid-cols-2 gap-6">
+              <Card className="bg-background shadow-soft border-0 p-6">
+                <h3 className="font-serif text-xl font-bold text-primary mb-3">Domaines d'intervention</h3>
+                <p className="text-muted-foreground">
+                  Distribution, Contrats, Consommation
+                </p>
+              </Card>
+              
+              <Card className="bg-background shadow-soft border-0 p-6">
+                <h3 className="font-serif text-xl font-bold text-primary mb-3">Inscription au Barreau</h3>
+                <p className="text-muted-foreground">
+                  Paris 2025
+                </p>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
@@ -138,7 +164,7 @@ const Presentation = () => {
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Mes Valeurs
             </h2>
-            <div className="grid md:grid-cols-3 gap-8">
+            <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
@@ -207,42 +233,6 @@ const Presentation = () => {
                     Écoute active, disponibilité et réactivité. Chaque client 
                     mérite une attention personnalisée et un service adapté 
                     à ses besoins spécifiques.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={0.5} />
-                    </div>
-                  </div>
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Innovation
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Anticipation des évolutions juridiques et adoption des 
-                    nouvelles technologies pour optimiser la qualité du 
-                    service et l'efficacité des missions.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Heart className="w-10 h-10 text-white" strokeWidth={0.5} />
-                    </div>
-                  </div>
-                  <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Engagement
-                  </h3>
-                  <p className="text-muted-foreground leading-relaxed">
-                    Implication totale dans chaque dossier et engagement 
-                    personnel dans la réussite de vos projets. Votre succès 
-                    est ma priorité.
                   </p>
                 </CardContent>
               </Card>
