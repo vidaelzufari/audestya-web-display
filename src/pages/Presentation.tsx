@@ -110,29 +110,24 @@ const Presentation = () => {
             <div className="grid md:grid-cols-2 gap-8">
               {/* Ma Mission */}
               <Card className="bg-background shadow-soft border-0">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8 text-left">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
                       <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Ma Mission
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="text-xl font-medium text-primary">
-                      Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
+                    <p className="text-xl font-bold text-primary text-justify">
+                      Accompagner les entreprises dans la structuration et la sécurisation juridique de leur activité avec une vision claire et porteuse de sens.
                     </p>
-                    <p className="leading-relaxed">
-                      Ma mission est de fournir un conseil juridique de qualité, adapté aux réalités économiques 
-                      et opérationnelles de chaque entreprise. Je m'engage à être un partenaire de confiance 
-                      dans le développement de vos projets, en apportant des solutions juridiques concrètes 
-                      et efficaces.
+                    <p className="leading-relaxed text-justify">
+                      <span className="font-bold text-primary">• Mon objectif :</span> faire du droit un véritable allié de leur développement.
                     </p>
-                    <p className="leading-relaxed">
-                      Mon objectif est de transformer la complexité juridique en opportunités business, 
-                      en vous permettant de vous concentrer sur votre cœur de métier tout en sécurisant 
-                      vos activités.
+                    <p className="leading-relaxed text-justify">
+                      <span className="font-bold text-primary">• Ma méthode :</span> transformer la complexité juridique en solutions concrètes et opérationnelles pour sécuriser et structurer votre activité.
                     </p>
                   </div>
                 </CardContent>
