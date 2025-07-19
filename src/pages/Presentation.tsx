@@ -55,50 +55,44 @@ const Presentation = () => {
                   />
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Informations professionnelles Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="mt-8 pt-8 border-t">
-              <h4 className="font-serif text-xl font-bold text-primary mb-6 text-center">
-                Informations Professionnelles
-              </h4>
-              <div className="grid md:grid-cols-2 gap-6">
-                <Card className="bg-muted/30 border-0 p-6">
-                  <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
-                  <p className="text-muted-foreground text-sm">
-                    Distribution, Contrats, Consommation
-                  </p>
-                </Card>
-                
-                <Card className="bg-muted/30 border-0 p-6">
-                  <h5 className="font-medium text-primary mb-3">Inscription au Barreau</h5>
-                  <p className="text-muted-foreground text-sm">
-                    Paris 2025
-                  </p>
-                </Card>
-                
-                <Card className="bg-muted/30 border-0 p-6">
-                  <h5 className="font-medium text-primary mb-3">Formation</h5>
-                  <div className="space-y-1 text-muted-foreground text-sm text-left">
-                    <p>Master II Droit européen des affaires</p>
-                    <p className="text-xs">Université Paris XI – Jean Monnet</p>
-                    <p>Maîtrise Droit européen & international</p>
-                    <p className="text-xs">Université Paris II – Panthéon Assas</p>
-                  </div>
-                </Card>
-                
-                <Card className="bg-muted/30 border-0 p-6">
-                  <h5 className="font-medium text-primary mb-3">Langues</h5>
-                  <p className="text-muted-foreground text-sm">
-                    Français • Anglais • Arabe
-                  </p>
-                </Card>
+              
+              {/* Informations professionnelles */}
+              <div className="mt-8 pt-8 border-t">
+                <h4 className="font-serif text-xl font-bold text-primary mb-6 text-center">
+                  Informations Professionnelles
+                </h4>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Distribution, Contrats, Consommation
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Inscription au Barreau</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Paris 2025
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Formation</h5>
+                    <div className="space-y-1 text-muted-foreground text-sm text-left">
+                      <p>Master II Droit européen des affaires</p>
+                      <p className="text-xs">Université Paris XI – Jean Monnet</p>
+                      <p>Maîtrise Droit européen & international</p>
+                      <p className="text-xs">Université Paris II – Panthéon Assas</p>
+                    </div>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Langues</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Français • Anglais • Arabe
+                    </p>
+                  </Card>
+                </div>
               </div>
             </div>
           </div>
