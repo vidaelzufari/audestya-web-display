@@ -15,9 +15,6 @@ const RelationsCommerciales = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Relations et Pratiques Commerciales
             </h1>
-            <p className="text-xl opacity-90 max-w-3xl mx-auto">
-              Sécurisation de vos relations et pratiques commerciales BtoB et BtoC
-            </p>
           </div>
         </div>
       </section>
@@ -31,7 +28,7 @@ const RelationsCommerciales = () => {
             <Card className="bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6 text-left">
-                  Sécurisation de vos relations et pratiques commerciales
+                  Sécurisation de vos relations et pratiques commerciales BtoB et BtoC
                 </h2>
                 <p className="text-lg font-bold text-primary text-justify">
                   Dans un environnement commercial en mutation rapide, la solidité de vos relations commerciales conditionne la performance, la résilience et l'image de votre entreprise.
@@ -53,8 +50,7 @@ const RelationsCommerciales = () => {
                 </div>
 
                 <p className="text-lg text-primary mb-8 text-justify">
-                  Vos relations commerciales structurent votre modèle économique.
-                  J'interviens pour encadrer vos contrats stratégiques, fiabiliser vos pratiques et anticiper les situations à risque.
+                  Vos relations commerciales structurent votre modèle économique. J'interviens pour encadrer vos contrats stratégiques, fiabiliser vos pratiques et anticiper les situations à risque.
                 </p>
 
                 <div className="mb-12">
@@ -63,18 +59,18 @@ const RelationsCommerciales = () => {
                   </h3>
                   
                   <div className="space-y-3 text-muted-foreground">
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>CGV, CGA, contrat d'achat ou de vente, convention unique, contrat de prestation, de référencement, de sous-traitance, partenariat complexe, etc.</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Contrats de distribution : franchise, concession, distribution exclusive ou sélective, agents commerciaux, commissionnaires, e-commerce, plateformes, etc.</p>
-                    </div>
-                    <div className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Accompagnement dans la négociation de vos baux commerciaux.</p>
-                    </div>
+                     <div className="flex items-start gap-3">
+                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                       <p className="text-justify">CGV, CGA, contrat d'achat ou de vente, convention unique, contrat de prestation, de référencement, de sous-traitance, partenariat complexe, etc.</p>
+                     </div>
+                     <div className="flex items-start gap-3">
+                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                       <p className="text-justify">Contrats de distribution : franchise, concession, distribution exclusive ou sélective, agents commerciaux, commissionnaires, e-commerce, plateformes, etc.</p>
+                     </div>
+                     <div className="flex items-start gap-3">
+                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
+                       <p className="text-justify">Accompagnement dans la négociation de vos baux commerciaux</p>
+                     </div>
                   </div>
                 </div>
 
@@ -121,18 +117,18 @@ const RelationsCommerciales = () => {
                 </p>
 
                 <div className="space-y-4 text-primary-foreground">
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Rédaction ou validation de vos CGV, CGU, politiques de confidentialité, pour garantir la conformité et la lisibilité de votre offre.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc.</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                    <p>Audit juridique et encadrement de vos campagnes commerciales, incluant vos messages, supports et mécaniques promotionnelles (publicités, jeux-concours, cadeaux, etc.), afin de prévenir les pratiques commerciales trompeuses, déloyales ou à risque réputationnel.</p>
-                  </div>
+                   <div className="flex items-start gap-3">
+                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <p className="text-justify">Rédaction ou validation de vos CGV, CGU, politiques de confidentialité, pour garantir la conformité et la lisibilité de votre offre</p>
+                   </div>
+                   <div className="flex items-start gap-3">
+                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <p className="text-justify">Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc</p>
+                   </div>
+                   <div className="flex items-start gap-3">
+                     <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
+                     <p className="text-justify">Audit juridique et encadrement de vos campagnes commerciales, incluant vos messages, supports et mécaniques promotionnelles (publicités, jeux-concours, cadeaux, etc.), afin de prévenir les pratiques commerciales trompeuses, déloyales ou à risque réputationnel</p>
+                   </div>
                 </div>
               </CardContent>
             </Card>
@@ -150,30 +146,30 @@ const RelationsCommerciales = () => {
                       <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
                         <span className="text-secondary-foreground font-bold text-sm">1</span>
                       </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Analyse de vos besoins</h3>
-                        <p className="text-muted-foreground">Compréhension fine de votre activité et de vos enjeux commerciaux</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-secondary-foreground font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Audit juridique</h3>
-                        <p className="text-muted-foreground">Évaluation de vos pratiques actuelles et identification des risques</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-secondary-foreground font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Solutions personnalisées</h3>
-                        <p className="text-muted-foreground">Rédaction et négociation adaptées à votre secteur d'activité</p>
-                      </div>
+                       <div>
+                         <h3 className="font-semibold text-primary mb-2">Analyse de vos besoins</h3>
+                         <p className="text-muted-foreground text-justify">Compréhension fine de votre activité et de vos enjeux commerciaux</p>
+                       </div>
+                     </div>
+                     
+                     <div className="flex items-start gap-4">
+                       <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                         <span className="text-secondary-foreground font-bold text-sm">2</span>
+                       </div>
+                       <div>
+                         <h3 className="font-semibold text-primary mb-2">Audit juridique</h3>
+                         <p className="text-muted-foreground text-justify">Évaluation de vos pratiques actuelles et identification des risques</p>
+                       </div>
+                     </div>
+                     
+                     <div className="flex items-start gap-4">
+                       <div className="w-8 h-8 bg-gradient-secondary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                         <span className="text-secondary-foreground font-bold text-sm">3</span>
+                       </div>
+                       <div>
+                         <h3 className="font-semibold text-primary mb-2">Solutions personnalisées</h3>
+                         <p className="text-muted-foreground text-justify">Rédaction et négociation adaptées à votre secteur d'activité</p>
+                       </div>
                     </div>
                   </div>
                   

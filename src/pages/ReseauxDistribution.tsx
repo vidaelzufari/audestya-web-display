@@ -37,12 +37,12 @@ const ReseauxDistribution = () => {
                   <p className="text-lg text-muted-foreground">
                     <strong>Créer un réseau est une chose. Le structurer pour durer, scaler et incarner la marque en est une autre.</strong>
                   </p>
-                  <p className="text-lg text-muted-foreground">
-                    <strong>Mon rôle :</strong> sécuriser juridiquement et accompagner stratégiquement chaque étape de votre trajectoire de développement.
-                  </p>
-                  <p className="text-lg text-muted-foreground">
-                    <strong>Objectif :</strong> poser les fondations juridiques solides d'un modèle de réseau pérenne, aligné avec vos ambitions de croissance et vos contraintes opérationnelles.
-                  </p>
+                   <p className="text-lg text-muted-foreground text-justify">
+                     <strong>Mon rôle :</strong> sécuriser juridiquement et accompagner stratégiquement chaque étape de votre trajectoire de développement.
+                   </p>
+                   <p className="text-lg text-muted-foreground text-justify">
+                     <strong>Objectif :</strong> poser les fondations juridiques solides d'un modèle de réseau pérenne, aligné avec vos ambitions de croissance et vos contraintes opérationnelles.
+                   </p>
                 </div>
               </CardContent>
             </Card>
