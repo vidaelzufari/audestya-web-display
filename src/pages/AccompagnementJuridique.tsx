@@ -179,7 +179,7 @@ const AccompagnementJuridique = () => {
                 <h2 className="font-serif text-4xl font-bold text-primary mb-8 text-center">
                   Secteurs d'activité
                 </h2>
-                <p className="text-xl text-muted-foreground text-center mb-12 max-w-3xl mx-auto">
+                <p className="text-xl text-muted-foreground text-center mb-12 mx-auto whitespace-nowrap">
                   Forte de mon expérience en entreprise, j'interviens dans les principaux secteurs du retail. 
                 </p>
                 
@@ -214,8 +214,8 @@ const AccompagnementJuridique = () => {
                 </div>
                 
                  <div className="text-center">
-                   <p className="text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto whitespace-nowrap">
-                     <strong className="text-primary">Tous exigeants en structuration contractuelle, conformité commerciale et accompagnement opérationnel.</strong>
+                   <p className="text-lg text-muted-foreground leading-relaxed mx-auto whitespace-nowrap">
+                     <strong className="text-primary">Même exigence. Quels que soient les enjeux.</strong>
                    </p>
                  </div>
               </CardContent>
