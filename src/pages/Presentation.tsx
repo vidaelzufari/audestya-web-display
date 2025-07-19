@@ -23,8 +23,12 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Bio Section */}
-      <section id="presentation" className="py-20">
+      {/* Bio Section with Decorative Elements */}
+      <section id="presentation" className="py-20 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full blur-xl"></div>
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-lg"></div>
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center mb-20">
             <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
@@ -164,13 +168,25 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Mes Valeurs Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
+      {/* Mes Valeurs Section with Decorative Elements */}
+      <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-6xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Mes Valeurs
-            </h2>
+            <div className="text-center mb-12">
+              <div className="inline-block p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full mb-6 backdrop-blur-sm">
+                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
+                  <Heart className="w-6 h-6 text-white" />
+                </div>
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
+                Mes Valeurs
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
+            </div>
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-background shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
                 <CardContent className="p-8 text-center">
