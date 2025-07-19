@@ -103,65 +103,74 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Ma Mission Section */}
+      {/* Ma Mission et Ma Vision Section */}
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <div className="bg-background shadow-soft border-0 rounded-xl p-12 text-left">
-                <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-                  Ma Mission
-                </h2>
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p className="text-xl font-medium text-primary">
-                    Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
-                  </p>
-                  <p className="leading-relaxed">
-                    Ma mission est de fournir un conseil juridique de qualité, adapté aux réalités économiques 
-                    et opérationnelles de chaque entreprise. Je m'engage à être un partenaire de confiance 
-                    dans le développement de vos projets, en apportant des solutions juridiques concrètes 
-                    et efficaces.
-                  </p>
-                  <p className="leading-relaxed">
-                    Mon objectif est de transformer la complexité juridique en opportunités business, 
-                    en vous permettant de vous concentrer sur votre cœur de métier tout en sécurisant 
-                    vos activités.
-                  </p>
-                </div>
-            </div>
-          </div>
-        </div>
-      </section>
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Ma Mission */}
+              <Card className="bg-background shadow-soft border-0">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
+                    Ma Mission
+                  </h2>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="text-xl font-medium text-primary">
+                      Accompagner les entreprises dans la sécurisation juridique de leurs activités commerciales
+                    </p>
+                    <p className="leading-relaxed">
+                      Ma mission est de fournir un conseil juridique de qualité, adapté aux réalités économiques 
+                      et opérationnelles de chaque entreprise. Je m'engage à être un partenaire de confiance 
+                      dans le développement de vos projets, en apportant des solutions juridiques concrètes 
+                      et efficaces.
+                    </p>
+                    <p className="leading-relaxed">
+                      Mon objectif est de transformer la complexité juridique en opportunités business, 
+                      en vous permettant de vous concentrer sur votre cœur de métier tout en sécurisant 
+                      vos activités.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
 
-      {/* Ma Vision Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Ma Vision
-            </h2>
-            <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-center">
-                <div className="space-y-6 text-lg text-muted-foreground">
-                  <p className="text-xl font-medium text-primary">
-                    Un droit des affaires accessible, pragmatique et créateur de valeur
-                  </p>
-                  <p className="leading-relaxed">
-                    Je crois en un accompagnement juridique qui va au-delà du simple conseil : 
-                    un véritable partenariat stratégique qui contribue à la croissance et au 
-                    succès de votre entreprise.
-                  </p>
-                  <p className="leading-relaxed">
-                    Ma vision est celle d'un droit des affaires moderne, où l'expertise juridique 
-                    s'allie à la compréhension des enjeux business pour créer des solutions 
-                    innovantes et durables.
-                  </p>
-                  <p className="leading-relaxed">
-                    L'avenir du conseil juridique réside dans l'adaptabilité, la proximité 
-                    avec les clients et la capacité à anticiper les évolutions du marché.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+              {/* Ma Vision */}
+              <Card className="bg-background shadow-soft border-0">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
+                    Ma Vision
+                  </h2>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="text-xl font-medium text-primary">
+                      Un droit des affaires accessible, pragmatique et créateur de valeur
+                    </p>
+                    <p className="leading-relaxed">
+                      Je crois en un accompagnement juridique qui va au-delà du simple conseil : 
+                      un véritable partenariat stratégique qui contribue à la croissance et au 
+                      succès de votre entreprise.
+                    </p>
+                    <p className="leading-relaxed">
+                      Ma vision est celle d'un droit des affaires moderne, où l'expertise juridique 
+                      s'allie à la compréhension des enjeux business pour créer des solutions 
+                      innovantes et durables.
+                    </p>
+                    <p className="leading-relaxed">
+                      L'avenir du conseil juridique réside dans l'adaptabilité, la proximité 
+                      avec les clients et la capacité à anticiper les évolutions du marché.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
           </div>
         </div>
       </section>
