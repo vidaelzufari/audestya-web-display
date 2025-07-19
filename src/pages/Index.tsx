@@ -174,62 +174,6 @@ const Index = () => {
 
       
 
-      {/* Honoraires Section */}
-      <section className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Honoraires
-            </h2>
-            <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12">
-                <div className="space-y-8 text-lg text-muted-foreground">
-                  <div className="text-center">
-                    <p className="text-xl font-medium text-primary mb-6">
-                      Des honoraires fondées sur la réalité de vos enjeux
-                    </p>
-                    <p className="leading-relaxed max-w-3xl mx-auto">
-                      Les modalités d'intervention et les honoraires sont définis en amont, avec clarté et sérénité.
-                    </p>
-                  </div>
-                  
-                  <div className="space-y-6">
-                    <p className="leading-relaxed">
-                      Les honoraires sont fixés en fonction de plusieurs critères : nature et complexité du dossier, 
-                      volume des diligences, et usages de la profession.
-                    </p>
-                    
-                    <div>
-                      <p className="text-lg font-medium text-primary mb-4">
-                        Trois modes de facturation peuvent être proposés :
-                      </p>
-                      <ul className="space-y-3 text-muted-foreground">
-                        <li className="flex items-start gap-3">
-                          <span className="text-primary font-bold mt-1">•</span>
-                          <span>Forfait (avec ou sans honoraire de résultat)</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="text-primary font-bold mt-1">•</span>
-                          <span>Temps passé, sur la base d'un taux horaire</span>
-                        </li>
-                        <li className="flex items-start gap-3">
-                          <span className="text-primary font-bold mt-1">•</span>
-                          <span>Abonnement, pour un accompagnement régulier</span>
-                        </li>
-                      </ul>
-                    </div>
-                    
-                    <p className="leading-relaxed">
-                      Sauf urgence, les modalités sont définies d'un commun accord au début de la mission, 
-                      via une convention d'honoraires. Les honoraires ne couvrent pas les frais externes.
-                    </p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
 
       <ContactSection />
