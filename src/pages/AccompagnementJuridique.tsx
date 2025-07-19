@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight } from 'lucide-react';
+import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell } from 'lucide-react';
 
 const AccompagnementJuridique = () => {
   return (
@@ -188,18 +188,30 @@ const AccompagnementJuridique = () => {
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Shirt className="w-6 h-6 text-primary-foreground" />
+                    </div>
                     <h3 className="font-semibold text-primary mb-2">Textile et Mode</h3>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <UtensilsCrossed className="w-6 h-6 text-primary-foreground" />
+                    </div>
                     <h3 className="font-semibold text-primary mb-2">Restauration</h3>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Film className="w-6 h-6 text-primary-foreground" />
+                    </div>
                     <h3 className="font-semibold text-primary mb-2">Cinéma et Loisirs</h3>
                   </div>
                   
                   <div className="p-6 bg-gradient-accent rounded-lg text-center">
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                      <Dumbbell className="w-6 h-6 text-primary-foreground" />
+                    </div>
                     <h3 className="font-semibold text-primary mb-2">Sport et Bien-être</h3>
                   </div>
                 </div>
