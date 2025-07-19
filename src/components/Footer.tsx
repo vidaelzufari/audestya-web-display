@@ -75,9 +75,6 @@ const Footer = () => {
               <a href="/politique-confidentialite" className="hover:text-secondary transition-colors">
                 Politique de confidentialité
               </a>
-              <a href="/conditions-generales-vente" className="hover:text-secondary transition-colors">
-                Honoraires
-              </a>
             </div>
           </div>
         </div>
