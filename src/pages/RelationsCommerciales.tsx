@@ -206,31 +206,6 @@ const RelationsCommerciales = () => {
               </CardContent>
             </Card>
 
-            {/* Call to Action */}
-            <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12 text-center">
-                <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                  Besoin de sécuriser vos relations commerciales ?
-                </h2>
-                <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-                  Contactez-moi pour un audit de vos pratiques ou pour la rédaction de vos contrats commerciaux.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="tel:+33685353781" 
-                    className="bg-gradient-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:shadow-glow transition-all duration-300 inline-block"
-                  >
-                    Appeler maintenant
-                  </a>
-                  <a 
-                    href="mailto:haia.elzufari@audestya-avocat.com" 
-                    className="border-2 border-primary text-primary px-8 py-4 rounded-lg font-semibold hover:bg-primary hover:text-primary-foreground transition-all duration-300 inline-block"
-                  >
-                    Envoyer un email
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
