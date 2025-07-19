@@ -175,7 +175,7 @@ const Presentation = () => {
 
               {/* Mes Valeurs */}
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
-                <CardContent className="p-8 text-center">
+                <CardContent className="p-8 text-left">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
                       <Heart className="w-10 h-10 text-white" strokeWidth={1.5} />
@@ -184,12 +184,12 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Mes Valeurs
                   </h2>
-                  <div className="space-y-4 text-lg text-muted-foreground">
+                  <div className="space-y-6 text-lg text-muted-foreground">
                     <div className="space-y-3">
                       <h4 className="font-serif text-xl font-bold text-primary">
                         Authenticité
                       </h4>
-                      <p className="text-sm leading-relaxed">
+                      <p className="leading-relaxed text-justify">
                         une relation simple, directe, sans jargon inutile.
                       </p>
                     </div>
@@ -198,7 +198,7 @@ const Presentation = () => {
                       <h4 className="font-serif text-xl font-bold text-primary">
                         Confiance
                       </h4>
-                      <p className="text-sm leading-relaxed">
+                      <p className="leading-relaxed text-justify">
                         un engagement loyal et transparent.
                       </p>
                     </div>
@@ -207,7 +207,7 @@ const Presentation = () => {
                       <h4 className="font-serif text-xl font-bold text-primary">
                         Proximité
                       </h4>
-                      <p className="text-sm leading-relaxed">
+                      <p className="leading-relaxed text-justify">
                         une compréhension fine de votre réalité et de vos besoins.
                       </p>
                     </div>
@@ -216,7 +216,7 @@ const Presentation = () => {
                       <h4 className="font-serif text-xl font-bold text-primary">
                         Excellence
                       </h4>
-                      <p className="text-sm leading-relaxed">
+                      <p className="leading-relaxed text-justify">
                         une exigence constante dans la qualité des prestations et des conseils.
                       </p>
                     </div>
