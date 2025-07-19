@@ -275,55 +275,6 @@ const Index = () => {
       </section>
 
 
-      {/* Ma Mission Section with Decorative Elements */}
-      <section className="py-20 bg-gradient-to-br from-muted/20 via-muted/30 to-background/50 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-10 left-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-10 right-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-primary/10 rounded-full blur-xl"></div>
-        <div className="absolute top-1/2 left-1/4 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-lg"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-4xl mx-auto">
-            <div className="text-center mb-12">
-              <div className="inline-block p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full mb-6 backdrop-blur-sm">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-xl">M</span>
-                </div>
-              </div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
-                Ma Mission
-              </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
-            </div>
-            <Card className="bg-background/80 backdrop-blur-sm shadow-soft border-0 hover:shadow-card transition-all duration-300">
-              <CardContent className="p-12">
-                <div className="space-y-8 text-lg text-muted-foreground">
-                  <div className="text-left">
-                    <h3 className="text-xl font-medium text-primary mb-6">
-                      Accompagner les entreprises dans la structuration et la sécurisation juridique de leur activité avec une vision claire et porteuse de sens.
-                    </h3>
-                    <div className="space-y-4">
-                      <div className="flex items-start gap-4">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                        <p className="leading-relaxed text-justify">
-                          <span className="font-medium text-primary">Mon objectif :</span> faire du droit un véritable allié de leur développement.
-                        </p>
-                      </div>
-                      <div className="flex items-start gap-4">
-                        <div className="w-2 h-2 bg-primary rounded-full mt-3 flex-shrink-0"></div>
-                        <p className="leading-relaxed text-justify">
-                          <span className="font-medium text-primary">Ma méthode :</span> transformer la complexité juridique en solutions concrètes et opérationnelles pour sécuriser et structurer votre activité.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Ma Vision Section */}
       <section className="py-20">
         <div className="container mx-auto px-4">
