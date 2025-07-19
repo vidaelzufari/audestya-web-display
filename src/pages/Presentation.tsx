@@ -82,11 +82,11 @@ const Presentation = () => {
                   
                   <Card className="bg-muted/30 border-0 p-6">
                     <h5 className="font-medium text-primary mb-3">Formation</h5>
-                    <div className="space-y-1 text-muted-foreground text-sm text-left">
+                    <div className="space-y-2 text-muted-foreground text-sm text-center">
                       <p>Master II Droit européen des affaires</p>
-                      <p className="text-xs">Université Paris XI – Jean Monnet</p>
+                      <p>Université Paris XI – Jean Monnet</p>
                       <p>Maîtrise Droit européen & international</p>
-                      <p className="text-xs">Université Paris II – Panthéon Assas</p>
+                      <p>Université Paris II – Panthéon Assas</p>
                     </div>
                   </Card>
                   
