@@ -123,7 +123,7 @@ const RelationsCommerciales = () => {
                    </div>
                    <div className="flex items-start gap-3">
                      <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
-                     <p className="text-justify">Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc</p>
+                     <p className="text-justify">Sécurisation de vos supports d'information précontractuelle, tout au long du parcours client : fiches produits, conditions d'abonnement, devis, etc.</p>
                    </div>
                    <div className="flex items-start gap-3">
                      <div className="w-2 h-2 bg-white rounded-full mt-2 flex-shrink-0"></div>
