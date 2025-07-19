@@ -37,17 +37,17 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-left">
                     Bio
                   </h2>
-                  <p className="text-left leading-relaxed">
+                  <p className="text-left leading-relaxed text-justify">
                     Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                   </p>
-                  <div className="text-left leading-relaxed">
+                  <div className="text-left leading-relaxed text-justify">
                     <p className="mb-3">Ce choix repose sur :</p>
-                    <ul className="space-y-2 ml-4">
-                      <li>– Une conviction forte : le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;</li>
-                      <li>– Une ambition claire : accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.</li>
+                    <ul className="space-y-2 ml-4 list-disc">
+                      <li><strong>Une conviction forte :</strong> le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;</li>
+                      <li><strong>Une ambition claire :</strong> accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.</li>
                     </ul>
                   </div>
-                  <p className="text-left leading-relaxed">
+                  <p className="text-left leading-relaxed text-justify">
                     J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
                   </p>
                 </div>
