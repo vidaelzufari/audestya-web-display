@@ -5,7 +5,7 @@ import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Heart } from 'lucide-react';
+import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass } from 'lucide-react';
 import lawyerPortrait from '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const Presentation = () => {
@@ -178,7 +178,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Heart className="w-10 h-10 text-white" strokeWidth={1.5} />
+                      <Compass className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
