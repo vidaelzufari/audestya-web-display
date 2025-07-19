@@ -224,31 +224,6 @@ const AccompagnementJuridique = () => {
               </CardContent>
             </Card>
 
-            {/* Call to Action */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant">
-              <CardContent className="p-12 text-center">
-                <h2 className="font-serif text-3xl font-bold mb-6">
-                  Besoin d'un accompagnement juridique externalisé ?
-                </h2>
-                <p className="text-xl opacity-90 mb-8 max-w-2xl mx-auto">
-                  Discutons de la solution juridique la plus utile à vos enjeux.
-                </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <a 
-                    href="tel:+33685353781" 
-                    className="bg-white text-primary px-8 py-4 rounded-lg font-semibold hover:shadow-glow transition-all duration-300 inline-block"
-                  >
-                    Appeler maintenant
-                  </a>
-                  <a 
-                    href="mailto:haia.elzufari@audestya-avocat.com" 
-                    className="border-2 border-white text-white px-8 py-4 rounded-lg font-semibold hover:bg-white hover:text-primary transition-all duration-300 inline-block"
-                  >
-                    Envoyer un email
-                  </a>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </section>
