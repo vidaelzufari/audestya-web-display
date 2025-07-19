@@ -74,17 +74,34 @@ const Presentation = () => {
               Informations Professionnelles
             </h2>
             <div className="grid md:grid-cols-2 gap-6">
-              <Card className="bg-background shadow-soft border-0 p-6">
-                <h3 className="font-serif text-xl font-bold text-primary mb-3">Domaines d'intervention</h3>
-                <p className="text-muted-foreground">
+              <Card className="bg-muted/30 border-0 p-6">
+                <h3 className="font-medium text-primary mb-3">Domaines d'intervention</h3>
+                <p className="text-muted-foreground text-sm">
                   Distribution, Contrats, Consommation
                 </p>
               </Card>
               
-              <Card className="bg-background shadow-soft border-0 p-6">
-                <h3 className="font-serif text-xl font-bold text-primary mb-3">Inscription au Barreau</h3>
-                <p className="text-muted-foreground">
+              <Card className="bg-muted/30 border-0 p-6">
+                <h3 className="font-medium text-primary mb-3">Inscription au Barreau</h3>
+                <p className="text-muted-foreground text-sm">
                   Paris 2025
+                </p>
+              </Card>
+              
+              <Card className="bg-muted/30 border-0 p-6">
+                <h3 className="font-medium text-primary mb-3">Formation</h3>
+                <div className="space-y-1 text-muted-foreground text-sm text-left">
+                  <p>Master II Droit européen des affaires</p>
+                  <p className="text-xs">Université Paris XI – Jean Monnet</p>
+                  <p>Maîtrise Droit européen & international</p>
+                  <p className="text-xs">Université Paris II – Panthéon Assas</p>
+                </div>
+              </Card>
+              
+              <Card className="bg-muted/30 border-0 p-6">
+                <h3 className="font-medium text-primary mb-3">Langues</h3>
+                <p className="text-muted-foreground text-sm">
+                  Français • Anglais • Arabe
                 </p>
               </Card>
             </div>
