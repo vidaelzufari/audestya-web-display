@@ -158,10 +158,10 @@ const Presentation = () => {
                       Ce nom symbolise une conviction profonde :
                     </p>
                     <p className="leading-relaxed text-justify">
-                      • oser prendre sa place ;
+                      • oser prendre sa place
                     </p>
                     <p className="leading-relaxed text-justify">
-                      • se réinventer quand tout semble figé ;
+                      • se réinventer quand tout semble figé
                     </p>
                     <p className="leading-relaxed text-justify">
                       • et croire que la maîtrise juridique des activités est un levier de transformation et de croissance
