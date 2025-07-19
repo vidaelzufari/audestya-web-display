@@ -104,48 +104,27 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Ma Mission, Ma Vision et Mes Valeurs Section Unifiée */}
+      {/* Ma Mission, Ma Vision et Mes Valeurs Section */}
       <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background Elements */}
         <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
         <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-accent/3 to-primary/3 rounded-full blur-3xl"></div>
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
             
-            {/* Section Header */}
-            <div className="text-center mb-16">
-              <div className="inline-flex items-center gap-4 mb-8">
-                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
-                <div className="flex gap-2">
-                  <div className="w-3 h-3 bg-primary rounded-full"></div>
-                  <div className="w-3 h-3 bg-secondary rounded-full"></div>
-                  <div className="w-3 h-3 bg-accent rounded-full"></div>
-                </div>
-                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
-              </div>
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
-                Mes Fondements
-              </h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-                Mission, vision et valeurs qui guident mon accompagnement juridique
-              </p>
-            </div>
-
-            {/* Ma Mission et Ma Vision - Grid 2 colonnes */}
-            <div className="grid md:grid-cols-2 gap-8 mb-16">
+            <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
                       <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
-                  <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Ma Mission
-                  </h3>
+                  </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="text-xl font-bold text-primary text-justify">
                       Accompagner les entreprises dans la structuration et la sécurisation juridique de leur activité avec une vision claire et porteuse de sens.
@@ -164,13 +143,13 @@ const Presentation = () => {
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center shadow-md group-hover:scale-110 transition-transform duration-300">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center shadow-md">
                       <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
-                  <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Ma Vision
-                  </h3>
+                  </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="text-xl font-bold text-primary text-justify">
                       Audestya est née d'un choix audacieux : sortir de ma zone de confort, reprendre mon destin professionnel en main.
@@ -193,102 +172,57 @@ const Presentation = () => {
                   </div>
                 </CardContent>
               </Card>
-            </div>
 
-            {/* Séparateur décoratif */}
-            <div className="flex justify-center mb-16">
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-px bg-gradient-to-r from-transparent to-primary"></div>
-                <div className="p-3 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full backdrop-blur-sm">
-                  <div className="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-full flex items-center justify-center">
-                    <Heart className="w-6 h-6 text-white" />
-                  </div>
-                </div>
-                <div className="w-16 h-px bg-gradient-to-l from-transparent to-primary"></div>
-              </div>
-            </div>
-
-            {/* Mes Valeurs */}
-            <div className="text-center mb-12">
-              <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6">
-                Mes Valeurs
-              </h3>
-              <div className="w-24 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
-            </div>
-            
-            <div className="grid md:grid-cols-2 gap-8">
-              <Card className="bg-background/90 backdrop-blur-sm shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
+              {/* Mes Valeurs */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
                       <Heart className="w-10 h-10 text-white" strokeWidth={1.5} />
                     </div>
                   </div>
-                  <h4 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Authenticité
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    une relation simple, directe, sans jargon inutile.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background/90 backdrop-blur-sm shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Shield className="w-10 h-10 text-white" strokeWidth={1.5} />
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    Mes Valeurs
+                  </h2>
+                  <div className="space-y-4 text-lg text-muted-foreground">
+                    <div className="space-y-3">
+                      <h4 className="font-serif text-xl font-bold text-primary">
+                        Authenticité
+                      </h4>
+                      <p className="text-sm leading-relaxed">
+                        une relation simple, directe, sans jargon inutile.
+                      </p>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <h4 className="font-serif text-xl font-bold text-primary">
+                        Confiance
+                      </h4>
+                      <p className="text-sm leading-relaxed">
+                        un engagement loyal et transparent.
+                      </p>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <h4 className="font-serif text-xl font-bold text-primary">
+                        Proximité
+                      </h4>
+                      <p className="text-sm leading-relaxed">
+                        une compréhension fine de votre réalité et de vos besoins.
+                      </p>
+                    </div>
+                    
+                    <div className="space-y-3">
+                      <h4 className="font-serif text-xl font-bold text-primary">
+                        Excellence
+                      </h4>
+                      <p className="text-sm leading-relaxed">
+                        une exigence constante dans la qualité des prestations et des conseils.
+                      </p>
                     </div>
                   </div>
-                  <h4 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Confiance
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    un engagement loyal et transparent.
-                  </p>
                 </CardContent>
               </Card>
-
-              <Card className="bg-background/90 backdrop-blur-sm shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Users className="w-10 h-10 text-white" strokeWidth={1.5} />
-                    </div>
-                  </div>
-                  <h4 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Proximité
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    une compréhension fine de votre réalité et de vos besoins.
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card className="bg-background/90 backdrop-blur-sm shadow-soft hover:shadow-card transition-all duration-300 hover:-translate-y-2 border-0">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Award className="w-10 h-10 text-white" strokeWidth={1.5} />
-                    </div>
-                  </div>
-                  <h4 className="font-serif text-2xl font-bold text-primary mb-6">
-                    Excellence
-                  </h4>
-                  <p className="text-muted-foreground leading-relaxed">
-                    une exigence constante dans la qualité des prestations et des conseils.
-                  </p>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Bottom decoration */}
-            <div className="flex justify-center mt-16">
-              <div className="flex items-center gap-2">
-                <div className="w-2 h-2 bg-primary rounded-full animate-pulse"></div>
-                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
-                <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
-              </div>
             </div>
           </div>
         </div>
