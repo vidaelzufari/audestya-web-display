@@ -72,20 +72,20 @@ const DomainsSection = () => {
             return (
               <Card 
                 key={index}
-                className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]"
+                className="relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft transition-all duration-500"
               >
                 
                 <CardHeader className="text-center pb-6 relative z-10">
-                  <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                  <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md">
                     {typeof domain.icon === 'string' ? (
                       <img src={domain.icon} alt={domain.title} className="w-10 h-10" />
                     ) : domain.icon === AccompagnementIcon ? (
-                      <AccompagnementIcon className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
+                      <AccompagnementIcon className="w-10 h-10 text-foreground" />
                     ) : (
-                      <domain.icon className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <domain.icon className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                     )}
                   </div>
-                  <CardTitle className="font-serif text-2xl text-primary group-hover:text-foreground transition-colors duration-300">
+                  <CardTitle className="font-serif text-2xl text-primary">
                     {domain.title}
                   </CardTitle>
                   <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
@@ -99,19 +99,19 @@ const DomainsSection = () => {
                   {domain.details.length > 0 && (
                     <div className="space-y-3 mb-8">
                       {domain.details.map((detail, detailIndex) => (
-                        <div key={detailIndex} className="flex items-start text-sm text-muted-foreground group/item">
-                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mr-4 flex-shrink-0 mt-1 group-hover/item:scale-125 transition-transform duration-300"></div>
-                          <span className="group-hover/item:text-foreground transition-colors duration-300">{detail}</span>
+                        <div key={detailIndex} className="flex items-start text-sm text-muted-foreground">
+                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mr-4 flex-shrink-0 mt-1"></div>
+                          <span>{detail}</span>
                         </div>
                       ))}
                     </div>
                   )}
                   
                   {domain.hasPage ? (
-                    <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
+                    <Button asChild className="w-full bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
                       <a href={domain.link}>
                         En savoir plus
-                        <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
+                        <ArrowRight className="ml-2 h-5 w-5" />
                       </a>
                     </Button>
                   ) : (
