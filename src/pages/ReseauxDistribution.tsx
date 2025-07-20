@@ -58,11 +58,11 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Volet BtoB */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
+            <Card className="group bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="p-4 bg-gradient-secondary rounded-full">
-                    <Shield className="w-8 h-8 text-secondary-foreground" />
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                    <Shield className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     Volet BtoB – Sécuriser votre réseau
@@ -151,11 +151,11 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Volet BtoC */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
+            <Card className="group bg-background shadow-soft border-0 mb-12">
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
-                  <div className="p-4 bg-gradient-secondary rounded-full">
-                    <Shield className="w-8 h-8 text-secondary-foreground" />
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                    <Shield className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     Volet BtoC – Sécuriser la relation client-consommateur
