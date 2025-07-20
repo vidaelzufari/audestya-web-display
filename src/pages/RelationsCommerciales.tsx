@@ -59,7 +59,7 @@ const RelationsCommerciales = () => {
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="p-4 bg-gradient-secondary rounded-full">
-                    <FileText className="w-8 h-8 text-secondary-foreground" />
+                    <Shield className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     BtoB – Encadrement contractuel et prévention des risques commerciaux
@@ -120,7 +120,7 @@ const RelationsCommerciales = () => {
               <CardContent className="p-12">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="p-4 bg-gradient-secondary rounded-full">
-                    <Users className="w-8 h-8 text-secondary-foreground" />
+                    <Shield className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     BtoC – Sécurisation des offres, supports et campagnes
