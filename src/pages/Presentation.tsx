@@ -192,23 +192,23 @@ const Presentation = () => {
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                    Ce qui guide chaque mission
+                    Mes valeurs
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      Une parole claire, sans jargon ni détour (<span className="font-bold italic">Authenticité</span>)
+                      <span className="font-bold italic">Authenticité</span> — Une relation directe, sans jargon inutile
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Un regard aligné, loyal et sans complaisance (<span className="font-bold italic">Confiance</span>)
+                      <span className="font-bold italic">Confiance</span> — Un engagement loyal, clair et transparent
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Un ancrage terrain, attentif à vos contraintes réelles (<span className="font-bold italic">Proximité</span>)
+                      <span className="font-bold italic">Proximité</span> — Une compréhension fine de votre réalité terrain
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Une exigence constante, dans le fond comme dans la forme (<span className="font-bold italic">Excellence</span>)
+                      <span className="font-bold italic">Excellence</span> — Une exigence constante, dans le fond comme dans la forme
                     </p>
                   </div>
                 </CardContent>
