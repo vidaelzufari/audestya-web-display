@@ -2,7 +2,14 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Network, Shield, Users, FileText, Handshake, Target, ArrowRight, Folder } from 'lucide-react';
+import { Network, Shield, Users, FileText, Handshake, Target, ArrowRight } from 'lucide-react';
+
+// Custom SVG icon for Accompagnement Juridique Externalisé
+const AccompagnementIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
+  </svg>
+);
 
 const ReseauxDistribution = () => {
   return (
@@ -275,7 +282,7 @@ const ReseauxDistribution = () => {
               
               <CardContent className="text-center p-12 relative z-10">
                 <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Folder className="w-10 h-10 text-secondary-foreground" />
+                  <AccompagnementIcon className="w-10 h-10 text-secondary-foreground" />
                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
                   Accompagnement Juridique Externalisé
