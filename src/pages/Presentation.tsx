@@ -162,22 +162,10 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="text-xl font-bold text-primary text-justify">
-                      Audestya est née d'un choix audacieux : sortir de ma zone de confort, reprendre mon destin professionnel en main.
+                      Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
                     </p>
                     <p className="leading-relaxed text-justify">
-                      Ce nom symbolise une conviction profonde :
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      •  oser prendre sa place
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      •  se réinventer quand tout semble figé
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      •  croire que la maîtrise juridique des activités est un levier de transformation et de croissance
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      C'est cette énergie que je souhaite transmettre à mes clients.
+                      C'est cette dynamique que je mets au service de mes clients.
                     </p>
                   </div>
                 </CardContent>
