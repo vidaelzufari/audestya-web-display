@@ -82,7 +82,7 @@ const Presentation = () => {
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
                       <p className="text-muted-foreground leading-relaxed text-lg text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
-                        Mon parcours en entreprise m'a permis de développer une solide culture business, une compréhension fine des enjeux métiers et une capacité à dialoguer avec les directions générales, les directions juridiques qu'avec les équipes opérationnelles.
+                        Mon parcours en entreprise m'a permis de développer une solide culture business, une compréhension fine des enjeux métiers et une capacité à dialoguer avec les directions générales, les directions juridiques aussi bien qu'avec les équipes opérationnelles.
                       </p>
                     </div>
                   </CardContent>
