@@ -44,7 +44,7 @@ const RelationsCommerciales = () => {
                 </h2>
                 <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                 <div className="space-y-4 max-w-4xl mx-auto text-left">
-                  <p className="text-lg text-muted-foreground">
+                  <p className="text-lg text-muted-foreground text-justify">
                     <strong>Dans un environnement commercial en mutation rapide, la solidité de vos relations commerciales conditionne la performance, la résilience et l'image de votre entreprise.</strong>
                   </p>
                    <p className="text-lg text-muted-foreground text-justify">
