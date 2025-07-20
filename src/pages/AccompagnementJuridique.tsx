@@ -150,7 +150,7 @@ const AccompagnementJuridique = () => {
                          </div>
                          <div>
                            <h3 className="font-serif text-xl font-bold text-white mb-2">
-                             Proposition sur-mesure
+                             Proposition sur mesure
                            </h3>
                            <p className="text-white/80 leading-relaxed text-justify">
                              Définition du périmètre, du calendrier et des modalités d'intervention.
