@@ -65,8 +65,8 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="flex items-center justify-center mb-8">
-                      <div className="w-16 h-16 bg-gradient-to-br from-primary to-secondary rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                        <Network className="w-8 h-8 text-white" />
+                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
+                        <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                       </div>
                       <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
@@ -129,8 +129,8 @@ const Index = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="flex items-center justify-center mb-8">
-                      <div className="w-16 h-16 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl flex items-center justify-center mr-6 group-hover:scale-110 transition-transform duration-300">
-                        <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
+                        <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
