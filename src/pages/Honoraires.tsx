@@ -49,7 +49,7 @@ const Honoraires = () => {
             {/* Three Modes Section */}
             <div className="mb-16">
               <h2 className="font-serif text-4xl font-bold text-center text-foreground mb-12">
-                Trois modes de facturation peuvent être proposés :
+                Trois modes de facturation peuvent être proposés
               </h2>
               
               <div className="grid lg:grid-cols-3 gap-8">
