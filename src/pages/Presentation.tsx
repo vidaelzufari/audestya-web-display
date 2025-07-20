@@ -168,11 +168,11 @@ const Presentation = () => {
             
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Target className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -191,11 +191,11 @@ const Presentation = () => {
               </Card>
 
               {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Lightbulb className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -214,11 +214,11 @@ const Presentation = () => {
               </Card>
 
               {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Compass className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Compass className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
