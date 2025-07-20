@@ -229,7 +229,7 @@ const Presentation = () => {
       </section>
 
       {/* Mon Approche Section */}
-      <section className="py-20 bg-muted/30 relative overflow-hidden">
+      <section id="mon-approche" className="py-20 bg-muted/30 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-10 w-40 h-40 border-2 border-primary/30 rounded-full animate-pulse"></div>

@@ -1,5 +1,6 @@
 
 import { Button } from '@/components/ui/button';
+import { Link } from 'react-router-dom';
 import heroImage from '@/assets/hero-aerial-view.jpg';
 
 const HeroSection = () => {
@@ -43,13 +44,15 @@ const HeroSection = () => {
 
           {/* CTA buttons */}
           <div className="flex justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <Button 
-              variant="outline" 
-              size="lg"
-              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
-            >
-              Découvrir Mon Approche
-            </Button>
+            <Link to="/presentation#mon-approche">
+              <Button 
+                variant="outline" 
+                size="lg"
+                className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
+              >
+                Découvrir Mon Approche
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
