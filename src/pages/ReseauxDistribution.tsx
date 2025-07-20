@@ -119,12 +119,12 @@ const ReseauxDistribution = () => {
                 </div>
 
                 <div className="mt-12 p-8 bg-gradient-accent rounded-lg">
-                  <h3 className="text-xl font-semibold text-primary mb-6">Accompagnement / rédaction sur-mesure :</h3>
+                  <h3 className="text-xl font-semibold text-primary mb-6">Accompagnement / rédaction sur mesure :</h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3 text-muted-foreground">
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Document d'Information Précontractuelle (DIP)</p>
+                         <p>Document d'information précontractuelle (DIP)</p>
                        </div>
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
