@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield } from 'lucide-react';
+import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Network } from 'lucide-react';
 
 // Custom SVG icon for Accompagnement Juridique Externalisé
 const AccompagnementIcon = ({ className }: { className?: string }) => (
@@ -12,7 +12,7 @@ const AccompagnementIcon = ({ className }: { className?: string }) => (
 const DomainsSection = () => {
   const domains = [
     {
-      icon: Building,
+      icon: Network,
       title: "Réseaux de Distribution",
       description: "Structurer un réseau, c'est construire un cadre juridique robuste, évolutif et aligné sur votre stratégie.\nJe vous accompagne à chaque étape :",
       details: [
@@ -24,7 +24,7 @@ const DomainsSection = () => {
       hasPage: true
     },
     {
-      icon: Shield,
+      icon: Network,
       title: "Relations et Pratiques Commerciales",
       description: "Vos relations contractuelles structurent la solidité et la performance de votre activité.\nJ'interviens pour :",
       details: [
