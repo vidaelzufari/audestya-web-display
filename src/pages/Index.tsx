@@ -96,7 +96,7 @@ const Index = () => {
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Rédaction et mise en place d'outils juridiques (contrats cadres, CGV, politiques commerciales, etc.)
+                            Rédaction et mise en place d'outils juridiques (contrats-cadres, CGV, politiques commerciales, etc.)
                           </p>
                         </div>
                       </div>
