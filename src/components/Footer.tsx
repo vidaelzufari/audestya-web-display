@@ -1,7 +1,20 @@
 
 import { Facebook, Linkedin, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
     <footer className="bg-gradient-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
@@ -36,9 +49,9 @@ const Footer = () => {
               <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
               </a>
-              <a href="/#contact" onClick={(e) => { window.location.href = '/#contact'; }} className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Contact
-              </a>
+              </button>
               <a href="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Honoraires
               </a>
