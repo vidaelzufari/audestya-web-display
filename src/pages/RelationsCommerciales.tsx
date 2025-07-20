@@ -104,7 +104,7 @@ const RelationsCommerciales = () => {
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                      <p>Audit de vos pratiques commerciales : politique tarifaire, remises, délais de paiement, remises</p>
+                      <p>Audit de vos pratiques commerciales : politique tarifaire, délais de paiement</p>
                     </div>
                     <div className="flex items-start gap-3">
                       <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
@@ -160,7 +160,7 @@ const RelationsCommerciales = () => {
                     <Layers className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-white mb-6">
-                    Une approche sur-mesure
+                    Une approche sur mesure
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
                 </div>
