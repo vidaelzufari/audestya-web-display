@@ -23,6 +23,7 @@ const ContactSection = () => {
                 <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                   Informations de Contact
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                 
                 <div className="space-y-6">
                   <div className="flex items-start gap-4">
@@ -78,6 +79,7 @@ const ContactSection = () => {
               <h3 className="font-serif text-2xl font-bold text-primary mb-6">
                 Formulaire de contact
               </h3>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
               
               <form className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">

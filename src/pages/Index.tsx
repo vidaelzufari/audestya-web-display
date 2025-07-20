@@ -74,6 +74,7 @@ const Index = () => {
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
                           Distribution - Contrats - Consommation
                         </h3>
+                        <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
                           Structurer l'action, prévenir le risque, accompagner vos activités.
                         </p>
@@ -139,6 +140,7 @@ const Index = () => {
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                           Accompagnement Juridique Externalisé
                         </h3>
+                        <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
                           Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
                         </p>

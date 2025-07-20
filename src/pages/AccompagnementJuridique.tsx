@@ -33,6 +33,7 @@ const AccompagnementJuridique = () => {
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
                   Une collaboration juridique agile et structurante
                 </h2>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                  <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-justify">
                      J'interviens en autonomie ou en lien étroit avec vos équipes, selon vos priorités stratégiques ou opérationnelles, pour structurer, fluidifier et faire avancer vos projets.
                    </p>
@@ -55,6 +56,7 @@ const AccompagnementJuridique = () => {
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
                         Pilotage juridique de projets structurants
                       </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
                       <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
                         Réorganisation, développement de réseau, lancement de nouveaux modèles ou outils contractuels
                       </p>
@@ -69,6 +71,7 @@ const AccompagnementJuridique = () => {
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
                         Renfort ponctuel ou continu
                       </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
                       <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
                         Auprès de directions juridiques ou d'équipes opérationnelles, selon vos besoins spécifiques
                       </p>
@@ -83,6 +86,7 @@ const AccompagnementJuridique = () => {
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
                         Appui transversal aux dirigeants
                       </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
                       <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
                         Ou responsables métiers, sur des enjeux contractuels, commerciaux ou concurrentiels
                       </p>
@@ -240,6 +244,7 @@ const AccompagnementJuridique = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Réseaux de Distribution
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/reseaux-distribution">
@@ -263,6 +268,7 @@ const AccompagnementJuridique = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Relations et Pratiques Commerciales
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/relations-commerciales">

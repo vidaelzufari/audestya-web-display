@@ -47,6 +47,7 @@ const RelationsCommerciales = () => {
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     BtoB – Encadrement contractuel & prévention des risques commerciaux
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
 
                 <p className="text-lg text-primary mb-8 text-justify">
@@ -107,6 +108,7 @@ const RelationsCommerciales = () => {
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     BtoC – Sécurisation des offres, supports & campagnes
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
 
                 <p className="text-lg font-bold mb-8 text-justify text-primary">
@@ -221,6 +223,7 @@ const RelationsCommerciales = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Réseaux de Distribution
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/reseaux-distribution">
@@ -244,6 +247,7 @@ const RelationsCommerciales = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Accompagnement Juridique Externalisé
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/accompagnement-juridique">

@@ -33,6 +33,7 @@ const ReseauxDistribution = () => {
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
                   Structuration de votre réseau de distribution
                 </h2>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                 <div className="space-y-4 max-w-4xl mx-auto text-left">
                   <p className="text-lg text-muted-foreground">
                     <strong>Créer un réseau est une chose. Le structurer pour durer, scaler et incarner la marque en est une autre.</strong>
@@ -57,6 +58,7 @@ const ReseauxDistribution = () => {
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     Volet BtoB – Sécuriser votre réseau
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
                 
                 <p className="text-lg text-muted-foreground mb-8 text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
@@ -149,6 +151,7 @@ const ReseauxDistribution = () => {
                   <h2 className="font-serif text-3xl font-bold text-primary">
                     Volet BtoC – Sécuriser la relation client-consommateur
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
                 
                 <p className="text-lg text-muted-foreground mb-8 text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
@@ -188,6 +191,7 @@ const ReseauxDistribution = () => {
                     <Target className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="font-serif text-4xl font-bold mb-6">Méthodologie</h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
                   <p className="text-xl opacity-90 max-w-3xl mx-auto">
                     Une approche collaborative pour des solutions adaptées à votre réalité
                   </p>
@@ -250,6 +254,7 @@ const ReseauxDistribution = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
                   Relations et Pratiques Commerciales
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
                   <a href="/relations-commerciales">
@@ -273,6 +278,7 @@ const ReseauxDistribution = () => {
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
                   Accompagnement Juridique Externalisé
                 </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
                 <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
                   <a href="/accompagnement-juridique">
