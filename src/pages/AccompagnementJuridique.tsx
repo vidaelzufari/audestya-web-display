@@ -204,31 +204,31 @@ const AccompagnementJuridique = () => {
                 </p>
                 
                 <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
-                  <div className="p-6 bg-gradient-accent rounded-lg text-center">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Shirt className="w-6 h-6 text-primary-foreground" />
-                    </div>
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Shirt className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
                     <h3 className="font-semibold text-primary mb-2">Textile et Mode</h3>
                   </div>
                   
-                  <div className="p-6 bg-gradient-accent rounded-lg text-center">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <UtensilsCrossed className="w-6 h-6 text-primary-foreground" />
-                    </div>
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <UtensilsCrossed className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
                     <h3 className="font-semibold text-primary mb-2">Restauration</h3>
                   </div>
                   
-                  <div className="p-6 bg-gradient-accent rounded-lg text-center">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Film className="w-6 h-6 text-primary-foreground" />
-                    </div>
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Film className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
                     <h3 className="font-semibold text-primary mb-2">Loisirs</h3>
                   </div>
                   
-                  <div className="p-6 bg-gradient-accent rounded-lg text-center">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Dumbbell className="w-6 h-6 text-primary-foreground" />
-                    </div>
+                  <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Dumbbell className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
                     <h3 className="font-semibold text-primary mb-2">Sport et Bien-être</h3>
                   </div>
                 </div>
@@ -254,9 +254,9 @@ const AccompagnementJuridique = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
-                <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Building className="w-10 h-10 text-secondary-foreground" />
-                </div>
+                 <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                   <Building className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Réseaux de Distribution
                 </h3>
@@ -278,9 +278,9 @@ const AccompagnementJuridique = () => {
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
-                <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Network className="w-10 h-10 text-secondary-foreground" />
-                </div>
+                 <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                   <Network className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Relations et Pratiques Commerciales
                 </h3>
