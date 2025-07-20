@@ -1,9 +1,21 @@
 
 import { Button } from '@/components/ui/button';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import heroImage from '@/assets/hero-aerial-view.jpg';
 
 const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleDiscoverApproach = () => {
+    navigate('/presentation');
+    // Petit délai pour s'assurer que la page est chargée avant de faire le scroll
+    setTimeout(() => {
+      const element = document.getElementById('mon-approche');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
   return (
     <section id="accueil" className="relative min-h-screen flex items-center">
       {/* Background image with overlay */}
@@ -44,15 +56,14 @@ const HeroSection = () => {
 
           {/* CTA buttons */}
           <div className="flex justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
-            <Link to="/presentation#mon-approche">
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
-              >
-                Découvrir Mon Approche
-              </Button>
-            </Link>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
+              onClick={handleDiscoverApproach}
+            >
+              Découvrir Mon Approche
+            </Button>
           </div>
         </div>
       </div>
