@@ -106,45 +106,51 @@ const AccompagnementJuridique = () => {
 
 
             {/* Processus de collaboration */}
-            <Card className="bg-gradient-accent rounded-lg mb-16">
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-16">
               <CardContent className="p-12">
-                <h2 className="font-serif text-4xl font-bold text-primary mb-8 text-center">
-                  Processus de collaboration
-                </h2>
+                <div className="text-center mb-12">
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Target className="w-10 h-10 text-white" />
+                  </div>
+                  <h2 className="font-serif text-4xl font-bold text-white mb-6">
+                    Processus de collaboration
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
+                </div>
                 
                 <div className="max-w-5xl mx-auto">
-                   <p className="text-xl text-muted-foreground leading-relaxed text-justify mb-4">
+                   <p className="text-xl text-white/90 leading-relaxed text-justify mb-4">
                      Chaque mission s'ouvre sur une phase d'échange approfondi.
                    </p>
-                   <p className="text-xl text-muted-foreground leading-relaxed mb-12 text-justify">
-                     <strong className="text-primary">Objectif :</strong> cerner vos besoins, définir un périmètre d'action précis, et mettre en œuvre une collaboration utile, lisible et alignée.
+                   <p className="text-xl text-white/90 leading-relaxed mb-12 text-justify">
+                     <strong className="text-white">Objectif :</strong> cerner vos besoins, définir un périmètre d'action précis, et mettre en œuvre une collaboration utile, lisible et alignée.
                    </p>
                   
                   <div className="grid md:grid-cols-2 gap-8">
                     <div className="space-y-6">
                       <div className="flex items-start gap-4">
-                        <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
                           1
                         </div>
                         <div>
-                          <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                          <h3 className="font-serif text-xl font-bold text-white mb-2">
                             Écoute & analyse
                           </h3>
-                           <p className="text-muted-foreground leading-relaxed text-justify">
+                           <p className="text-white/80 leading-relaxed text-justify">
                              Compréhension de vos besoins, enjeux stratégiques et contextes opérationnels.
                            </p>
                          </div>
                        </div>
                        
                        <div className="flex items-start gap-4">
-                         <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
                            2
                          </div>
                          <div>
-                           <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                           <h3 className="font-serif text-xl font-bold text-white mb-2">
                              Proposition sur-mesure
                            </h3>
-                           <p className="text-muted-foreground leading-relaxed text-justify">
+                           <p className="text-white/80 leading-relaxed text-justify">
                              Définition du périmètre, du calendrier et des modalités d'intervention.
                            </p>
                          </div>
@@ -153,28 +159,28 @@ const AccompagnementJuridique = () => {
                      
                      <div className="space-y-6">
                        <div className="flex items-start gap-4">
-                         <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
                            3
                          </div>
                          <div>
-                           <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                           <h3 className="font-serif text-xl font-bold text-white mb-2">
                              Mise en œuvre
                            </h3>
-                           <p className="text-muted-foreground leading-relaxed text-justify">
+                           <p className="text-white/80 leading-relaxed text-justify">
                              Déploiement de la mission, en lien étroit avec vos équipes internes ou partenaires.
                            </p>
                          </div>
                        </div>
                        
                        <div className="flex items-start gap-4">
-                         <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center flex-shrink-0 text-primary-foreground font-bold text-lg">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
                            4
                          </div>
                          <div>
-                           <h3 className="font-serif text-xl font-bold text-primary mb-2">
+                           <h3 className="font-serif text-xl font-bold text-white mb-2">
                              Suivi & ajustement
                            </h3>
-                           <p className="text-muted-foreground leading-relaxed text-justify">
+                           <p className="text-white/80 leading-relaxed text-justify">
                              Points d'étape réguliers et adaptations selon l'évolution de vos priorités.
                            </p>
                          </div>
