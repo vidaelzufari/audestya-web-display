@@ -33,11 +33,11 @@ const Honoraires = () => {
           <div className="max-w-5xl mx-auto">
             
             {/* Introduction Card */}
-            <Card className="mb-16 border-0 shadow-lg">
+            <Card className="mb-16 border-0 shadow-lg group">
               <CardContent className="p-12">
                 <div className="text-center mb-8">
-                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <CheckCircle className="w-10 h-10 text-primary" />
+                  <div className="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                    <CheckCircle className="w-10 h-10 text-primary group-hover:text-white transition-colors duration-300" />
                   </div>
                   <p className="text-xl text-foreground leading-relaxed">
                     Les honoraires sont fixés en fonction de plusieurs critères : nature et complexité du dossier, volume des diligences, et usages de la profession.
@@ -53,10 +53,10 @@ const Honoraires = () => {
               </h2>
               
               <div className="grid lg:grid-cols-3 gap-8">
-                <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105">
+                <Card className="bg-gradient-to-br from-primary/5 to-primary/10 border-primary/20 hover:border-primary/40 transition-all duration-300 hover:transform hover:scale-105 group">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <CreditCard className="w-8 h-8 text-primary-foreground" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                      <CreditCard className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <h3 className="font-serif text-2xl font-bold text-foreground mb-4">
                       Forfait
@@ -67,10 +67,10 @@ const Honoraires = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-secondary/5 to-secondary/10 border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:transform hover:scale-105">
+                <Card className="bg-gradient-to-br from-secondary/5 to-secondary/10 border-secondary/20 hover:border-secondary/40 transition-all duration-300 hover:transform hover:scale-105 group">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Clock className="w-8 h-8 text-secondary-foreground" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                      <Clock className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <h3 className="font-serif text-2xl font-bold text-foreground mb-4">
                       Temps passé
@@ -81,10 +81,10 @@ const Honoraires = () => {
                   </CardContent>
                 </Card>
 
-                <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20 hover:border-accent/40 transition-all duration-300 hover:transform hover:scale-105">
+                <Card className="bg-gradient-to-br from-accent/5 to-accent/10 border-accent/20 hover:border-accent/40 transition-all duration-300 hover:transform hover:scale-105 group">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 bg-accent rounded-full flex items-center justify-center mx-auto mb-6">
-                      <Users className="w-8 h-8 text-accent-foreground" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                      <Users className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <h3 className="font-serif text-2xl font-bold text-foreground mb-4">
                       Abonnement
