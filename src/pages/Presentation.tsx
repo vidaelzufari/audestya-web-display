@@ -140,13 +140,10 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="text-xl font-bold text-primary text-justify">
-                      Accompagner les entreprises dans la structuration et la sécurisation juridique de leur activité avec une vision claire et porteuse de sens.
+                      Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
                     </p>
                     <p className="leading-relaxed text-justify mt-6">
-                      <span className="font-bold text-primary">• Mon objectif :</span> faire du droit un véritable allié de leur développement.
-                    </p>
-                    <p className="leading-relaxed text-justify mt-6">
-                      <span className="font-bold text-primary">• Ma méthode :</span> transformer la complexité juridique en solutions concrètes et opérationnelles pour sécuriser et structurer votre activité.
+                      Transformer la complexité du droit en décisions claires, concrètes et utiles.
                     </p>
                   </div>
                 </CardContent>
