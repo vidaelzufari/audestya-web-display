@@ -67,16 +67,16 @@ const Presentation = () => {
             {/* Cards grid */}
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Expertise Card */}
-              <div className="group">
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
+              <div>
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                        <Briefcase className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                        <Briefcase className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
-                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-primary-light transition-colors duration-300">
+                      <h3 className="font-serif text-2xl font-bold text-primary">
                         Une expertise confirmée
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto"></div>
@@ -89,16 +89,16 @@ const Presentation = () => {
               </div>
 
               {/* Pragmatic Card */}
-              <div className="group">
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative lg:mt-8">
+              <div>
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                        <Wrench className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                        <Wrench className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
-                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
+                      <h3 className="font-serif text-2xl font-bold text-primary">
                         Une approche pragmatique
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto"></div>
@@ -111,16 +111,16 @@ const Presentation = () => {
               </div>
 
               {/* Trust Card */}
-              <div className="group">
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
+              <div>
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                        <Handshake className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                        <Handshake className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
-                      <h3 className="font-serif text-2xl font-bold text-primary group-hover:text-accent transition-colors duration-300">
+                      <h3 className="font-serif text-2xl font-bold text-primary">
                         Une relation de confiance
                       </h3>
                       <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto"></div>
@@ -156,11 +156,11 @@ const Presentation = () => {
             
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Target className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -179,11 +179,11 @@ const Presentation = () => {
               </Card>
 
               {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Lightbulb className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -202,11 +202,11 @@ const Presentation = () => {
               </Card>
 
               {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2 group">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Compass className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
+                      <Compass className="w-10 h-10 text-foreground" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
