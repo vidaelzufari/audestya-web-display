@@ -78,11 +78,13 @@ const DomainsSection = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <CardHeader className="text-center pb-6 relative z-10">
-                  <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
+                  <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
                     {typeof domain.icon === 'string' ? (
                       <img src={domain.icon} alt={domain.title} className="w-10 h-10" />
+                    ) : domain.icon === AccompagnementIcon ? (
+                      <AccompagnementIcon className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
                     ) : (
-                      <domain.icon className="w-10 h-10 text-secondary-foreground" />
+                      <domain.icon className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     )}
                   </div>
                   <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300">
