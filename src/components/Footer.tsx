@@ -30,8 +30,8 @@ const Footer = () => {
               <a href="#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Accueil
               </a>
-              <a href="#presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
-                Présentation
+              <a href="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Identité & Approche
               </a>
               <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
