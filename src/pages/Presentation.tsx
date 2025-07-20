@@ -37,84 +37,6 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Bio Section with Decorative Elements */}
-      <section id="presentation" className="py-20 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-xl"></div>
-        <div className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full blur-xl"></div>
-        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-lg"></div>
-        <div className="container mx-auto px-4">
-          <div className="max-w-7xl mx-auto text-center mb-20">
-            <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
-              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
-                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-left">
-                    Bio
-                  </h2>
-                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-6"></div>
-                  <p className="text-left leading-relaxed text-justify">
-                    Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
-                  </p>
-                  <div className="text-left leading-relaxed text-justify">
-                    <p className="mb-3">Ce choix repose sur :</p>
-                    <ul className="space-y-2 ml-4 list-disc">
-                      <li><strong>Une conviction forte :</strong> le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;</li>
-                      <li><strong>Une ambition claire :</strong> accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.</li>
-                    </ul>
-                  </div>
-                  <p className="text-left leading-relaxed text-justify">
-                    J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
-                  </p>
-                </div>
-                <div className="w-full md:w-80 h-96 rounded-lg overflow-hidden shadow-card flex-shrink-0">
-                  <img 
-                    src={lawyerPortrait} 
-                    alt="Portrait de l'avocate" 
-                    className="w-full h-full object-cover object-[40%_20%]"
-                  />
-                </div>
-              </div>
-              
-              {/* Informations professionnelles */}
-              <div className="mt-8 pt-8 border-t">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <Card className="bg-muted/30 border-0 p-6">
-                    <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Distribution, Contrats, Consommation
-                    </p>
-                  </Card>
-                  
-                  <Card className="bg-muted/30 border-0 p-6">
-                    <h5 className="font-medium text-primary mb-3">Inscription au Barreau</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Paris 2025
-                    </p>
-                  </Card>
-                  
-                  <Card className="bg-muted/30 border-0 p-6">
-                    <h5 className="font-medium text-primary mb-3">Formation</h5>
-                    <div className="space-y-2 text-muted-foreground text-sm text-center">
-                      <p>Master II Droit européen des affaires</p>
-                      <p>Université Paris XI – Jean Monnet</p>
-                      <p>Maîtrise Droit européen & international</p>
-                      <p>Université Paris II – Panthéon Assas</p>
-                    </div>
-                  </Card>
-                  
-                  <Card className="bg-muted/30 border-0 p-6">
-                    <h5 className="font-medium text-primary mb-3">Langues</h5>
-                    <p className="text-muted-foreground text-sm">
-                      Français • Anglais • Arabe
-                    </p>
-                  </Card>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Ma Mission, Ma Vision et Mes Valeurs Section */}
       <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
         {/* Decorative Background Elements */}
@@ -328,6 +250,84 @@ const Presentation = () => {
       </section>
 
       <DomainsSection />
+
+      {/* Bio Section with Decorative Elements */}
+      <section id="presentation" className="py-20 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-xl"></div>
+        <div className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full blur-xl"></div>
+        <div className="absolute top-1/3 right-1/4 w-24 h-24 bg-gradient-to-br from-accent/10 to-primary/10 rounded-full blur-lg"></div>
+        <div className="container mx-auto px-4">
+          <div className="max-w-7xl mx-auto text-center mb-20">
+            <div className="bg-background rounded-xl p-8 shadow-soft mb-12 border">
+              <div className="flex flex-col md:flex-row items-center gap-8 mb-8">
+                <div className="flex-1 space-y-6 text-lg text-muted-foreground">
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-left">
+                    Bio
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-6"></div>
+                  <p className="text-left leading-relaxed text-justify">
+                    Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
+                  </p>
+                  <div className="text-left leading-relaxed text-justify">
+                    <p className="mb-3">Ce choix repose sur :</p>
+                    <ul className="space-y-2 ml-4 list-disc">
+                      <li><strong>Une conviction forte :</strong> le droit est un levier de structuration, de sécurisation et de création de valeur, lorsqu'il est compris, bien appliqué, et aligné avec la réalité opérationnelle de l'entreprise ;</li>
+                      <li><strong>Une ambition claire :</strong> accompagner les entreprises différemment, en m'appuyant sur ma connaissance de leurs enjeux internes.</li>
+                    </ul>
+                  </div>
+                  <p className="text-left leading-relaxed text-justify">
+                    J'ai évolué, au sein d'ETI en croissance ou en transformation, dans des secteurs aussi divers que le textile, la restauration, l'exploitation cinématographique ou encore l'exploitation de salles de sport. Cette diversité m'a permis de développer une vision transversale et stratégique du droit, ainsi qu'une capacité à dialoguer avec les directions générales comme avec les équipes opérationnelles.
+                  </p>
+                </div>
+                <div className="w-full md:w-80 h-96 rounded-lg overflow-hidden shadow-card flex-shrink-0">
+                  <img 
+                    src={lawyerPortrait} 
+                    alt="Portrait de l'avocate" 
+                    className="w-full h-full object-cover object-[40%_20%]"
+                  />
+                </div>
+              </div>
+              
+              {/* Informations professionnelles */}
+              <div className="mt-8 pt-8 border-t">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Distribution, Contrats, Consommation
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Inscription au Barreau</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Paris 2025
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Formation</h5>
+                    <div className="space-y-2 text-muted-foreground text-sm text-center">
+                      <p>Master II Droit européen des affaires</p>
+                      <p>Université Paris XI – Jean Monnet</p>
+                      <p>Maîtrise Droit européen & international</p>
+                      <p>Université Paris II – Panthéon Assas</p>
+                    </div>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Langues</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Français • Anglais • Arabe
+                    </p>
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
 
       <Footer />
