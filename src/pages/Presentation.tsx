@@ -69,7 +69,6 @@ const Presentation = () => {
               {/* Expertise Card */}
               <div className="group">
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -92,7 +91,6 @@ const Presentation = () => {
               {/* Pragmatic Card */}
               <div className="group">
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative lg:mt-8">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -115,7 +113,6 @@ const Presentation = () => {
               {/* Trust Card */}
               <div className="group">
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden hover:shadow-glow transition-all duration-500 hover:-translate-y-3 relative">
-                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
