@@ -69,8 +69,8 @@ const PolitiqueConfidentialite = () => {
                   <p>Je suis amenée à collecter des Données :</p>
                   <ul className="space-y-2 ml-4">
                     <li>• Lorsque vous êtes un prospect ou un client potentiel et vous me contactez directement pour demander des informations ou des conseils ou via le formulaire contact du Site ;</li>
-                    <li>• Lorsque vous êtes client, notamment dans le cadre de la conclusion de la convention d'honoraire et l'exécution des missions confiées par ledit client et de tout échange y afférent ;</li>
-                    <li>• Lorsque vous êtes un partenaire (experts, prestataires, confrère, etc.), avec qui je suis amenée à collaborer, dans le cadre de l'exécution de mes missions et de mon activité et de tout échange y afférent ;</li>
+                     <li>• Lorsque vous êtes client, notamment dans le cadre de la conclusion de la convention d'honoraires et l'exécution des missions confiées par ledit client et de tout échange y afférent ;</li>
+                     <li>• Lorsque vous êtes un partenaire (experts, prestataires, confrères, etc.), avec qui je suis amenée à collaborer, dans le cadre de l'exécution de mes missions et de mon activité et de tout échange y afférent ;</li>
                     <li>• Lorsque vous naviguez sur mon Site via les cookies et autres traceurs.</li>
                   </ul>
                 </div>
@@ -105,7 +105,7 @@ const PolitiqueConfidentialite = () => {
                   <ul className="space-y-3 ml-4">
                     <li>• <strong className="text-primary">Si vous êtes un prospect ou un client potentiel</strong> : Vos Données sont traitées à des fins de traitement des demandes : répondre à vos questions.</li>
                     <li>• <strong className="text-primary">Si vous êtes un client</strong> : Vos Données sont traitées à des fins (i) d'exécution de la relation contractuelle, (ii) de respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : traitement des demandes, exécution des missions, gestion de la convention d'honoraires et des factures, gestion de la comptabilité et plus généralement suivi de la relation contractuelle.</li>
-                    <li>• <strong className="text-primary">Si vous êtes un partenaire</strong> (experts, prestataires, confrère, etc.) : Vos Données sont traitées à des fins (i) de gestion de mon activité ; (ii) d'exécution d'une relation contractuelle avec un client et (iii) de respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : traitement des demandes, exécution des missions, gestion du contrat et des factures, de gestion de la comptabilité et plus généralement pour le suivi de la gestion d'activité ou de la relation contractuelle.</li>
+                    <li>• <strong className="text-primary">Si vous êtes un partenaire</strong> (experts, prestataires, confrères, etc.) : Vos Données sont traitées à des fins (i) de gestion de mon activité ; (ii) d'exécution d'une relation contractuelle avec un client et (iii) de respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : traitement des demandes, exécution des missions, gestion du contrat et des factures, de gestion de la comptabilité et plus généralement pour le suivi de la gestion d'activité ou de la relation contractuelle.</li>
                     <li>• <strong className="text-primary">Si vous naviguez sur le Site</strong> : Vos Données sont traitées à des fins (i) d'analyse du trafic du Site et (ii) de navigation sur le Site.</li>
                   </ul>
                 </div>
@@ -190,11 +190,11 @@ const PolitiqueConfidentialite = () => {
                     </a>
                   </p>
                   <p>
-                    En cas de difficulté en lien avec la gestion des Données, vous pouvez adresser une réclamation auprès des autorités 
-                    compétentes et notamment la CNIL via 
-                    <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary ml-1">
-                      https://www.cnil.fr/fr/plaintes
-                    </a>.
+                     En cas de difficulté en lien avec la gestion des Données, vous pouvez adresser une réclamation auprès des autorités 
+                     compétentes et notamment la CNIL via :
+                     <a href="https://www.cnil.fr/fr/plaintes" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary ml-1">
+                       https://www.cnil.fr/fr/plaintes
+                     </a>.
                   </p>
                 </div>
               </CardContent>
