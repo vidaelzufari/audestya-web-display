@@ -74,6 +74,42 @@ const Presentation = () => {
                   />
                 </div>
               </div>
+              
+              {/* Informations professionnelles */}
+              <div className="mt-8 pt-8 border-t">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Distribution, Contrats, Consommation
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Inscription au Barreau</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Paris 2025
+                    </p>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Formation</h5>
+                    <div className="space-y-2 text-muted-foreground text-sm text-center">
+                      <p>Master II Droit européen des affaires</p>
+                      <p>Université Paris XI – Jean Monnet</p>
+                      <p>Maîtrise Droit européen & international</p>
+                      <p>Université Paris II – Panthéon Assas</p>
+                    </div>
+                  </Card>
+                  
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Langues</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Français • Anglais • Arabe
+                    </p>
+                  </Card>
+                </div>
+              </div>
             </div>
           </div>
         </div>
