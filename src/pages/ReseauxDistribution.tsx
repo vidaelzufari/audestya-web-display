@@ -59,7 +59,7 @@ const ReseauxDistribution = () => {
                   </h2>
                 </div>
                 
-                <p className="text-lg text-muted-foreground mb-8 text-left">
+                <p className="text-lg text-muted-foreground mb-8 text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
                   Je vous accompagne dans la conception, l'ajustement ou l'optimisation de votre modèle de distribution :
                 </p>
 
@@ -151,7 +151,7 @@ const ReseauxDistribution = () => {
                   </h2>
                 </div>
                 
-                <p className="text-lg text-muted-foreground mb-8 text-left">
+                <p className="text-lg text-muted-foreground mb-8 text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
                   Parce que la solidité de votre réseau repose aussi sur la conformité de votre offre vis-à-vis du consommateur, j'interviens également sur :
                 </p>
 

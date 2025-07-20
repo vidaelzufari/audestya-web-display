@@ -24,17 +24,17 @@ const AboutSection = () => {
                 />
               </div>
               <div className="flex-1 space-y-6 text-lg text-muted-foreground">
-              <p className="text-left leading-relaxed">
+              <p className="text-justify leading-relaxed hyphens-auto" style={{ textAlignLast: 'left' }}>
                 Après plusieurs années d'expérience au sein de cabinets d'avocats d'affaires reconnus, 
                 j'ai choisi de développer une pratique indépendante pour offrir un accompagnement 
                 juridique sur mesure, adapté aux besoins spécifiques de chaque entreprise.
               </p>
-              <p className="text-left leading-relaxed">
+              <p className="text-justify leading-relaxed hyphens-auto" style={{ textAlignLast: 'left' }}>
                 Ma spécialisation en droit de la distribution, des contrats et de la consommation 
                 me permet d'apporter une expertise pointue et des solutions concrètes aux défis 
                 juridiques que rencontrent les entreprises dans leurs activités commerciales.
               </p>
-                <p className="text-left leading-relaxed">
+                <p className="text-justify leading-relaxed hyphens-auto" style={{ textAlignLast: 'left' }}>
                   Mon approche se distingue par un équilibre entre rigueur juridique et pragmatisme 
                   opérationnel, pour vous accompagner efficacement dans la sécurisation et le 
                   développement de vos activités.
@@ -56,7 +56,7 @@ const AboutSection = () => {
             <p className="text-xl font-medium text-primary text-left">
               Clarté, méthode, exigence à chaque étape
             </p>
-            <p className="text-lg leading-relaxed text-left">
+            <p className="text-lg leading-relaxed text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
               Le droit n'a d'impact que s'il éclaire l'action.
             </p>
           </div>
@@ -118,7 +118,7 @@ const AboutSection = () => {
           <h3 className="font-serif text-3xl font-bold text-primary mb-6 text-left">
             Accompagnement Juridique Externalisé
           </h3>
-          <p className="text-lg text-muted-foreground text-left">
+          <p className="text-lg text-muted-foreground text-justify hyphens-auto" style={{ textAlignLast: 'left' }}>
             Pilotage juridique de projets structurants – Missions ponctuelles
           </p>
         </div>
