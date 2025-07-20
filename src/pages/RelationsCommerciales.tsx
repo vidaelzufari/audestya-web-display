@@ -146,9 +146,15 @@ const RelationsCommerciales = () => {
             {/* Méthodologie */}
             <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
               <CardContent className="p-12">
-                <h2 className="font-serif text-3xl font-bold text-white mb-8 text-center">
-                  Une approche sur-mesure
-                </h2>
+                <div className="text-center mb-12">
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                    <Target className="w-10 h-10 text-white" />
+                  </div>
+                  <h2 className="font-serif text-3xl font-bold text-white mb-6">
+                    Une approche sur-mesure
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
+                </div>
                 
                 <div className="grid md:grid-cols-2 gap-12 items-center">
                   <div className="space-y-6">
