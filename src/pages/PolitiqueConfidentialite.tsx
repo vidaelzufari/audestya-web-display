@@ -98,7 +98,7 @@ const PolitiqueConfidentialite = () => {
             <Card className="bg-background shadow-soft border-0 mb-8">
               <CardContent className="p-8">
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                  4. Pour quelles finalités sont collectées vos Données
+                  4. Pour quelles finalités sont collectées vos Données ?
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Vos Données peuvent être traitées pour les finalités suivantes :</p>
@@ -171,7 +171,7 @@ const PolitiqueConfidentialite = () => {
             <Card className="bg-background shadow-soft border-0 mb-8">
               <CardContent className="p-8">
                 <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                  8. Quels sont vos droits
+                  8. Quels sont vos droits ?
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Conformément à la réglementation en vigueur, vous disposez des droits suivants :</p>
