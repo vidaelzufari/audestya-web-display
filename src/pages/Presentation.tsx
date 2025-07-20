@@ -6,7 +6,7 @@ import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass } from 'lucide-react';
+import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass, Handshake } from 'lucide-react';
 import lawyerPortrait from '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const Presentation = () => {
@@ -296,7 +296,7 @@ const Presentation = () => {
                     <div className="mb-8 flex justify-center">
                       <div className="relative">
                         <div className="w-24 h-24 bg-gradient-to-br from-accent to-accent/80 rounded-2xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform duration-300">
-                          <Users className="w-12 h-12 text-white" />
+                          <Handshake className="w-12 h-12 text-white" />
                         </div>
                         <div className="absolute -inset-2 bg-gradient-to-br from-accent/20 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-300 blur-xl"></div>
                       </div>
