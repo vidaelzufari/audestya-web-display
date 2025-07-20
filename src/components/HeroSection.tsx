@@ -25,9 +25,7 @@ const HeroSection = () => {
             <div className="h-px bg-background/40 w-12"></div>
           </div>
           
-          <h1 className="font-serif text-2xl md:text-3xl font-bold mb-8 animate-fade-in" style={{ animationDelay: '0.1s' }}>
-            Aux côtés des entreprises pour structurer leurs relations commerciales et sécuriser leur développement
-          </h1>
+          
           
           <div className="space-y-6 mb-12">
             <p className="text-lg md:text-xl font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
