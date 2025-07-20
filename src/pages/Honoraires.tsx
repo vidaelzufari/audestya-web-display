@@ -17,7 +17,7 @@ const Honoraires = () => {
             </h1>
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20">
               <p className="text-2xl font-semibold text-primary-foreground mb-4">
-                Des honoraires fondées sur la réalité de vos enjeux
+                Des honoraires fondés sur la réalité de vos enjeux
               </p>
               <p className="text-lg text-primary-foreground/90 leading-relaxed">
                 Les modalités d'intervention et les honoraires sont définis en amont, avec clarté et sérénité.
