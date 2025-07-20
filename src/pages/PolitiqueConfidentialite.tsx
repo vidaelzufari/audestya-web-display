@@ -68,7 +68,7 @@ const PolitiqueConfidentialite = () => {
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Je suis amenée à collecter des Données :</p>
                   <ul className="space-y-2 ml-4">
-                    <li>• Lorsque vous êtes un prospect ou un client potentiel et vous me contactez directement pour demander des informations ou des conseils ou via le formulaire contact du Site ;</li>
+                    <li>• Lorsque vous êtes un prospect ou un client potentiel et que vous me contactez directement pour demander des informations ou des conseils ou via le formulaire contact du Site ;</li>
                      <li>• Lorsque vous êtes client, notamment dans le cadre de la conclusion de la convention d'honoraires et l'exécution des missions confiées par ledit client et de tout échange y afférent ;</li>
                      <li>• Lorsque vous êtes un partenaire (experts, prestataires, confrères, etc.), avec qui je suis amenée à collaborer, dans le cadre de l'exécution de mes missions et de mon activité et de tout échange y afférent ;</li>
                     <li>• Lorsque vous naviguez sur mon Site via les cookies et autres traceurs.</li>
