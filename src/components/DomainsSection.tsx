@@ -29,7 +29,7 @@ const DomainsSection = () => {
       hasPage: true
     },
     {
-      icon: Armchair,
+      icon: '/lovable-uploads/00926a01-214d-403a-9406-eff66988a547.png',
       title: "Accompagnement Juridique Externalisé",
       description: "Un appui juridique structuré et aligné sur vos priorités.\nJe vous accompagne en autonomie ou aux côtés de vos équipes, pour :",
       details: [
@@ -62,7 +62,6 @@ const DomainsSection = () => {
 
         <div className="grid lg:grid-cols-3 gap-8 md:gap-12">
           {domains.map((domain, index) => {
-            const IconComponent = domain.icon;
             return (
               <Card 
                 key={index}
@@ -73,7 +72,11 @@ const DomainsSection = () => {
                 
                 <CardHeader className="text-center pb-6 relative z-10">
                   <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                    <IconComponent className="w-10 h-10 text-secondary-foreground" />
+                    {typeof domain.icon === 'string' ? (
+                      <img src={domain.icon} alt={domain.title} className="w-10 h-10" />
+                    ) : (
+                      <domain.icon className="w-10 h-10 text-secondary-foreground" />
+                    )}
                   </div>
                   <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300">
                     {domain.title}

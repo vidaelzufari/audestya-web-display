@@ -258,7 +258,7 @@ const RelationsCommerciales = () => {
               
               <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
                 <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Armchair className="w-10 h-10 text-secondary-foreground" />
+                  <img src="/lovable-uploads/00926a01-214d-403a-9406-eff66988a547.png" alt="Accompagnement" className="w-10 h-10" />
                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Accompagnement Juridique Externalisé
