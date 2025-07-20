@@ -1,6 +1,13 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield, Folder } from 'lucide-react';
+import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield } from 'lucide-react';
+
+// Custom SVG icon for Accompagnement Juridique Externalisé
+const AccompagnementIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
+  </svg>
+);
 
 const DomainsSection = () => {
   const domains = [
@@ -29,7 +36,7 @@ const DomainsSection = () => {
       hasPage: true
     },
     {
-      icon: Folder,
+      icon: AccompagnementIcon,
       title: "Accompagnement Juridique Externalisé",
       description: "Un appui juridique structuré et aligné sur vos priorités.\nJe vous accompagne en autonomie ou aux côtés de vos équipes, pour :",
       details: [
