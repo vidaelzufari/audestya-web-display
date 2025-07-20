@@ -76,6 +76,7 @@ const DomainsSection = () => {
                   <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300">
                     {domain.title}
                   </CardTitle>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </CardHeader>
                 
                 <CardContent className="relative z-10">
