@@ -1,5 +1,6 @@
 
 
+import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
@@ -9,6 +10,18 @@ import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass } from '
 import lawyerPortrait from '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const Presentation = () => {
+  useEffect(() => {
+    // Gérer le scroll vers la section si un hash est présent dans l'URL
+    const hash = window.location.hash;
+    if (hash) {
+      const element = document.querySelector(hash);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }, 100);
+      }
+    }
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
