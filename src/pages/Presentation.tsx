@@ -51,6 +51,7 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-left">
                     Bio
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-6"></div>
                   <p className="text-left leading-relaxed text-justify">
                     Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                   </p>
