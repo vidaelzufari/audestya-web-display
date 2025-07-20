@@ -172,7 +172,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Target className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <Target className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -195,7 +195,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Lightbulb className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <Lightbulb className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -218,7 +218,7 @@ const Presentation = () => {
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                      <Compass className="w-10 h-10 text-muted-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                      <Compass className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
