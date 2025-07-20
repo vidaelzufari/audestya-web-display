@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Network, Shield, Users, FileText, Handshake, Target, ArrowRight } from 'lucide-react';
+import { Network, Shield, Users, FileText, Handshake, Target, ArrowRight, Armchair } from 'lucide-react';
 
 const ReseauxDistribution = () => {
   return (
@@ -275,7 +275,7 @@ const ReseauxDistribution = () => {
               
               <CardContent className="text-center p-12 relative z-10">
                 <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Users className="w-10 h-10 text-secondary-foreground" />
+                  <Armchair className="w-10 h-10 text-secondary-foreground" />
                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
                   Accompagnement Juridique Externalisé
