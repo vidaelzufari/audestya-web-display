@@ -12,6 +12,7 @@ import MentionsLegales from "./pages/MentionsLegales";
 import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import ConditionsGeneralesVente from "./pages/ConditionsGeneralesVente";
 import Actualites from "./pages/Actualites";
+import Honoraires from "./pages/Honoraires";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/relations-commerciales" element={<RelationsCommerciales />} />
           <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
           <Route path="/actualites" element={<Actualites />} />
+          <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
           <Route path="/conditions-generales-vente" element={<ConditionsGeneralesVente />} />
