@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Handshake, FileText, Shield, Target, Users, AlertTriangle, Network, Building, ArrowRight } from 'lucide-react';
+import { Handshake, FileText, Shield, Target, Users, AlertTriangle, Network, Building, ArrowRight, Layers } from 'lucide-react';
 
 // Custom SVG icon for Accompagnement Juridique Externalisé
 const AccompagnementIcon = ({ className }: { className?: string }) => (
@@ -157,7 +157,7 @@ const RelationsCommerciales = () => {
               <CardContent className="p-12">
                 <div className="text-center mb-12">
                   <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Target className="w-10 h-10 text-white" />
+                    <Layers className="w-10 h-10 text-white" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-white mb-6">
                     Une approche sur-mesure
