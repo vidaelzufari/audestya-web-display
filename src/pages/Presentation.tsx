@@ -196,19 +196,19 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      Une parole claire, sans jargon ni détour (Authenticité)
+                      Une parole claire, sans jargon ni détour (<span className="font-bold italic">Authenticité</span>)
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Un regard aligné, loyal et sans complaisance (Confiance)
+                      Un regard aligné, loyal et sans complaisance (<span className="font-bold italic">Confiance</span>)
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Un ancrage terrain, attentif à vos contraintes réelles (Proximité)
+                      Un ancrage terrain, attentif à vos contraintes réelles (<span className="font-bold italic">Proximité</span>)
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      Une exigence constante, dans le fond comme dans la forme (Excellence)
+                      Une exigence constante, dans le fond comme dans la forme (<span className="font-bold italic">Excellence</span>)
                     </p>
                   </div>
                 </CardContent>
