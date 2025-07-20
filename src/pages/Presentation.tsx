@@ -140,10 +140,10 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      <span className="text-xl font-bold text-primary">Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.</span>
+                      Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
                     </p>
                     <p className="leading-relaxed text-justify">
-                      <span className="text-xl font-bold text-primary">Transformer la complexité du droit en décisions claires, concrètes et utiles.</span>
+                      Transformer la complexité du droit en décisions claires, concrètes et utiles.
                     </p>
                   </div>
                 </CardContent>
@@ -162,7 +162,7 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      <span className="text-xl font-bold text-primary">Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.</span>
+                      Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
                     </p>
                     <p className="leading-relaxed text-justify">
                       C'est cette dynamique que je mets au service de mes clients.
@@ -184,19 +184,19 @@ const Presentation = () => {
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
-                      <span className="font-bold italic">Authenticité</span> — Une relation directe, sans jargon inutile
+                      Authenticité — Une relation directe, sans jargon inutile
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      <span className="font-bold italic">Confiance</span> — Un engagement loyal, clair et transparent
+                      Confiance — Un engagement loyal, clair et transparent
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      <span className="font-bold italic">Proximité</span> — Une compréhension fine de votre réalité terrain
+                      Proximité — Une compréhension fine de votre réalité terrain
                     </p>
                     
                     <p className="leading-relaxed text-justify">
-                      <span className="font-bold italic">Excellence</span> — Une exigence constante, dans le fond comme dans la forme
+                      Excellence — Une exigence constante, dans le fond comme dans la forme
                     </p>
                   </div>
                 </CardContent>
