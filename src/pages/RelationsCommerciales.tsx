@@ -62,7 +62,7 @@ const RelationsCommerciales = () => {
                     <FileText className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
-                    BtoB – Encadrement contractuel & prévention des risques commerciaux
+                    BtoB – Encadrement contractuel et prévention des risques commerciaux
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
@@ -123,7 +123,7 @@ const RelationsCommerciales = () => {
                     <Users className="w-8 h-8 text-secondary-foreground" />
                   </div>
                   <h2 className="font-serif text-3xl font-bold text-primary">
-                    BtoC – Sécurisation des offres, supports & campagnes
+                    BtoC – Sécurisation des offres, supports et campagnes
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
