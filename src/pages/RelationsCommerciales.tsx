@@ -26,14 +26,22 @@ const RelationsCommerciales = () => {
             
             {/* Introduction Section */}
             <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
-                <h2 className="font-serif text-3xl font-bold text-primary mb-6 text-left">
+              <CardContent className="p-12 text-center">
+                <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
+                  <Handshake className="w-10 h-10 text-secondary-foreground" />
+                </div>
+                <h2 className="font-serif text-4xl font-bold text-primary mb-6">
                   Sécurisation de vos relations et pratiques commerciales BtoB et BtoC
                 </h2>
-                <p className="text-lg font-bold text-primary text-justify">
-                  Dans un environnement commercial en mutation rapide, la solidité de vos relations commerciales conditionne la performance, la résilience et l'image de votre entreprise.
-                  J'interviens pour sécuriser, structurer et renforcer vos relations commerciales à forts enjeux, à chaque étape de la vie de votre activité.
-                </p>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                <div className="space-y-4 max-w-4xl mx-auto text-left">
+                  <p className="text-lg text-muted-foreground">
+                    <strong>Dans un environnement commercial en mutation rapide, la solidité de vos relations commerciales conditionne la performance, la résilience et l'image de votre entreprise.</strong>
+                  </p>
+                   <p className="text-lg text-muted-foreground text-justify">
+                     <strong>Mon rôle :</strong> sécuriser, structurer et renforcer vos relations commerciales à forts enjeux, à chaque étape de la vie de votre activité.
+                   </p>
+                </div>
               </CardContent>
             </Card>
             
