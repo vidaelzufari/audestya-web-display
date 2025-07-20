@@ -170,7 +170,7 @@ const Index = () => {
               {/* Call to action */}
               <div className="mt-16 text-center">
                 <a 
-                  href="#domaines" 
+                  href="/presentation" 
                   className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300 shadow-elegant text-lg"
                 >
                   En savoir plus
