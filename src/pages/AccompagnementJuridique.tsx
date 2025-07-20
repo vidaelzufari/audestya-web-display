@@ -43,9 +43,17 @@ const AccompagnementJuridique = () => {
             {/* Types d'accompagnement */}
             <Card className="bg-background shadow-soft border-0 mb-16">
               <CardContent className="p-12">
-                <h2 className="font-serif text-4xl font-bold text-primary mb-12 text-center">
-                  Mes axes d'intervention
-                </h2>
+                <div className="text-center mb-12">
+                  <div className="inline-flex items-center gap-3 mb-6">
+                    <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                    <div className="w-3 h-3 bg-primary rounded-full"></div>
+                    <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                  </div>
+                  <h2 className="font-serif text-4xl font-bold text-primary mb-6">
+                    Mes axes d'intervention
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                </div>
                 
                 <div className="space-y-8">
                   <div className="flex items-start gap-6">
