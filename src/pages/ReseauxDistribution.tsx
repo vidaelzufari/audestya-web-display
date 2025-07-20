@@ -193,11 +193,11 @@ const ReseauxDistribution = () => {
             </Card>
 
             {/* Méthodologie */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12">
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12 group">
               <CardContent className="p-12">
                 <div className="text-center mb-12">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Layers className="w-10 h-10 text-white" />
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/60 transition-colors duration-300">
+                    <Layers className="w-10 h-10 text-white group-hover:text-primary transition-colors duration-300" />
                   </div>
                   <h2 className="font-serif text-4xl font-bold mb-6">Méthodologie</h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
@@ -211,30 +211,30 @@ const ReseauxDistribution = () => {
                   <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-white/30 z-0"></div>
                   
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
-                        <Handshake className="w-8 h-8 text-white" />
+                    <div className="text-center group/item">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary group-hover/item:bg-white/60 transition-colors duration-300">
+                        <Handshake className="w-8 h-8 text-white group-hover/item:text-primary transition-colors duration-300" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Réunions de co-construction</h3>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
-                        <Target className="w-8 h-8 text-white" />
+                    <div className="text-center group/item">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary group-hover/item:bg-white/60 transition-colors duration-300">
+                        <Target className="w-8 h-8 text-white group-hover/item:text-primary transition-colors duration-300" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Identification des points-clés stratégiques</h3>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
-                        <Users className="w-8 h-8 text-white" />
+                    <div className="text-center group/item">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary group-hover/item:bg-white/60 transition-colors duration-300">
+                        <Users className="w-8 h-8 text-white group-hover/item:text-primary transition-colors duration-300" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Entretiens avec les opérationnels</h3>
                     </div>
                     
-                    <div className="text-center">
-                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary">
-                        <FileText className="w-8 h-8 text-white" />
+                    <div className="text-center group/item">
+                      <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 relative z-20 bg-gradient-primary group-hover/item:bg-white/60 transition-colors duration-300">
+                        <FileText className="w-8 h-8 text-white group-hover/item:text-primary transition-colors duration-300" />
                       </div>
                       <h3 className="font-semibold text-lg mb-3">Conception de packs contractuels personnalisés</h3>
                     </div>
