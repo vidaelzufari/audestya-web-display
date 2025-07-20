@@ -111,8 +111,8 @@ const AccompagnementJuridique = () => {
             <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-16 group">
               <CardContent className="p-12">
                 <div className="text-center mb-12">
-                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/30 transition-colors duration-300">
-                    <Layers className="w-10 h-10 text-white group-hover:text-white transition-colors duration-300" />
+                  <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-white/60 transition-colors duration-300">
+                    <Layers className="w-10 h-10 text-white group-hover:text-primary transition-colors duration-300" />
                   </div>
                   <h2 className="font-serif text-4xl font-bold text-white mb-6">
                     Processus de collaboration
