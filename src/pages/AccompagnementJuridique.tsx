@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell, Network, Building, FileText, Shield } from 'lucide-react';
+import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell, Network, Building, FileText, Shield, Settings } from 'lucide-react';
 
 const AccompagnementJuridique = () => {
   return (
@@ -90,7 +90,7 @@ const AccompagnementJuridique = () => {
                   
                   <div className="flex items-start gap-6">
                     <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0">
-                      <Handshake className="w-8 h-8 text-primary-foreground" />
+                      <Settings className="w-8 h-8 text-primary-foreground" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
