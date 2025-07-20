@@ -301,7 +301,7 @@ const Presentation = () => {
                       <p>Master II Droit européen des affaires</p>
                       <p>Université Paris XI – Jean Monnet</p>
                       <p>Maîtrise Droit européen & international</p>
-                      <p>Université Paris II – Panthéon Assas</p>
+                      <p>Université Paris II – Panthéon-Assas</p>
                     </div>
                   </Card>
                   
