@@ -230,6 +230,7 @@ const Presentation = () => {
               <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 leading-tight">
                 Mon Approche
               </h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
               <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
                 Une démarche structurée, articulée autour de trois principes d'intervention.
               </p>

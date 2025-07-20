@@ -46,8 +46,10 @@ const DomainsSection = () => {
     <section id="domaines" className="py-24 bg-gradient-to-br from-background via-background/95 to-secondary/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <div className="inline-block p-3 bg-gradient-secondary rounded-full mb-6">
-            <Scale className="w-8 h-8 text-secondary-foreground" />
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+            <div className="w-3 h-3 bg-primary rounded-full"></div>
+            <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
           </div>
           <h2 className="font-serif text-4xl md:text-6xl font-bold text-primary mb-6 bg-gradient-to-r from-primary to-primary/70 bg-clip-text">
             Domaines d'Intervention
