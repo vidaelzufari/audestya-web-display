@@ -2,7 +2,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Handshake, FileText, Shield, Target, Users, AlertTriangle, Network, ArrowRight } from 'lucide-react';
+import { Handshake, FileText, Shield, Target, Users, AlertTriangle, Network, Building, ArrowRight } from 'lucide-react';
 
 // Custom SVG icon for Accompagnement Juridique Externalisé
 const AccompagnementIcon = ({ className }: { className?: string }) => (
@@ -241,7 +241,7 @@ const RelationsCommerciales = () => {
               
               <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
                 <div className="mx-auto mb-6 p-5 bg-gradient-to-br from-secondary to-secondary/80 rounded-2xl w-fit group-hover:shadow-glow group-hover:scale-110 transition-all duration-300">
-                  <Network className="w-10 h-10 text-secondary-foreground" />
+                  <Building className="w-10 h-10 text-secondary-foreground" />
                 </div>
                 <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Réseaux de Distribution
