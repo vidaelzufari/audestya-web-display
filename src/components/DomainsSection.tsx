@@ -87,7 +87,7 @@ const DomainsSection = () => {
                       <domain.icon className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                     )}
                   </div>
-                  <CardTitle className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300">
+                  <CardTitle className="font-serif text-2xl text-primary group-hover:text-foreground transition-colors duration-300">
                     {domain.title}
                   </CardTitle>
                   <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
