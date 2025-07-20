@@ -94,11 +94,11 @@ const AccompagnementJuridique = () => {
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
-                        Appui transversal aux dirigeants
+                        Appui transversal
                       </h3>
                       <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
                       <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
-                        Ou responsables métiers, sur des enjeux contractuels, commerciaux ou concurrentiels
+                        Aux dirigeants ou responsables métiers, sur des enjeux contractuels, commerciaux ou concurrentiels
                       </p>
                     </div>
                   </div>
