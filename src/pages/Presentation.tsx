@@ -139,11 +139,11 @@ const Presentation = () => {
                     Ma Mission
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="text-xl font-bold text-primary text-justify hyphens-auto leading-relaxed" style={{ textAlignLast: 'left' }}>
-                      Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
+                    <p className="leading-relaxed text-justify">
+                      <span className="text-xl font-bold text-primary">Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.</span>
                     </p>
-                    <p className="text-xl font-bold text-primary text-justify hyphens-auto leading-relaxed mt-6" style={{ textAlignLast: 'left' }}>
-                      Transformer la complexité du droit en décisions claires, concrètes et utiles.
+                    <p className="leading-relaxed text-justify">
+                      <span className="text-xl font-bold text-primary">Transformer la complexité du droit en décisions claires, concrètes et utiles.</span>
                     </p>
                   </div>
                 </CardContent>
@@ -161,8 +161,8 @@ const Presentation = () => {
                     Ma Vision
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="text-xl font-bold text-primary text-justify">
-                      Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
+                    <p className="leading-relaxed text-justify">
+                      <span className="text-xl font-bold text-primary">Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.</span>
                     </p>
                     <p className="leading-relaxed text-justify">
                       C'est cette dynamique que je mets au service de mes clients.
