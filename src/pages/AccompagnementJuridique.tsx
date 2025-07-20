@@ -136,7 +136,7 @@ const AccompagnementJuridique = () => {
                         </div>
                         <div>
                           <h3 className="font-serif text-xl font-bold text-white mb-2">
-                            Écoute & analyse
+                            Écoute et analyse
                           </h3>
                            <p className="text-white/80 leading-relaxed text-justify">
                              Compréhension de vos besoins, enjeux stratégiques et contextes opérationnels.
@@ -179,9 +179,9 @@ const AccompagnementJuridique = () => {
                            4
                          </div>
                          <div>
-                           <h3 className="font-serif text-xl font-bold text-white mb-2">
-                             Suivi & ajustement
-                           </h3>
+                            <h3 className="font-serif text-xl font-bold text-white mb-2">
+                              Suivi et ajustement
+                            </h3>
                            <p className="text-white/80 leading-relaxed text-justify">
                              Points d'étape réguliers et adaptations selon l'évolution de vos priorités.
                            </p>
