@@ -36,7 +36,7 @@ const Footer = () => {
               <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
               </a>
-              <a href="#contact" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <a href="/#contact" onClick={(e) => { window.location.href = '/#contact'; }} className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Contact
               </a>
               <a href="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
