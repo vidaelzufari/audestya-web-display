@@ -39,6 +39,9 @@ const Footer = () => {
               <a href="#contact" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Contact
               </a>
+              <a href="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Honoraires
+              </a>
             </div>
           </div>
 
@@ -69,9 +72,6 @@ const Footer = () => {
               © 2025 Audestya Avocat. Tous droits réservés.
             </p>
             <div className="flex gap-6">
-              <a href="/honoraires" className="hover:text-secondary transition-colors">
-                Honoraires
-              </a>
               <a href="/mentions-legales" className="hover:text-secondary transition-colors">
                 Mentions légales
               </a>
