@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight } from 'lucide-react';
+import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield } from 'lucide-react';
 
 const DomainsSection = () => {
   const domains = [
@@ -17,7 +17,7 @@ const DomainsSection = () => {
       hasPage: true
     },
     {
-      icon: FileText,
+      icon: Shield,
       title: "Relations et Pratiques Commerciales",
       description: "Vos relations contractuelles structurent la solidité et la performance de votre activité.\nJ'interviens pour :",
       details: [
