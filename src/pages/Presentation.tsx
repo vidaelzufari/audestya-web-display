@@ -138,6 +138,7 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Ma Mission
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
                       Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
@@ -160,6 +161,7 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Ma Vision
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
                       Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
@@ -182,6 +184,7 @@ const Presentation = () => {
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
                     Mes valeurs
                   </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6"></div>
                   <div className="space-y-6 text-lg text-muted-foreground">
                     <p className="leading-relaxed text-justify">
                       Authenticité — Une relation directe, sans jargon inutile
