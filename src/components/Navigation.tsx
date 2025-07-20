@@ -61,10 +61,10 @@ const Navigation = () => {
             {/* Dropdown for Domaines */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-primary-foreground hover:text-secondary font-medium text-sm">
+                <button className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center">
                   DOMAINES D'INTERVENTION
                   <ChevronDown className="ml-1 h-4 w-4" />
-                </Button>
+                </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50 w-64">
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
@@ -105,10 +105,10 @@ const Navigation = () => {
             {/* Language selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm">
+                <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm transition-colors flex items-center px-3 py-1.5 rounded">
                   <Globe size={16} className="mr-1" />
                   FR
-                </Button>
+                </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
                 <DropdownMenuItem className="hover:bg-muted cursor-pointer">
@@ -123,14 +123,12 @@ const Navigation = () => {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={toggleMenu}
-              className="text-primary-foreground hover:text-secondary"
+              className="text-primary-foreground hover:text-secondary transition-colors p-2"
             >
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-            </Button>
+            </button>
           </div>
         </div>
 
@@ -170,10 +168,10 @@ const Navigation = () => {
               <div className="py-2 px-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
-                    <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary">
+                    <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary transition-colors flex items-center px-3 py-1.5 rounded text-sm">
                       <Globe size={16} className="mr-1" />
                       FR
-                    </Button>
+                    </button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
