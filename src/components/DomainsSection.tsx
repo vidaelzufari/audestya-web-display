@@ -12,7 +12,7 @@ const AccompagnementIcon = ({ className }: { className?: string }) => (
 const DomainsSection = () => {
   const domains = [
     {
-      icon: Network,
+      icon: Building,
       title: "Réseaux de Distribution",
       description: "Structurer un réseau, c'est construire un cadre juridique robuste, évolutif et aligné sur votre stratégie.\nJe vous accompagne à chaque étape :",
       details: [
