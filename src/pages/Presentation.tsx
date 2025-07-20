@@ -37,98 +37,6 @@ const Presentation = () => {
         </div>
       </section>
 
-      {/* Ma Mission, Ma Vision et Mes Valeurs Section */}
-      <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
-        {/* Decorative Background Elements */}
-        <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
-        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
-        
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="max-w-7xl mx-auto">
-            
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
-                <CardContent className="p-8 text-left">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
-                    </div>
-                  </div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                    Ma Mission
-                  </h2>
-                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                  <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="leading-relaxed text-justify">
-                      Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      Transformer la complexité du droit en décisions claires, concrètes et utiles.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
-                <CardContent className="p-8 text-center">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
-                    </div>
-                  </div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                    Ma Vision
-                  </h2>
-                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
-                  <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="leading-relaxed text-justify">
-                      Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
-                    </p>
-                    <p className="leading-relaxed text-justify">
-                      C'est cette dynamique que je mets au service de mes clients.
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
-                <CardContent className="p-8 text-left">
-                  <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
-                      <Compass className="w-10 h-10 text-white" strokeWidth={1.5} />
-                    </div>
-                  </div>
-                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                    Mes valeurs
-                  </h2>
-                  <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6"></div>
-                  <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="leading-relaxed text-justify">
-                      Authenticité — Une relation directe, sans jargon inutile
-                    </p>
-                    
-                    <p className="leading-relaxed text-justify">
-                      Confiance — Un engagement loyal, clair et transparent
-                    </p>
-                    
-                    <p className="leading-relaxed text-justify">
-                      Proximité — Une compréhension fine de votre réalité terrain
-                    </p>
-                    
-                    <p className="leading-relaxed text-justify">
-                      Excellence — Une exigence constante, dans le fond comme dans la forme
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Mon Approche Section */}
       <section id="mon-approche" className="py-20 bg-muted/30 relative overflow-hidden">
         {/* Background decorative elements */}
@@ -244,6 +152,98 @@ const Presentation = () => {
                 <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" style={{ animationDelay: '0.5s' }}></div>
                 <div className="w-2 h-2 bg-accent rounded-full animate-pulse" style={{ animationDelay: '1s' }}></div>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Ma Mission, Ma Vision et Mes Valeurs Section */}
+      <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* Ma Mission */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                <CardContent className="p-8 text-left">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-primary to-primary-light rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    Ma Mission
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      Transformer la complexité du droit en décisions claires, concrètes et utiles.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Ma Vision */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                <CardContent className="p-8 text-center">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-secondary to-secondary-light rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    Ma Vision
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      Je crois au pouvoir du droit comme moteur de mouvement : décider avec clarté, challenger ses pratiques, affirmer son modèle, avancer avec confiance.
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      C'est cette dynamique que je mets au service de mes clients.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Mes Valeurs */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                <CardContent className="p-8 text-left">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-gradient-to-br from-accent to-accent/80 rounded-full flex items-center justify-center shadow-md">
+                      <Compass className="w-10 h-10 text-white" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    Mes valeurs
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      Authenticité — Une relation directe, sans jargon inutile
+                    </p>
+                    
+                    <p className="leading-relaxed text-justify">
+                      Confiance — Un engagement loyal, clair et transparent
+                    </p>
+                    
+                    <p className="leading-relaxed text-justify">
+                      Proximité — Une compréhension fine de votre réalité terrain
+                    </p>
+                    
+                    <p className="leading-relaxed text-justify">
+                      Excellence — Une exigence constante, dans le fond comme dans la forme
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
