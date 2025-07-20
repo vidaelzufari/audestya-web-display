@@ -334,9 +334,17 @@ const Presentation = () => {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
-              Honoraires
-            </h2>
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-3 mb-6">
+                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                <div className="w-3 h-3 bg-primary rounded-full"></div>
+                <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+              </div>
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+                Honoraires
+              </h2>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+            </div>
             <Card className="bg-background shadow-soft border-0">
               <CardContent className="p-12">
                 <div className="space-y-8 text-lg text-muted-foreground">
