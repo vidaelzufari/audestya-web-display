@@ -59,8 +59,8 @@ const AccompagnementJuridique = () => {
                 
                 <div className="space-y-8">
                   <div className="group flex items-start gap-6">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
-                      <Target className="w-8 h-8 text-primary-foreground group-hover:text-white transition-colors duration-300" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Target className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
@@ -74,8 +74,8 @@ const AccompagnementJuridique = () => {
                   </div>
                   
                   <div className="group flex items-start gap-6">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
-                      <Users className="w-8 h-8 text-primary-foreground group-hover:text-white transition-colors duration-300" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Users className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
@@ -89,8 +89,8 @@ const AccompagnementJuridique = () => {
                   </div>
                   
                   <div className="group flex items-start gap-6">
-                    <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
-                      <Settings className="w-8 h-8 text-primary-foreground group-hover:text-white transition-colors duration-300" />
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Settings className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
                     <div>
                       <h3 className="font-serif text-2xl font-bold text-primary mb-4">
