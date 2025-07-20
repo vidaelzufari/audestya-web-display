@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield, Briefcase } from 'lucide-react';
+import { Scale, FileText, ShieldCheck, Users, Building, Gavel, ArrowRight, Shield, Folder } from 'lucide-react';
 
 const DomainsSection = () => {
   const domains = [
@@ -29,7 +29,7 @@ const DomainsSection = () => {
       hasPage: true
     },
     {
-      icon: Briefcase,
+      icon: Folder,
       title: "Accompagnement Juridique Externalisé",
       description: "Un appui juridique structuré et aligné sur vos priorités.\nJe vous accompagne en autonomie ou aux côtés de vos équipes, pour :",
       details: [
