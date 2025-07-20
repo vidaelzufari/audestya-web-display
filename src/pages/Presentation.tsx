@@ -139,10 +139,10 @@ const Presentation = () => {
                     Ma Mission
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
-                    <p className="text-xl font-bold text-primary text-justify">
+                    <p className="text-xl font-bold text-primary text-justify hyphens-auto leading-relaxed" style={{ textAlignLast: 'left' }}>
                       Donner aux entreprises les leviers juridiques pour structurer, sécuriser et faire grandir leur modèle économique.
                     </p>
-                    <p className="leading-relaxed text-justify mt-6">
+                    <p className="text-xl font-bold text-primary text-justify hyphens-auto leading-relaxed mt-6" style={{ textAlignLast: 'left' }}>
                       Transformer la complexité du droit en décisions claires, concrètes et utiles.
                     </p>
                   </div>
