@@ -256,7 +256,7 @@ const Presentation = () => {
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-6"></div>
                   <p className="text-left leading-relaxed text-justify">
-                    Après de plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
+                    Après plus de quinze années d'expérience en entreprise, d'abord comme juriste, puis comme directrice juridique, j'ai choisi d'exercer en toute indépendance pour mettre mon expertise au service des entreprises.
                   </p>
                   <div className="text-left leading-relaxed text-justify">
                     <p className="mb-3">Ce choix repose sur :</p>
