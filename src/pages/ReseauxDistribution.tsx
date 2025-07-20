@@ -27,8 +27,10 @@ const ReseauxDistribution = () => {
             {/* Introduction */}
             <Card className="bg-background shadow-soft border-0 mb-16">
               <CardContent className="p-12 text-center">
-                <div className="w-20 h-20 bg-gradient-secondary rounded-full flex items-center justify-center mx-auto mb-6">
-                  <Network className="w-10 h-10 text-secondary-foreground" />
+                <div className="inline-flex items-center gap-3 mb-6">
+                  <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                  <div className="w-3 h-3 bg-primary rounded-full"></div>
+                  <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
                 </div>
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
                   Structuration de votre réseau de distribution
