@@ -128,10 +128,10 @@ const RelationsCommerciales = () => {
                   <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4"></div>
                 </div>
 
-                <p className="text-lg font-bold mb-8 text-justify text-primary">
+                <p className="text-lg mb-8 text-justify text-primary">
                   Dans un contexte de vigilance accrue sur les droits des consommateurs et la transparence commerciale, chaque offre mal encadrée, chaque support imprécis, chaque campagne non conforme peut exposer votre marque à un risque juridique ou réputationnel.
                 </p>
-                <p className="text-lg font-bold mb-8 text-justify text-primary">
+                <p className="text-lg mb-8 text-justify text-primary">
                   J'interviens pour sécuriser juridiquement votre relation client, protéger votre image et fiabiliser vos actions commerciales.
                 </p>
 
