@@ -192,44 +192,24 @@ const Presentation = () => {
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
-                    Mes Valeurs
+                    Ce qui guide chaque mission
                   </h2>
                   <div className="space-y-6 text-lg text-muted-foreground">
-                    <div className="space-y-3">
-                      <h4 className="font-serif text-xl font-bold text-primary">
-                        Authenticité
-                      </h4>
-                      <p className="leading-relaxed text-justify">
-                        Une relation simple, directe, sans jargon inutile.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed text-justify">
+                      Une parole claire, sans jargon ni détour (Authenticité)
+                    </p>
                     
-                    <div className="space-y-3">
-                      <h4 className="font-serif text-xl font-bold text-primary">
-                        Confiance
-                      </h4>
-                      <p className="leading-relaxed text-justify">
-                        Un engagement loyal et transparent.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed text-justify">
+                      Un regard aligné, loyal et sans complaisance (Confiance)
+                    </p>
                     
-                    <div className="space-y-3">
-                      <h4 className="font-serif text-xl font-bold text-primary">
-                        Proximité
-                      </h4>
-                      <p className="leading-relaxed text-justify">
-                        Une compréhension fine de votre réalité et de vos besoins.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed text-justify">
+                      Un ancrage terrain, attentif à vos contraintes réelles (Proximité)
+                    </p>
                     
-                    <div className="space-y-3">
-                      <h4 className="font-serif text-xl font-bold text-primary">
-                        Excellence
-                      </h4>
-                      <p className="leading-relaxed text-justify">
-                        Une exigence constante dans la qualité des prestations et des conseils.
-                      </p>
-                    </div>
+                    <p className="leading-relaxed text-justify">
+                      Une exigence constante, dans le fond comme dans la forme (Excellence)
+                    </p>
                   </div>
                 </CardContent>
               </Card>
