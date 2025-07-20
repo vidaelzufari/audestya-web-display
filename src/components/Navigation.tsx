@@ -66,7 +66,7 @@ const Navigation = () => {
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border shadow-lg z-50 w-64">
+              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50 w-64">
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
                   <a href="/reseaux-distribution" className="w-full">
                     Réseaux de Distribution
@@ -110,7 +110,7 @@ const Navigation = () => {
                   FR
                 </Button>
               </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background border shadow-lg z-50">
+              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
                 <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                   🇫🇷 Français
                 </DropdownMenuItem>
@@ -175,7 +175,7 @@ const Navigation = () => {
                       FR
                     </Button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="bg-background border shadow-lg z-50">
+                  <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
                       🇫🇷 Français
                     </DropdownMenuItem>
