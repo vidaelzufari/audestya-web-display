@@ -240,8 +240,6 @@ const Presentation = () => {
         </div>
       </section>
 
-      <DomainsSection />
-
       {/* Bio Section with Decorative Elements */}
       <section id="presentation" className="py-20 relative overflow-hidden">
         {/* Decorative Background Elements */}
@@ -320,6 +318,7 @@ const Presentation = () => {
         </div>
       </section>
 
+      <DomainsSection />
 
       <Footer />
     </div>
