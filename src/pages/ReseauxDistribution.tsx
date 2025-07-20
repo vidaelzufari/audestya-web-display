@@ -122,28 +122,28 @@ const ReseauxDistribution = () => {
                   <h3 className="text-xl font-semibold text-primary mb-6">Accompagnement / rédaction sur-mesure :</h3>
                   <div className="grid md:grid-cols-2 gap-6">
                     <div className="space-y-3 text-muted-foreground">
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-secondary" />
-                        <p>Document d'Information Précontractuelle (DIP)</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-secondary" />
-                        <p>Contrats : réservation, franchise, licence de marque, concession exclusive</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-secondary" />
-                        <p>Conditions générales de vente (CGV) internes au réseau</p>
-                      </div>
-                    </div>
-                    <div className="space-y-3 text-muted-foreground">
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-secondary" />
-                        <p>Contrats d'approvisionnement, informatiques, logistiques, partenariats</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <FileText className="w-5 h-5 text-secondary" />
-                        <p>Supports de prospection et documents de recrutement réseau</p>
-                      </div>
+                       <div className="flex items-center gap-3">
+                         <FileText className="w-5 h-5 text-secondary" strokeWidth={1.5} />
+                         <p>Document d'Information Précontractuelle (DIP)</p>
+                       </div>
+                       <div className="flex items-center gap-3">
+                         <FileText className="w-5 h-5 text-secondary" strokeWidth={1.5} />
+                         <p>Contrats : réservation, franchise, licence de marque, concession exclusive</p>
+                       </div>
+                       <div className="flex items-center gap-3">
+                         <FileText className="w-5 h-5 text-secondary" strokeWidth={1.5} />
+                         <p>Conditions générales de vente (CGV) internes au réseau</p>
+                       </div>
+                     </div>
+                     <div className="space-y-3 text-muted-foreground">
+                       <div className="flex items-center gap-3">
+                         <FileText className="w-5 h-5 text-secondary" strokeWidth={1.5} />
+                         <p>Contrats d'approvisionnement, informatiques, logistiques, partenariats</p>
+                       </div>
+                       <div className="flex items-center gap-3">
+                         <FileText className="w-5 h-5 text-secondary" strokeWidth={1.5} />
+                         <p>Supports de prospection et documents de recrutement réseau</p>
+                       </div>
                     </div>
                   </div>
                 </div>
