@@ -14,31 +14,31 @@ const HeroSection = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4">
-        <div className="max-w-4xl mx-auto text-center text-background">
+      <div className="relative z-10 container mx-auto px-6 py-16">
+        <div className="max-w-5xl mx-auto text-center text-background">
           {/* Modern badge-style header */}
-          <div className="inline-flex items-center gap-3 mb-8 animate-fade-in">
-            <div className="h-px bg-background/40 w-12"></div>
-            <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 py-2 text-sm font-medium tracking-wider">
+          <div className="inline-flex items-center gap-6 mb-16 animate-fade-in">
+            <div className="h-px bg-background/40 w-20"></div>
+            <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-6 py-3 text-base font-medium tracking-wider">
               DISTRIBUTION, CONTRATS ET CONSOMMATION
             </span>
-            <div className="h-px bg-background/40 w-12"></div>
+            <div className="h-px bg-background/40 w-20"></div>
           </div>
           
           
           
-          <div className="space-y-6 mb-12">
-            <p className="text-lg md:text-xl font-light animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <div className="space-y-12 mb-20">
+            <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed animate-fade-in max-w-4xl mx-auto" style={{ animationDelay: '0.2s' }}>
               Une expertise juridique pragmatique, stratégique et alignée sur vos enjeux concrets
             </p>
           </div>
 
           {/* Inspirational quote */}
-          <div className="bg-background/95 backdrop-blur-sm rounded-xl p-8 mb-12 border border-border shadow-soft animate-scale-in" style={{ animationDelay: '0.4s' }}>
-            <blockquote className="text-base md:text-lg italic mb-4 text-primary">
+          <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-12 mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto" style={{ animationDelay: '0.4s' }}>
+            <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
               « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
             </blockquote>
-            <cite className="text-sm font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
+            <cite className="text-base font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
           </div>
 
           {/* CTA buttons */}
@@ -46,7 +46,7 @@ const HeroSection = () => {
             <Button 
               variant="outline" 
               size="lg"
-              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-8 py-4 text-lg"
+              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
             >
               Découvrir Mon Approche
             </Button>
