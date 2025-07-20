@@ -30,7 +30,7 @@ const MentionsLegales = () => {
             <Card className="bg-background shadow-soft border-0 mb-8">
               <CardContent className="p-8">
                 <p className="text-muted-foreground leading-relaxed">
-                  Le site www.Audestya-avocat.com est désigné ci-après par le « Site ».
+                  Le site www.audestya-avocat.com est désigné ci-après par le « Site ».
                 </p>
               </CardContent>
             </Card>
