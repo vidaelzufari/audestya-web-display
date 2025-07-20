@@ -282,7 +282,7 @@ const Presentation = () => {
               <div className="mt-8 pt-8 border-t">
                 <div className="grid md:grid-cols-2 gap-6">
                   <Card className="bg-muted/30 border-0 p-6">
-                    <h5 className="font-medium text-primary mb-3">Domaines d'intervention</h5>
+                    <h5 className="font-medium text-primary mb-3">Principaux domaines d'intervention</h5>
                     <p className="text-muted-foreground text-sm">
                       Distribution, Contrats, Consommation
                     </p>
