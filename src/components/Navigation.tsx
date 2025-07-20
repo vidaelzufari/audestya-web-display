@@ -26,7 +26,7 @@ const Navigation = () => {
   };
 
   const getNavLinkClass = (path: string) => {
-    const baseClass = "transition-colors font-medium relative";
+    const baseClass = "transition-colors font-medium relative text-sm";
     const inactiveClass = "text-primary-foreground/90 hover:text-secondary hover:font-semibold";
     const activeClass = "text-white font-semibold";
     
@@ -61,7 +61,7 @@ const Navigation = () => {
             {/* Dropdown for Domaines */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" className="text-primary-foreground hover:text-secondary font-medium">
+                <Button variant="ghost" className="text-primary-foreground hover:text-secondary font-medium text-sm">
                   DOMAINES D'INTERVENTION
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </Button>
@@ -105,7 +105,7 @@ const Navigation = () => {
             {/* Language selector */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
-                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary">
+                <Button variant="ghost" size="sm" className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm">
                   <Globe size={16} className="mr-1" />
                   FR
                 </Button>
