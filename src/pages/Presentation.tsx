@@ -31,7 +31,7 @@ const Presentation = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-7xl mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
-              PRÉSENTATION
+              IDENTITÉ & APPROCHE
             </h1>
           </div>
         </div>

@@ -55,7 +55,7 @@ const Navigation = () => {
               ACCUEIL
             </a>
             <a href="/presentation" className={getNavLinkClass('/presentation')}>
-              PRÉSENTATION
+              IDENTITÉ & APPROCHE
             </a>
             
             {/* Dropdown for Domaines */}
@@ -142,7 +142,7 @@ const Navigation = () => {
                 ACCUEIL
               </a>
               <a href="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
-                PRÉSENTATION
+                IDENTITÉ & APPROCHE
               </a>
               
               {/* Mobile Domaines section */}
