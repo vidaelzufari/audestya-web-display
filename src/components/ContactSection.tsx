@@ -25,7 +25,19 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    
+    // Créer le lien mailto avec les données du formulaire
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Prénom: ${formData.firstName}\n` +
+      `Nom: ${formData.lastName}\n` +
+      `Email: ${formData.email}\n` +
+      `Téléphone: ${formData.phone}\n\n` +
+      `Message:\n${formData.message}`
+    );
+    
+    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${subject}&body=${body}`;
+    window.location.href = mailtoLink;
   };
 
   return (
@@ -190,6 +202,7 @@ const ContactSection = () => {
                 </div>
 
                 <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                  <Send className="w-4 h-4 mr-2" />
                   Envoyer le message
                 </Button>
 
