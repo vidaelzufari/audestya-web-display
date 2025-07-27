@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="alternate icon" href="/favicon.ico" />
+        to_email: 'haia.elzufari@audestya-avocat.com',
+        reply_to: data.email
     <title>Audestya Avocat - Droit de la Distribution, Contrats et Consommation</title>
     <meta name="description" content="Avocate indépendante spécialisée en droit de la distribution, des contrats et de la consommation. Accompagnement juridique avec pragmatisme, méthode et clarté." />
     <meta name="author" content="Lovable" />
