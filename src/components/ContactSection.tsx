@@ -207,7 +207,10 @@ const ContactSection = () => {
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
-                  * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la politique de confidentialité.
+                  * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la{' '}
+                  <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline">
+                    politique de confidentialité
+                  </a>.
                 </p>
               </form>
             </CardContent>
