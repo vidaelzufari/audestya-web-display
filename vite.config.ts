@@ -7,6 +7,14 @@ import { componentTagger } from "lovable-tagger";
 export default defineConfig(({ mode }) => ({
   base: "/", // 👈 ESSENTIEL pour GitHub Pages + domaine personnalisé
 
+  build: {
+    rollupOptions: {
+      input: {
+        main: path.resolve(__dirname, 'index.html'),
+      }
+    }
+  },
+
   server: {
     host: "::",
     port: 8080,
