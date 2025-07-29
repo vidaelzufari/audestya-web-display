@@ -72,8 +72,9 @@ const DomainsSection = () => {
             return (
               <Card 
                 key={index}
-                className="relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft transition-all duration-500 group hover:shadow-xl"
+                className="relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]"
               >
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 
                 <CardHeader className="text-center pb-6 relative z-10">
                   <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -123,6 +124,7 @@ const DomainsSection = () => {
                   )}
                 </CardContent>
                 
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
               </Card>
             );
           })}
