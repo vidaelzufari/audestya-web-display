@@ -71,8 +71,8 @@ const Presentation = () => {
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                        <Briefcase className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center shadow-md">
+                        <Briefcase className="w-10 h-10 text-primary" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -93,8 +93,8 @@ const Presentation = () => {
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                        <Wrench className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center shadow-md">
+                        <Wrench className="w-10 h-10 text-secondary" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -115,8 +115,8 @@ const Presentation = () => {
                 <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                        <Handshake className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center shadow-md">
+                        <Handshake className="w-10 h-10 text-accent" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -159,8 +159,8 @@ const Presentation = () => {
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center shadow-md">
+                      <Target className="w-10 h-10 text-primary" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -182,8 +182,8 @@ const Presentation = () => {
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center shadow-md">
+                      <Lightbulb className="w-10 h-10 text-secondary" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -205,8 +205,8 @@ const Presentation = () => {
               <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md">
-                      <Compass className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center shadow-md">
+                      <Compass className="w-10 h-10 text-accent" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
