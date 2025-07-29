@@ -116,7 +116,7 @@ const PolitiqueConfidentialite = () => {
                   5. Avec qui vos Données sont-elles partagées ?
                 </h2>
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
-                  <p>Dans la limite des finalités et des traitements définis à l'article 4, je peux être amenée à partager vos Données :</p>
+                  <p>Dans la limite des finalités et des traitements définis à l'article 4, je peux être amenée à partager vos Données&nbsp;:</p>
                   <ul className="space-y-2 ml-6 list-none">
                     <li className="relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-primary">Avec des partenaires avec votre consentement explicite.</li>
                     <li className="relative pl-4 before:content-['•'] before:absolute before:left-0 before:text-primary">Avec des prestataires techniques : notamment hébergeur, prestataires informatiques, dans le cadre de l'exécution de mes services et l'exercice de mon activité.</li>
