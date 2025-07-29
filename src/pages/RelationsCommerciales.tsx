@@ -55,8 +55,9 @@ const RelationsCommerciales = () => {
             </Card>
             
             {/* BtoB - Encadrement contractuel & prévention des risques commerciaux */}
-            <Card className="group bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
+            <Card className="group bg-background shadow-soft border-0 mb-12 hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
                     <Shield className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
@@ -113,11 +114,13 @@ const RelationsCommerciales = () => {
                   </div>
                 </div>
               </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
             </Card>
 
             {/* BtoC Section */}
-            <Card className="group bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
+            <Card className="group bg-background shadow-soft border-0 mb-12 hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
                 <div className="flex items-center gap-4 mb-8">
                   <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
                     <Shield className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
@@ -150,11 +153,13 @@ const RelationsCommerciales = () => {
                    </div>
                 </div>
               </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
             </Card>
 
             {/* Méthodologie */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12 group">
-              <CardContent className="p-12">
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
                 <div className="text-center mb-12">
                   <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
                     <Layers className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
@@ -225,6 +230,7 @@ const RelationsCommerciales = () => {
                   </div>
                 </div>
               </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-white/30 via-white/60 to-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
             </Card>
 
           </div>
