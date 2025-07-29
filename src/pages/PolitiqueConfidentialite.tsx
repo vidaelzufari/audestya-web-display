@@ -212,7 +212,10 @@ const PolitiqueConfidentialite = () => {
                     Vous pouvez configurer votre navigateur pour accepter ou refuser les cookies. Vous pouvez modifier votre choix à tout moment.
                   </p>
                   <p>
-                    Pour en savoir plus et gérer vos cookies, consultez la CNIL.
+                    Pour en savoir plus et gérer vos cookies, consultez la 
+                    <a href="https://www.cnil.fr/fr/cookies-et-autres-traceurs/comment-se-proteger/maitriser-votre-navigateur" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-secondary ml-1">
+                      CNIL
+                    </a>.
                   </p>
                 </div>
               </CardContent>
