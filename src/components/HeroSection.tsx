@@ -47,11 +47,15 @@ const HeroSection = () => {
           </div>
 
           {/* Inspirational quote */}
-          <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-12 mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto" style={{ animationDelay: '0.4s' }}>
-            <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
-              « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
-            </blockquote>
-            <cite className="text-base font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
+          <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-12 mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group" style={{ animationDelay: '0.4s' }}>
+            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <div className="relative z-10">
+              <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
+                « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
+              </blockquote>
+              <cite className="text-base font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
+            </div>
+            <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
           </div>
 
           {/* CTA buttons */}

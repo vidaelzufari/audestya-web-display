@@ -33,15 +33,23 @@ const Index = () => {
                 Structurer, sécuriser, accompagner vos décisions
               </h2>
               <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl">
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                    Des solutions juridiques ancrées dans vos enjeux business
-                  </p>
+                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
+                      Des solutions juridiques ancrées dans vos enjeux business
+                    </p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl">
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                    Clarté, méthode, exigence à chaque étape
-                  </p>
+                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <div className="relative z-10">
+                    <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
+                      Clarté, méthode, exigence à chaque étape
+                    </p>
+                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </div>
               </div>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
@@ -61,7 +69,7 @@ const Index = () => {
               {/* Combined content in a flowing layout */}
               <div className="space-y-8">
                 {/* First section - Distribution Contrats Consommation */}
-                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="flex items-center justify-center mb-8">
@@ -122,10 +130,11 @@ const Index = () => {
                       </div>
                     </div>
                   </CardContent>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </Card>
 
                 {/* Second section - Accompagnement */}
-                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="flex items-center justify-center mb-8">
@@ -164,6 +173,7 @@ const Index = () => {
                       </div>
                     </div>
                   </CardContent>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </Card>
               </div>
               
