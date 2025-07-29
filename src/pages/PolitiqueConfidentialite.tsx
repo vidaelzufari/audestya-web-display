@@ -83,9 +83,9 @@ const PolitiqueConfidentialite = () => {
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Je collecte et traite notamment :</p>
                   <ul className="space-y-3 ml-4">
-                    <li>• <strong className="text-primary">Lors de la prise de contact :</strong> des Données d'identification du prospect ou du client potentiel qui demande des informations : les données nécessaires à la prise de contact, telles que le nom, le prénom, l'adresse électronique, le numéro de téléphone.</li>
-                    <li>• <strong className="text-primary">Dans le cadre de l'exécution de ma mission :</strong> des Données d'identification des clients (y compris leurs salariés, représentants ou dirigeants) ainsi que les Données nécessaires à l'exécution de la mission, telles que le nom, le prénom, l'adresse, l'adresse électronique, le numéro de téléphone, les coordonnées bancaires, la date de naissance.</li>
-                    <li>• <strong className="text-primary">Les Données de navigation</strong> des visiteurs du Site : telles que l'adresse IP et les données de navigation.</li>
+                    <li>• Lors de la prise de contact : des Données d'identification du prospect ou du client potentiel qui demande des informations : les données nécessaires à la prise de contact, telles que le nom, le prénom, l'adresse électronique, le numéro de téléphone.</li>
+                    <li>• Dans le cadre de l'exécution de ma mission : des Données d'identification des clients (y compris leurs salariés, représentants ou dirigeants) ainsi que les Données nécessaires à l'exécution de la mission, telles que le nom, le prénom, l'adresse, l'adresse électronique, le numéro de téléphone, les coordonnées bancaires, la date de naissance.</li>
+                    <li>• Les Données de navigation des visiteurs du Site : telles que l'adresse IP et les données de navigation.</li>
                   </ul>
                 </div>
               </CardContent>
@@ -100,10 +100,10 @@ const PolitiqueConfidentialite = () => {
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Vos Données peuvent être traitées pour les finalités suivantes :</p>
                   <ul className="space-y-3 ml-4">
-                    <li>• <strong className="text-primary">Si vous êtes un prospect ou un client potentiel :</strong> pour répondre à vos demandes d'information ou de prise de contact.</li>
-                    <li>• <strong className="text-primary">Si vous êtes un client :</strong> pour (i) l'exécution de la relation contractuelle, (ii) le respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : notamment pour le traitement des demandes, l'exécution des missions, la gestion de la convention d'honoraires, des factures, de la comptabilité et plus généralement le suivi de la relation contractuelle.</li>
-                    <li>• <strong className="text-primary">Si vous êtes un partenaire</strong> (expert, prestataire, confrère, etc.) : pour (i) la gestion de mon activité ; (ii) l'exécution d'une relation contractuelle avec un client et (iii) le respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : notamment pour le traitement des demandes, l'exécution des missions, la gestion du contrat, des factures, de la comptabilité et plus généralement pour le suivi de la gestion de l'activité ou de la relation contractuelle.</li>
-                    <li>• <strong className="text-primary">Si vous naviguez sur le Site :</strong> pour (i) analyser le trafic du Site et (ii) faciliter la navigation.</li>
+                    <li>• Si vous êtes un prospect ou un client potentiel : pour répondre à vos demandes d'information ou de prise de contact.</li>
+                    <li>• Si vous êtes un client : pour (i) l'exécution de la relation contractuelle, (ii) le respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : notamment pour le traitement des demandes, l'exécution des missions, la gestion de la convention d'honoraires, des factures, de la comptabilité et plus généralement le suivi de la relation contractuelle.</li>
+                    <li>• Si vous êtes un partenaire (expert, prestataire, confrère, etc.) : pour (i) la gestion de mon activité ; (ii) l'exécution d'une relation contractuelle avec un client et (iii) le respect de mes obligations légales (comptables et fiscales ainsi que des règles professionnelles) : notamment pour le traitement des demandes, l'exécution des missions, la gestion du contrat, des factures, de la comptabilité et plus généralement pour le suivi de la gestion de l'activité ou de la relation contractuelle.</li>
+                    <li>• Si vous naviguez sur le Site : pour (i) analyser le trafic du Site et (ii) faciliter la navigation.</li>
                   </ul>
                 </div>
               </CardContent>
@@ -170,12 +170,12 @@ const PolitiqueConfidentialite = () => {
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>Conformément à la réglementation en vigueur, vous disposez des droits suivants :</p>
                   <ul className="space-y-3 ml-4">
-                    <li>• <strong className="text-primary">Le droit d'accès :</strong> Vous avez le droit (i) d'obtenir la confirmation que des Données vous concernant sont ou ne sont pas traitées et, lorsqu'elles le sont, (ii) d'obtenir l'accès auxdites Données et une copie de ces dernières.</li>
-                    <li>• <strong className="text-primary">Le droit de rectification :</strong> Vous avez le droit d'obtenir la rectification des Données vous concernant qui sont inexactes ou incomplètes.</li>
-                    <li>• <strong className="text-primary">Le droit à l'effacement :</strong> Vous avez le droit d'obtenir l'effacement de vos Données. Je me réserve néanmoins la possibilité pour des raisons légales ou légitimes de conserver ces Données.</li>
-                    <li>• <strong className="text-primary">Le droit à la limitation du traitement :</strong> Dans certains cas, vous avez le droit d'obtenir la limitation du traitement de vos Données.</li>
-                    <li>• <strong className="text-primary">Le droit à la portabilité :</strong> Vous pouvez demander à recevoir vos Données vous concernant dans un format structuré, couramment utilisé et lisible par machine.</li>
-                    <li>• <strong className="text-primary">Le droit d'opposition :</strong> Vous avez le droit de vous opposer à tout moment, pour des raisons tenant à votre situation particulière, à un traitement de Données vous concernant lorsque vos intérêts ou libertés et droits fondamentaux exigent une protection. Je me réserve néanmoins la possibilité d'invoquer des motifs légitimes et impérieux nécessitant la poursuite du traitement. Il en va de même aux fins de constatation, d'exercice ou de défense de droits en justice.</li>
+                    <li>• Le droit d'accès : Vous avez le droit (i) d'obtenir la confirmation que des Données vous concernant sont ou ne sont pas traitées et, lorsqu'elles le sont, (ii) d'obtenir l'accès auxdites Données et une copie de ces dernières.</li>
+                    <li>• Le droit de rectification : Vous avez le droit d'obtenir la rectification des Données vous concernant qui sont inexactes ou incomplètes.</li>
+                    <li>• Le droit à l'effacement : Vous avez le droit d'obtenir l'effacement de vos Données. Je me réserve néanmoins la possibilité pour des raisons légales ou légitimes de conserver ces Données.</li>
+                    <li>• Le droit à la limitation du traitement : Dans certains cas, vous avez le droit d'obtenir la limitation du traitement de vos Données.</li>
+                    <li>• Le droit à la portabilité : Vous pouvez demander à recevoir vos Données vous concernant dans un format structuré, couramment utilisé et lisible par machine.</li>
+                    <li>• Le droit d'opposition : Vous avez le droit de vous opposer à tout moment, pour des raisons tenant à votre situation particulière, à un traitement de Données vous concernant lorsque vos intérêts ou libertés et droits fondamentaux exigent une protection. Je me réserve néanmoins la possibilité d'invoquer des motifs légitimes et impérieux nécessitant la poursuite du traitement. Il en va de même aux fins de constatation, d'exercice ou de défense de droits en justice.</li>
                   </ul>
                   <p className="mt-6">
                     Pour exercer ces droits, vous pouvez adresser une demande, par courriel à : 
@@ -205,8 +205,8 @@ const PolitiqueConfidentialite = () => {
                   </p>
                   <p>Les cookies utilisés par le Site permettent notamment :</p>
                   <ul className="space-y-2 ml-4">
-                    <li>• <strong className="text-primary">D'afficher le Site :</strong> Cookies strictement nécessaires.</li>
-                    <li>• <strong className="text-primary">D'analyser le trafic sur le Site :</strong> Cookies de mesure d'audience.</li>
+                    <li>• D'afficher le Site : Cookies strictement nécessaires.</li>
+                    <li>• D'analyser le trafic sur le Site : Cookies de mesure d'audience.</li>
                   </ul>
                   <p>
                     Vous pouvez configurer votre navigateur pour accepter ou refuser les cookies. Vous pouvez modifier votre choix à tout moment.
