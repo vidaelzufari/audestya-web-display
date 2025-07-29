@@ -68,7 +68,8 @@ const Presentation = () => {
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Expertise Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -90,7 +91,8 @@ const Presentation = () => {
 
               {/* Pragmatic Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8 group hover:shadow-xl">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -112,7 +114,8 @@ const Presentation = () => {
 
               {/* Trust Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
                       <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
@@ -156,8 +159,9 @@ const Presentation = () => {
             
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
-                <CardContent className="p-8 text-left">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-left relative z-10">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
                       <Target className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
@@ -179,8 +183,9 @@ const Presentation = () => {
               </Card>
 
               {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
-                <CardContent className="p-8 text-center">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-center relative z-10">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
                       <Lightbulb className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
@@ -202,8 +207,9 @@ const Presentation = () => {
               </Card>
 
               {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
-                <CardContent className="p-8 text-left">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-left relative z-10">
                   <div className="mb-6">
                     <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
                       <Compass className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
