@@ -72,17 +72,27 @@ const DomainsSection = () => {
             return (
               <Card 
                 key={index}
-                className="relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft transition-all duration-500"
+                className="relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft transition-all duration-500 group hover:shadow-xl"
               >
                 
                 <CardHeader className="text-center pb-6 relative z-10">
-                  <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md">
+                  <div className={`mx-auto mb-6 rounded-full w-20 h-20 flex items-center justify-center shadow-md transition-all duration-300 ${
+                    index === 0 ? 'bg-primary/10 group-hover:bg-primary/20' :
+                    index === 1 ? 'bg-secondary/10 group-hover:bg-secondary/20' :
+                    'bg-accent/10 group-hover:bg-accent/20'
+                  }`}>
                     {typeof domain.icon === 'string' ? (
                       <img src={domain.icon} alt={domain.title} className="w-10 h-10" />
                     ) : domain.icon === AccompagnementIcon ? (
-                      <AccompagnementIcon className="w-10 h-10 text-foreground" />
+                      <AccompagnementIcon className={`w-10 h-10 transition-colors duration-300 ${
+                        index === 2 ? 'text-accent group-hover:text-accent/80' : 'text-foreground'
+                      }`} />
                     ) : (
-                      <domain.icon className="w-10 h-10 text-foreground" strokeWidth={1.5} />
+                      <domain.icon className={`w-10 h-10 transition-colors duration-300 ${
+                        index === 0 ? 'text-primary group-hover:text-primary/80' :
+                        index === 1 ? 'text-secondary group-hover:text-secondary/80' :
+                        'text-accent group-hover:text-accent/80'
+                      }`} strokeWidth={1.5} />
                     )}
                   </div>
                   <CardTitle className="font-serif text-2xl text-primary">
