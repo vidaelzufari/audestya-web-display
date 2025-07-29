@@ -68,11 +68,11 @@ const Presentation = () => {
             <div className="grid lg:grid-cols-3 gap-8 lg:gap-12">
               {/* Expertise Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center shadow-md">
-                        <Briefcase className="w-10 h-10 text-primary" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-primary/10 group-hover:bg-primary/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                        <Briefcase className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors duration-300" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -90,11 +90,11 @@ const Presentation = () => {
 
               {/* Pragmatic Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative lg:mt-8 group hover:shadow-xl">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center shadow-md">
-                        <Wrench className="w-10 h-10 text-secondary" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-secondary/10 group-hover:bg-secondary/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                        <Wrench className="w-10 h-10 text-secondary group-hover:text-secondary/80 transition-colors duration-300" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -112,11 +112,11 @@ const Presentation = () => {
 
               {/* Trust Card */}
               <div>
-                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative">
+                <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden transition-all duration-500 relative group hover:shadow-xl">
                   <CardContent className="p-10 relative z-10">
                     <div className="mb-8 flex justify-center">
-                      <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center shadow-md">
-                        <Handshake className="w-10 h-10 text-accent" strokeWidth={1.5} />
+                      <div className="w-20 h-20 mx-auto bg-accent/10 group-hover:bg-accent/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                        <Handshake className="w-10 h-10 text-accent group-hover:text-accent/80 transition-colors duration-300" strokeWidth={1.5} />
                       </div>
                     </div>
                     <div className="text-center space-y-4">
@@ -156,11 +156,11 @@ const Presentation = () => {
             
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-primary/10 rounded-full flex items-center justify-center shadow-md">
-                      <Target className="w-10 h-10 text-primary" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-primary/10 group-hover:bg-primary/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                      <Target className="w-10 h-10 text-primary group-hover:text-primary/80 transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -179,11 +179,11 @@ const Presentation = () => {
               </Card>
 
               {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
                 <CardContent className="p-8 text-center">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-secondary/10 rounded-full flex items-center justify-center shadow-md">
-                      <Lightbulb className="w-10 h-10 text-secondary" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-secondary/10 group-hover:bg-secondary/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                      <Lightbulb className="w-10 h-10 text-secondary group-hover:text-secondary/80 transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
@@ -202,11 +202,11 @@ const Presentation = () => {
               </Card>
 
               {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl">
                 <CardContent className="p-8 text-left">
                   <div className="mb-6">
-                    <div className="w-20 h-20 mx-auto bg-accent/10 rounded-full flex items-center justify-center shadow-md">
-                      <Compass className="w-10 h-10 text-accent" strokeWidth={1.5} />
+                    <div className="w-20 h-20 mx-auto bg-accent/10 group-hover:bg-accent/20 rounded-full flex items-center justify-center shadow-md transition-all duration-300">
+                      <Compass className="w-10 h-10 text-accent group-hover:text-accent/80 transition-colors duration-300" strokeWidth={1.5} />
                     </div>
                   </div>
                   <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
