@@ -1,4 +1,3 @@
-import React from "react";
 import { Toaster } from "@/components/ui/toaster";
 import { Toaster as Sonner } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -20,29 +19,27 @@ const queryClient = new QueryClient();
 
 const App = () => {
   return (
-    <React.StrictMode>
-      <QueryClientProvider client={queryClient}>
-        <TooltipProvider>
-          <Toaster />
-          <Sonner />
-          <BrowserRouter>
-            <Routes>
-              <Route path="/" element={<Index />} />
-              <Route path="/presentation" element={<Presentation />} />
-              <Route path="/reseaux-distribution" element={<ReseauxDistribution />} />
-              <Route path="/relations-commerciales" element={<RelationsCommerciales />} />
-              <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
-              <Route path="/actualites" element={<Actualites />} />
-              <Route path="/honoraires" element={<Honoraires />} />
-              <Route path="/mentions-legales" element={<MentionsLegales />} />
-              <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
-              <Route path="/conditions-generales-vente" element={<ConditionsGeneralesVente />} />
-              <Route path="*" element={<NotFound />} />
-            </Routes>
-          </BrowserRouter>
-        </TooltipProvider>
-      </QueryClientProvider>
-    </React.StrictMode>
+    <QueryClientProvider client={queryClient}>
+      <TooltipProvider>
+        <Toaster />
+        <Sonner />
+        <BrowserRouter>
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/presentation" element={<Presentation />} />
+            <Route path="/reseaux-distribution" element={<ReseauxDistribution />} />
+            <Route path="/relations-commerciales" element={<RelationsCommerciales />} />
+            <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
+            <Route path="/actualites" element={<Actualites />} />
+            <Route path="/honoraires" element={<Honoraires />} />
+            <Route path="/mentions-legales" element={<MentionsLegales />} />
+            <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+            <Route path="/conditions-generales-vente" element={<ConditionsGeneralesVente />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </BrowserRouter>
+      </TooltipProvider>
+    </QueryClientProvider>
   );
 };
 
