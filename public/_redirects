@@ -1,0 +1,13 @@
+# Netlify redirects for SPA
+/*    /index.html   200
+
+# Handle specific routes
+/presentation    /index.html   200
+/reseaux-distribution    /index.html   200
+/relations-commerciales    /index.html   200
+/accompagnement-juridique    /index.html   200
+/actualites    /index.html   200
+/honoraires    /index.html   200
+/mentions-legales    /index.html   200
+/politique-confidentialite    /index.html   200
+/conditions-generales-vente    /index.html   200
