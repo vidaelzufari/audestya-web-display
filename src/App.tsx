@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
+import CookieConsent from "./components/CookieConsent";
 import Presentation from "./pages/Presentation";
 import ReseauxDistribution from "./pages/ReseauxDistribution";
 import RelationsCommerciales from "./pages/RelationsCommerciales";
@@ -13,6 +14,7 @@ import PolitiqueConfidentialite from "./pages/PolitiqueConfidentialite";
 import ConditionsGeneralesVente from "./pages/ConditionsGeneralesVente";
 import Actualites from "./pages/Actualites";
 import Honoraires from "./pages/Honoraires";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -33,9 +35,11 @@ const App = () => (
           <Route path="/honoraires" element={<Honoraires />} />
           <Route path="/mentions-legales" element={<MentionsLegales />} />
           <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
+          <Route path="/politique-cookies" element={<CookiePolicy />} />
           <Route path="/conditions-generales-vente" element={<ConditionsGeneralesVente />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
+        <CookieConsent />
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
