@@ -5,7 +5,7 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./", // 👈 Utilisation de chemins relatifs pour Netlify
+  base: "/", // 👈 Utilisation de chemins absolus pour Netlify
 
   build: {
     outDir: 'dist',
@@ -19,7 +19,7 @@ export default defineConfig(({ mode }) => ({
       }
     },
     copyPublicDir: true,
-    sourcemap: false,
+    sourcemap: mode === 'development',
     minify: 'terser'
   },
 
