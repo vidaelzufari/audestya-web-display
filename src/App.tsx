@@ -39,8 +39,8 @@ const App = () => (
           <Route path="/conditions-generales-vente" element={<ConditionsGeneralesVente />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-        <CookieConsent />
       </BrowserRouter>
+      <CookieConsent />
     </TooltipProvider>
   </QueryClientProvider>
 );

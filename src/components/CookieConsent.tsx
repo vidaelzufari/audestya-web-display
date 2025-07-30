@@ -33,7 +33,7 @@ const CookieConsent = () => {
       // Show banner after a short delay
       const timer = setTimeout(() => {
         setShowBanner(true);
-      }, 1000);
+      }, 500);
       return () => clearTimeout(timer);
     } else {
       // Load saved preferences
