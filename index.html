@@ -3,38 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audestya Avocat</title>
-    <meta name="description" content="Avocat spécialisé en droit de la distribution, contrats et consommation" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Audestya Avocat - Debug</title>
     <style>
-      /* Styles de base pour éviter le flash */
       body {
         margin: 0;
         padding: 0;
-        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-        background-color: #ffffff;
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
       }
       #root {
         min-height: 100vh;
+        background-color: white;
       }
-      /* Loading spinner */
-      .loading {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        font-family: Inter, sans-serif;
+      .debug-info {
+        position: fixed;
+        top: 10px;
+        right: 10px;
+        background: #333;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        font-size: 12px;
+        z-index: 9999;
       }
     </style>
   </head>
   <body>
+    <div class="debug-info">
+      Debug Mode - Vérifiez la console
+    </div>
     <div id="root">
-      <div class="loading">
-        <div>Chargement...</div>
+      <div style="padding: 20px; text-align: center;">
+        <h2>Chargement en cours...</h2>
+        <p>Si ce message persiste, vérifiez la console pour les erreurs.</p>
       </div>
     </div>
+    <script>
+      console.log('HTML chargé, script inline exécuté')
+      console.log('Root element exists:', !!document.getElementById('root'))
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
