@@ -2,46 +2,48 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audestya Avocat - Debug</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: #f0f0f0;
-      }
-      #root {
-        min-height: 100vh;
-        background-color: white;
-      }
-      .debug-info {
-        position: fixed;
-        top: 10px;
-        right: 10px;
-        background: #333;
-        color: white;
-        padding: 10px;
-        border-radius: 5px;
-        font-size: 12px;
-        z-index: 9999;
-      }
-    </style>
+    <meta name="description" content="Audestya Avocat - Haia El Zufari, Avocat au Barreau de Paris spécialisé en droit de la distribution, des contrats et de la consommation." />
+    <meta name="keywords" content="avocat, Paris, droit distribution, contrats, consommation, franchise, réseau commercial" />
+    <meta name="author" content="Haia El Zufari" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://audestya-avocat.com/" />
+    <meta property="og:title" content="Audestya Avocat - Droit de la Distribution, Contrats et Consommation" />
+    <meta property="og:description" content="Expertise juridique pragmatique en droit de la distribution, des contrats et de la consommation. Accompagnement des entreprises dans leurs enjeux commerciaux." />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://audestya-avocat.com/" />
+    <meta property="twitter:title" content="Audestya Avocat - Droit de la Distribution, Contrats et Consommation" />
+    <meta property="twitter:description" content="Expertise juridique pragmatique en droit de la distribution, des contrats et de la consommation." />
+    
+    <title>Audestya Avocat - Haia El Zufari | Droit de la Distribution, Contrats et Consommation</title>
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="debug-info">
-      Debug Mode - Vérifiez la console
-    </div>
     <div id="root">
-      <div style="padding: 20px; text-align: center;">
-        <h2>Chargement en cours...</h2>
-        <p>Si ce message persiste, vérifiez la console pour les erreurs.</p>
+      <div style="display: flex; justify-content: center; align-items: center; min-height: 100vh; font-family: Arial, sans-serif;">
+        <div style="text-align: center;">
+          <div style="width: 40px; height: 40px; border: 4px solid #f3f3f3; border-top: 4px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite; margin: 0 auto 20px;"></div>
+          <p>Chargement...</p>
+        </div>
       </div>
     </div>
-    <script>
-      console.log('HTML chargé, script inline exécuté')
-      console.log('Root element exists:', !!document.getElementById('root'))
-    </script>
+    <style>
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+    </style>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
