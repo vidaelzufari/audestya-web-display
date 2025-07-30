@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent } from './ui/card';
+import { toast } from './ui/sonner';
 
 const ContactSection = () => {
+  const [state, handleSubmit] = useForm("YOUR_FORM_ID"); // Remplacez par votre ID de formulaire Formspree
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -23,22 +26,32 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const onSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    // Créer le lien mailto avec les données du formulaire
-    const subject = encodeURIComponent(formData.subject);
-    const body = encodeURIComponent(
-      `Prénom: ${formData.firstName}\n` +
-      `Nom: ${formData.lastName}\n` +
-      `Email: ${formData.email}\n` +
-      `Téléphone: ${formData.phone}\n\n` +
-      `Message:\n${formData.message}`
-    );
-    
-    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${subject}&body=${body}`;
-    window.location.href = mailtoLink;
+    await handleSubmit(e);
   };
+
+  React.useEffect(() => {
+    if (state.succeeded) {
+      toast.success("Message envoyé avec succès !", {
+        description: "Nous vous répondrons dans les plus brefs délais."
+      });
+      // Réinitialiser le formulaire
+      setFormData({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
+    }
+    if (state.errors && state.errors.length > 0) {
+      toast.error("Erreur lors de l'envoi", {
+        description: "Veuillez réessayer ou nous contacter directement."
+      });
+    }
+  }, [state.succeeded, state.errors]);
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-background via-background/95 to-secondary/5">
@@ -104,7 +117,7 @@ const ContactSection = () => {
               </h3>
               <div className="w-12 h-0.5 bg-primary mx-auto mb-8"></div>
               
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form onSubmit={onSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
@@ -153,6 +166,7 @@ const ContactSection = () => {
                     placeholder="votre@email.com"
                   />
                 </div>
+                <ValidationError prefix="Email" field="email" errors={state.errors} />
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
@@ -200,10 +214,11 @@ const ContactSection = () => {
                     placeholder="Décrivez votre demande et vos besoins..."
                   />
                 </div>
+                <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-                <Button type="submit" className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                <Button type="submit" disabled={state.submitting} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                   <Send className="w-4 h-4 mr-2" />
-                  Envoyer le message
+                  {state.submitting ? 'Envoi en cours...' : 'Envoyer le message'}
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
