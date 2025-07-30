@@ -5,17 +5,22 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/", // 👈 ESSENTIEL pour GitHub Pages + domaine personnalisé
+  base: "./", // 👈 Utilisation de chemins relatifs pour Netlify
 
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
+      },
+      output: {
+        manualChunks: undefined,
       }
     },
-    // Ensure .htaccess is copied to dist
-    copyPublicDir: true
+    copyPublicDir: true,
+    sourcemap: false,
+    minify: 'terser'
   },
 
   server: {

@@ -20,4 +20,3 @@ import './index.css'
   }
 }(window.location))
 
-createRoot(document.getElementById("root")!).render(<App />);
