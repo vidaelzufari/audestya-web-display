@@ -8,7 +8,7 @@ import { Card, CardContent } from './ui/card';
 import { toast } from './ui/sonner';
 
 const ContactSection = () => {
-  const [state, handleSubmit] = useForm("YOUR_FORM_ID"); // Remplacez par votre ID de formulaire Formspree
+  const [state, handleSubmit] = useForm("xpwagdko"); // ID Formspree configuré
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
