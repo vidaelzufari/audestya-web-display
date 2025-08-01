@@ -40,15 +40,15 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg text-secondary">Navigation</h4>
             <div className="space-y-2">
-              <a href="#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <Link to="/#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Accueil
-              </a>
+              </Link>
               <Link to="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Identité & Approche
               </Link>
-              <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <Link to="/#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
-              </a>
+              </Link>
               <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Contact
               </button>

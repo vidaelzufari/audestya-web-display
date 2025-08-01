@@ -51,9 +51,9 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className={getNavLinkClass('/')}>
+            <Link to="/" className={getNavLinkClass('/')}>
               ACCUEIL
-            </a>
+            </Link>
             <Link to="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
               IDENTITÉ & APPROCHE
             </Link>
@@ -88,9 +88,9 @@ const Navigation = () => {
             <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
             </Link>
-            <a href="/#contact" className={getNavLinkClass('#contact')}>
+            <Link to="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
-            </a>
+            </Link>
             
             {/* LinkedIn icon */}
             <a 
@@ -136,35 +136,35 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
-              <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
+              <Link to="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
                 ACCUEIL
-              </a>
-              <a href="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
+              </Link>
+              <Link to="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
                 IDENTITÉ & APPROCHE
-              </a>
+              </Link>
               
               {/* Mobile Domaines section */}
               <div className="py-2">
                 <p className="text-primary-foreground font-medium px-2 mb-2">DOMAINES D'INTERVENTION</p>
                 <div className="ml-4 space-y-2">
-                  <a href="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Réseaux de Distribution
-                  </a>
-                  <a href="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  </Link>
+                  <Link to="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Relations et Pratiques Commerciales
-                  </a>
-                  <a href="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  </Link>
+                  <Link to="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Accompagnement Juridique Externalisé
-                  </a>
+                  </Link>
                 </div>
               </div>
               
-              <a href="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
+              <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
                 ACTUALITÉS
-              </a>
-              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
+              </Link>
+              <Link to="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
                 CONTACT
-              </a>
+              </Link>
               <div className="py-2 px-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>

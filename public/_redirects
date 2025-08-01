@@ -1,1 +1,5 @@
+# Netlify redirects for SPA
 /*    /index.html   200
+
+# Handle hash routing
+/#/*  /index.html   200
