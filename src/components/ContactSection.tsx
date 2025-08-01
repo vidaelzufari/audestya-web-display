@@ -33,40 +33,24 @@ const ContactSection = () => {
     try {
       // Configuration EmailJS
       const templateParams = {
-        from_name: `${formData.firstName} ${formData.lastName}`,
-        from_email: formData.email,
+        name: `${formData.firstName} ${formData.lastName}`,
+        email: formData.email,
         phone: formData.phone,
         subject: formData.subject,
-        message: formData.message,
-        to_email: 'haia.elzufari@audestya-avocat.com',
-        reply_to: formData.email,
+        message: `Sujet: ${formData.subject}\n\nEmail: ${formData.email}\nTéléphone: ${formData.phone || 'Non renseigné'}\n\nMessage:\n${formData.message}`,
+        time: new Date().toLocaleString('fr-FR'),
       };
 
       // Envoi de l'email principal à vous
       await emailjs.send(
         'service_bl7a3qq', // Service ID
-        'template_contact', // Template ID - à remplacer  
+        'YOUR_TEMPLATE_ID', // Template ID - remplacez par votre vrai Template ID
         templateParams,
         'YOUR_PUBLIC_KEY' // Public Key - à remplacer
       );
 
-      // Envoi de l'email de confirmation à l'utilisateur
-      const confirmationParams = {
-        to_name: `${formData.firstName} ${formData.lastName}`,
-        to_email: formData.email,
-        subject: formData.subject,
-        from_name: 'Haia El Zufari - Audestya Avocat',
-      };
-
-      await emailjs.send(
-        'service_bl7a3qq', // Service ID
-        'template_confirmation', // Template ID pour confirmation - à remplacer
-        confirmationParams,
-        'YOUR_PUBLIC_KEY' // Public Key - à remplacer
-      );
-
       toast.success("Message envoyé avec succès !", {
-        description: "Nous vous répondrons dans les plus brefs délais. Un email de confirmation vous a été envoyé."
+        description: "Nous vous répondrons dans les plus brefs délais."
       });
 
       // Réinitialiser le formulaire
