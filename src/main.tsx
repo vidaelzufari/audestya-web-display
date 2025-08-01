@@ -1,31 +1,53 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import App from "./App";
-import "./index.css";
-
 console.log("=== MAIN.TSX STARTING ===");
-console.log("Document ready state:", document.readyState);
 
+// Test if basic DOM manipulation works
 const rootElement = document.getElementById("root");
-console.log("Root element found:", !!rootElement);
-
-if (!rootElement) {
-  console.error("ROOT ELEMENT NOT FOUND!");
-  document.body.innerHTML = '<div style="padding: 20px; color: red; font-size: 24px;">ERROR: Root element not found!</div>';
+if (rootElement) {
+  rootElement.innerHTML = '<div style="padding: 20px; color: green; font-size: 24px;">✅ JavaScript is working! React loading...</div>';
+  console.log("✅ DOM manipulation successful");
 } else {
-  console.log("Creating React root...");
-  try {
-    const root = createRoot(rootElement);
-    console.log("React root created, rendering app...");
+  console.error("❌ Root element not found");
+}
+
+// Test React import
+try {
+  console.log("Importing React...");
+  import("react").then(() => {
+    console.log("✅ React imported successfully");
     
-    root.render(
-      <StrictMode>
-        <App />
-      </StrictMode>
-    );
-    console.log("App rendered successfully!");
-  } catch (error) {
-    console.error("Error rendering app:", error);
-    rootElement.innerHTML = '<div style="padding: 20px; color: red; font-size: 24px;">Error: ' + error.message + '</div>';
+    // Test React DOM import
+    import("react-dom/client").then(() => {
+      console.log("✅ React DOM imported successfully");
+      
+      // Now try to render
+      import("./App").then((AppModule) => {
+        console.log("✅ App component imported successfully");
+        
+        const { createRoot } = require("react-dom/client");
+        const { createElement } = require("react");
+        
+        const root = createRoot(rootElement!);
+        root.render(createElement(AppModule.default));
+        console.log("✅ React app rendered successfully");
+        
+      }).catch(error => {
+        console.error("❌ Failed to import App:", error);
+        rootElement!.innerHTML = '<div style="padding: 20px; color: red;">Error importing App: ' + error.message + '</div>';
+      });
+      
+    }).catch(error => {
+      console.error("❌ Failed to import React DOM:", error);
+      rootElement!.innerHTML = '<div style="padding: 20px; color: red;">Error importing React DOM: ' + error.message + '</div>';
+    });
+    
+  }).catch(error => {
+    console.error("❌ Failed to import React:", error);
+    rootElement!.innerHTML = '<div style="padding: 20px; color: red;">Error importing React: ' + error.message + '</div>';
+  });
+  
+} catch (error) {
+  console.error("❌ Critical error:", error);
+  if (rootElement) {
+    rootElement.innerHTML = '<div style="padding: 20px; color: red;">Critical error: ' + error.message + '</div>';
   }
 }
