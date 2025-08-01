@@ -251,8 +251,7 @@ const ContactSection = () => {
 
                   <p className="text-xs text-muted-foreground text-center">
                     * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la{' '}
-                    <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline">
-                      politique de confidentialité
+                  <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline" onClick={(e) => { e.preventDefault(); window.location.href = '/politique-confidentialite'; }}>
                     </a>.
                   </p>
                 </form>
