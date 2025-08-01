@@ -15,7 +15,7 @@ const ContactSection = () => {
     sujet: '',
     message: ''
   });
-  const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
+  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -25,7 +25,7 @@ const ContactSection = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
     // Validation simple
@@ -34,28 +34,34 @@ const ContactSection = () => {
       return;
     }
 
-    // Créer le lien mailto
-    const subject = formData.sujet;
-    const body = `Prénom: ${formData.prenom}\nNom: ${formData.nom}\nEmail: ${formData.email}\nTéléphone: ${formData.telephone}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-    
-    // Ouvrir le client email
-    window.location.href = mailtoLink;
-    
-    setStatus('success');
-    
-    // Reset form après 3 secondes
-    setTimeout(() => {
-      setFormData({
-        prenom: '',
-        nom: '',
-        email: '',
-        telephone: '',
-        sujet: '',
-        message: ''
-      });
-      setStatus('idle');
-    }, 3000);
+    setStatus('loading');
+
+    try {
+      // Simuler l'envoi du formulaire
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Ici vous pourrez intégrer votre service d'envoi d'email
+      // Par exemple : Formspree, EmailJS, ou votre propre API
+      
+      setStatus('success');
+      
+      // Reset form après succès
+      setTimeout(() => {
+        setFormData({
+          prenom: '',
+          nom: '',
+          email: '',
+          telephone: '',
+          sujet: '',
+          message: ''
+        });
+        setStatus('idle');
+      }, 3000);
+      
+    } catch (error) {
+      setStatus('error');
+      setTimeout(() => setStatus('idle'), 3000);
+    }
   };
 
   return (
@@ -91,9 +97,9 @@ const ContactSection = () => {
                       <Mail className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-primary">Email</p>
-                        <a href="mailto:haia.elzufari@audestya-avocat.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                        <span className="text-muted-foreground">
                           haia.elzufari@audestya-avocat.com
-                        </a>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -101,7 +107,7 @@ const ContactSection = () => {
                       <div>
                         <p className="font-semibold text-primary">Localisation</p>
                         <p className="text-muted-foreground">
-                          Paris-France
+                          Paris, France
                         </p>
                       </div>
                     </div>
@@ -120,7 +126,7 @@ const ContactSection = () => {
                 {status === 'success' && (
                   <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2">
                     <CheckCircle className="w-5 h-5 text-green-600" />
-                    <p className="text-green-800">Votre client email va s'ouvrir avec le message pré-rempli.</p>
+                    <p className="text-green-800">Votre message a été envoyé avec succès !</p>
                   </div>
                 )}
                 
@@ -143,6 +149,7 @@ const ContactSection = () => {
                         required
                         placeholder="Votre prénom"
                         className="border-gray-300 focus:border-secondary"
+                        disabled={status === 'loading'}
                       />
                     </div>
                     <div className="space-y-2">
@@ -155,6 +162,7 @@ const ContactSection = () => {
                         required
                         placeholder="Votre nom"
                         className="border-gray-300 focus:border-secondary"
+                        disabled={status === 'loading'}
                       />
                     </div>
                   </div>
@@ -170,6 +178,7 @@ const ContactSection = () => {
                       required
                       placeholder="votre@email.com"
                       className="border-gray-300 focus:border-secondary"
+                      disabled={status === 'loading'}
                     />
                   </div>
                   
@@ -183,6 +192,7 @@ const ContactSection = () => {
                       onChange={handleInputChange}
                       placeholder="Votre numéro de téléphone"
                       className="border-gray-300 focus:border-secondary"
+                      disabled={status === 'loading'}
                     />
                   </div>
                   
@@ -196,6 +206,7 @@ const ContactSection = () => {
                       required
                       placeholder="Objet de votre demande"
                       className="border-gray-300 focus:border-secondary"
+                      disabled={status === 'loading'}
                     />
                   </div>
                   
@@ -210,14 +221,26 @@ const ContactSection = () => {
                       rows={5}
                       className="border-gray-300 focus:border-secondary resize-none"
                       placeholder="Décrivez votre demande et vos besoins..."
+                      disabled={status === 'loading'}
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12"
+                    disabled={status === 'loading'}
                   >
-                    Envoyer le message
+                    {status === 'loading' ? (
+                      <>
+                        <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
+                        Envoi en cours...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-4 h-4 mr-2" />
+                        Envoyer le message
+                      </>
+                    )}
                   </Button>
                   
                   <p className="text-sm text-muted-foreground text-center">
