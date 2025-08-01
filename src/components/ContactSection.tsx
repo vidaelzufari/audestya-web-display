@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -251,8 +252,9 @@ const ContactSection = () => {
 
                   <p className="text-xs text-muted-foreground text-center">
                     * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la{' '}
-                  <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline" onClick={(e) => { e.preventDefault(); window.location.href = '/politique-confidentialite'; }}>
-                    </a>.
+                    <Link to="/politique-confidentialite" className="text-primary hover:text-secondary underline">
+                      politique de confidentialité
+                    </Link>.
                   </p>
                 </form>
               </CardContent>

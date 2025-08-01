@@ -43,18 +43,18 @@ const Footer = () => {
               <a href="#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Accueil
               </a>
-              <a href="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <Link to="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Identité & Approche
-              </a>
+              </Link>
               <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
               </a>
               <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Contact
               </button>
-              <a href="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <Link to="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Honoraires
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -85,15 +85,15 @@ const Footer = () => {
               © 2025 Audestya Avocat. Tous droits réservés.
             </p>
             <div className="flex gap-6">
-              <a href="/mentions-legales" className="hover:text-secondary transition-colors">
+              <Link to="/mentions-legales" className="hover:text-secondary transition-colors">
                 Mentions légales
-              </a>
-              <a href="/politique-cookies" className="hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/politique-cookies" className="hover:text-secondary transition-colors">
                 Cookies
-              </a>
-              <a href="/politique-confidentialite" className="hover:text-secondary transition-colors">
+              </Link>
+              <Link to="/politique-confidentialite" className="hover:text-secondary transition-colors">
                 Politique de confidentialité
-              </a>
+              </Link>
             </div>
           </div>
         </div>

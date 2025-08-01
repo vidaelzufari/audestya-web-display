@@ -1,6 +1,6 @@
 
 import { useState } from 'react';
-import { useLocation } from 'react-router-dom';
+import { useLocation, Link } from 'react-router-dom';
 import { Menu, X, Phone, Mail, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
@@ -54,9 +54,9 @@ const Navigation = () => {
             <a href="/" className={getNavLinkClass('/')}>
               ACCUEIL
             </a>
-            <a href="/presentation" className={getNavLinkClass('/presentation')}>
+            <Link to="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
               IDENTITÉ & APPROCHE
-            </a>
+            </Link>
             
             {/* Dropdown for Domaines */}
             <DropdownMenu>
@@ -68,26 +68,26 @@ const Navigation = () => {
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50 w-64">
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/reseaux-distribution" className="w-full">
+                  <Link to="/reseaux-distribution" className="w-full">
                     Réseaux de Distribution
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/relations-commerciales" className="w-full">
+                  <Link to="/relations-commerciales" className="w-full">
                     Relations et Pratiques Commerciales
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/accompagnement-juridique" className="w-full">
+                  <Link to="/accompagnement-juridique" className="w-full">
                     Accompagnement Juridique Externalisé
-                  </a>
+                  </Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <a href="/actualites" className={getNavLinkClass('/actualites')}>
+            <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
-            </a>
+            </Link>
             <a href="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
             </a>
@@ -173,15 +173,15 @@ const Navigation = () => {
                       FR
                     </button>
                   </DropdownMenuTrigger>
-                  <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
+                <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                      🇫🇷 Français
-                    </DropdownMenuItem>
+                </Link>
+                <Link to="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                      🇬🇧 English
-                    </DropdownMenuItem>
+                </Link>
+                <Link to="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                   </DropdownMenuContent>
-                </DropdownMenu>
+                </Link>
               </div>
             </div>
           </div>
