@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
+  const form = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState({
     prenom: '',
     nom: '',
@@ -16,7 +18,7 @@ const ContactSection = () => {
     message: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [isSuccess, setIsSuccess] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     setFormData({
@@ -28,63 +30,34 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
 
-    // Créer le contenu de l'email
-    const emailBody = `
-Nouveau message de contact depuis le site Audestya Avocat
+    try {
+      // Configuration EmailJS - remplacez par vos vraies clés
+      const result = await emailjs.sendForm(
+        'YOUR_SERVICE_ID',     // Remplacez par votre Service ID
+        'YOUR_TEMPLATE_ID',    // Remplacez par votre Template ID
+        form.current!,
+        'YOUR_PUBLIC_KEY'      // Remplacez par votre Public Key
+      );
 
-Prénom: ${formData.prenom}
-Nom: ${formData.nom}
-Email: ${formData.email}
-Téléphone: ${formData.telephone}
-Sujet: ${formData.sujet}
-
-Message:
-${formData.message}
-    `.trim();
-
-    // Créer le lien mailto
-    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${encodeURIComponent(formData.sujet)}&body=${encodeURIComponent(emailBody)}`;
-    
-    // Ouvrir le client email
-    window.location.href = mailtoLink;
-    
-    // Simuler un délai puis afficher le succès
-    setTimeout(() => {
+      console.log('Email envoyé avec succès:', result.text);
+      setSubmitStatus('success');
+      setFormData({
+        prenom: '',
+        nom: '',
+        email: '',
+        telephone: '',
+        sujet: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      setSubmitStatus('error');
+    } finally {
       setIsSubmitting(false);
-      setIsSuccess(true);
-    }, 1000);
+    }
   };
-
-  if (isSuccess) {
-    return (
-      <section id="contact" className="py-20 bg-gradient-accent">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <Card className="bg-background shadow-soft border-0">
-              <CardContent className="p-12">
-                <div className="flex items-center justify-center mb-6">
-                  <CheckCircle className="w-16 h-16 text-green-600" />
-                </div>
-                <h2 className="font-serif text-3xl font-bold text-primary mb-4">
-                  Votre client email s'est ouvert !
-                </h2>
-                <p className="text-lg text-muted-foreground mb-8">
-                  Envoyez maintenant l'email depuis votre client de messagerie pour que je reçoive votre message.
-                </p>
-                <Button 
-                  onClick={() => setIsSuccess(false)} 
-                  className="bg-primary hover:bg-primary/90"
-                >
-                  Nouveau message
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-    );
-  }
 
   return (
     <section id="contact" className="py-20 bg-gradient-accent">
@@ -110,9 +83,9 @@ ${formData.message}
                       <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-primary">Téléphone</p>
-                        <span className="text-muted-foreground">
+                        <a href="tel:+33685353781" className="text-muted-foreground hover:text-secondary transition-colors">
                           +33 6 85 35 37 81
-                        </span>
+                        </a>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -145,7 +118,22 @@ ${formData.message}
                   Formulaire de contact
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                {/* Messages de statut */}
+                {submitStatus === 'success' && (
+                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <p className="text-green-800">Votre message a été envoyé avec succès !</p>
+                  </div>
+                )}
+                
+                {submitStatus === 'error' && (
+                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center gap-3">
+                    <AlertCircle className="w-5 h-5 text-red-600" />
+                    <p className="text-red-800">Erreur lors de l'envoi. Veuillez réessayer.</p>
+                  </div>
+                )}
+                
+                <form ref={form} onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="prenom">Prénom *</Label>
@@ -241,7 +229,7 @@ ${formData.message}
                     {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Préparation...
+                        Envoi en cours...
                       </>
                     ) : (
                       <>
@@ -252,7 +240,7 @@ ${formData.message}
                   </Button>
                   
                   <p className="text-sm text-muted-foreground text-center">
-                    * Champs obligatoires. Le formulaire ouvrira votre client email avec le message pré-rempli.
+                    * Champs obligatoires
                   </p>
                 </form>
               </CardContent>
