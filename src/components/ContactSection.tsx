@@ -5,6 +5,7 @@ import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
 import { Card, CardContent } from './ui/card';
 import { toast } from './ui/sonner';
+import emailjs from '@emailjs/browser';
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -30,41 +31,42 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Configuration Mailchimp avec l'adresse email inbound
-      const emailData = {
-        to: 'us16-5169cd4c59-3607d5361f@inbound.mailchimpapp.net',
-        from: formData.email,
-        subject: `Nouveau contact: ${formData.subject}`,
-        html: `
-          <h2>Nouveau message de contact depuis audestya-avocat.com</h2>
-          <p><strong>Prénom:</strong> ${formData.firstName}</p>
-          <p><strong>Nom:</strong> ${formData.lastName}</p>
-          <p><strong>Email:</strong> ${formData.email}</p>
-          <p><strong>Téléphone:</strong> ${formData.phone}</p>
-          <p><strong>Sujet:</strong> ${formData.subject}</p>
-          <p><strong>Message:</strong></p>
-          <div style="background: #f5f5f5; padding: 15px; border-radius: 5px;">
-            ${formData.message.replace(/\n/g, '<br>')}
-          </div>
-        `
+      // Configuration EmailJS
+      const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
+        from_email: formData.email,
+        phone: formData.phone,
+        subject: formData.subject,
+        message: formData.message,
+        to_email: 'haia.elzufari@audestya-avocat.com',
+        reply_to: formData.email,
       };
 
-      // Envoi via EmailJS (service gratuit pour envoyer des emails depuis le frontend)
-      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          service_id: 'default_service',
-          template_id: 'template_contact',
-          user_id: 'your_emailjs_user_id',
-          template_params: emailData
-        })
-      });
+      // Envoi de l'email principal à vous
+      await emailjs.send(
+        'service_audestya', // Service ID - à remplacer
+        'template_contact', // Template ID - à remplacer  
+        templateParams,
+        'YOUR_PUBLIC_KEY' // Public Key - à remplacer
+      );
+
+      // Envoi de l'email de confirmation à l'utilisateur
+      const confirmationParams = {
+        to_name: `${formData.firstName} ${formData.lastName}`,
+        to_email: formData.email,
+        subject: formData.subject,
+        from_name: 'Haia El Zufari - Audestya Avocat',
+      };
+
+      await emailjs.send(
+        'service_audestya', // Service ID - à remplacer
+        'template_confirmation', // Template ID pour confirmation - à remplacer
+        confirmationParams,
+        'YOUR_PUBLIC_KEY' // Public Key - à remplacer
+      );
 
       toast.success("Message envoyé avec succès !", {
-        description: "Nous vous répondrons dans les plus brefs délais."
+        description: "Nous vous répondrons dans les plus brefs délais. Un email de confirmation vous a été envoyé."
       });
 
       // Réinitialiser le formulaire
@@ -80,7 +82,7 @@ const ContactSection = () => {
     } catch (error) {
       console.error('Erreur lors de l\'envoi:', error);
       toast.error("Erreur lors de l'envoi", {
-        description: "Veuillez réessayer ou nous contacter directement."
+        description: "Veuillez réessayer ou nous contacter directement par email."
       });
     } finally {
       setIsSubmitting(false);
