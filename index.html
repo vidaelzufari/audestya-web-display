@@ -1,44 +1,60 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Debug Test - Audestya Avocat</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background: #f5f5f5;
+    <title>Audestya Avocat - Haia El Zufari - Distribution, Contrats, Consommation</title>
+    <meta name="description" content="Haia El Zufari, Avocat au Barreau de Paris, spécialisée en droit de la distribution, des contrats et de la consommation. Accompagnement juridique des entreprises." />
+    <meta name="keywords" content="avocat, droit distribution, contrats, consommation, Paris, franchise, réseau commercial" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://audestya-avocat.com/" />
+    <meta property="og:title" content="Audestya Avocat - Haia El Zufari" />
+    <meta property="og:description" content="Avocat spécialisée en droit de la distribution, des contrats et de la consommation" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://audestya-avocat.com/" />
+    <meta property="twitter:title" content="Audestya Avocat - Haia El Zufari" />
+    <meta property="twitter:description" content="Avocat spécialisée en droit de la distribution, des contrats et de la consommation" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://audestya-avocat.com/" />
+    
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalService",
+      "name": "Audestya Avocat",
+      "description": "Cabinet d'avocat spécialisé en droit de la distribution, des contrats et de la consommation",
+      "url": "https://audestya-avocat.com",
+      "telephone": "+33685353781",
+      "email": "haia.elzufari@audestya-avocat.com",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Paris",
+        "addressCountry": "FR"
+      },
+      "founder": {
+        "@type": "Person",
+        "name": "Haia El Zufari",
+        "jobTitle": "Avocat au Barreau de Paris"
       }
-      #root {
-        min-height: 100vh;
-      }
-    </style>
+    }
+    </script>
   </head>
   <body>
-    <div id="root">
-      <div style="padding: 20px; color: orange; font-size: 18px;">
-        🔄 Initial Loading... JavaScript should replace this message.
-      </div>
-    </div>
-    
-    <script>
-      console.log("=== HTML SCRIPT EXECUTING ===");
-      console.log("Root element exists:", !!document.getElementById('root'));
-      console.log("Document ready state:", document.readyState);
-      
-      // Test basic JavaScript
-      setTimeout(() => {
-        console.log("=== 2 SECOND CHECK ===");
-        const root = document.getElementById('root');
-        if (root && root.innerHTML.includes('Initial Loading')) {
-          console.error("❌ React module did not load after 2 seconds");
-          root.innerHTML = '<div style="padding: 20px; color: red; font-size: 20px;">❌ Module loading failed. Check console for details.</div>';
-        }
-      }, 2000);
-    </script>
-    
+    <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
