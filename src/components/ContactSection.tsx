@@ -44,9 +44,9 @@ const ContactSection = () => {
       // Envoi de l'email principal à vous
       await emailjs.send(
         'service_bl7a3qq', // Service ID
-        'YOUR_TEMPLATE_ID', // Template ID - remplacez par votre vrai Template ID
+        'template_8em091m', // Template ID
         templateParams,
-        'YOUR_PUBLIC_KEY' // Public Key - à remplacer
+        'YOUR_PUBLIC_KEY' // Public Key - remplacez par votre vraie clé publique
       );
 
       toast.success("Message envoyé avec succès !", {
