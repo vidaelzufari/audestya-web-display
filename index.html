@@ -3,48 +3,45 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audestya Avocat - Droit de la Distribution, Contrats et Consommation</title>
-    <meta name="description" content="Avocate indépendante spécialisée en droit de la distribution, des contrats et de la consommation. Accompagnement juridique avec pragmatisme, méthode et clarté." />
-    <meta name="author" content="Lovable" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap">
-
-    <meta property="og:title" content="0d4cbf0a-2703-42f5-bfae-1c55fd7a922a" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-    
-    <script>
-      console.log("=== HTML DEBUG ===");
-      console.log("HTML loaded, DOM ready state:", document.readyState);
-      
-      document.addEventListener('DOMContentLoaded', function() {
-        console.log("DOM Content Loaded");
-        console.log("Root element exists:", !!document.getElementById('root'));
-      });
-      
-      window.addEventListener('load', function() {
-        console.log("Window loaded");
-      });
-      
-      window.addEventListener('error', function(e) {
-        console.error("Global error:", e.error);
-      });
-    </script>
+    <title>Debug - Audestya Avocat</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+      }
+      #root {
+        min-height: 100vh;
+        background: #f0f0f0;
+      }
+    </style>
   </head>
-
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <div style="padding: 20px; color: orange; font-size: 18px;">
+        Loading... If this message persists, check the console for errors.
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
     
-    <noscript>
-      <div style="padding: 20px; text-align: center; font-family: Arial;">
-        <h1>JavaScript Required</h1>
-        <p>This application requires JavaScript to run. Please enable JavaScript in your browser.</p>
-      </div>
-    </noscript>
+    <script>
+      console.log("=== HTML LOADED ===");
+      console.log("Root element exists:", !!document.getElementById('root'));
+      
+      // Global error handler
+      window.addEventListener('error', function(e) {
+        console.error("Global JavaScript error:", e.error);
+        document.body.innerHTML += '<div style="padding: 20px; color: red; border: 1px solid red; margin: 10px;">JavaScript Error: ' + e.message + '</div>';
+      });
+      
+      // Check if modules are loading
+      setTimeout(() => {
+        console.log("5 seconds passed, checking if React loaded...");
+        if (document.getElementById('root').innerHTML.includes('Loading...')) {
+          console.error("React did not load after 5 seconds!");
+          document.getElementById('root').innerHTML = '<div style="padding: 20px; color: red; font-size: 24px;">React failed to load. Check console for errors.</div>';
+        }
+      }, 5000);
+    </script>
   </body>
 </html>

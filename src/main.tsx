@@ -1,33 +1,31 @@
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
+import "./index.css";
 
-// Debug logs
-console.log("=== MAIN.TSX DEBUG ===");
-console.log("1. Main.tsx loaded");
-console.log("2. Document ready state:", document.readyState);
-console.log("3. Document body:", document.body);
+console.log("=== MAIN.TSX STARTING ===");
+console.log("Document ready state:", document.readyState);
 
 const rootElement = document.getElementById("root");
-console.log("4. Root element found:", rootElement);
+console.log("Root element found:", !!rootElement);
 
-if (rootElement) {
-  console.log("5. Creating React root...");
+if (!rootElement) {
+  console.error("ROOT ELEMENT NOT FOUND!");
+  document.body.innerHTML = '<div style="padding: 20px; color: red; font-size: 24px;">ERROR: Root element not found!</div>';
+} else {
+  console.log("Creating React root...");
   try {
     const root = createRoot(rootElement);
-    console.log("6. React root created successfully");
+    console.log("React root created, rendering app...");
     
     root.render(
       <StrictMode>
         <App />
       </StrictMode>
     );
-    console.log("7. React app rendered successfully");
+    console.log("App rendered successfully!");
   } catch (error) {
-    console.error("8. Error creating/rendering React app:", error);
+    console.error("Error rendering app:", error);
+    rootElement.innerHTML = '<div style="padding: 20px; color: red; font-size: 24px;">Error: ' + error.message + '</div>';
   }
-} else {
-  console.error("8. ERROR: Root element not found!");
-  // Créer un message d'erreur visible
-  document.body.innerHTML = '<div style="padding: 20px; color: red; font-family: Arial;">ERROR: Root element not found!</div>';
 }
