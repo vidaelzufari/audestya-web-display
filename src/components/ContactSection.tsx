@@ -33,8 +33,10 @@ const ContactSection = () => {
     try {
       // Configuration EmailJS
       const templateParams = {
+        from_name: `${formData.firstName} ${formData.lastName}`,
         name: `${formData.firstName} ${formData.lastName}`,
         email: formData.email,
+        from_email: formData.email,
         phone: formData.phone,
         subject: formData.subject,
         message: `Sujet: ${formData.subject}\n\nEmail: ${formData.email}\nTéléphone: ${formData.phone || 'Non renseigné'}\n\nMessage:\n${formData.message}`,
@@ -52,6 +54,7 @@ const ContactSection = () => {
       // Envoi de l'email de confirmation au visiteur
       const confirmationParams = {
         to_email: formData.email,
+        to_name: `${formData.firstName} ${formData.lastName}`,
         name: `${formData.firstName} ${formData.lastName}`,
         subject: formData.subject,
         time: new Date().toLocaleString('fr-FR'),
