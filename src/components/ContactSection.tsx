@@ -216,6 +216,11 @@ const ContactSection = () => {
                 </div>
                 <ValidationError prefix="Message" field="message" errors={state.errors} />
 
+                {/* Champs cachés pour la configuration Formspree */}
+                <input type="hidden" name="_replyto" value={formData.email} />
+                <input type="hidden" name="_subject" value={`Nouvelle demande de contact - ${formData.subject}`} />
+                <input type="hidden" name="_autoresponse" value="Merci pour votre message ! Nous avons bien reçu votre demande de contact concernant : ${formData.subject}. Nous vous répondrons dans les plus brefs délais, généralement sous 24-48h. Cordialement, Haia El Zufari - Audestya Avocat" />
+
                 <Button type="submit" disabled={state.submitting} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                   <Send className="w-4 h-4 mr-2" />
                   {state.submitting ? 'Envoi en cours...' : 'Envoyer le message'}
