@@ -134,8 +134,6 @@ const Navigation = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
-            )
-            }
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
               <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
@@ -175,15 +173,15 @@ const Navigation = () => {
                       FR
                     </button>
                   </DropdownMenuTrigger>
-                <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                  <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                </Link>
-                <Link to="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                      🇫🇷 Français
+                    </DropdownMenuItem>
                     <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                </Link>
-                <Link to="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                      🇬🇧 English
+                    </DropdownMenuItem>
                   </DropdownMenuContent>
-                </Link>
+                </DropdownMenu>
               </div>
             </div>
           </div>
