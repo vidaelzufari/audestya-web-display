@@ -16,7 +16,6 @@ const ContactSection = () => {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
-  const [errorMessage, setErrorMessage] = useState('');
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -29,33 +28,50 @@ const ContactSection = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     
-    // Validation simple
-    if (!formData.name || !formData.email || !formData.message) {
+    // Validation
+    if (!formData.name.trim() || !formData.email.trim() || !formData.message.trim()) {
       setSubmitStatus('error');
-      setErrorMessage('Veuillez remplir tous les champs obligatoires.');
       return;
     }
 
     setIsSubmitting(true);
     setSubmitStatus('idle');
-    setErrorMessage('');
 
     try {
-      // Simulation d'envoi d'email - remplacez par votre service d'email
-      await new Promise(resolve => setTimeout(resolve, 1000));
+      // Créer le corps de l'email
+      const emailBody = `
+Nouveau message depuis le site Audestya Avocat
+
+Nom: ${formData.name}
+Email: ${formData.email}
+Téléphone: ${formData.phone || 'Non renseigné'}
+Entreprise: ${formData.company || 'Non renseignée'}
+
+Message:
+${formData.message}
+      `.trim();
+
+      // Créer le lien mailto
+      const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=Nouveau message depuis le site web&body=${encodeURIComponent(emailBody)}`;
       
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        phone: '',
-        company: '',
-        message: ''
-      });
+      // Ouvrir le client email
+      window.location.href = mailtoLink;
+      
+      // Marquer comme succès après un délai
+      setTimeout(() => {
+        setSubmitStatus('success');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          company: '',
+          message: ''
+        });
+      }, 1000);
+
     } catch (error) {
-      console.error('Erreur lors de l\'envoi:', error);
+      console.error('Erreur:', error);
       setSubmitStatus('error');
-      setErrorMessage('Une erreur est survenue. Veuillez réessayer ou nous contacter directement par email.');
     } finally {
       setIsSubmitting(false);
     }
@@ -243,7 +259,7 @@ const ContactSection = () => {
                   <div className="flex items-center gap-3 p-4 bg-green-50 border border-green-200 rounded-lg">
                     <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0" />
                     <p className="text-green-800">
-                      Votre message a été envoyé avec succès ! Je vous répondrai dans les plus brefs délais.
+                      Votre client email s'est ouvert avec votre message pré-rempli. Envoyez-le pour me contacter !
                     </p>
                   </div>
                 )}
@@ -252,9 +268,9 @@ const ContactSection = () => {
                   <div className="flex items-start gap-3 p-4 bg-red-50 border border-red-200 rounded-lg">
                     <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
                     <div>
-                      <p className="text-red-800 font-medium">Erreur lors de l'envoi</p>
+                      <p className="text-red-800 font-medium">Veuillez remplir tous les champs obligatoires</p>
                       <p className="text-red-700 text-sm mt-1">
-                        {errorMessage || 'Veuillez réessayer ou nous contacter directement par email.'}
+                        Nom, email et message sont requis.
                       </p>
                     </div>
                   </div>
@@ -268,7 +284,7 @@ const ContactSection = () => {
                   {isSubmitting ? (
                     <>
                       <div className="w-5 h-5 border-2 border-white/30 border-t-white rounded-full animate-spin mr-3" />
-                      Envoi en cours...
+                      Ouverture de votre client email...
                     </>
                   ) : (
                     <>
@@ -278,6 +294,27 @@ const ContactSection = () => {
                   )}
                 </Button>
               </form>
+
+              {/* Alternative contact methods */}
+              <div className="mt-8 pt-6 border-t border-muted">
+                <p className="text-sm text-muted-foreground text-center mb-4">
+                  Ou contactez-moi directement :
+                </p>
+                <div className="flex flex-col sm:flex-row gap-3 justify-center">
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="tel:+33685353781">
+                      <Phone className="w-4 h-4 mr-2" />
+                      Appeler
+                    </a>
+                  </Button>
+                  <Button variant="outline" size="sm" asChild>
+                    <a href="mailto:haia.elzufari@audestya-avocat.com">
+                      <Mail className="w-4 h-4 mr-2" />
+                      Email direct
+                    </a>
+                  </Button>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
