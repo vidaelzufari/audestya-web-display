@@ -1,5 +1,5 @@
-import React from 'react';
-import { useForm, ValidationError } from '@formspree/react';
+import React, { useState, useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,9 +8,36 @@ import { Label } from '@/components/ui/label';
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const ContactSection = () => {
-  const [state, handleSubmit] = useForm("xpwagdko"); // Remplacez par votre ID Formspree
+  const form = useRef<HTMLFormElement>(null);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSuccess, setIsSuccess] = useState(false);
+  const [error, setError] = useState('');
 
-  if (state.succeeded) {
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setError('');
+
+    try {
+      if (form.current) {
+        await emailjs.sendForm(
+          'YOUR_SERVICE_ID', // Remplacez par votre Service ID
+          'YOUR_TEMPLATE_ID', // Remplacez par votre Template ID
+          form.current,
+          'YOUR_PUBLIC_KEY' // Remplacez par votre Public Key
+        );
+        setIsSuccess(true);
+        form.current.reset();
+      }
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      setError('Erreur lors de l\'envoi du message. Veuillez réessayer.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
+  if (isSuccess) {
     return (
       <section id="contact" className="py-20 bg-gradient-accent">
         <div className="container mx-auto px-4">
@@ -27,7 +54,7 @@ const ContactSection = () => {
                   Merci pour votre message. Je vous répondrai dans les plus brefs délais.
                 </p>
                 <Button 
-                  onClick={() => window.location.reload()} 
+                  onClick={() => setIsSuccess(false)} 
                   className="bg-primary hover:bg-primary/90"
                 >
                   Envoyer un autre message
@@ -99,38 +126,28 @@ const ContactSection = () => {
                   Formulaire de contact
                 </h3>
                 
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form ref={form} onSubmit={sendEmail} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="prenom">Prénom *</Label>
                       <Input
                         id="prenom"
-                        name="prenom"
+                        name="from_prenom"
                         required
                         placeholder="Votre prénom"
                         className="border-gray-300 focus:border-secondary"
-                        disabled={state.submitting}
-                      />
-                      <ValidationError 
-                        prefix="Prénom" 
-                        field="prenom"
-                        errors={state.errors}
+                        disabled={isSubmitting}
                       />
                     </div>
                     <div className="space-y-2">
                       <Label htmlFor="nom">Nom *</Label>
                       <Input
                         id="nom"
-                        name="nom"
+                        name="from_nom"
                         required
                         placeholder="Votre nom"
                         className="border-gray-300 focus:border-secondary"
-                        disabled={state.submitting}
-                      />
-                      <ValidationError 
-                        prefix="Nom" 
-                        field="nom"
-                        errors={state.errors}
+                        disabled={isSubmitting}
                       />
                     </div>
                   </div>
@@ -139,17 +156,12 @@ const ContactSection = () => {
                     <Label htmlFor="email">Email *</Label>
                     <Input
                       id="email"
-                      name="email"
+                      name="from_email"
                       type="email"
                       required
                       placeholder="votre@email.com"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={state.submitting}
-                    />
-                    <ValidationError 
-                      prefix="Email" 
-                      field="email"
-                      errors={state.errors}
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -157,16 +169,11 @@ const ContactSection = () => {
                     <Label htmlFor="telephone">Téléphone</Label>
                     <Input
                       id="telephone"
-                      name="telephone"
+                      name="from_telephone"
                       type="tel"
                       placeholder="Votre numéro de téléphone"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={state.submitting}
-                    />
-                    <ValidationError 
-                      prefix="Téléphone" 
-                      field="telephone"
-                      errors={state.errors}
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -174,16 +181,11 @@ const ContactSection = () => {
                     <Label htmlFor="sujet">Sujet *</Label>
                     <Input
                       id="sujet"
-                      name="sujet"
+                      name="subject"
                       required
                       placeholder="Objet de votre demande"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={state.submitting}
-                    />
-                    <ValidationError 
-                      prefix="Sujet" 
-                      field="sujet"
-                      errors={state.errors}
+                      disabled={isSubmitting}
                     />
                   </div>
                   
@@ -196,21 +198,22 @@ const ContactSection = () => {
                       rows={5}
                       className="border-gray-300 focus:border-secondary resize-none"
                       placeholder="Décrivez votre demande et vos besoins..."
-                      disabled={state.submitting}
-                    />
-                    <ValidationError 
-                      prefix="Message" 
-                      field="message"
-                      errors={state.errors}
+                      disabled={isSubmitting}
                     />
                   </div>
+
+                  {error && (
+                    <div className="p-4 bg-red-50 border border-red-200 rounded-md">
+                      <p className="text-red-600 text-sm">{error}</p>
+                    </div>
+                  )}
                   
                   <Button 
                     type="submit" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12"
-                    disabled={state.submitting}
+                    disabled={isSubmitting}
                   >
-                    {state.submitting ? (
+                    {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
                         Envoi en cours...
