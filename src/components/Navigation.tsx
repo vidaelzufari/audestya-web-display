@@ -51,9 +51,9 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <Link to="/" className={getNavLinkClass('/')}>
+            <a href="/" className={getNavLinkClass('/')}>
               ACCUEIL
-            </Link>
+            </a>
             <Link to="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
               IDENTITÉ & APPROCHE
             </Link>
@@ -88,9 +88,9 @@ const Navigation = () => {
             <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
             </Link>
-            <Link to="/#contact" className={getNavLinkClass('#contact')}>
+            <a href="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
-            </Link>
+            </a>
             
             {/* LinkedIn icon */}
             <a 
@@ -136,9 +136,9 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
-              <Link to="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
+              <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
                 ACCUEIL
-              </Link>
+              </a>
               <Link to="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
                 IDENTITÉ & APPROCHE
               </Link>
@@ -162,9 +162,9 @@ const Navigation = () => {
               <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
                 ACTUALITÉS
               </Link>
-              <Link to="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
+              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
                 CONTACT
-              </Link>
+              </a>
               <div className="py-2 px-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
