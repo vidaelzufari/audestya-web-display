@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Phone, Mail, MapPin, Send } from 'lucide-react';
-import { useForm, ValidationError } from '@formspree/react';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -8,7 +7,6 @@ import { Card, CardContent } from './ui/card';
 import { toast } from './ui/sonner';
 
 const ContactSection = () => {
-  const [state, handleSubmit] = useForm("mwpqqeja"); // ID Formspree configuré
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -17,6 +15,7 @@ const ContactSection = () => {
     subject: '',
     message: ''
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -26,16 +25,33 @@ const ContactSection = () => {
     }));
   };
 
-  const onSubmit = async (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await handleSubmit(e);
-  };
+    setIsSubmitting(true);
 
-  React.useEffect(() => {
-    if (state.succeeded) {
+    try {
+      // Configuration Mailchimp - Remplacez par votre URL d'action Mailchimp
+      const MAILCHIMP_URL = 'YOUR_MAILCHIMP_FORM_ACTION_URL';
+      
+      const formDataToSend = new FormData();
+      formDataToSend.append('FNAME', formData.firstName);
+      formDataToSend.append('LNAME', formData.lastName);
+      formDataToSend.append('EMAIL', formData.email);
+      formDataToSend.append('PHONE', formData.phone);
+      formDataToSend.append('SUBJECT', formData.subject);
+      formDataToSend.append('MESSAGE', formData.message);
+
+      // Envoi vers Mailchimp
+      const response = await fetch(MAILCHIMP_URL, {
+        method: 'POST',
+        body: formDataToSend,
+        mode: 'no-cors' // Nécessaire pour Mailchimp
+      });
+
       toast.success("Message envoyé avec succès !", {
         description: "Nous vous répondrons dans les plus brefs délais."
       });
+
       // Réinitialiser le formulaire
       setFormData({
         firstName: '',
@@ -45,13 +61,16 @@ const ContactSection = () => {
         subject: '',
         message: ''
       });
-    }
-    if (state.errors && state.errors.length > 0) {
+
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
       toast.error("Erreur lors de l'envoi", {
         description: "Veuillez réessayer ou nous contacter directement."
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  }, [state.succeeded, state.errors]);
+  };
 
   return (
     <section id="contact" className="py-20 bg-gradient-to-br from-background via-background/95 to-secondary/5">
@@ -117,7 +136,7 @@ const ContactSection = () => {
               </h3>
               <div className="w-12 h-0.5 bg-primary mx-auto mb-8"></div>
               
-              <form onSubmit={onSubmit} className="space-y-6">
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
                     <label htmlFor="firstName" className="block text-sm font-medium text-foreground mb-2">
@@ -166,7 +185,6 @@ const ContactSection = () => {
                     placeholder="votre@email.com"
                   />
                 </div>
-                <ValidationError prefix="Email" field="email" errors={state.errors} />
 
                 <div>
                   <label htmlFor="phone" className="block text-sm font-medium text-foreground mb-2">
@@ -214,16 +232,10 @@ const ContactSection = () => {
                     placeholder="Décrivez votre demande et vos besoins..."
                   />
                 </div>
-                <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-                {/* Champs cachés pour la configuration Formspree */}
-                <input type="hidden" name="_replyto" value={formData.email} />
-                <input type="hidden" name="_subject" value={`Nouvelle demande de contact - ${formData.subject}`} />
-                <input type="hidden" name="_autoresponse" value="Merci pour votre message ! Nous avons bien reçu votre demande de contact concernant : ${formData.subject}. Nous vous répondrons dans les plus brefs délais, généralement sous 24-48h. Cordialement, Haia El Zufari - Audestya Avocat" />
-
-                <Button type="submit" disabled={state.submitting} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
+                <Button type="submit" disabled={isSubmitting} className="w-full bg-primary hover:bg-primary/90 text-primary-foreground py-3">
                   <Send className="w-4 h-4 mr-2" />
-                  {state.submitting ? 'Envoi en cours...' : 'Envoyer le message'}
+                  {isSubmitting ? 'Envoi en cours...' : 'Envoyer le message'}
                 </Button>
 
                 <p className="text-xs text-muted-foreground text-center mt-4">
