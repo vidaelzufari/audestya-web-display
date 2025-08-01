@@ -23,12 +23,16 @@ try {
       import("./App").then((AppModule) => {
         console.log("✅ App component imported successfully");
         
-        const { createRoot } = require("react-dom/client");
-        const { createElement } = require("react");
+        import("react-dom/client").then((ReactDOMClientModule) => {
+          import("react").then((ReactModule) => {
+            const { createRoot } = ReactDOMClientModule;
+            const { createElement } = ReactModule;
         
-        const root = createRoot(rootElement!);
-        root.render(createElement(AppModule.default));
-        console.log("✅ React app rendered successfully");
+            const root = createRoot(rootElement!);
+            root.render(createElement(AppModule.default));
+            console.log("✅ React app rendered successfully");
+          });
+        });
         
       }).catch(error => {
         console.error("❌ Failed to import App:", error);
