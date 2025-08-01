@@ -44,7 +44,7 @@ const ContactSection = () => {
 
       // Envoi de l'email principal à vous
       await emailjs.send(
-        'service_audestya', // Service ID - à remplacer
+        'service_bl7a3qq', // Service ID
         'template_contact', // Template ID - à remplacer  
         templateParams,
         'YOUR_PUBLIC_KEY' // Public Key - à remplacer
@@ -59,7 +59,7 @@ const ContactSection = () => {
       };
 
       await emailjs.send(
-        'service_audestya', // Service ID - à remplacer
+        'service_bl7a3qq', // Service ID
         'template_confirmation', // Template ID pour confirmation - à remplacer
         confirmationParams,
         'YOUR_PUBLIC_KEY' // Public Key - à remplacer
