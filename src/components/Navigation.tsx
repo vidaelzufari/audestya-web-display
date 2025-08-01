@@ -134,6 +134,8 @@ const Navigation = () => {
 
         {/* Mobile menu */}
         {isMenuOpen && (
+            )
+            }
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
               <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
