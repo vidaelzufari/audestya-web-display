@@ -1,5 +1,4 @@
-import React, { useState, useRef } from 'react';
-import emailjs from '@emailjs/browser';
+import React, { useState } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -8,33 +7,53 @@ import { Label } from '@/components/ui/label';
 import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const ContactSection = () => {
-  const form = useRef<HTMLFormElement>(null);
+  const [formData, setFormData] = useState({
+    prenom: '',
+    nom: '',
+    email: '',
+    telephone: '',
+    sujet: '',
+    message: ''
+  });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [isSuccess, setIsSuccess] = useState(false);
-  const [error, setError] = useState('');
 
-  const sendEmail = async (e: React.FormEvent) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setError('');
 
-    try {
-      if (form.current) {
-        await emailjs.sendForm(
-          'YOUR_SERVICE_ID', // Remplacez par votre Service ID
-          'YOUR_TEMPLATE_ID', // Remplacez par votre Template ID
-          form.current,
-          'YOUR_PUBLIC_KEY' // Remplacez par votre Public Key
-        );
-        setIsSuccess(true);
-        form.current.reset();
-      }
-    } catch (error) {
-      console.error('Erreur lors de l\'envoi:', error);
-      setError('Erreur lors de l\'envoi du message. Veuillez réessayer.');
-    } finally {
+    // Créer le contenu de l'email
+    const emailBody = `
+Nouveau message de contact depuis le site Audestya Avocat
+
+Prénom: ${formData.prenom}
+Nom: ${formData.nom}
+Email: ${formData.email}
+Téléphone: ${formData.telephone}
+Sujet: ${formData.sujet}
+
+Message:
+${formData.message}
+    `.trim();
+
+    // Créer le lien mailto
+    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${encodeURIComponent(formData.sujet)}&body=${encodeURIComponent(emailBody)}`;
+    
+    // Ouvrir le client email
+    window.location.href = mailtoLink;
+    
+    // Simuler un délai puis afficher le succès
+    setTimeout(() => {
       setIsSubmitting(false);
-    }
+      setIsSuccess(true);
+    }, 1000);
   };
 
   if (isSuccess) {
@@ -48,16 +67,16 @@ const ContactSection = () => {
                   <CheckCircle className="w-16 h-16 text-green-600" />
                 </div>
                 <h2 className="font-serif text-3xl font-bold text-primary mb-4">
-                  Message envoyé avec succès !
+                  Votre client email s'est ouvert !
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Merci pour votre message. Je vous répondrai dans les plus brefs délais.
+                  Envoyez maintenant l'email depuis votre client de messagerie pour que je reçoive votre message.
                 </p>
                 <Button 
                   onClick={() => setIsSuccess(false)} 
                   className="bg-primary hover:bg-primary/90"
                 >
-                  Envoyer un autre message
+                  Nouveau message
                 </Button>
               </CardContent>
             </Card>
@@ -126,13 +145,15 @@ const ContactSection = () => {
                   Formulaire de contact
                 </h3>
                 
-                <form ref={form} onSubmit={sendEmail} className="space-y-6">
+                <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
                       <Label htmlFor="prenom">Prénom *</Label>
                       <Input
                         id="prenom"
-                        name="from_prenom"
+                        name="prenom"
+                        value={formData.prenom}
+                        onChange={handleChange}
                         required
                         placeholder="Votre prénom"
                         className="border-gray-300 focus:border-secondary"
@@ -143,7 +164,9 @@ const ContactSection = () => {
                       <Label htmlFor="nom">Nom *</Label>
                       <Input
                         id="nom"
-                        name="from_nom"
+                        name="nom"
+                        value={formData.nom}
+                        onChange={handleChange}
                         required
                         placeholder="Votre nom"
                         className="border-gray-300 focus:border-secondary"
@@ -156,8 +179,10 @@ const ContactSection = () => {
                     <Label htmlFor="email">Email *</Label>
                     <Input
                       id="email"
-                      name="from_email"
+                      name="email"
                       type="email"
+                      value={formData.email}
+                      onChange={handleChange}
                       required
                       placeholder="votre@email.com"
                       className="border-gray-300 focus:border-secondary"
@@ -169,8 +194,10 @@ const ContactSection = () => {
                     <Label htmlFor="telephone">Téléphone</Label>
                     <Input
                       id="telephone"
-                      name="from_telephone"
+                      name="telephone"
                       type="tel"
+                      value={formData.telephone}
+                      onChange={handleChange}
                       placeholder="Votre numéro de téléphone"
                       className="border-gray-300 focus:border-secondary"
                       disabled={isSubmitting}
@@ -181,7 +208,9 @@ const ContactSection = () => {
                     <Label htmlFor="sujet">Sujet *</Label>
                     <Input
                       id="sujet"
-                      name="subject"
+                      name="sujet"
+                      value={formData.sujet}
+                      onChange={handleChange}
                       required
                       placeholder="Objet de votre demande"
                       className="border-gray-300 focus:border-secondary"
@@ -194,6 +223,8 @@ const ContactSection = () => {
                     <Textarea
                       id="message"
                       name="message"
+                      value={formData.message}
+                      onChange={handleChange}
                       required
                       rows={5}
                       className="border-gray-300 focus:border-secondary resize-none"
@@ -201,12 +232,6 @@ const ContactSection = () => {
                       disabled={isSubmitting}
                     />
                   </div>
-
-                  {error && (
-                    <div className="p-4 bg-red-50 border border-red-200 rounded-md">
-                      <p className="text-red-600 text-sm">{error}</p>
-                    </div>
-                  )}
                   
                   <Button 
                     type="submit" 
@@ -216,7 +241,7 @@ const ContactSection = () => {
                     {isSubmitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                        Envoi en cours...
+                        Préparation...
                       </>
                     ) : (
                       <>
@@ -227,10 +252,7 @@ const ContactSection = () => {
                   </Button>
                   
                   <p className="text-sm text-muted-foreground text-center">
-                    * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la{' '}
-                    <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline">
-                      politique de confidentialité
-                    </a>.
+                    * Champs obligatoires. Le formulaire ouvrira votre client email avec le message pré-rempli.
                   </p>
                 </form>
               </CardContent>
