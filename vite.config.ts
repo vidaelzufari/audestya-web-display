@@ -5,11 +5,12 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "./",
+  base: "/",
 
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
+    sourcemap: true, // Ajouter les sourcemaps pour debug
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
@@ -34,4 +35,3 @@ export default defineConfig(({ mode }) => ({
     },
   },
 }));
-
