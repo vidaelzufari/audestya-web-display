@@ -49,6 +49,20 @@ const ContactSection = () => {
         'uMF-U7H_pbj1HSmdG' // Public Key
       );
 
+      // Envoi de l'email de confirmation au visiteur
+      const confirmationParams = {
+        to_email: formData.email,
+        name: `${formData.firstName} ${formData.lastName}`,
+        subject: formData.subject,
+        time: new Date().toLocaleString('fr-FR'),
+      };
+
+      await emailjs.send(
+        'service_bl7a3qq', // Service ID
+        'template_4i4y0sf', // Template ID de confirmation
+        confirmationParams,
+        'uMF-U7H_pbj1HSmdG' // Public Key
+      );
       toast.success("Message envoyé avec succès !", {
         description: "Nous vous répondrons dans les plus brefs délais."
       });
