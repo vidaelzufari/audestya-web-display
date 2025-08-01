@@ -81,7 +81,7 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-              Contact
+              Un premier échange pour poser un cadre clair et utile
             </h2>
           </div>
 
@@ -244,7 +244,6 @@ const ContactSection = () => {
                       "Envoi en cours..."
                     ) : (
                       <>
-                        <Send className="w-4 h-4 mr-2" />
                         Envoyer le message
                       </>
                     )}
