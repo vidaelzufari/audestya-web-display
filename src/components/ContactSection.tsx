@@ -30,22 +30,37 @@ const ContactSection = () => {
     setIsSubmitting(true);
 
     try {
-      // Configuration Mailchimp - Remplacez par votre URL d'action Mailchimp
-      const MAILCHIMP_URL = 'YOUR_MAILCHIMP_FORM_ACTION_URL';
-      
-      const formDataToSend = new FormData();
-      formDataToSend.append('FNAME', formData.firstName);
-      formDataToSend.append('LNAME', formData.lastName);
-      formDataToSend.append('EMAIL', formData.email);
-      formDataToSend.append('PHONE', formData.phone);
-      formDataToSend.append('SUBJECT', formData.subject);
-      formDataToSend.append('MESSAGE', formData.message);
+      // Configuration Mailchimp avec l'adresse email inbound
+      const emailData = {
+        to: 'us16-5169cd4c59-3607d5361f@inbound.mailchimpapp.net',
+        from: formData.email,
+        subject: `Nouveau contact: ${formData.subject}`,
+        html: `
+          <h2>Nouveau message de contact depuis audestya-avocat.com</h2>
+          <p><strong>Prénom:</strong> ${formData.firstName}</p>
+          <p><strong>Nom:</strong> ${formData.lastName}</p>
+          <p><strong>Email:</strong> ${formData.email}</p>
+          <p><strong>Téléphone:</strong> ${formData.phone}</p>
+          <p><strong>Sujet:</strong> ${formData.subject}</p>
+          <p><strong>Message:</strong></p>
+          <div style="background: #f5f5f5; padding: 15px; border-radius: 5px;">
+            ${formData.message.replace(/\n/g, '<br>')}
+          </div>
+        `
+      };
 
-      // Envoi vers Mailchimp
-      const response = await fetch(MAILCHIMP_URL, {
+      // Envoi via EmailJS (service gratuit pour envoyer des emails depuis le frontend)
+      const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
         method: 'POST',
-        body: formDataToSend,
-        mode: 'no-cors' // Nécessaire pour Mailchimp
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          service_id: 'default_service',
+          template_id: 'template_contact',
+          user_id: 'your_emailjs_user_id',
+          template_params: emailData
+        })
       });
 
       toast.success("Message envoyé avec succès !", {
