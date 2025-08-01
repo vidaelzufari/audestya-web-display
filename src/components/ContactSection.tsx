@@ -81,7 +81,7 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-              Un premier échange pour poser un cadre clair et utile
+              Contact
             </h2>
           </div>
 
