@@ -8,10 +8,11 @@ import { Phone, Mail, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-reac
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
+    prenom: '',
     nom: '',
     email: '',
     telephone: '',
-    objet: '',
+    sujet: '',
     message: ''
   });
   const [status, setStatus] = useState<'idle' | 'success' | 'error'>('idle');
@@ -28,15 +29,15 @@ const ContactSection = () => {
     e.preventDefault();
     
     // Validation simple
-    if (!formData.nom || !formData.email || !formData.message) {
+    if (!formData.prenom || !formData.nom || !formData.email || !formData.sujet || !formData.message) {
       setStatus('error');
       return;
     }
 
     // Créer le lien mailto
-    const subject = formData.objet || 'Demande de contact';
-    const body = `Nom: ${formData.nom}\nEmail: ${formData.email}\nTéléphone: ${formData.telephone}\n\nMessage:\n${formData.message}`;
-    const mailtoLink = `mailto:contact@audestya-avocat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    const subject = formData.sujet;
+    const body = `Prénom: ${formData.prenom}\nNom: ${formData.nom}\nEmail: ${formData.email}\nTéléphone: ${formData.telephone}\n\nMessage:\n${formData.message}`;
+    const mailtoLink = `mailto:haia.elzufari@audestya-avocat.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
     
     // Ouvrir le client email
     window.location.href = mailtoLink;
@@ -46,10 +47,11 @@ const ContactSection = () => {
     // Reset form après 3 secondes
     setTimeout(() => {
       setFormData({
+        prenom: '',
         nom: '',
         email: '',
         telephone: '',
-        objet: '',
+        sujet: '',
         message: ''
       });
       setStatus('idle');
@@ -63,12 +65,8 @@ const ContactSection = () => {
           {/* Header */}
           <div className="text-center mb-16">
             <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-              Me Contacter
+              Un premier échange pour poser un cadre clair et utile
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              N'hésitez pas à me contacter pour discuter de vos besoins juridiques. 
-              Je vous répondrai dans les plus brefs délais.
-            </p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12">
@@ -84,8 +82,8 @@ const ContactSection = () => {
                       <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-primary">Téléphone</p>
-                        <a href="tel:+33123456789" className="text-muted-foreground hover:text-secondary transition-colors">
-                          01 23 45 67 89
+                        <a href="tel:+33685353781" className="text-muted-foreground hover:text-secondary transition-colors">
+                          +33 6 85 35 37 81
                         </a>
                       </div>
                     </div>
@@ -93,8 +91,8 @@ const ContactSection = () => {
                       <Mail className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-primary">Email</p>
-                        <a href="mailto:contact@audestya-avocat.com" className="text-muted-foreground hover:text-secondary transition-colors">
-                          contact@audestya-avocat.com
+                        <a href="mailto:haia.elzufari@audestya-avocat.com" className="text-muted-foreground hover:text-secondary transition-colors">
+                          haia.elzufari@audestya-avocat.com
                         </a>
                       </div>
                     </div>
@@ -103,44 +101,20 @@ const ContactSection = () => {
                       <div>
                         <p className="font-semibold text-primary">Localisation</p>
                         <p className="text-muted-foreground">
-                          Paris et région parisienne<br />
-                          Consultations sur rendez-vous
+                          Paris-France
                         </p>
                       </div>
                     </div>
                   </div>
                 </CardContent>
               </Card>
-
-              {/* Boutons de contact direct */}
-              <div className="grid grid-cols-2 gap-4">
-                <Button 
-                  asChild 
-                  className="bg-secondary hover:bg-secondary/90 text-secondary-foreground h-14"
-                >
-                  <a href="tel:+33123456789">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Appeler
-                  </a>
-                </Button>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  className="border-secondary text-secondary hover:bg-secondary hover:text-secondary-foreground h-14"
-                >
-                  <a href="mailto:contact@audestya-avocat.com">
-                    <Mail className="w-5 h-5 mr-2" />
-                    Email
-                  </a>
-                </Button>
-              </div>
             </div>
 
             {/* Formulaire de contact */}
             <Card className="bg-background shadow-soft border-0">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-bold text-primary mb-6">
-                  Formulaire de Contact
+                  Formulaire de contact
                 </h3>
                 
                 {status === 'success' && (
@@ -160,6 +134,18 @@ const ContactSection = () => {
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
+                      <Label htmlFor="prenom">Prénom *</Label>
+                      <Input
+                        id="prenom"
+                        name="prenom"
+                        value={formData.prenom}
+                        onChange={handleInputChange}
+                        required
+                        placeholder="Votre prénom"
+                        className="border-gray-300 focus:border-secondary"
+                      />
+                    </div>
+                    <div className="space-y-2">
                       <Label htmlFor="nom">Nom *</Label>
                       <Input
                         id="nom"
@@ -167,45 +153,50 @@ const ContactSection = () => {
                         value={formData.nom}
                         onChange={handleInputChange}
                         required
-                        className="border-gray-300 focus:border-secondary"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="email">Email *</Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        required
+                        placeholder="Votre nom"
                         className="border-gray-300 focus:border-secondary"
                       />
                     </div>
                   </div>
                   
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="space-y-2">
-                      <Label htmlFor="telephone">Téléphone</Label>
-                      <Input
-                        id="telephone"
-                        name="telephone"
-                        type="tel"
-                        value={formData.telephone}
-                        onChange={handleInputChange}
-                        className="border-gray-300 focus:border-secondary"
-                      />
-                    </div>
-                    <div className="space-y-2">
-                      <Label htmlFor="objet">Objet</Label>
-                      <Input
-                        id="objet"
-                        name="objet"
-                        value={formData.objet}
-                        onChange={handleInputChange}
-                        className="border-gray-300 focus:border-secondary"
-                      />
-                    </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="email">Email *</Label>
+                    <Input
+                      id="email"
+                      name="email"
+                      type="email"
+                      value={formData.email}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="votre@email.com"
+                      className="border-gray-300 focus:border-secondary"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="telephone">Téléphone</Label>
+                    <Input
+                      id="telephone"
+                      name="telephone"
+                      type="tel"
+                      value={formData.telephone}
+                      onChange={handleInputChange}
+                      placeholder="Votre numéro de téléphone"
+                      className="border-gray-300 focus:border-secondary"
+                    />
+                  </div>
+                  
+                  <div className="space-y-2">
+                    <Label htmlFor="sujet">Sujet *</Label>
+                    <Input
+                      id="sujet"
+                      name="sujet"
+                      value={formData.sujet}
+                      onChange={handleInputChange}
+                      required
+                      placeholder="Objet de votre demande"
+                      className="border-gray-300 focus:border-secondary"
+                    />
                   </div>
                   
                   <div className="space-y-2">
@@ -218,7 +209,7 @@ const ContactSection = () => {
                       required
                       rows={5}
                       className="border-gray-300 focus:border-secondary resize-none"
-                      placeholder="Décrivez votre situation et vos besoins juridiques..."
+                      placeholder="Décrivez votre demande et vos besoins..."
                     />
                   </div>
                   
@@ -226,9 +217,15 @@ const ContactSection = () => {
                     type="submit" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12"
                   >
-                    <Send className="w-5 h-5 mr-2" />
                     Envoyer le message
                   </Button>
+                  
+                  <p className="text-sm text-muted-foreground text-center">
+                    * Champs obligatoires. Vos données à caractère personnel seront traitées conformément à la{' '}
+                    <a href="/politique-confidentialite" className="text-primary hover:text-secondary underline">
+                      politique de confidentialité
+                    </a>.
+                  </p>
                 </form>
               </CardContent>
             </Card>
