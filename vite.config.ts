@@ -5,16 +5,16 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  base: "/", // 👈 ESSENTIEL pour GitHub Pages + domaine personnalisé
+  base: "/",
 
   build: {
     outDir: 'dist',
+    assetsDir: 'assets',
     rollupOptions: {
       input: {
         main: path.resolve(__dirname, 'index.html'),
       }
     },
-    // Ensure .htaccess is copied to dist
     copyPublicDir: true
   },
 

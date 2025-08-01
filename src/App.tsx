@@ -43,6 +43,6 @@ const App = () => (
       <CookieConsent />
     </TooltipProvider>
   </QueryClientProvider>
-);
+)
 
 export default App;
