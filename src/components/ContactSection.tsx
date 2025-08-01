@@ -17,9 +17,6 @@ const PolitiqueConfidentialite = () => {
             <p className="text-xl opacity-90">
               Traitement et protection de vos données personnelles
             </p>
-            <p className="text-xl opacity-90">
-              Traitement et protection de vos données personnelles
-            </p>
           </div>
         </div>
       </section>
@@ -34,56 +31,9 @@ const PolitiqueConfidentialite = () => {
               <CardContent className="p-8">
                 <div className="space-y-4 text-muted-foreground leading-relaxed text-justify">
                   <p>
-                        +33 6 85 35 37 81
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
-                      <Mail className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Email</h4>
-                      <a href="mailto:haia.elzufari@audestya-avocat.com" className="text-muted-foreground hover:text-primary transition-colors">
-                        haia.elzufari@audestya-avocat.com
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center flex-shrink-0">
-                      <MapPin className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h4 className="font-semibold text-primary mb-1">Localisation</h4>
-                      <p className="text-muted-foreground">Paris, France</p>
-                    </div>
-                  </div>
-                </div>
-              </Card>
-
-              <Card className="bg-gradient-primary text-primary-foreground shadow-elegant border-0 p-8">
-                <h3 className="font-serif text-2xl font-bold mb-4">
-                  Pourquoi me choisir ?
-                </h3>
-                <div className="space-y-4">
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                    <p className="text-primary-foreground/90">Expertise confirmée en droit de la distribution</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                    <p className="text-primary-foreground/90">Approche pragmatique et business-oriented</p>
-                  </div>
-                  <div className="flex items-start gap-3">
-                    <CheckCircle className="w-5 h-5 mt-1 flex-shrink-0" />
-                    <p className="text-primary-foreground/90">Accompagnement personnalisé et réactif</p>
-                  </div>
-                </div>
-              </Card>
-            </div>
-
+                    La présente politique (ci-après « Politique ») a pour objet de vous donner plus de visibilité sur le traitement 
+                  </p>
+                  <p>
                     <strong className="text-primary">La présente politique s'applique :</strong>
                   </p>
                   <ul className="space-y-1 ml-4">
