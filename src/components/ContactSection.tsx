@@ -1,68 +1,44 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useForm, ValidationError } from '@formspree/react';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Phone, Mail, MapPin, Send, CheckCircle, AlertCircle } from 'lucide-react';
+import { Phone, Mail, MapPin, Send, CheckCircle } from 'lucide-react';
 
 const ContactSection = () => {
-  const [formData, setFormData] = useState({
-    prenom: '',
-    nom: '',
-    email: '',
-    telephone: '',
-    sujet: '',
-    message: ''
-  });
-  const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle');
+  const [state, handleSubmit] = useForm("xpwagdko"); // Remplacez par votre ID Formspree
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }));
-  };
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    // Validation simple
-    if (!formData.prenom || !formData.nom || !formData.email || !formData.sujet || !formData.message) {
-      setStatus('error');
-      return;
-    }
-
-    setStatus('loading');
-
-    try {
-      // Simuler l'envoi du formulaire
-      await new Promise(resolve => setTimeout(resolve, 1000));
-      
-      // Ici vous pourrez intégrer votre service d'envoi d'email
-      // Par exemple : Formspree, EmailJS, ou votre propre API
-      
-      setStatus('success');
-      
-      // Reset form après succès
-      setTimeout(() => {
-        setFormData({
-          prenom: '',
-          nom: '',
-          email: '',
-          telephone: '',
-          sujet: '',
-          message: ''
-        });
-        setStatus('idle');
-      }, 3000);
-      
-    } catch (error) {
-      setStatus('error');
-      setTimeout(() => setStatus('idle'), 3000);
-    }
-  };
+  if (state.succeeded) {
+    return (
+      <section id="contact" className="py-20 bg-gradient-accent">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <Card className="bg-background shadow-soft border-0">
+              <CardContent className="p-12">
+                <div className="flex items-center justify-center mb-6">
+                  <CheckCircle className="w-16 h-16 text-green-600" />
+                </div>
+                <h2 className="font-serif text-3xl font-bold text-primary mb-4">
+                  Message envoyé avec succès !
+                </h2>
+                <p className="text-lg text-muted-foreground mb-8">
+                  Merci pour votre message. Je vous répondrai dans les plus brefs délais.
+                </p>
+                <Button 
+                  onClick={() => window.location.reload()} 
+                  className="bg-primary hover:bg-primary/90"
+                >
+                  Envoyer un autre message
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+    );
+  }
 
   return (
     <section id="contact" className="py-20 bg-gradient-accent">
@@ -88,9 +64,9 @@ const ContactSection = () => {
                       <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                       <div>
                         <p className="font-semibold text-primary">Téléphone</p>
-                        <a href="tel:+33685353781" className="text-muted-foreground hover:text-secondary transition-colors">
+                        <span className="text-muted-foreground">
                           +33 6 85 35 37 81
-                        </a>
+                        </span>
                       </div>
                     </div>
                     <div className="flex items-start space-x-4">
@@ -123,20 +99,6 @@ const ContactSection = () => {
                   Formulaire de contact
                 </h3>
                 
-                {status === 'success' && (
-                  <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-lg flex items-center space-x-2">
-                    <CheckCircle className="w-5 h-5 text-green-600" />
-                    <p className="text-green-800">Votre message a été envoyé avec succès !</p>
-                  </div>
-                )}
-                
-                {status === 'error' && (
-                  <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg flex items-center space-x-2">
-                    <AlertCircle className="w-5 h-5 text-red-600" />
-                    <p className="text-red-800">Veuillez remplir tous les champs obligatoires.</p>
-                  </div>
-                )}
-
                 <form onSubmit={handleSubmit} className="space-y-6">
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div className="space-y-2">
@@ -144,12 +106,15 @@ const ContactSection = () => {
                       <Input
                         id="prenom"
                         name="prenom"
-                        value={formData.prenom}
-                        onChange={handleInputChange}
                         required
                         placeholder="Votre prénom"
                         className="border-gray-300 focus:border-secondary"
-                        disabled={status === 'loading'}
+                        disabled={state.submitting}
+                      />
+                      <ValidationError 
+                        prefix="Prénom" 
+                        field="prenom"
+                        errors={state.errors}
                       />
                     </div>
                     <div className="space-y-2">
@@ -157,12 +122,15 @@ const ContactSection = () => {
                       <Input
                         id="nom"
                         name="nom"
-                        value={formData.nom}
-                        onChange={handleInputChange}
                         required
                         placeholder="Votre nom"
                         className="border-gray-300 focus:border-secondary"
-                        disabled={status === 'loading'}
+                        disabled={state.submitting}
+                      />
+                      <ValidationError 
+                        prefix="Nom" 
+                        field="nom"
+                        errors={state.errors}
                       />
                     </div>
                   </div>
@@ -173,12 +141,15 @@ const ContactSection = () => {
                       id="email"
                       name="email"
                       type="email"
-                      value={formData.email}
-                      onChange={handleInputChange}
                       required
                       placeholder="votre@email.com"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={status === 'loading'}
+                      disabled={state.submitting}
+                    />
+                    <ValidationError 
+                      prefix="Email" 
+                      field="email"
+                      errors={state.errors}
                     />
                   </div>
                   
@@ -188,11 +159,14 @@ const ContactSection = () => {
                       id="telephone"
                       name="telephone"
                       type="tel"
-                      value={formData.telephone}
-                      onChange={handleInputChange}
                       placeholder="Votre numéro de téléphone"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={status === 'loading'}
+                      disabled={state.submitting}
+                    />
+                    <ValidationError 
+                      prefix="Téléphone" 
+                      field="telephone"
+                      errors={state.errors}
                     />
                   </div>
                   
@@ -201,12 +175,15 @@ const ContactSection = () => {
                     <Input
                       id="sujet"
                       name="sujet"
-                      value={formData.sujet}
-                      onChange={handleInputChange}
                       required
                       placeholder="Objet de votre demande"
                       className="border-gray-300 focus:border-secondary"
-                      disabled={status === 'loading'}
+                      disabled={state.submitting}
+                    />
+                    <ValidationError 
+                      prefix="Sujet" 
+                      field="sujet"
+                      errors={state.errors}
                     />
                   </div>
                   
@@ -215,22 +192,25 @@ const ContactSection = () => {
                     <Textarea
                       id="message"
                       name="message"
-                      value={formData.message}
-                      onChange={handleInputChange}
                       required
                       rows={5}
                       className="border-gray-300 focus:border-secondary resize-none"
                       placeholder="Décrivez votre demande et vos besoins..."
-                      disabled={status === 'loading'}
+                      disabled={state.submitting}
+                    />
+                    <ValidationError 
+                      prefix="Message" 
+                      field="message"
+                      errors={state.errors}
                     />
                   </div>
                   
                   <Button 
                     type="submit" 
                     className="w-full bg-primary hover:bg-primary/90 text-primary-foreground h-12"
-                    disabled={status === 'loading'}
+                    disabled={state.submitting}
                   >
-                    {status === 'loading' ? (
+                    {state.submitting ? (
                       <>
                         <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
                         Envoi en cours...
