@@ -46,7 +46,7 @@ const ContactSection = () => {
         'service_bl7a3qq', // Service ID
         'template_8em091m', // Template ID
         templateParams,
-        'YOUR_PUBLIC_KEY' // Public Key - remplacez par votre vraie clé publique
+        'uMF-U7H_pbj1HSmdG' // Public Key
       );
 
       toast.success("Message envoyé avec succès !", {
