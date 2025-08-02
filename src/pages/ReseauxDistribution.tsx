@@ -125,25 +125,25 @@ const ReseauxDistribution = () => {
                     <div className="space-y-3 text-muted-foreground">
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Document d'information précontractuelle (DIP)</p>
+                         <p className="text-justify">Document d'information précontractuelle (DIP)</p>
                        </div>
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Contrats : réservation, franchise, licence de marque, concession exclusive</p>
+                         <p className="text-justify">Contrats : réservation, franchise, licence de marque, concession exclusive</p>
                        </div>
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Conditions générales de vente (CGV) internes au réseau</p>
+                         <p className="text-justify">Conditions générales de vente (CGV) internes au réseau</p>
                        </div>
                      </div>
                      <div className="space-y-3 text-muted-foreground">
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Contrats d'approvisionnement, informatiques, logistiques, partenariats</p>
+                         <p className="text-justify">Contrats d'approvisionnement, informatiques, logistiques, partenariats</p>
                        </div>
                        <div className="flex items-center gap-3">
                          <FileText className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                         <p>Supports de prospection et documents de recrutement réseau</p>
+                         <p className="text-justify">Supports de prospection et documents de recrutement réseau</p>
                        </div>
                     </div>
                   </div>
