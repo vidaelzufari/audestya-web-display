@@ -46,7 +46,7 @@ const Footer = () => {
               <a href="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Identité & Approche
               </a>
-              <a href="#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <a href="/presentation#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
               </a>
               <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
