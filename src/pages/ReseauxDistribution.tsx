@@ -80,19 +80,19 @@ const ReseauxDistribution = () => {
                     <div className="space-y-3 text-muted-foreground">
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Choix du cadre juridique adapté à votre stratégie : licence, franchise, commission-affiliation, concession</p>
+                        <p className="text-justify">Choix du cadre juridique adapté à votre stratégie : licence, franchise, commission-affiliation, concession</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Vérification de la protection de votre marque (en lien avec un CPI)</p>
+                        <p className="text-justify">Vérification de la protection de votre marque (en lien avec un CPI)</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Encadrement de la phase précontractuelle : prévention des risques et construction de la relation de confiance</p>
+                        <p className="text-justify">Encadrement de la phase précontractuelle : prévention des risques et construction de la relation de confiance</p>
                       </div>
                       <div className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p>Relecture stratégique de votre manuel opératoire : cohérence, articulation avec les contrats</p>
+                        <p className="text-justify">Relecture stratégique de votre manuel opératoire : cohérence, articulation avec les contrats</p>
                       </div>
                     </div>
                   </div>
