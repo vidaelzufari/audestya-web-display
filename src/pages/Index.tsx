@@ -16,7 +16,6 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       
-
       {/* Mon Intervention Section */}
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
@@ -24,7 +23,6 @@ const Index = () => {
               </h2>
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
-                    </p>
                   </div>
                 </div>
               </div>
@@ -55,11 +53,44 @@ const Index = () => {
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
                           Distribution - Contrats - Consommation
                         </h3>
-                        <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 mb-2"></div>
-                        <p className="text-muted-foreground italic mt-2 text-lg">
-                          Structurer l'action, prévenir le risque, accompagner vos activités.
-                        </p>
+      {/* Mon Intervention Section */}
+      <section className="py-20 bg-gradient-to-br from-background via-background/95 to-primary/5">
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-16">
+              <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
+              <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-medium italic">
+                Le droit n'a d'impact que s'il éclaire l'action.
+              </p>
+            </div>
+
+            {/* Main content - Single flowing section */}
+            <div className="max-w-6xl mx-auto">
+              <div className="text-center mb-16">
+                <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
+                  Deux leviers d'intervention complémentaires
+                </h3>
+              </div>
+              
+              {/* Combined content in a flowing layout */}
+              <div className="space-y-8">
+                {/* First section - Distribution Contrats Consommation */}
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="text-center mb-8">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                          <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                        </div>
                       </div>
+                      <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                        Distribution - Contrats - Consommation
+                      </h3>
+                      <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 mb-2"></div>
+                      <p className="text-muted-foreground italic mt-2 text-lg">
+                        Structurer l'action, prévenir le risque, accompagner vos activités.
+                      </p>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -111,19 +142,21 @@ const Index = () => {
                 <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
-                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
-                        <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
-                        </svg>
+                    <div className="text-center mb-8">
+                      <div className="flex items-center justify-center mb-6">
+                        <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
+                          <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
+                          </svg>
+                        </div>
                       </div>
-                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
-                          Accompagnement Juridique Externalisé
-                        </h3>
-                        <div className="w-32 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                        <p className="text-muted-foreground italic mt-2 text-lg">
-                          Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
-                        </p>
-                      </div>
+                      <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                        Accompagnement Juridique Externalisé
+                      </h3>
+                      <div className="w-32 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                      <p className="text-muted-foreground italic mt-2 text-lg">
+                        Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
+                      </p>
                     </div>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
@@ -164,15 +197,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-
-
-
-
-      
-
-
-
       <ContactSection />
       <Footer />
     </div>
