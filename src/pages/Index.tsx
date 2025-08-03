@@ -20,7 +20,6 @@ const Index = () => {
       {/* Mon Intervention Section */}
       <section className="py-20 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          {/* Hero content */}
           <div className="max-w-7xl mx-auto">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
               </h2>
@@ -28,7 +27,6 @@ const Index = () => {
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                     </p>
                   </div>
-                </div>
                   </div>
                 </div>
               </div>
@@ -115,19 +113,11 @@ const Index = () => {
                 <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
-                    <div className="flex items-center justify-center mb-8">
                       <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
                         <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                          Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-                      <div className="space-y-4">
                       <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
                           Accompagnement Juridique Externalisé
@@ -138,6 +128,10 @@ const Index = () => {
                         </p>
                       </div>
                     </div>
+                    
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+                      <div className="space-y-4">
+                        <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
                             Pilotage juridique de projets structurants
