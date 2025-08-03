@@ -28,15 +28,15 @@ const Index = () => {
               </h2>
               <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12 animate-fade-in">
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed relative">
+                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed relative group">
                     Des solutions juridiques ancrées dans vos enjeux business
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary animate-[expand-underline_1.5s_ease-out_0.8s_forwards]"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-500 ease-out"></span>
                   </p>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed relative">
+                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed relative group">
                     Clarté, méthode, exigence à chaque étape
-                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary animate-[expand-underline_1.5s_ease-out_1.1s_forwards]"></span>
+                    <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary group-hover:w-full transition-all duration-500 ease-out"></span>
                   </p>
                 </div>
               </div>
