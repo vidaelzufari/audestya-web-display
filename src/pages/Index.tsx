@@ -1,14 +1,16 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
-
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart, Network } from 'lucide-react';
-import expertiseIcon from '@/assets/expertise-icon.jpg';
-import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
-import trustIcon from '@/assets/trust-icon.jpg';
-import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
+import { Network } from 'lucide-react';
+
+// Custom SVG icon for Accompagnement Juridique Externalisé
+const AccompagnementIcon = ({ className }: { className?: string }) => (
+  <svg className={className} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
+  </svg>
+);
 
 const Index = () => {
   return (
@@ -16,7 +18,6 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       
-
       {/* Mon Intervention Section */}
       <section className="py-20 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
@@ -133,9 +134,7 @@ const Index = () => {
                   <CardContent className="p-10 relative z-10">
                     <div className="flex items-center justify-center mb-8">
                       <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
-                        <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
-                        </svg>
+                        <AccompagnementIcon className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                       </div>
                       <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
