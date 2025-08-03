@@ -1,261 +1,122 @@
-import React, { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
-import { Menu, X, ChevronDown } from 'lucide-react';
+import React from 'react';
+import { Card, CardContent } from '@/components/ui/card';
+import Navigation from '@/components/Navigation';
+import Footer from '@/components/Footer';
+import { Linkedin, ExternalLink, Calendar, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
+import { Linkedin, ExternalLink } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import LinkedInFeed from '@/components/LinkedInFeed';
 
-const Navigation = () => {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isScrolled, setIsScrolled] = useState(false);
-  const [isDomainesOpen, setIsDomainesOpen] = useState(false);
-  const location = useLocation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
-    };
-
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
-
-  const closeMenu = () => {
-    setIsOpen(false);
-    setIsDomainesOpen(false);
-  };
-
-  const toggleDomaines = () => {
-    setIsDomainesOpen(!isDomainesOpen);
-  };
-
-  const isActive = (path: string) => {
-    return location.pathname === path;
-  };
-
+const Actualites = () => {
   return (
-    <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-      isScrolled 
-        ? 'bg-background/95 backdrop-blur-md shadow-soft border-b border-border/50' 
-        : 'bg-transparent'
-    }`}>
-      <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-20">
-          {/* Logo */}
-          <Link to="/" className="flex items-center space-x-3 group" onClick={closeMenu}>
-            <div className="flex flex-col">
-              <span className={`font-serif text-2xl font-bold transition-colors duration-300 ${
-                isScrolled ? 'text-primary' : 'text-primary-foreground'
-              } group-hover:text-secondary`}>
-                AUDESTYA
-              </span>
-              <span className={`text-sm font-medium transition-colors duration-300 ${
-                isScrolled ? 'text-muted-foreground' : 'text-primary-foreground/80'
-              } group-hover:text-secondary`}>
-                AVOCAT
-              </span>
-            </div>
-          </Link>
+    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
+      <Navigation />
+      
+      {/* Hero Section */}
+      <section className="pt-32 pb-16">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
+              Actualités
+            </h1>
+            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+              Suivez mes dernières analyses juridiques et actualités du droit de la distribution
+            </p>
+          </div>
+        </div>
+      </section>
 
-          {/* Desktop Menu */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link 
-              to="/" 
-              className={`font-medium transition-colors duration-300 hover:text-secondary ${
-                isScrolled ? 'text-foreground' : 'text-primary-foreground'
-              } ${isActive('/') ? 'text-secondary' : ''}`}
-            >
-              Accueil
-            </Link>
+      {/* LinkedIn Feed Section */}
+      <section className="py-20">
+        <div className="container mx-auto px-4">
+          <div className="max-w-4xl mx-auto">
             
-            <Link 
-              to="/presentation" 
-              className={`font-medium transition-colors duration-300 hover:text-secondary ${
-                isScrolled ? 'text-foreground' : 'text-primary-foreground'
-              } ${isActive('/presentation') ? 'text-secondary' : ''}`}
-            >
-              Présentation
-            </Link>
-
-            {/* Domaines Dropdown */}
-            <div className="relative group">
-              <button 
-                className={`font-medium transition-colors duration-300 hover:text-secondary flex items-center gap-1 ${
-                  isScrolled ? 'text-foreground' : 'text-primary-foreground'
-                } ${['/reseaux-distribution', '/relations-commerciales', '/accompagnement-juridique'].includes(location.pathname) ? 'text-secondary' : ''}`}
-                onMouseEnter={() => setIsDomainesOpen(true)}
-                onMouseLeave={() => setIsDomainesOpen(false)}
-              >
-                Domaines
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDomainesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              <div 
-                className={`absolute top-full left-0 mt-2 w-64 bg-background border border-border rounded-lg shadow-elegant transition-all duration-200 ${
-                  isDomainesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible -translate-y-2'
-                }`}
-                onMouseEnter={() => setIsDomainesOpen(true)}
-                onMouseLeave={() => setIsDomainesOpen(false)}
-              >
-                <div className="py-2">
-                  <Link 
-                    to="/reseaux-distribution" 
-                    className="block px-4 py-3 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors"
-                  >
-                    Réseaux de Distribution
-                  </Link>
-                  <Link 
-                    to="/relations-commerciales" 
-                    className="block px-4 py-3 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors"
-                  >
-                    Relations Commerciales
-                  </Link>
-                  <Link 
-                    to="/accompagnement-juridique" 
-                    className="block px-4 py-3 text-sm text-foreground hover:bg-muted hover:text-secondary transition-colors"
-                  >
-                    Accompagnement Juridique
-                  </Link>
+            {/* LinkedIn Feed Section */}
+            <Card className="bg-background shadow-soft border-0 mb-12">
+              <CardContent className="p-12 text-center">
+                <div className="flex items-center justify-center gap-3 mb-8">
+                  <Linkedin className="w-8 h-8 text-primary" />
+                  <h2 className="font-serif text-3xl font-bold text-primary">
+                    Suivez-moi sur LinkedIn
+                  </h2>
                 </div>
-              </div>
-            </div>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+                
+                <div className="space-y-6">
+                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
+                    et conseils pratiques directement sur mon profil LinkedIn.
+                    Suivez-moi sur LinkedIn
+                  </h2>
+                </div>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
+                
+                <div className="space-y-6">
+                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
+                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
+                    et conseils pratiques directement sur mon profil LinkedIn.
+                  </p>
+                  
+                  <Button asChild className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-8 py-3 text-lg font-medium">
+                    <a 
+                      href="https://www.linkedin.com/in/haiaelzufari" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                      Voir mon profil LinkedIn
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Link 
-              to="/honoraires" 
-              className={`font-medium transition-colors duration-300 hover:text-secondary ${
-                isScrolled ? 'text-foreground' : 'text-primary-foreground'
-              } ${isActive('/honoraires') ? 'text-secondary' : ''}`}
-            >
-              Honoraires
-            </Link>
-            
-            <Link 
-              to="/actualites" 
-              className={`font-medium transition-colors duration-300 hover:text-secondary ${
-                isScrolled ? 'text-foreground' : 'text-primary-foreground'
-              } ${isActive('/actualites') ? 'text-secondary' : ''}`}
-            >
-              Actualités
-            </Link>
+            {/* LinkedIn Posts Preview */}
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              {/* Post Example 1 */}
+              <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+                <CardContent className="p-8">
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <User className="w-6 h-6 text-primary" />
+                    </div>
+                    <div>
+                      <h3 className="font-semibold text-primary">Haia El Zufari</h3>
+                      <p className="text-sm text-muted-foreground">Avocat au Barreau de Paris</p>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <p className="text-muted-foreground leading-relaxed">
+                      🔍 <strong>Analyse juridique :</strong> Les nouvelles obligations en matière de 
+                      protection des consommateurs dans le e-commerce...
+                    </p>
+                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
+                      <Calendar className="w-4 h-4" />
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-3"
+                    >
+                      <Linkedin className="w-5 h-5" />
+                      Voir mon profil LinkedIn
+                      <ExternalLink className="w-4 h-4" />
+                    </a>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
 
-            <Button 
-              asChild 
-              className="bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-glow"
-            >
-              <a href="#contact">Contact</a>
-            </Button>
-          </div>
-
-          {/* Mobile Menu Button */}
-          <Button
-            variant="ghost"
-            size="icon"
-            className={`lg:hidden transition-colors duration-300 ${
-              isScrolled ? 'text-foreground hover:text-secondary' : 'text-primary-foreground hover:text-secondary'
-            }`}
-            onClick={toggleMenu}
-          >
-            {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-          </Button>
-        </div>
-
-        {/* Mobile Menu */}
-        <div className={`lg:hidden transition-all duration-300 overflow-hidden ${
-          isOpen ? 'max-h-screen opacity-100' : 'max-h-0 opacity-0'
-        }`}>
-          <div className="py-4 space-y-2 bg-background/95 backdrop-blur-md rounded-lg mt-2 border border-border/50">
-            <Link 
-              to="/" 
-              className={`block px-4 py-3 text-foreground hover:text-secondary hover:bg-muted transition-colors ${
-                isActive('/') ? 'text-secondary bg-muted' : ''
-              }`}
-              onClick={closeMenu}
-            >
-              Accueil
-            </Link>
-            
-            <Link 
-              to="/presentation" 
-              className={`block px-4 py-3 text-foreground hover:text-secondary hover:bg-muted transition-colors ${
-                isActive('/presentation') ? 'text-secondary bg-muted' : ''
-              }`}
-              onClick={closeMenu}
-            >
-              Présentation
-            </Link>
-
-            {/* Mobile Domaines */}
-            <div>
-              <button 
-                className="w-full flex items-center justify-between px-4 py-3 text-foreground hover:text-secondary hover:bg-muted transition-colors"
-                onClick={toggleDomaines}
-              >
-                Domaines
-                <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${isDomainesOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              <div className={`transition-all duration-200 overflow-hidden ${
-                isDomainesOpen ? 'max-h-48 opacity-100' : 'max-h-0 opacity-0'
-              }`}>
-                <Link 
-                  to="/reseaux-distribution" 
-                  className="block px-8 py-2 text-sm text-muted-foreground hover:text-secondary hover:bg-muted transition-colors"
-                  onClick={closeMenu}
-                >
-                  Réseaux de Distribution
-                </Link>
-                <Link 
-                  to="/relations-commerciales" 
-                  className="block px-8 py-2 text-sm text-muted-foreground hover:text-secondary hover:bg-muted transition-colors"
-                  onClick={closeMenu}
-                >
-                  Relations Commerciales
-                </Link>
-                <Link 
-                  to="/accompagnement-juridique" 
-                  className="block px-8 py-2 text-sm text-muted-foreground hover:text-secondary hover:bg-muted transition-colors"
-                  onClick={closeMenu}
-                >
-                  Accompagnement Juridique
-                </Link>
-              </div>
-            </div>
-
-            <Link 
-              to="/honoraires" 
-              className={`block px-4 py-3 text-foreground hover:text-secondary hover:bg-muted transition-colors ${
-                isActive('/honoraires') ? 'text-secondary bg-muted' : ''
-              }`}
-              onClick={closeMenu}
-            >
-              Honoraires
-            </Link>
-            
-            <Link 
-              to="/actualites" 
-              className={`block px-4 py-3 text-foreground hover:text-secondary hover:bg-muted transition-colors ${
-                isActive('/actualites') ? 'text-secondary bg-muted' : ''
-              }`}
-              onClick={closeMenu}
-            >
-              Actualités
-            </Link>
-
-            <div className="px-4 py-3">
-              <Button 
-                asChild 
-                className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-primary-foreground rounded-full font-medium"
-              >
-                <a href="#contact" onClick={closeMenu}>Contact</a>
-              </Button>
-            </div>
+            <LinkedInFeed />
           </div>
         </div>
-      </div>
-    </nav>
+      </section>
+
+      <Footer />
+    </div>
   );
 };
 
-export default Navigation;
+export default Actualites;
