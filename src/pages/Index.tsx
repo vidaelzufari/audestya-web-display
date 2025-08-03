@@ -24,7 +24,6 @@ const Index = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
-                Structurer, sécuriser, accompagner vos décisions
               </h2>
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
@@ -32,7 +31,6 @@ const Index = () => {
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
-                  <div className="relative group">
                   </div>
                 </div>
               </div>
@@ -125,7 +123,6 @@ const Index = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                        </h3>
                         <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
                           Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
