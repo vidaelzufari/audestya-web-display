@@ -22,7 +22,6 @@ const Index = () => {
         <div className="container mx-auto px-4 relative z-10">
           {/* Hero content */}
           <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
               </h2>
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
@@ -30,7 +29,6 @@ const Index = () => {
                     </p>
                   </div>
                 </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
                   </div>
                 </div>
               </div>
@@ -123,8 +121,6 @@ const Index = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                        <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
-                        <p className="text-muted-foreground italic mt-2 text-lg">
                           Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
                         </p>
                       </div>
@@ -132,7 +128,16 @@ const Index = () => {
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
                       <div className="space-y-4">
-                        <div className="flex items-start gap-4">
+                      <div className="text-center">
+                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                          Accompagnement Juridique Externalisé
+                        </h3>
+                        <div className="w-32 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                        <p className="text-muted-foreground italic mt-2 text-lg">
+                          Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
+                        </p>
+                      </div>
+                    </div>
                           <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
                             Pilotage juridique de projets structurants
