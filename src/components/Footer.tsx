@@ -46,7 +46,7 @@ const Footer = () => {
               <Link to="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Identité & Approche
               </Link>
-              <Link to="/#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <Link to="/presentation#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
                 Domaines d'intervention
               </Link>
               <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
