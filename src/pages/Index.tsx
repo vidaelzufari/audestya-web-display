@@ -28,7 +28,6 @@ const Index = () => {
               </h2>
               <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12 animate-fade-in">
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                  <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                     </p>
                   </div>
@@ -36,7 +35,6 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
                   <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
-                      Clarté, méthode, exigence à chaque étape
                   </div>
                 </div>
               </div>
@@ -129,7 +127,6 @@ const Index = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                           Accompagnement Juridique Externalisé
                         </h3>
                         <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
