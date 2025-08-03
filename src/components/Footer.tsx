@@ -1,122 +1,105 @@
-import React from 'react';
-import { Card, CardContent } from '@/components/ui/card';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Linkedin, ExternalLink, Calendar, User } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Linkedin, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import LinkedInFeed from '@/components/LinkedInFeed';
 
-const Actualites = () => {
+import { Facebook, Linkedin, Instagram, Twitter, Phone, Mail, MapPin } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
+
+const Footer = () => {
+  const navigate = useNavigate();
+
+  const handleContactClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      const contactSection = document.getElementById('contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 100);
+  };
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
-              Actualités
-            </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Suivez mes dernières analyses juridiques et actualités du droit de la distribution
+    <footer className="bg-gradient-primary text-primary-foreground">
+      <div className="container mx-auto px-4 py-12">
+        <div className="grid md:grid-cols-3 gap-8 mb-8">
+          {/* Brand and description */}
+          <div className="space-y-4">
+            <div className="flex items-center">
+              <h3 className="font-serif text-2xl font-bold">AUDESTYA</h3>
+              <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
+            </div>
+            <p className="text-primary-foreground/80 leading-relaxed">
+              Haia EL ZUFARI<br/>
+              Avocat au Barreau de Paris
             </p>
+            <div className="flex space-x-4">
+              <a href="https://www.linkedin.com/in/haiaelzufari" target="_blank" rel="noopener noreferrer" className="text-primary-foreground/60 hover:text-secondary transition-colors">
+                <Linkedin size={20} />
+              </a>
+            </div>
+          </div>
+
+          {/* Quick links */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg text-secondary">Navigation</h4>
+            <div className="space-y-2">
+              <Link to="/#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Accueil
+              </Link>
+              <Link to="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Identité & Approche
+              </Link>
+              <Link to="/presentation#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Domaines d'intervention
+              </Link>
+              <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
+                Contact
+              </button>
+              <Link to="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+                Honoraires
+              </Link>
+            </div>
+          </div>
+
+          {/* Contact info */}
+          <div className="space-y-4">
+            <h4 className="font-semibold text-lg text-secondary">Contact</h4>
+            <div className="space-y-3">
+              <a href="tel:+33685353781" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
+                <Phone size={16} />
+                +33 6 85 35 37 81
+              </a>
+              <a href="mailto:haia.elzufari@audestya-avocat.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
+                <Mail size={16} />
+                haia.elzufari@audestya-avocat.com
+              </a>
+              <div className="flex items-center gap-3 text-primary-foreground/80">
+                <MapPin size={16} />
+                Paris - France
+              </div>
+            </div>
           </div>
         </div>
-      </section>
 
-      {/* LinkedIn Feed Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
-            
-            {/* LinkedIn Feed Section */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12 text-center">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Linkedin className="w-8 h-8 text-primary" />
-                  <h2 className="font-serif text-3xl font-bold text-primary">
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                  </p>
-                  
-                  <Button asChild className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-8 py-3 text-lg font-medium">
-                    <a 
-                      href="https://www.linkedin.com/in/haiaelzufari" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* LinkedIn Posts Preview */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              {/* Post Example 1 */}
-              <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Haia El Zufari</h3>
-                      <p className="text-sm text-muted-foreground">Avocat au Barreau de Paris</p>
-                    </div>
-                  </div>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      🔍 <strong>Analyse juridique :</strong> Les nouvelles obligations en matière de 
-                      protection des consommateurs dans le e-commerce...
-                    </p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="w-4 h-4" />
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            <LinkedInFeed />
+        {/* Bottom bar */}
+        <div className="border-t border-primary-foreground/20 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-primary-foreground/60">
+            <p>
+              © 2025 Audestya Avocat. Tous droits réservés.
+            </p>
+            <div className="flex gap-6">
+              <Link to="/mentions-legales" className="hover:text-secondary transition-colors">
+                Mentions légales
+              </Link>
+              <Link to="/politique-cookies" className="hover:text-secondary transition-colors">
+                Cookies
+              </Link>
+              <Link to="/politique-confidentialite" className="hover:text-secondary transition-colors">
+                Politique de confidentialité
+              </Link>
+            </div>
           </div>
         </div>
-      </section>
-
-      <Footer />
-    </div>
+      </div>
+    </footer>
   );
 };
 
-export default Actualites;
+export default Footer;
