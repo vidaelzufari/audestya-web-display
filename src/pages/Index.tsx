@@ -14,7 +14,6 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
-      <HeroSection />
       
       {/* Mon Intervention Section */}
         <div className="container mx-auto px-4 relative z-10">
@@ -22,7 +21,6 @@ const Index = () => {
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
               </h2>
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
-                    <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                   </div>
                 </div>
               </div>
@@ -148,7 +146,6 @@ const Index = () => {
                           <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                           </svg>
-                        </div>
                       </div>
                       <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
                         Accompagnement Juridique Externalisé
@@ -204,6 +201,3 @@ const Index = () => {
 };
 
 export default Index;
-
-  )
-}
