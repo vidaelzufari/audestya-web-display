@@ -1,4 +1,4 @@
-import { LinkedInFeed } from '@/components/LinkedInFeed';
+import LinkedInFeed from '@/components/LinkedInFeed';
 
 const Actualites = () => {
   return (
