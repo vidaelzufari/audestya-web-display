@@ -30,17 +30,17 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
                   <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
-                    Des solutions juridiques ancrées dans vos enjeux business
+                      Des solutions juridiques ancrées dans vos enjeux business
                     </p>
-                    <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-4/5 transition-all duration-500 ease-out"></div>
+                    <div className="absolute -bottom-6 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-500 ease-out"></div>
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
                   <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
-                    Clarté, méthode, exigence à chaque étape
+                      Clarté, méthode, exigence à chaque étape
                     </p>
-                    <div className="absolute -bottom-4 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary group-hover:w-3/5 transition-all duration-500 ease-out"></div>
+                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary group-hover:w-1/2 transition-all duration-500 ease-out"></div>
                   </div>
                 </div>
               </div>
