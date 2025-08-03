@@ -60,10 +60,10 @@ const Navigation = () => {
             
             {/* Dropdown for Domaines */}
             <div className="relative group">
-              <button className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center py-3 px-2">
+              <Link to="/presentation#domaines" className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center py-3 px-2">
                   DOMAINES D'INTERVENTION
                   <ChevronDown className="ml-1 h-4 w-4" />
-              </button>
+              </Link>
               
               {/* Hover submenu */}
               <div className="absolute top-full left-0 w-64 bg-background/95 backdrop-blur-sm border shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
@@ -139,7 +139,7 @@ const Navigation = () => {
               
               {/* Mobile Domaines section */}
               <div className="py-2">
-                <p className="text-primary-foreground font-medium px-2 mb-2">DOMAINES D'INTERVENTION</p>
+                <Link to="/presentation#domaines" className="text-primary-foreground font-medium px-2 mb-2 block hover:text-secondary transition-colors">DOMAINES D'INTERVENTION</Link>
                 <div className="ml-4 space-y-2">
                   <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Réseaux de Distribution
