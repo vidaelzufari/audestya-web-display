@@ -32,7 +32,6 @@ const Index = () => {
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                       Des solutions juridiques ancrées dans vos enjeux business
                     </p>
-                    <div className="absolute -bottom-6 left-0 w-0 h-0.5 bg-gradient-to-r from-primary to-secondary group-hover:w-full transition-all duration-500 ease-out"></div>
                   </div>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
@@ -40,7 +39,6 @@ const Index = () => {
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                       Clarté, méthode, exigence à chaque étape
                     </p>
-                    <div className="absolute -bottom-6 left-1/2 transform -translate-x-1/2 w-0 h-0.5 bg-gradient-to-r from-secondary to-primary group-hover:w-1/2 transition-all duration-500 ease-out"></div>
                   </div>
                 </div>
               </div>
@@ -134,7 +132,6 @@ const Index = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                      <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                           Accompagnement Juridique Externalisé
                         </h3>
