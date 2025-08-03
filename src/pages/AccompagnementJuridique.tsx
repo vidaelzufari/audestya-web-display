@@ -2,13 +2,12 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Users, Target, Briefcase, Clock, CheckCircle, ArrowRight, Building, Network, Layers } from 'lucide-react';
+import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell, Network, Building, FileText, Shield, Settings, Layers } from 'lucide-react';
 
 const AccompagnementJuridique = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
-      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">
@@ -34,214 +33,218 @@ const AccompagnementJuridique = () => {
                   <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
                 </div>
                 <h2 className="font-serif text-4xl font-bold text-primary mb-6">
-                  Un appui juridique structuré et aligné sur vos priorités
+                  Une collaboration juridique agile et structurante
                 </h2>
                 <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
-                <div className="space-y-4 max-w-4xl mx-auto text-left">
-                  <p className="text-lg text-muted-foreground text-justify">
-                    <strong>Vous avez besoin d'un appui juridique ponctuel ou récurrent, mais vous ne souhaitez pas recruter en interne ?</strong>
-                  </p>
-                  <p className="text-lg text-muted-foreground text-justify">
-                    <strong>Vous disposez d'une équipe juridique, mais vous cherchez un renfort sur des projets spécifiques ou des pics d'activité ?</strong>
-                  </p>
-                  <p className="text-lg text-muted-foreground text-justify">
-                    <strong>Mon rôle :</strong> vous accompagner en autonomie ou aux côtés de vos équipes, avec la réactivité et l'expertise d'un juriste expérimenté, sans les contraintes du recrutement.
-                  </p>
-                </div>
+                 <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed text-justify">
+                     J'interviens en autonomie ou en lien étroit avec vos équipes, selon vos priorités stratégiques ou opérationnelles, pour structurer, fluidifier et faire avancer vos projets.
+                   </p>
               </CardContent>
             </Card>
 
-            {/* Deux modalités d'intervention */}
-            <div className="mb-16">
-              <div className="text-center mb-12">
-                <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
-                  Deux modalités d'intervention
-                </h2>
-              </div>
-              
-              <div className="grid lg:grid-cols-2 gap-8">
-                {/* Pilotage juridique */}
-                <Card className="group bg-background shadow-soft border-0 hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <CardContent className="p-10 relative z-10">
-                    <div className="flex items-center gap-4 mb-8">
-                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
-                        <Target className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
-                      </div>
-                      <h3 className="font-serif text-2xl font-bold text-primary">
-                        Pilotage juridique de projets structurants
-                      </h3>
-                    </div>
-                    <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mb-8"></div>
-                    
-                    <div className="space-y-4 text-muted-foreground">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Accompagnement dans vos projets de développement, restructuration ou transformation</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Pilotage de la dimension juridique de vos projets stratégiques</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Coordination avec vos équipes internes et partenaires externes</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Suivi et reporting régulier sur l'avancement des projets</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
-                </Card>
-
-                {/* Missions ponctuelles */}
-                <Card className="group bg-background shadow-soft border-0 hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <CardContent className="p-10 relative z-10">
-                    <div className="flex items-center gap-4 mb-8">
-                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center group-hover:bg-primary transition-colors duration-300">
-                        <Clock className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
-                      </div>
-                      <h3 className="font-serif text-2xl font-bold text-primary">
-                        Missions ponctuelles
-                      </h3>
-                    </div>
-                    <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mb-8"></div>
-                    
-                    <div className="space-y-4 text-muted-foreground">
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Renfort sur des pics d'activité ou des urgences</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Expertise spécialisée sur des dossiers complexes</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Audit et conseil sur des problématiques spécifiques</p>
-                      </div>
-                      <div className="flex items-start gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full mt-2 flex-shrink-0"></div>
-                        <p className="text-justify">Formation et sensibilisation de vos équipes</p>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
-                </Card>
-              </div>
-            </div>
-
-            {/* Avantages */}
-            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-12 group">
-              <CardContent className="p-12">
+            {/* Types d'accompagnement */}
+            <Card className="bg-background shadow-soft border-0 mb-16 hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
                 <div className="text-center mb-12">
-                  <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
-                    <CheckCircle className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
+                  <div className="inline-flex items-center gap-3 mb-6">
+                    <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
+                    <div className="w-3 h-3 bg-primary rounded-full"></div>
+                    <div className="h-px bg-gradient-to-r from-transparent via-primary to-transparent flex-1"></div>
                   </div>
-                  <h2 className="font-serif text-4xl font-bold mb-6">Les avantages de l'externalisation</h2>
-                  <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
-                </div>
-
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Briefcase className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3 text-white">Expertise immédiate</h3>
-                    <p className="text-white/80 text-sm">Accès direct à une expertise confirmée sans délai de recrutement</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Target className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3 text-white">Flexibilité</h3>
-                    <p className="text-white/80 text-sm">Adaptation du niveau d'intervention selon vos besoins</p>
-                  </div>
-                  
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/10 rounded-full flex items-center justify-center mx-auto mb-4">
-                      <Users className="w-8 h-8 text-white" />
-                    </div>
-                    <h3 className="font-semibold text-lg mb-3 text-white">Optimisation des coûts</h3>
-                    <p className="text-white/80 text-sm">Maîtrise budgétaire sans charges fixes</p>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* Méthodologie */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12">
-                <div className="text-center mb-12">
-                  <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-6">
-                    <Layers className="w-10 h-10 text-foreground" />
-                  </div>
-                  <h2 className="font-serif text-3xl font-bold text-primary mb-6">
-                    Une approche collaborative
+                  <h2 className="font-serif text-4xl font-bold text-primary mb-6">
+                    Mes axes d'intervention
                   </h2>
                   <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
                 </div>
                 
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  <div className="space-y-6">
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-primary-foreground font-bold text-sm">1</span>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Analyse des besoins</h3>
-                        <p className="text-muted-foreground text-justify">Compréhension précise de vos enjeux et objectifs</p>
-                      </div>
+                <div className="space-y-8">
+                  <div className="group flex items-start gap-6">
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Target className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                     </div>
-                    
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-primary-foreground font-bold text-sm">2</span>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Définition du cadre</h3>
-                        <p className="text-muted-foreground text-justify">Modalités d'intervention, planning et livrables</p>
-                      </div>
-                    </div>
-                    
-                    <div className="flex items-start gap-4">
-                      <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                        <span className="text-primary-foreground font-bold text-sm">3</span>
-                      </div>
-                      <div>
-                        <h3 className="font-semibold text-primary mb-2">Exécution et suivi</h3>
-                        <p className="text-muted-foreground text-justify">Mise en œuvre avec reporting régulier</p>
-                      </div>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Pilotage juridique de projets structurants
+                      </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Réorganisation, développement de réseau, lancement de nouveaux modèles ou outils contractuels
+                      </p>
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-accent p-8 rounded-lg">
-                    <h3 className="font-serif text-2xl font-bold text-primary mb-6">Domaines d'intervention</h3>
-                    <div className="space-y-3 text-muted-foreground">
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                        <p>Droit des contrats et relations commerciales</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                        <p>Droit de la distribution et réseaux</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                        <p>Droit de la consommation</p>
-                      </div>
-                      <div className="flex items-center gap-3">
-                        <div className="w-2 h-2 bg-secondary rounded-full"></div>
-                        <p>Conformité et audit juridique</p>
+                  <div className="group flex items-start gap-6">
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Users className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Renfort ponctuel ou continu
+                      </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Auprès de directions juridiques ou d'équipes opérationnelles, selon vos besoins spécifiques
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="group flex items-start gap-6">
+                    <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center flex-shrink-0 group-hover:bg-primary transition-colors duration-300">
+                      <Settings className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                    </div>
+                    <div>
+                      <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                        Appui transversal
+                      </h3>
+                      <div className="w-12 h-1 bg-gradient-to-r from-primary to-secondary mb-4"></div>
+                      <p className="text-lg text-muted-foreground leading-relaxed text-justify text-left">
+                        Aux dirigeants ou responsables métiers, sur des enjeux contractuels, commerciaux ou concurrentiels
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+
+            {/* Processus de collaboration */}
+            <Card className="bg-gradient-primary text-primary-foreground shadow-elegant mb-16 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/5 via-transparent to-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
+                <div className="text-center mb-12">
+                  <div className="w-20 h-20 bg-muted rounded-full flex items-center justify-center mx-auto mb-6 group-hover:bg-primary transition-colors duration-300">
+                    <Layers className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                  <h2 className="font-serif text-4xl font-bold text-white mb-6">
+                    Processus de collaboration
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-white/30 to-white/60 mx-auto mb-6"></div>
+                </div>
+                
+                <div className="max-w-5xl mx-auto">
+                   <p className="text-xl text-white/90 leading-relaxed text-justify mb-4">
+                     Chaque mission s'ouvre sur une phase d'échange approfondi.
+                   </p>
+                   <p className="text-xl text-white/90 leading-relaxed mb-12 text-justify">
+                     <strong className="text-white">Objectif :</strong> cerner vos besoins, définir un périmètre d'action précis, et mettre en œuvre une collaboration utile, lisible et alignée.
+                   </p>
+                  
+                  <div className="grid md:grid-cols-2 gap-8">
+                    <div className="space-y-6">
+                      <div className="flex items-start gap-4">
+                        <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
+                          1
+                        </div>
+                        <div>
+                          <h3 className="font-serif text-xl font-bold text-white mb-2">
+                            Écoute et analyse
+                          </h3>
+                           <p className="text-white/80 leading-relaxed text-justify">
+                             Compréhension de vos besoins, enjeux stratégiques et contextes opérationnels.
+                           </p>
+                         </div>
+                       </div>
+                       
+                       <div className="flex items-start gap-4">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
+                           2
+                         </div>
+                         <div>
+                           <h3 className="font-serif text-xl font-bold text-white mb-2">
+                             Proposition sur mesure
+                           </h3>
+                           <p className="text-white/80 leading-relaxed text-justify">
+                             Définition du périmètre, du calendrier et des modalités d'intervention.
+                           </p>
+                         </div>
+                       </div>
+                     </div>
+                     
+                     <div className="space-y-6">
+                       <div className="flex items-start gap-4">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
+                           3
+                         </div>
+                         <div>
+                           <h3 className="font-serif text-xl font-bold text-white mb-2">
+                             Mise en œuvre
+                           </h3>
+                           <p className="text-white/80 leading-relaxed text-justify">
+                             Déploiement de la mission, en lien étroit avec vos équipes internes ou partenaires.
+                           </p>
+                         </div>
+                       </div>
+                       
+                       <div className="flex items-start gap-4">
+                         <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center flex-shrink-0 text-white font-bold text-lg">
+                           4
+                         </div>
+                         <div>
+                            <h3 className="font-serif text-xl font-bold text-white mb-2">
+                              Suivi et ajustement
+                            </h3>
+                           <p className="text-white/80 leading-relaxed text-justify">
+                             Points d'étape réguliers et adaptations selon l'évolution de vos priorités.
+                           </p>
+                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-white/30 via-white/60 to-white/30 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Secteurs d'activité */}
+            <Card className="bg-background shadow-soft border-0 mb-16 hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-12 relative z-10">
+                <h2 className="font-serif text-4xl font-bold text-primary mb-8 text-center">
+                  Secteurs d'activité
+                </h2>
+                <p className="text-xl text-muted-foreground text-center mb-12 mx-auto whitespace-nowrap">
+                  Forte de mon expérience en entreprise, j'interviens dans les principaux secteurs du retail. 
+                </p>
+                
+                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Shirt className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
+                    <h3 className="font-semibold text-primary mb-2">Textile et Mode</h3>
+                  </div>
+                  
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <UtensilsCrossed className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
+                    <h3 className="font-semibold text-primary mb-2">Restauration</h3>
+                  </div>
+                  
+                   <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Film className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
+                    <h3 className="font-semibold text-primary mb-2">Loisirs</h3>
+                  </div>
+                  
+                  <div className="group p-6 bg-gradient-accent rounded-lg text-center hover:bg-accent/20 transition-colors duration-300">
+                     <div className="w-12 h-12 bg-muted rounded-full flex items-center justify-center mx-auto mb-4 group-hover:bg-primary transition-colors duration-300">
+                       <Dumbbell className="w-6 h-6 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                     </div>
+                    <h3 className="font-semibold text-primary mb-2">Sport et Bien-être</h3>
+                  </div>
+                </div>
+                
+                 <div className="text-center">
+                   <p className="text-lg text-muted-foreground leading-relaxed mx-auto whitespace-nowrap">
+                     <strong className="text-primary">Même exigence. Quels que soient les enjeux.</strong>
+                   </p>
+                 </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
             </Card>
 
           </div>
@@ -253,19 +256,19 @@ const AccompagnementJuridique = () => {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-8 md:gap-12 max-w-4xl mx-auto">
             {/* Réseaux de Distribution */}
-            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
+            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <CardContent className="text-center p-12 relative z-10">
-                <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                  <Building className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
-                </div>
-                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
+              <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
+                 <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                   <Building className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                 </div>
+                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Réseaux de Distribution
                 </h3>
                 <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
-                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
+                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/reseaux-distribution">
                     En savoir plus
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
@@ -277,19 +280,19 @@ const AccompagnementJuridique = () => {
             </Card>
 
             {/* Relations et Pratiques Commerciales */}
-            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02]">
+            <Card className="group relative overflow-hidden bg-gradient-to-br from-background to-background/90 border border-border/50 shadow-soft hover:shadow-elegant transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] h-full">
               <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
-              <CardContent className="text-center p-12 relative z-10">
-                <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
-                  <Network className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
-                </div>
-                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8">
+              <CardContent className="text-center p-12 relative z-10 h-full flex flex-col">
+                 <div className="mx-auto mb-6 bg-muted rounded-full w-20 h-20 flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                   <Network className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                 </div>
+                <h3 className="font-serif text-2xl text-primary group-hover:text-primary/90 transition-colors duration-300 mb-8 flex-grow">
                   Relations et Pratiques Commerciales
                 </h3>
                 <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-8"></div>
                 
-                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium">
+                <Button asChild className="w-full group/btn bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground border-0 py-6 text-base font-medium mt-auto">
                   <a href="/relations-commerciales">
                     En savoir plus
                     <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover/btn:translate-x-2" />
