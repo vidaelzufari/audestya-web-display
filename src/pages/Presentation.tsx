@@ -1,7 +1,6 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
-
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart, Network } from 'lucide-react';
@@ -10,17 +9,15 @@ import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
 import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
 
-const Index = () => {
+const Presentation = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
       
-
       {/* Mon Intervention Section */}
       <section className="py-20 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          {/* Hero content */}
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
@@ -41,6 +38,7 @@ const Index = () => {
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                       Clarté, méthode, exigence à chaque étape
                     </p>
+                  </div>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </div>
               </div>
@@ -61,6 +59,10 @@ const Index = () => {
               {/* Combined content in a flowing layout */}
               <div className="space-y-8">
                 {/* First section - Distribution Contrats Consommation */}
+                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+                  <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <CardContent className="p-10 relative z-10">
+                    <div className="flex items-center justify-center mb-8">
                       <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
                         <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                       </div>
@@ -131,10 +133,11 @@ const Index = () => {
                           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
                         </svg>
                       </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl">
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                    Clarté, méthode, exigence à chaque étape
-                  </p>
+                      <div className="text-center">
+                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                          Accompagnement Juridique Externalisé
+                        </h3>
+                        <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
                           Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
                         </p>
@@ -187,4 +190,4 @@ const Index = () => {
   );
 };
 
-export default Index;
+export default Presentation;
