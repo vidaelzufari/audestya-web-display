@@ -10,27 +10,46 @@ import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
 import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
 
-const Index = () => {
   return (
-    <div>
       <Navigation />
       <HeroSection />
       
-      {/* Mon Intervention Section */}
-      <section className="py-20 bg-gradient-to-br from-background via-background/95 to-primary/5">
+      {/* Structurer, sécuriser, accompagner Section */}
+      <section className="py-20 bg-gradient-to-br from-muted/10 via-background to-muted/5">
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-7xl mx-auto">
+            {/* Main title */}
             <div className="text-center mb-16">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
-                Mon Intervention
+              <h2 className="font-serif text-4xl md:text-5xl font-bold text-foreground mb-12 leading-tight">
+                Structurer, sécuriser, accompagner vos décisions
               </h2>
-              <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
+            </div>
+
+            {/* Two columns */}
+            <div className="grid md:grid-cols-2 gap-12 mb-16 max-w-5xl mx-auto">
+              <div className="text-center">
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Des solutions juridiques ancrées dans<br />
+                  vos enjeux business
+                </p>
+              </div>
+              <div className="text-center">
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  Clarté, méthode, exigence à chaque<br />
+                  étape
+                </p>
+              </div>
+            </div>
+
+            {/* Decorative line and quote */}
+            <div className="text-center mb-16">
+              <div className="w-32 h-1 bg-muted-foreground mx-auto mb-8"></div>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-medium italic">
                 Le droit n'a d'impact que s'il éclaire l'action.
               </p>
             </div>
 
-            {/* Main content - Single flowing section */}
+            {/* Deux leviers d'intervention */}
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
@@ -166,6 +185,7 @@ const Index = () => {
       
       <ContactSection />
       <Footer />
+    </div>
     </div>
   );
 };
