@@ -1,190 +1,81 @@
-import Navigation from '@/components/Navigation';
-import HeroSection from '@/components/HeroSection';
-import { Card, CardContent } from '@/components/ui/card';
 
-import ContactSection from '@/components/ContactSection';
-import Footer from '@/components/Footer';
-import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart, Network } from 'lucide-react';
-import expertiseIcon from '@/assets/expertise-icon.jpg';
-import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
-import trustIcon from '@/assets/trust-icon.jpg';
-import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
+import { Button } from '@/components/ui/button';
+import { useNavigate } from 'react-router-dom';
+import heroImage from '@/assets/hero-aerial-view.jpg';
 
-const Index = () => {
+const HeroSection = () => {
+  const navigate = useNavigate();
+
+  const handleDiscoverApproach = () => {
+    navigate('/presentation');
+    // Petit délai pour s'assurer que la page est chargée avant de faire le scroll
+    setTimeout(() => {
+      const element = document.getElementById('mon-approche');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100);
+  };
   return (
-    <div className="min-h-screen bg-background">
-      <Navigation />
-      <HeroSection />
-      
+    <section id="accueil" className="relative min-h-screen flex items-center">
+      {/* Background image with overlay */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${heroImage})` }}
+      >
+        <div className="absolute inset-0 bg-gradient-hero opacity-85"></div>
+      </div>
 
-      {/* Mon Intervention Section */}
-      <section className="py-20 bg-background relative overflow-hidden">
-        <div className="container mx-auto px-4 relative z-10">
-          {/* Hero content */}
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-20">
-              <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
-                Structurer, sécuriser, accompagner vos décisions
-              </h2>
-              <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative z-10">
-                    <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                      Des solutions juridiques ancrées dans vos enjeux business
-                    </p>
-                  </div>
-                </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <div className="relative z-10">
-                    <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                      Clarté, méthode, exigence à chaque étape
-                    </p>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
-                </div>
-              </div>
-              <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-medium italic">
-                Le droit n'a d'impact que s'il éclaire l'action.
-              </p>
-            </div>
+      {/* Content */}
+      <div className="relative z-10 container mx-auto px-6 py-16">
+        <div className="max-w-5xl mx-auto text-center text-background">
+          {/* Modern badge-style header */}
+          <div className="inline-flex items-center gap-6 mb-16 animate-fade-in">
+            <div className="h-px bg-background/40 w-20"></div>
+            <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-6 py-3 text-base font-medium tracking-wider">
+              DISTRIBUTION, CONTRATS ET CONSOMMATION
+            </span>
+            <div className="h-px bg-background/40 w-20"></div>
+          </div>
+          
+          
+          
+          <div className="space-y-12 mb-20">
+            <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed animate-fade-in max-w-4xl mx-auto" style={{ animationDelay: '0.2s' }}>
+              Une expertise juridique pragmatique, stratégique et alignée sur vos enjeux concrets
+            </p>
+          </div>
 
-            {/* Main content - Single flowing section */}
-            <div className="max-w-6xl mx-auto">
-              <div className="text-center mb-16">
-                <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
-                  Deux leviers d'intervention complémentaires
-                </h3>
-              </div>
-              
-              {/* Combined content in a flowing layout */}
-              <div className="space-y-8">
-                {/* First section - Distribution Contrats Consommation */}
-                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
-                        <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
-                      </div>
-                      <div className="text-center">
-                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
-                          Distribution - Contrats - Consommation
-                        </h3>
-                        <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 mb-2"></div>
-                        <p className="text-muted-foreground italic mt-2 text-lg">
-                          Structurer l'action, prévenir le risque, accompagner vos activités.
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Négociation et sécurisation de contrats, qu'ils soient standards, complexes ou stratégiques
-                          </p>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Structuration, sécurisation et accompagnement juridique de réseaux de distribution
-                          </p>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Rédaction et mise en place d'outils juridiques (contrats-cadres, CGV, politiques commerciales, etc.)
-                          </p>
-                        </div>
-                      </div>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Audits contractuels adaptés à vos enjeux du moment
-                          </p>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Conseil dans vos relations commerciales avec vos fournisseurs, distributeurs ou partenaires
-                          </p>
-                        </div>
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Encadrement de vos pratiques promotionnelles et protection du consommateur
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
-                </Card>
+          {/* Inspirational quote */}
+          <div className="bg-background/95 backdrop-blur-sm rounded-2xl p-12 mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto" style={{ animationDelay: '0.4s' }}>
+            <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
+              « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
+            </blockquote>
+            <cite className="text-base font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
+          </div>
 
-                {/* Second section - Accompagnement */}
-                <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
-                  <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
-                  <CardContent className="p-10 relative z-10">
-                    <div className="flex items-center justify-center mb-8">
-                      <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
-                        <svg className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2-2v2m8 0V6a2 2 0 012 2v6.5" />
-                        </svg>
-                      </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl">
-                  <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                    Clarté, méthode, exigence à chaque étape
-                  </p>
-                        <p className="text-muted-foreground italic mt-2 text-lg">
-                          Appui juridique ciblé pour vos projets, vos décisions et vos équipes.
-                        </p>
-                      </div>
-                    </div>
-                    
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Pilotage juridique de projets structurants
-                          </p>
-                        </div>
-                      </div>
-                      <div className="space-y-4">
-                        <div className="flex items-start gap-4">
-                          <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
-                          <p className="text-muted-foreground leading-relaxed text-justify">
-                            Missions ponctuelles
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>
-                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
-                </Card>
-              </div>
-              
-              {/* Call to action */}
-              <div className="mt-16 text-center">
-                <a 
-                  href="/presentation" 
-                  className="inline-flex items-center px-10 py-5 bg-gradient-to-r from-primary to-secondary text-primary-foreground font-semibold rounded-full hover:shadow-glow hover:scale-105 transition-all duration-300 shadow-elegant text-lg"
-                >
-                  En savoir plus
-                  <svg className="ml-3 w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                  </svg>
-                </a>
-              </div>
-            </div>
+          {/* CTA buttons */}
+          <div className="flex justify-center animate-slide-up" style={{ animationDelay: '0.6s' }}>
+            <Button 
+              variant="outline" 
+              size="lg"
+              className="border-background text-background hover:bg-background hover:text-primary font-semibold px-12 py-6 text-xl"
+              onClick={handleDiscoverApproach}
+            >
+              Découvrir Mon Approche
+            </Button>
           </div>
         </div>
-      </section>
+      </div>
 
-      <ContactSection />
-      <Footer />
-    </div>
+      {/* Scroll indicator */}
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 text-background animate-bounce">
+        <div className="w-6 h-10 border-2 border-background rounded-full flex justify-center">
+          <div className="w-1 h-3 bg-background rounded-full mt-2 animate-pulse"></div>
+        </div>
+      </div>
+    </section>
   );
 };
 
-export default Index;
+export default HeroSection;
