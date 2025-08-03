@@ -145,3 +145,12 @@ All colors MUST be HSL.
     text-justify: inter-word !important;
   }
 }
+
+@keyframes expand-underline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%;
+  }
+}
