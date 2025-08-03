@@ -30,7 +30,6 @@ const Index = () => {
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
                   <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
-                      Des solutions juridiques ancrées dans vos enjeux business
                     </p>
                   </div>
                 </div>
@@ -38,7 +37,6 @@ const Index = () => {
                   <div className="relative group">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed text-center">
                       Clarté, méthode, exigence à chaque étape
-                    </p>
                   </div>
                 </div>
               </div>
@@ -66,7 +64,6 @@ const Index = () => {
                       <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mr-6 group-hover:bg-primary transition-colors duration-300">
                         <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
                       </div>
-                      <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
                           Distribution - Contrats - Consommation
                         </h3>
