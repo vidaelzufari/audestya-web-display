@@ -1,6 +1,7 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
+
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
 import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart, Network } from 'lucide-react';
@@ -9,15 +10,23 @@ import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
 import trustIcon from '@/assets/trust-icon.jpg';
 import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
 
-const Presentation = () => {
+const Index = () => {
   return (
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
       
+
       {/* Mon Intervention Section */}
       <section className="py-20 bg-background relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-5">
+          <div className="absolute top-20 left-10 w-32 h-32 border border-primary rounded-full"></div>
+          <div className="absolute bottom-20 right-10 w-24 h-24 border border-secondary rounded-full"></div>
+        </div>
+        
         <div className="container mx-auto px-4 relative z-10">
+          {/* Hero content */}
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
@@ -31,6 +40,7 @@ const Presentation = () => {
                       Des solutions juridiques ancrées dans vos enjeux business
                     </p>
                   </div>
+                  <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </div>
                 <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -134,7 +144,7 @@ const Presentation = () => {
                         </svg>
                       </div>
                       <div className="text-center">
-                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
+                        <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
                           Accompagnement Juridique Externalisé
                         </h3>
                         <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
@@ -190,4 +200,4 @@ const Presentation = () => {
   );
 };
 
-export default Presentation;
+export default Index;
