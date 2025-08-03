@@ -32,13 +32,13 @@ const Index = () => {
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
                 Structurer, sécuriser, accompagner vos décisions
               </h2>
-              <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
-                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl">
+              <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12 animate-fade-in">
+                <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.3s' }}>
                   <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                     Des solutions juridiques ancrées dans vos enjeux business
                   </p>
                 </div>
-                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl">
+                <div className="bg-gradient-to-br from-secondary/5 to-primary/5 p-8 rounded-2xl transform hover:scale-105 transition-all duration-500 hover:shadow-glow animate-slide-up" style={{ animationDelay: '0.6s' }}>
                   <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
                     Clarté, méthode, exigence à chaque étape
                   </p>
