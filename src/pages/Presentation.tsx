@@ -20,7 +20,6 @@ const Presentation = () => {
       }
     }
   }, []);
-  
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
@@ -161,7 +160,7 @@ const Presentation = () => {
             
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Ma Mission */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <CardContent className="p-8 text-left relative z-10">
                   <div className="mb-6">
@@ -186,7 +185,7 @@ const Presentation = () => {
               </Card>
 
               {/* Ma Vision */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <CardContent className="p-8 text-center relative z-10">
                   <div className="mb-6">
@@ -211,7 +210,7 @@ const Presentation = () => {
               </Card>
 
               {/* Mes Valeurs */}
-              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] relative overflow-hidden">
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                 <CardContent className="p-8 text-left relative z-10">
                   <div className="mb-6">
