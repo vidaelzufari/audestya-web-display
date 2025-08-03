@@ -59,31 +59,25 @@ const Navigation = () => {
             </Link>
             
             {/* Dropdown for Domaines */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center">
+            <div className="relative group">
+              <button className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center py-3 px-2">
                   DOMAINES D'INTERVENTION
                   <ChevronDown className="ml-1 h-4 w-4" />
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50 w-64">
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <Link to="/reseaux-distribution" className="w-full">
+              </button>
+              
+              {/* Hover submenu */}
+              <div className="absolute top-full left-0 w-64 bg-background/95 backdrop-blur-sm border shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
+                <Link to="/reseaux-distribution" className="block px-4 py-3 text-sm text-foreground hover:bg-muted transition-colors">
                     Réseaux de Distribution
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <Link to="/relations-commerciales" className="w-full">
+                </Link>
+                <Link to="/relations-commerciales" className="block px-4 py-3 text-sm text-foreground hover:bg-muted transition-colors">
                     Relations et Pratiques Commerciales
-                  </Link>
-                </DropdownMenuItem>
-                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <Link to="/accompagnement-juridique" className="w-full">
+                </Link>
+                <Link to="/accompagnement-juridique" className="block px-4 py-3 text-sm text-foreground hover:bg-muted transition-colors">
                     Accompagnement Juridique Externalisé
-                  </Link>
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
+                </Link>
+              </div>
+            </div>
             
             <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
