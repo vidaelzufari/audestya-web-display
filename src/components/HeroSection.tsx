@@ -1,6 +1,8 @@
 import { Button } from '@/components/ui/button';
 import { useNavigate } from 'react-router-dom';
-import heroImage from '@/assets/hero-aerial-view.jpg';
+
+// Use a reliable external image or fallback
+const heroImage = '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const HeroSection = () => {
   const navigate = useNavigate();

@@ -1,14 +1,9 @@
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
 import { Card, CardContent } from '@/components/ui/card';
-
 import ContactSection from '@/components/ContactSection';
 import Footer from '@/components/Footer';
-import { Scale, ShieldCheck, Handshake, Award, Shield, Target, Users, Lightbulb, Heart, Network } from 'lucide-react';
-import expertiseIcon from '@/assets/expertise-icon.jpg';
-import pragmaticIcon from '@/assets/pragmatic-icon.jpg';
-import trustIcon from '@/assets/trust-icon.jpg';
-import lawyerPortrait from '/lovable-uploads/a6b7efa7-8358-4a4c-be9e-dc837df084c2.png';
+import { Network } from 'lucide-react';
 
 const Index = () => {
   return (
