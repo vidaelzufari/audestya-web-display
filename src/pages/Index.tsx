@@ -14,6 +14,7 @@ const Index = () => {
   return (
     <div>
       <Navigation />
+      <HeroSection />
       
       {/* Mon Intervention Section */}
       <section className="py-20 bg-gradient-to-br from-background via-background/95 to-primary/5">
