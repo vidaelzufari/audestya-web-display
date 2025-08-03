@@ -1,122 +1,195 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Card, CardContent } from '@/components/ui/card';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Linkedin, ExternalLink, Calendar, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Linkedin, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import LinkedInFeed from '@/components/LinkedInFeed';
+import { Network, Users, FileText, Scale, Shield, Briefcase } from 'lucide-react';
 
-const Actualites = () => {
+const DomainsSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
-              Actualités
-            </h1>
+    <section id="domaines" className="py-20 bg-background">
+      <div className="container mx-auto px-4">
+        <div className="max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-8">
+              Domaines d'Intervention
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Suivez mes dernières analyses juridiques et actualités du droit de la distribution
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto">
+              Une expertise spécialisée en droit de la distribution, des contrats et de la consommation
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* LinkedIn Feed Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          {/* Domains Grid */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            {/* LinkedIn Feed Section */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12 text-center">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Linkedin className="w-8 h-8 text-primary" />
-                  <h2 className="font-serif text-3xl font-bold text-primary">
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                  </p>
-                  
-                  <Button asChild className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-8 py-3 text-lg font-medium">
-                    <a 
-                      href="https://www.linkedin.com/in/haiaelzufari" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* LinkedIn Posts Preview */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              {/* Post Example 1 */}
-              <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Haia El Zufari</h3>
-                      <p className="text-sm text-muted-foreground">Avocat au Barreau de Paris</p>
-                    </div>
+            {/* Réseaux de Distribution */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <Network className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
                   </div>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      🔍 <strong>Analyse juridique :</strong> Les nouvelles obligations en matière de 
-                      protection des consommateurs dans le e-commerce...
-                    </p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="w-4 h-4" />
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Réseaux de Distribution
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Structuration et sécurisation de vos réseaux commerciaux
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/reseaux-distribution">
+                      En savoir plus
+                    </Link>
                   </Button>
                 </div>
               </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
             </Card>
 
-            <LinkedInFeed />
+            {/* Relations Commerciales */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <Users className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Relations Commerciales
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Négociation et sécurisation de vos contrats commerciaux
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/relations-commerciales">
+                      En savoir plus
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Conditions Générales de Vente */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <FileText className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Conditions Générales
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Rédaction et optimisation de vos CGV et outils juridiques
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/conditions-generales-vente">
+                      En savoir plus
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-primary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Accompagnement Juridique */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <Briefcase className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Accompagnement Juridique
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-accent mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Pilotage juridique externalisé pour vos projets stratégiques
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/accompagnement-juridique">
+                      En savoir plus
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Protection du Consommateur */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <Shield className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Protection du Consommateur
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-secondary to-accent mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Conformité réglementaire et pratiques commerciales
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/relations-commerciales">
+                      En savoir plus
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-accent to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
+            {/* Droit des Contrats */}
+            <Card className="bg-gradient-to-br from-background to-background/90 shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
+              <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+              <CardContent className="p-8 relative z-10">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-muted rounded-full flex items-center justify-center mx-auto group-hover:bg-primary transition-colors duration-300">
+                    <Scale className="w-8 h-8 text-foreground group-hover:text-white transition-colors duration-300" />
+                  </div>
+                </div>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-4 text-center">
+                  Droit des Contrats
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-accent to-secondary mx-auto mb-6"></div>
+                <p className="text-muted-foreground leading-relaxed text-center mb-6">
+                  Expertise contractuelle pour sécuriser vos relations d'affaires
+                </p>
+                <div className="text-center">
+                  <Button asChild variant="outline" className="group-hover:bg-primary group-hover:text-white transition-colors duration-300">
+                    <Link to="/relations-commerciales">
+                      En savoir plus
+                    </Link>
+                  </Button>
+                </div>
+              </CardContent>
+              <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-accent via-secondary to-accent transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
+            </Card>
+
           </div>
         </div>
-      </section>
-
-      <Footer />
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default Actualites;
+export default DomainsSection;
