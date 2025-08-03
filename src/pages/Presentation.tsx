@@ -4,9 +4,8 @@ import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
-import { Target, Lightbulb, Compass, Handshake, Briefcase, Wrench } from 'lucide-react';
-
-const lawyerPortrait = '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
+import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass, Handshake, Briefcase, Wrench } from 'lucide-react';
+import lawyerPortrait from '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const Presentation = () => {
   useEffect(() => {

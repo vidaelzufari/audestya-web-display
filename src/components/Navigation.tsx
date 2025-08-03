@@ -1,7 +1,14 @@
 
 import { useState } from 'react';
 import { useLocation, Link } from 'react-router-dom';
-import { Menu, X, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Phone, Mail, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from '@/components/ui/dropdown-menu';
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -90,10 +97,22 @@ const Navigation = () => {
             </a>
             
             {/* Language selector */}
-            <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm transition-colors flex items-center px-3 py-1.5 rounded">
-              <Globe size={16} className="mr-1" />
-              FR
-            </button>
+            <DropdownMenu>
+              <DropdownMenuTrigger asChild>
+                <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm transition-colors flex items-center px-3 py-1.5 rounded">
+                  <Globe size={16} className="mr-1" />
+                  FR
+                </button>
+              </DropdownMenuTrigger>
+              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                  🇫🇷 Français
+                </DropdownMenuItem>
+                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                  🇬🇧 English
+                </DropdownMenuItem>
+              </DropdownMenuContent>
+            </DropdownMenu>
           </div>
 
           {/* Mobile menu button */}
@@ -141,10 +160,22 @@ const Navigation = () => {
                 CONTACT
               </a>
               <div className="py-2 px-2">
-                <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary transition-colors flex items-center px-3 py-1.5 rounded text-sm">
-                  <Globe size={16} className="mr-1" />
-                  FR
-                </button>
+                <DropdownMenu>
+                  <DropdownMenuTrigger asChild>
+                    <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary transition-colors flex items-center px-3 py-1.5 rounded text-sm">
+                      <Globe size={16} className="mr-1" />
+                      FR
+                    </button>
+                  </DropdownMenuTrigger>
+                  <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                      🇫🇷 Français
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
+                      🇬🇧 English
+                    </DropdownMenuItem>
+                  </DropdownMenuContent>
+                </DropdownMenu>
               </div>
             </div>
           </div>
