@@ -6,6 +6,10 @@ import { Button } from '@/components/ui/button';
 import { Users, Target, Handshake, Clock, CheckCircle, ArrowRight, Shirt, UtensilsCrossed, Film, Dumbbell, Network, Building, FileText, Shield, Settings, Layers } from 'lucide-react';
 
 const AccompagnementJuridique = () => {
+  // Scroller au début de la page lors du chargement
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
