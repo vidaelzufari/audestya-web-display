@@ -1,28 +1,39 @@
 from fastapi import FastAPI, APIRouter, HTTPException
-from dotenv import load_dotenv
-from starlette.middleware.cors import CORSMiddleware
-from motor.motor_asyncio import AsyncIOMotorClient
-import os
-import logging
-from pathlib import Path
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Optional
-import uuid
 from datetime import datetime
+import uuid
+import os
 
+# In-memory storage for testing (will be replaced by MongoDB later)
+STATUS_CHECKS = []
+CMS_PAGES = []
+CMS_SETTINGS = {
+    "id": str(uuid.uuid4()),
+    "site_title": "Audestya Avocat",
+    "site_description": "Cabinet d'avocat spécialisé en droit de la distribution",
+    "contact_email": "haia.elzufari@audestya-avocat.com",
+    "contact_phone": "+33685353781",
+    "linkedin_url": "https://www.linkedin.com/in/haiaelzufari",
+    "primary_color": "#1e40af",
+    "secondary_color": "#3b82f6",
+    "updated_at": datetime.utcnow().isoformat()
+}
 
-ROOT_DIR = Path(__file__).parent
-load_dotenv(ROOT_DIR / '.env')
+# Create FastAPI app
+app = FastAPI(title="Audestya Avocat API", version="1.0.0")
 
-# MongoDB connection
-mongo_url = os.environ['MONGO_URL']
-client = AsyncIOMotorClient(mongo_url)
-db = client[os.environ['DB_NAME']]
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-# Create the main app without a prefix
-app = FastAPI()
-
-# Create a router with the /api prefix
+# Create API router
 api_router = APIRouter(prefix="/api")
 
 
@@ -97,26 +108,24 @@ async def root():
 async def create_status_check(input: StatusCheckCreate):
     status_dict = input.dict()
     status_obj = StatusCheck(**status_dict)
-    _ = await db.status_checks.insert_one(status_obj.dict())
+    STATUS_CHECKS.append(status_obj.dict())
     return status_obj
 
 @api_router.get("/status", response_model=List[StatusCheck])
 async def get_status_checks():
-    status_checks = await db.status_checks.find().to_list(1000)
-    return [StatusCheck(**status_check) for status_check in status_checks]
+    return [StatusCheck(**status_check) for status_check in STATUS_CHECKS]
 
 # CMS Content Management Endpoints
 
 @api_router.get("/cms/pages", response_model=List[ContentPage])
 async def get_all_pages():
     """Get all content pages"""
-    pages = await db.content_pages.find().to_list(100)
-    return [ContentPage(**page) for page in pages]
+    return [ContentPage(**page) for page in CMS_PAGES]
 
 @api_router.get("/cms/pages/{slug}", response_model=ContentPage)
 async def get_page_by_slug(slug: str):
     """Get a content page by slug"""
-    page = await db.content_pages.find_one({"slug": slug})
+    page = next((page for page in CMS_PAGES if page["slug"] == slug), None)
     if not page:
         raise HTTPException(status_code=404, detail="Page not found")
     return ContentPage(**page)
@@ -125,20 +134,20 @@ async def get_page_by_slug(slug: str):
 async def create_page(page_data: ContentPageCreate):
     """Create a new content page"""
     # Check if slug already exists
-    existing_page = await db.content_pages.find_one({"slug": page_data.slug})
+    existing_page = next((page for page in CMS_PAGES if page["slug"] == page_data.slug), None)
     if existing_page:
         raise HTTPException(status_code=400, detail="Page with this slug already exists")
     
     page_dict = page_data.dict()
     page_obj = ContentPage(**page_dict)
-    await db.content_pages.insert_one(page_obj.dict())
+    CMS_PAGES.append(page_obj.dict())
     return page_obj
 
 @api_router.put("/cms/pages/{slug}", response_model=ContentPage)
 async def update_page(slug: str, page_data: ContentPageUpdate):
     """Update a content page"""
-    existing_page = await db.content_pages.find_one({"slug": slug})
-    if not existing_page:
+    page_index = next((i for i, page in enumerate(CMS_PAGES) if page["slug"] == slug), None)
+    if page_index is None:
         raise HTTPException(status_code=404, detail="Page not found")
     
     # Prepare update data
@@ -146,18 +155,19 @@ async def update_page(slug: str, page_data: ContentPageUpdate):
     update_data["updated_at"] = datetime.utcnow()
     
     # Update the page
-    await db.content_pages.update_one({"slug": slug}, {"$set": update_data})
+    CMS_PAGES[page_index].update(update_data)
     
     # Return updated page
-    updated_page = await db.content_pages.find_one({"slug": slug})
-    return ContentPage(**updated_page)
+    return ContentPage(**CMS_PAGES[page_index])
 
 @api_router.delete("/cms/pages/{slug}")
 async def delete_page(slug: str):
     """Delete a content page"""
-    result = await db.content_pages.delete_one({"slug": slug})
-    if result.deleted_count == 0:
+    page_index = next((i for i, page in enumerate(CMS_PAGES) if page["slug"] == slug), None)
+    if page_index is None:
         raise HTTPException(status_code=404, detail="Page not found")
+    
+    CMS_PAGES.pop(page_index)
     return {"message": "Page deleted successfully"}
 
 # CMS Settings Endpoints
@@ -165,60 +175,21 @@ async def delete_page(slug: str):
 @api_router.get("/cms/settings", response_model=CMSSettings)
 async def get_cms_settings():
     """Get CMS settings"""
-    settings = await db.cms_settings.find_one()
-    if not settings:
-        # Return default settings if none exist
-        default_settings = CMSSettings(
-            site_title="Audestya Avocat",
-            site_description="Cabinet d'avocat spécialisé en droit de la distribution",
-            contact_email="haia.elzufari@audestya-avocat.com",
-            contact_phone="+33685353781",
-            linkedin_url="https://www.linkedin.com/in/haiaelzufari"
-        )
-        await db.cms_settings.insert_one(default_settings.dict())
-        return default_settings
-    return CMSSettings(**settings)
+    return CMSSettings(**CMS_SETTINGS)
 
 @api_router.put("/cms/settings", response_model=CMSSettings)
 async def update_cms_settings(settings_data: CMSSettingsUpdate):
     """Update CMS settings"""
-    existing_settings = await db.cms_settings.find_one()
+    global CMS_SETTINGS
     
-    if not existing_settings:
-        # Create new settings if none exist
-        update_data = {k: v for k, v in settings_data.dict().items() if v is not None}
-        settings_obj = CMSSettings(**update_data)
-        await db.cms_settings.insert_one(settings_obj.dict())
-        return settings_obj
-    else:
-        # Update existing settings
-        update_data = {k: v for k, v in settings_data.dict().items() if v is not None}
-        update_data["updated_at"] = datetime.utcnow()
-        
-        await db.cms_settings.update_one({"_id": existing_settings["_id"]}, {"$set": update_data})
-        
-        # Return updated settings
-        updated_settings = await db.cms_settings.find_one()
-        return CMSSettings(**updated_settings)
+    # Update existing settings
+    update_data = {k: v for k, v in settings_data.dict().items() if v is not None}
+    update_data["updated_at"] = datetime.utcnow().isoformat()
+    
+    CMS_SETTINGS.update(update_data)
+    
+    # Return updated settings
+    return CMSSettings(**CMS_SETTINGS)
 
 # Include the router in the main app
 app.include_router(api_router)
-
-app.add_middleware(
-    CORSMiddleware,
-    allow_credentials=True,
-    allow_origins=["*"],
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
-# Configure logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
-)
-logger = logging.getLogger(__name__)
-
-@app.on_event("shutdown")
-async def shutdown_db_client():
-    client.close()
