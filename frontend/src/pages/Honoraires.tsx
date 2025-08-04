@@ -9,6 +9,13 @@ const Honoraires = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       
+      {/* Breadcrumb */}
+      <section className="bg-muted/30 py-4">
+        <div className="container mx-auto px-4">
+          <Breadcrumb />
+        </div>
+      </section>
+      
       {/* Hero Section */}
       <section className="bg-gradient-primary py-20">
         <div className="container mx-auto px-4">
