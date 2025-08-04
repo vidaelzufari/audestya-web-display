@@ -1,13 +1,14 @@
 services:
-  # Backend FastAPI Service - GRATUIT
+  # Backend FastAPI Service
   - type: web
     name: audestya-backend
     env: python
-    region: frankfurt
-    plan: free  # Plan GRATUIT
-    buildCommand: "cd backend && pip install -r requirements.txt"
-    startCommand: "cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT"
-    healthCheckPath: "/api/"
+    region: oregon
+    plan: free
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/
     envVars:
       - key: MONGO_URL
         fromDatabase:
@@ -15,43 +16,33 @@ services:
           property: connectionString
       - key: DB_NAME
         value: audestya_production
-      - key: PORT
-        value: 10000
 
-  # Frontend React Service - GRATUIT
+  # Frontend Static Site
   - type: web
-    name: audestya-frontend
+    name: audestya-frontend  
     env: static
-    region: frankfurt
-    plan: free  # Plan GRATUIT
-    buildCommand: "cd frontend && yarn install && yarn build"
-    staticPublishPath: "./frontend/build"
-    pullRequestPreviewsEnabled: false  # Économise les ressources
-    headers:
-      - path: "/*"
-        name: "X-Frame-Options"
-        value: "DENY"
-      - path: "/*"
-        name: "X-Content-Type-Options"
-        value: "nosniff"
-    routes:
-      - type: rewrite
-        source: "/api/*"
-        destination: "https://audestya-backend.onrender.com/api/*"
+    region: oregon
+    plan: free
+    rootDir: frontend
+    buildCommand: yarn install && yarn build
+    staticPublishPath: build
     envVars:
       - key: VITE_REACT_APP_BACKEND_URL
-        value: "https://audestya-backend.onrender.com"
+        fromService:
+          name: audestya-backend
+          type: web
+          property: host
       - key: REACT_APP_BACKEND_URL
-        value: "https://audestya-backend.onrender.com"
+        fromService:
+          name: audestya-backend
+          type: web
+          property: host
 
 databases:
-  # MongoDB Database - GRATUIT 1GB
   - name: audestya-mongodb
     databaseName: audestya_production
     user: audestya_user
-    plan: free  # 1GB GRATUIT
-    region: frankfurt
-    
+    region: oregon
+    plan: free
     ipAllowList:
       - source: anywhere
-        description: "Allow connections from Render services"
