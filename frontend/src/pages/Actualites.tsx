@@ -95,32 +95,7 @@ const Actualites = () => {
               </Button>
             </div>
 
-            {/* Statistics */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
-              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="flex items-center justify-center mb-2">
-                  <TrendingUp className="w-6 h-6 text-primary" />
-                </div>
-                <h3 className="text-2xl font-bold text-primary mb-1">150+</h3>
-                <p className="text-sm text-muted-foreground">Publications juridiques</p>
-              </div>
-              
-              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="flex items-center justify-center mb-2">
-                  <Linkedin className="w-6 h-6 text-blue-600" />
-                </div>
-                <h3 className="text-2xl font-bold text-primary mb-1">5K+</h3>
-                <p className="text-sm text-muted-foreground">Abonnés LinkedIn</p>
-              </div>
-              
-              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
-                <div className="flex items-center justify-center mb-2">
-                  <ExternalLink className="w-6 h-6 text-secondary" />
-                </div>
-                <h3 className="text-2xl font-bold text-primary mb-1">95%</h3>
-                <p className="text-sm text-muted-foreground">Engagement positif</p>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>
