@@ -1,0 +1,38 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/api/"
+healthcheckTimeout = 30
+restartPolicyType = "on_failure"
+
+[env]
+MONGO_URL = "${{MONGO_URL}}"
+DB_NAME = "${{DB_NAME}}"
+PORT = "8001"
+
+# Service definitions
+[[services]]
+name = "backend"
+source = "backend"
+
+[services.build]
+builder = "nixpacks"
+buildCommand = "pip install -r requirements.txt"
+
+[services.deploy]
+startCommand = "uvicorn server:app --host 0.0.0.0 --port $PORT"
+port = 8001
+
+[[services]]
+name = "mongodb"
+image = "mongo:7.0"
+
+[services.env]
+MONGO_INITDB_ROOT_USERNAME = "${{MONGO_USERNAME}}"
+MONGO_INITDB_ROOT_PASSWORD = "${{MONGO_PASSWORD}}"
+
+[services.volumes]
+path = "/data/db"
+size = "1GB"
