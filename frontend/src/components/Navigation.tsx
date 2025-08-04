@@ -14,7 +14,10 @@ const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
+  const handleDomainesClick = () => {
+    // Naviguer vers la page de présentation
+    window.location.href = '/presentation#domaines';
+  };
 
   const isActive = (path: string) => {
     if (path === '/' || path === '#accueil') return location.pathname === '/' && (!location.hash || location.hash === '#accueil');
