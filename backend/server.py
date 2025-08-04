@@ -35,6 +35,59 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# CMS Models
+class ContentPage(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    slug: str  # URL slug like 'presentation', 'actualites'
+    title: str
+    meta_description: str
+    hero_title: str
+    hero_description: str
+    sections: List[dict] = Field(default_factory=list)
+    status: str = Field(default="draft")  # draft, published
+    created_at: datetime = Field(default_factory=datetime.utcnow)
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+class ContentPageCreate(BaseModel):
+    slug: str
+    title: str
+    meta_description: str
+    hero_title: str
+    hero_description: str
+    sections: List[dict] = Field(default_factory=list)
+    status: str = Field(default="draft")
+
+class ContentPageUpdate(BaseModel):
+    title: Optional[str] = None
+    meta_description: Optional[str] = None  
+    hero_title: Optional[str] = None
+    hero_description: Optional[str] = None
+    sections: Optional[List[dict]] = None
+    status: Optional[str] = None
+
+# CMS Settings Model
+class CMSSettings(BaseModel):
+    id: str = Field(default_factory=lambda: str(uuid.uuid4()))
+    site_title: str
+    site_description: str
+    contact_email: str
+    contact_phone: str
+    linkedin_url: str
+    logo_url: Optional[str] = None
+    primary_color: str = Field(default="#1e40af")
+    secondary_color: str = Field(default="#3b82f6")
+    updated_at: datetime = Field(default_factory=datetime.utcnow)
+
+class CMSSettingsUpdate(BaseModel):
+    site_title: Optional[str] = None
+    site_description: Optional[str] = None
+    contact_email: Optional[str] = None
+    contact_phone: Optional[str] = None
+    linkedin_url: Optional[str] = None
+    logo_url: Optional[str] = None
+    primary_color: Optional[str] = None
+    secondary_color: Optional[str] = None
+
 # Add your routes to the router instead of directly to app
 @api_router.get("/")
 async def root():
