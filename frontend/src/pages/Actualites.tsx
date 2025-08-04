@@ -12,6 +12,13 @@ const Actualites = () => {
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       <Navigation />
       
+      {/* Breadcrumb */}
+      <section className="bg-muted/30 py-4">
+        <div className="container mx-auto px-4">
+          <Breadcrumb />
+        </div>
+      </section>
+      
       {/* Hero Section */}
       <section className="pt-32 pb-16">
         <div className="container mx-auto px-4">
