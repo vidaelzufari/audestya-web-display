@@ -21,7 +21,6 @@ services:
   - type: web
     name: audestya-frontend  
     env: static
-    region: oregon
     plan: free
     rootDir: frontend
     buildCommand: yarn install && yarn build
@@ -45,4 +44,5 @@ databases:
     region: oregon
     plan: free
     ipAllowList:
-      - source: anywhere
+      - source: 0.0.0.0/0
+        description: Allow all connections
