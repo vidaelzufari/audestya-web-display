@@ -63,10 +63,13 @@ const Navigation = () => {
             
             {/* Dropdown for Domaines */}
             <div className="relative group">
-              <Link to="/presentation#domaines" className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center py-3 px-2">
+              <button 
+                onClick={handleDomainesClick}
+                className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center py-3 px-2"
+              >
                   DOMAINES D'INTERVENTION
                   <ChevronDown className="ml-1 h-4 w-4" />
-              </Link>
+              </button>
               
               {/* Hover submenu */}
               <div className="absolute top-full left-0 w-64 bg-background/95 backdrop-blur-sm border shadow-lg rounded-md opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300 z-50">
