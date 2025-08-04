@@ -204,7 +204,6 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Backend API endpoints setup"
     - "API service layer implementation"
     - "Client Status component"
     - "Environment variable configuration"
