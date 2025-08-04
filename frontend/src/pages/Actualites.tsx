@@ -2,6 +2,7 @@ import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import LinkedInFeed from '@/components/LinkedInFeed';
