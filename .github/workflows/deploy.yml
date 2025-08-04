@@ -101,7 +101,7 @@ jobs:
   deploy:
     needs: [test-backend, test-frontend]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main-1'
+    if: github.ref == 'refs/heads/main-3'
     
     steps:
     - name: Checkout code
