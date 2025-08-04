@@ -18,10 +18,8 @@ const Index = () => {
       <Navigation />
       <HeroSection />
       
-      {/* Mon Intervention Section */}
       <section className="py-20 bg-background relative overflow-hidden">
         <div className="container mx-auto px-4 relative z-10">
-          {/* Hero content */}
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
@@ -53,7 +51,6 @@ const Index = () => {
               </p>
             </div>
 
-            {/* Main content - Single flowing section */}
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
@@ -61,9 +58,7 @@ const Index = () => {
                 </h3>
               </div>
               
-              {/* Combined content in a flowing layout */}
               <div className="space-y-8">
-                {/* First section - Distribution Contrats Consommation */}
                 <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
@@ -128,7 +123,6 @@ const Index = () => {
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
                 </Card>
 
-                {/* Second section - Accompagnement */}
                 <Card className="bg-gradient-to-br from-background to-background/90 backdrop-blur-sm shadow-elegant border-0 overflow-hidden group hover:shadow-glow transition-all duration-500 hover:-translate-y-2 hover:scale-[1.02]">
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <CardContent className="p-10 relative z-10">
@@ -170,7 +164,6 @@ const Index = () => {
                 </Card>
               </div>
               
-              {/* Call to action */}
               <div className="mt-16 text-center">
                 <a 
                   href="/presentation" 
