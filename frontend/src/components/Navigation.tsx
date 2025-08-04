@@ -17,8 +17,17 @@ const Navigation = () => {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const handleDomainesClick = () => {
-    // Naviguer vers la page de présentation
-    window.location.href = '/presentation#domaines';
+    // Naviguer vers la page de présentation et scroller vers la section domaines
+    if (window.location.pathname === '/presentation') {
+      // Si on est déjà sur la page présentation, juste scroller
+      const element = document.getElementById('domaines');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    } else {
+      // Sinon naviguer vers la page et scroller après chargement
+      window.location.href = '/presentation#domaines';
+    }
   };
 
   const isActive = (path: string) => {
