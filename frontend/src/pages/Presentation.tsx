@@ -25,6 +25,13 @@ const Presentation = () => {
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
       
+      {/* Breadcrumb */}
+      <section className="bg-muted/30 py-4">
+        <div className="container mx-auto px-4">
+          <Breadcrumb />
+        </div>
+      </section>
+
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">
