@@ -1,122 +1,176 @@
 import React from 'react';
 import { Card, CardContent } from '@/components/ui/card';
-import Navigation from '@/components/Navigation';
-import Footer from '@/components/Footer';
-import { Linkedin, ExternalLink, Calendar, User } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { Linkedin, ExternalLink } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import LinkedInFeed from '@/components/LinkedInFeed';
+import { Link } from 'react-router-dom';
+import { Network, Scale, Users, Briefcase } from 'lucide-react';
 
-const Actualites = () => {
+const DomainsSection = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
-      <Navigation />
-      
-      {/* Hero Section */}
-      <section className="pt-32 pb-16">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center">
-            <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
-              Actualités
-            </h1>
+    <section id="domaines" className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30">
+      <div className="container mx-auto px-4">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-16">
+            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+              Domaines d'Intervention
+            </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
             <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Suivez mes dernières analyses juridiques et actualités du droit de la distribution
+              Une expertise spécialisée dans trois domaines complémentaires pour accompagner 
+              votre développement commercial et sécuriser vos relations d'affaires.
             </p>
           </div>
-        </div>
-      </section>
 
-      {/* LinkedIn Feed Section */}
-      <section className="py-20">
-        <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          {/* Domains Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
             
-            {/* LinkedIn Feed Section */}
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12 text-center">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Linkedin className="w-8 h-8 text-primary" />
-                  <h2 className="font-serif text-3xl font-bold text-primary">
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                  </p>
-                  
-                  <Button asChild className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-8 py-3 text-lg font-medium">
-                    <a 
-                      href="https://www.linkedin.com/in/haiaelzufari" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-
-            {/* LinkedIn Posts Preview */}
-            <div className="grid md:grid-cols-2 gap-8 mb-12">
-              {/* Post Example 1 */}
-              <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
-                <CardContent className="p-8">
-                  <div className="flex items-center gap-3 mb-4">
-                    <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                      <User className="w-6 h-6 text-primary" />
-                    </div>
-                    <div>
-                      <h3 className="font-semibold text-primary">Haia El Zufari</h3>
-                      <p className="text-sm text-muted-foreground">Avocat au Barreau de Paris</p>
-                    </div>
+            {/* Réseaux de Distribution */}
+            <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Network className="w-8 h-8 text-primary" />
                   </div>
-                  <div className="space-y-4">
-                    <p className="text-muted-foreground leading-relaxed">
-                      🔍 <strong>Analyse juridique :</strong> Les nouvelles obligations en matière de 
-                      protection des consommateurs dans le e-commerce...
-                    </p>
-                    <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="w-4 h-4" />
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
-                    >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
-                    </a>
-                  </Button>
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                    Réseaux de Distribution
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Structuration et accompagnement juridique de vos réseaux commerciaux : 
+                    franchise, distribution sélective, concession.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Création de réseaux de franchise
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Distribution sélective et concession
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Partenariats commerciaux
+                    </li>
+                  </ul>
+                  <div className="pt-4">
+                    <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Link to="/reseaux-distribution">
+                        En savoir plus
+                      </Link>
+                    </Button>
+                  </div>
                 </div>
               </CardContent>
             </Card>
 
-            <LinkedInFeed />
+            {/* Relations Commerciales */}
+            <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Scale className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                    Relations et Pratiques Commerciales
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Sécurisation de vos relations d'affaires et conformité de vos 
+                    pratiques commerciales avec la réglementation.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Contrats commerciaux
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Pratiques restrictives
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Négociation et contentieux
+                    </li>
+                  </ul>
+                  <div className="pt-4">
+                    <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Link to="/relations-commerciales">
+                        En savoir plus
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Accompagnement Juridique */}
+            <Card className="bg-background shadow-soft border-0 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group">
+              <CardContent className="p-8">
+                <div className="mb-6">
+                  <div className="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Briefcase className="w-8 h-8 text-primary" />
+                  </div>
+                  <h3 className="font-serif text-2xl font-bold text-primary mb-4">
+                    Accompagnement Juridique Externalisé
+                  </h3>
+                </div>
+                <div className="space-y-4">
+                  <p className="text-muted-foreground leading-relaxed">
+                    Support juridique personnalisé pour vos projets et décisions 
+                    stratégiques avec une approche collaborative.
+                  </p>
+                  <ul className="space-y-2 text-sm text-muted-foreground">
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Conseil stratégique
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Rédaction contractuelle
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <span className="w-1.5 h-1.5 bg-primary rounded-full mt-2 flex-shrink-0"></span>
+                      Formation et sensibilisation
+                    </li>
+                  </ul>
+                  <div className="pt-4">
+                    <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+                      <Link to="/accompagnement-juridique">
+                        En savoir plus
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center">
+            <Card className="bg-gradient-primary border-0 max-w-4xl mx-auto">
+              <CardContent className="p-12">
+                <h3 className="font-serif text-3xl font-bold text-primary-foreground mb-6">
+                  Prêt à sécuriser et développer votre activité ?
+                </h3>
+                <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
+                  Discutons de vos enjeux juridiques et définissons ensemble 
+                  la stratégie la plus adaptée à vos objectifs.
+                </p>
+                <Button asChild variant="secondary" size="lg" className="bg-white text-primary hover:bg-white/90 px-8 py-3 text-lg font-medium">
+                  <a href="/#contact">
+                    Prendre contact
+                  </a>
+                </Button>
+              </CardContent>
+            </Card>
           </div>
         </div>
-      </section>
-
-      <Footer />
-    </div>
+      </div>
+    </section>
   );
 };
 
-export default Actualites;
+export default DomainsSection;
