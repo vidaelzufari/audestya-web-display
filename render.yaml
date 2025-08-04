@@ -10,9 +10,7 @@ services:
     healthCheckPath: /api/
     envVars:
       - key: MONGO_URL
-        fromDatabase:
-          name: audestya-mongodb
-          property: connectionString
+        value: mongodb+srv://audestya:audestya2024@cluster0.4hwxy.mongodb.net/audestya_production?retryWrites=true&w=majority
       - key: DB_NAME
         value: audestya_production
 
@@ -34,12 +32,3 @@ services:
           name: audestya-backend
           type: web
           property: host
-
-databases:
-  - name: audestya-mongodb
-    databaseName: audestya_production
-    user: audestya_user
-    region: oregon
-    ipAllowList:
-      - source: 0.0.0.0/0
-        description: Allow all connections
