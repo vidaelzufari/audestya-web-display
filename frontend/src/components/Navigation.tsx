@@ -145,7 +145,12 @@ const Navigation = () => {
               
               {/* Mobile Domaines section */}
               <div className="py-2">
-                <Link to="/presentation#domaines" className="text-primary-foreground font-medium px-2 mb-2 block hover:text-secondary transition-colors">DOMAINES D'INTERVENTION</Link>
+                <button 
+                  onClick={handleDomainesClick}
+                  className="text-primary-foreground font-medium px-2 mb-2 block hover:text-secondary transition-colors text-left w-full"
+                >
+                  DOMAINES D'INTERVENTION
+                </button>
                 <div className="ml-4 space-y-2">
                   <Link to="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
                     Réseaux de Distribution
