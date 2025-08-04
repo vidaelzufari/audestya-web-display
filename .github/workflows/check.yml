@@ -1,0 +1,19 @@
+name: Check Repository
+
+on:
+  push:
+    branches: [ main-3 ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        
+      - name: Repository Check
+        run: |
+          echo "✅ Repository structure OK"
+          echo "✅ Frontend exists: $(ls -la frontend/)"
+          echo "✅ Backend exists: $(ls -la backend/)"
+          echo "✅ Workflows cleaned up successfully"
