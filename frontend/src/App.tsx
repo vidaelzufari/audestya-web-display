@@ -11,7 +11,6 @@ import RelationsCommerciales from '@/pages/RelationsCommerciales';
 import AccompagnementJuridique from '@/pages/AccompagnementJuridique';
 import Actualites from '@/pages/Actualites';
 import Honoraires from '@/pages/Honoraires';
-import ClientPortal from '@/pages/ClientPortal';
 import CMSAdmin from '@/pages/CMSAdmin';
 import MentionsLegales from '@/pages/MentionsLegales';
 import PolitiqueConfidentialite from '@/pages/PolitiqueConfidentialite';
