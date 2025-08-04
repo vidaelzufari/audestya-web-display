@@ -4,7 +4,6 @@ services:
     name: audestya-backend
     env: python
     region: oregon
-    plan: hobby
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
@@ -17,11 +16,10 @@ services:
       - key: DB_NAME
         value: audestya_production
 
-  # Frontend Static Site
+  # Frontend Static Site  
   - type: web
     name: audestya-frontend  
     env: static
-    plan: hobby
     rootDir: frontend
     buildCommand: yarn install && yarn build
     staticPublishPath: build
@@ -42,7 +40,6 @@ databases:
     databaseName: audestya_production
     user: audestya_user
     region: oregon
-    plan: hobby
     ipAllowList:
       - source: 0.0.0.0/0
         description: Allow all connections
