@@ -8,11 +8,6 @@ services:
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
     healthCheckPath: /api/
-    envVars:
-      - key: MONGO_URL
-        value: mongodb+srv://audestya:audestya2024@cluster0.4hwxy.mongodb.net/audestya_production?retryWrites=true&w=majority
-      - key: DB_NAME
-        value: audestya_production
 
   # Frontend Static Site  
   - type: web
