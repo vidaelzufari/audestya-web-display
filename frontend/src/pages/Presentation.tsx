@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import DomainsSection from '@/components/DomainsSection';
 import Footer from '@/components/Footer';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Card, CardContent } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass, Handshake, Briefcase, Wrench } from 'lucide-react';
