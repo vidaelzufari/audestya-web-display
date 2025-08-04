@@ -15,6 +15,7 @@ const ReseauxDistribution = () => {
   return (
     <div className="min-h-screen bg-gradient-accent">
       <Navigation />
+      
       {/* Hero Section */}
       <section className="py-20 bg-gradient-hero text-primary-foreground">
         <div className="container mx-auto px-4">
@@ -212,7 +213,6 @@ const ReseauxDistribution = () => {
                 </div>
 
                 <div className="relative">
-                  {/* Lignes de connexion - placées en arrière-plan */}
                   <div className="hidden lg:block absolute top-8 left-0 w-full h-0.5 bg-white/30 z-0"></div>
                   
                   <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
