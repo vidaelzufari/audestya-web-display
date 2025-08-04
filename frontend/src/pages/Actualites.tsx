@@ -1,13 +1,53 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
-import { Linkedin, ExternalLink } from 'lucide-react';
+import LinkedInPostCard from '@/components/LinkedInPostCard';
+import { Linkedin, ExternalLink, Loader2, RefreshCw, TrendingUp } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import LinkedInFeed from '@/components/LinkedInFeed';
+import { LinkedInPost, LinkedInService } from '@/lib/linkedin-service';
 
 const Actualites = () => {
+  const [posts, setPosts] = useState<LinkedInPost[]>([]);
+  const [isLoading, setIsLoading] = useState(true);
+  const [expandedPosts, setExpandedPosts] = useState<Set<string>>(new Set());
+  const [isRefreshing, setIsRefreshing] = useState(false);
+
+  const linkedInService = LinkedInService.getInstance();
+
+  useEffect(() => {
+    loadPosts();
+  }, []);
+
+  const loadPosts = async () => {
+    setIsLoading(true);
+    try {
+      const fetchedPosts = await linkedInService.fetchLatestPosts();
+      setPosts(fetchedPosts);
+    } catch (error) {
+      console.error('Error loading posts:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const handleRefresh = async () => {
+    setIsRefreshing(true);
+    await loadPosts();
+    setIsRefreshing(false);
+  };
+
+  const togglePostExpansion = (postId: string) => {
+    const newExpandedPosts = new Set(expandedPosts);
+    if (newExpandedPosts.has(postId)) {
+      newExpandedPosts.delete(postId);
+    } else {
+      newExpandedPosts.add(postId);
+    }
+    setExpandedPosts(newExpandedPosts);
+  };
+
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       <Navigation />
@@ -20,57 +60,185 @@ const Actualites = () => {
       </section>
       
       {/* Hero Section */}
-      <section className="pt-32 pb-16">
+      <section className="pt-16 pb-12">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="font-serif text-5xl md:text-6xl font-bold text-primary mb-6">
-              Actualités
+              Actualités Juridiques
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-              Suivez mes dernières analyses juridiques et actualités du droit de la distribution
+            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
+              Suivez en direct mes dernières analyses juridiques, décryptages de la jurisprudence 
+              et conseils pratiques en droit de la distribution.
             </p>
+            
+            {/* LinkedIn Direct Feed Badge */}
+            <div className="flex items-center justify-center space-x-2 mb-8">
+              <div className="flex items-center bg-blue-600/10 text-blue-700 px-4 py-2 rounded-full border border-blue-200">
+                <Linkedin className="w-5 h-5 mr-2" />
+                <span className="text-sm font-medium">Feed LinkedIn Direct</span>
+                <div className="w-2 h-2 bg-green-500 rounded-full ml-2 animate-pulse"></div>
+              </div>
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={handleRefresh}
+                disabled={isRefreshing}
+                className="ml-2"
+              >
+                {isRefreshing ? (
+                  <Loader2 className="w-4 h-4 animate-spin mr-1" />
+                ) : (
+                  <RefreshCw className="w-4 h-4 mr-1" />
+                )}
+                Actualiser
+              </Button>
+            </div>
+
+            {/* Statistics */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto">
+              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <TrendingUp className="w-6 h-6 text-primary" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-1">150+</h3>
+                <p className="text-sm text-muted-foreground">Publications juridiques</p>
+              </div>
+              
+              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <Linkedin className="w-6 h-6 text-blue-600" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-1">5K+</h3>
+                <p className="text-sm text-muted-foreground">Abonnés LinkedIn</p>
+              </div>
+              
+              <div className="bg-white/50 backdrop-blur-sm rounded-lg p-4 border border-white/20">
+                <div className="flex items-center justify-center mb-2">
+                  <ExternalLink className="w-6 h-6 text-secondary" />
+                </div>
+                <h3 className="text-2xl font-bold text-primary mb-1">95%</h3>
+                <p className="text-sm text-muted-foreground">Engagement positif</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* LinkedIn Feed Section */}
-      <section className="py-20">
+      {/* LinkedIn Feed Content */}
+      <section className="py-12 bg-background">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <Card className="bg-background shadow-soft border-0 mb-12">
-              <CardContent className="p-12 text-center">
-                <div className="flex items-center justify-center gap-3 mb-8">
-                  <Linkedin className="w-8 h-8 text-primary" />
-                  <h2 className="font-serif text-3xl font-bold text-primary">
-                    Suivez-moi sur LinkedIn
-                  </h2>
-                </div>
-                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-                
-                <div className="space-y-6">
-                  <p className="text-lg text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                    Retrouvez mes dernières analyses juridiques, actualités du droit de la distribution 
-                    et conseils pratiques directement sur mon profil LinkedIn.
-                  </p>
-                  
-                  <Button asChild className="bg-gradient-to-r from-primary to-primary/90 hover:from-primary/90 hover:to-primary text-primary-foreground px-8 py-3 text-lg font-medium">
+            
+            {/* Follow LinkedIn CTA */}
+            <Card className="mb-12 bg-gradient-to-r from-blue-50 to-blue-100 border-blue-200">
+              <CardContent className="p-8">
+                <div className="flex items-center justify-between">
+                  <div className="flex-1">
+                    <h2 className="text-2xl font-bold text-primary mb-2">
+                      Ne ratez aucune actualité juridique
+                    </h2>
+                    <p className="text-muted-foreground mb-4">
+                      Suivez-moi sur LinkedIn pour recevoir toutes mes analyses en temps réel 
+                      et interagir directement avec mes publications.
+                    </p>
+                    <div className="flex items-center text-sm text-blue-700">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mr-2 animate-pulse"></div>
+                      En ligne maintenant
+                    </div>
+                  </div>
+                  <Button 
+                    asChild 
+                    className="bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-3 ml-6"
+                  >
                     <a 
                       href="https://www.linkedin.com/in/haiaelzufari" 
                       target="_blank" 
                       rel="noopener noreferrer"
-                      className="inline-flex items-center gap-3"
+                      className="flex items-center"
                     >
-                      <Linkedin className="w-5 h-5" />
-                      Voir mon profil LinkedIn
-                      <ExternalLink className="w-4 h-4" />
+                      <Linkedin className="w-5 h-5 mr-2" />
+                      Suivre sur LinkedIn
                     </a>
                   </Button>
                 </div>
               </CardContent>
             </Card>
 
-            <LinkedInFeed />
+            {/* Loading State */}
+            {isLoading && (
+              <div className="flex items-center justify-center py-12">
+                <div className="text-center">
+                  <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
+                  <p className="text-muted-foreground">
+                    Chargement des dernières publications...
+                  </p>
+                </div>
+              </div>
+            )}
+
+            {/* Posts Feed */}
+            {!isLoading && posts.length > 0 && (
+              <div className="space-y-8">
+                <div className="flex items-center justify-between mb-6">
+                  <h2 className="text-2xl font-bold text-primary">
+                    Publications récentes
+                  </h2>
+                  <p className="text-sm text-muted-foreground">
+                    {posts.length} publication{posts.length > 1 ? 's' : ''} disponible{posts.length > 1 ? 's' : ''}
+                  </p>
+                </div>
+                
+                {posts.map((post) => (
+                  <LinkedInPostCard
+                    key={post.id}
+                    post={post}
+                    isExpanded={expandedPosts.has(post.id)}
+                    onToggleExpand={() => togglePostExpansion(post.id)}
+                  />
+                ))}
+              </div>
+            )}
+
+            {/* Empty State */}
+            {!isLoading && posts.length === 0 && (
+              <div className="text-center py-12">
+                <Linkedin className="w-16 h-16 text-blue-600 mx-auto mb-4 opacity-50" />
+                <h3 className="text-xl font-semibold text-foreground mb-2">
+                  Aucune publication disponible
+                </h3>
+                <p className="text-muted-foreground mb-6">
+                  Les dernières publications LinkedIn se chargeront automatiquement.
+                </p>
+                <Button onClick={handleRefresh} variant="outline">
+                  <RefreshCw className="w-4 h-4 mr-2" />
+                  Réessayer
+                </Button>
+              </div>
+            )}
+
+            {/* LinkedIn Direct Link */}
+            <div className="mt-12 text-center">
+              <div className="bg-muted/30 rounded-lg p-6">
+                <h3 className="text-lg font-semibold text-primary mb-2">
+                  Voir toutes les publications
+                </h3>
+                <p className="text-muted-foreground mb-4">
+                  Découvrez l'intégralité de mes analyses et participez aux discussions 
+                  directement sur LinkedIn.
+                </p>
+                <Button asChild variant="outline">
+                  <a 
+                    href="https://www.linkedin.com/in/haiaelzufari" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                  >
+                    <ExternalLink className="w-4 h-4 mr-2" />
+                    Voir le profil LinkedIn complet
+                  </a>
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </section>
