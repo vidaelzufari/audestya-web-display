@@ -1,0 +1,28 @@
+[build]
+builder = "nixpacks"
+
+[deploy]
+startCommand = "cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT"
+healthcheckPath = "/api/"
+
+[[services]]
+name = "backend"
+source = "backend"
+
+[services.build]
+buildCommand = "pip install -r requirements.txt"
+
+[services.deploy]
+startCommand = "uvicorn server:app --host 0.0.0.0 --port $PORT"
+
+[[services]]
+name = "mongodb"
+image = "mongo:7.0"
+
+[services.env]
+MONGO_INITDB_ROOT_USERNAME = "audestya"
+MONGO_INITDB_ROOT_PASSWORD = "audestya2024"
+
+[env]
+MONGO_URL = "mongodb://audestya:audestya2024@mongodb:27017/audestya_production"
+DB_NAME = "audestya_production"
