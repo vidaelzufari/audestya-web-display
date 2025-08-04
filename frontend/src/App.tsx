@@ -28,7 +28,6 @@ function App() {
         <Route path="/accompagnement-juridique" element={<AccompagnementJuridique />} />
         <Route path="/actualites" element={<Actualites />} />
         <Route path="/honoraires" element={<Honoraires />} />
-        <Route path="/portail-client" element={<ClientPortal />} />
         <Route path="/admin" element={<CMSAdmin />} />
         <Route path="/mentions-legales" element={<MentionsLegales />} />
         <Route path="/politique-confidentialite" element={<PolitiqueConfidentialite />} />
