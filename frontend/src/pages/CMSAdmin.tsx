@@ -229,7 +229,7 @@ const CMSAdmin = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl font-bold text-primary mb-4">
-              Administration CMS
+              Administration
             </h1>
             <p className="text-lg text-muted-foreground">
               Gérez le contenu et les paramètres de votre site
