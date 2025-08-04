@@ -1,0 +1,14 @@
+# Version simplifiée de render.yaml - Si la première ne marche pas
+services:
+  # Backend seulement (pour commencer)
+  - type: web
+    name: audestya-backend
+    env: python
+    buildCommand: cd backend && pip install -r requirements.txt
+    startCommand: cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT
+    plan: free
+    envVars:
+      - key: MONGO_URL
+        value: mongodb+srv://demo:demo@cluster.mongodb.net/audestya
+      - key: DB_NAME  
+        value: audestya_production
