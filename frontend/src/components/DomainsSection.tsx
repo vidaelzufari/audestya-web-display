@@ -44,11 +44,11 @@ const DomainsSection = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
+    <section id="domaines" className="py-20 bg-gradient-to-br from-background via-background to-primary/5">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            Domaines d'expertise
+            Domaines d'Intervention
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
