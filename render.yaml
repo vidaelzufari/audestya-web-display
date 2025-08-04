@@ -4,7 +4,6 @@ services:
     name: audestya-backend
     env: python
     region: oregon
-    plan: starter
     rootDir: backend
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
@@ -21,7 +20,6 @@ services:
   - type: web
     name: audestya-frontend  
     env: static
-    plan: starter
     rootDir: frontend
     buildCommand: yarn install && yarn build
     staticPublishPath: build
@@ -42,7 +40,6 @@ databases:
     databaseName: audestya_production
     user: audestya_user
     region: oregon
-    plan: starter
     ipAllowList:
       - source: 0.0.0.0/0
         description: Allow all connections
