@@ -3,7 +3,7 @@ name: Deploy to Vercel + Railway
 
 on:
   push:
-    branches: [ main-1 ]
+    branches: [ main-3 ]
 
 jobs:
   deploy-frontend-vercel:
