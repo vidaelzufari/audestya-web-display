@@ -2,6 +2,7 @@ import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import ClientStatus from '@/components/ClientStatus';
+import Breadcrumb from '@/components/Breadcrumb';
 import { Users, Shield, Clock, CheckCircle } from 'lucide-react';
 
 const ClientPortal = () => {
