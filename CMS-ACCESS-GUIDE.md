@@ -6,10 +6,10 @@
 Une fois votre site déployé :
 
 **Local (Preview)** : 
-`https://c0bc7372-6089-44bf-bda3-aaad53676437.preview.emergentagent.com/cms-admin`
+`https://c0bc7372-6089-44bf-bda3-aaad53676437.preview.emergentagent.com/admin`
 
 **Production (après déploiement)** :
-`https://audestya-frontend.onrender.com/cms-admin`
+`https://audestya-avocat.com/admin`
 
 ## 🎯 **Fonctionnalités CMS Disponibles**
 
