@@ -1,0 +1,34 @@
+services:
+  # Backend FastAPI Service
+  - type: web
+    name: audestya-backend
+    env: python
+    region: oregon
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn server:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/
+    envVars:
+      - key: MONGO_URL
+        value: mongodb+srv://audestya:audestya2024@cluster0.mongodb.net/audestya_production?retryWrites=true&w=majority
+      - key: DB_NAME
+        value: audestya_production
+
+  # Frontend Static Site  
+  - type: web
+    name: audestya-frontend  
+    env: static
+    rootDir: frontend
+    buildCommand: yarn install && yarn build
+    staticPublishPath: build
+    envVars:
+      - key: VITE_REACT_APP_BACKEND_URL
+        fromService:
+          name: audestya-backend
+          type: web
+          property: host
+      - key: REACT_APP_BACKEND_URL
+        fromService:
+          name: audestya-backend
+          type: web
+          property: host
