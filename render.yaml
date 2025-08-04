@@ -1,0 +1,58 @@
+services:
+  # Backend FastAPI Service
+  - type: web
+    name: audestya-backend
+    env: python
+    region: frankfurt  # ou oregon pour US
+    plan: starter  # gratuit pour commencer
+    buildCommand: "cd backend && pip install -r requirements.txt"
+    startCommand: "cd backend && uvicorn server:app --host 0.0.0.0 --port $PORT"
+    healthCheckPath: "/api/"
+    envVars:
+      - key: MONGO_URL
+        fromDatabase:
+          name: audestya-mongodb
+          property: connectionString
+      - key: DB_NAME
+        value: audestya_production
+      - key: PORT
+        value: 8001
+
+  # Frontend React Service  
+  - type: web
+    name: audestya-frontend
+    env: static
+    region: frankfurt
+    plan: starter
+    buildCommand: "cd frontend && yarn install && yarn build"
+    staticPublishPath: "./frontend/build"
+    pullRequestPreviewsEnabled: true
+    headers:
+      - path: "/*"
+        name: "X-Frame-Options"
+        value: "DENY"
+      - path: "/*"
+        name: "X-Content-Type-Options"
+        value: "nosniff"
+    routes:
+      - type: rewrite
+        source: "/api/*"
+        destination: "https://audestya-backend.onrender.com/api/*"
+    envVars:
+      - key: VITE_REACT_APP_BACKEND_URL
+        value: "https://audestya-backend.onrender.com"
+      - key: REACT_APP_BACKEND_URL
+        value: "https://audestya-backend.onrender.com"
+
+databases:
+  # MongoDB Database
+  - name: audestya-mongodb
+    databaseName: audestya_production
+    user: audestya_user
+    plan: starter  # 1GB gratuit
+    region: frankfurt
+    
+    # Configuration MongoDB
+    ipAllowList:
+      - source: anywhere
+        description: "Allow connections from Render services"
