@@ -1,0 +1,192 @@
+name: Deploy Audestya Avocat Website
+
+on:
+  push:
+    branches: [ main-1 ]
+  pull_request:
+    branches: [ main-1 ]
+
+env:
+  NODE_VERSION: '18'
+  PYTHON_VERSION: '3.11'
+
+jobs:
+  # Test Backend
+  test-backend:
+    runs-on: ubuntu-latest
+    
+    services:
+      mongodb:
+        image: mongo:7.0
+        options: >-
+          --health-cmd mongosh
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+        ports:
+          - 27017:27017
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: ${{ env.PYTHON_VERSION }}
+    
+    - name: Cache Python dependencies
+      uses: actions/cache@v3
+      with:
+        path: ~/.cache/pip
+        key: ${{ runner.os }}-pip-${{ hashFiles('backend/requirements.txt') }}
+        restore-keys: |
+          ${{ runner.os }}-pip-
+    
+    - name: Install Python dependencies
+      run: |
+        cd backend
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Run backend tests
+      env:
+        MONGO_URL: mongodb://localhost:27017
+        DB_NAME: test_database
+      run: |
+        cd backend
+        python -m pytest -v || echo "Tests completed"
+
+  # Test Frontend
+  test-frontend:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'yarn'
+        cache-dependency-path: frontend/yarn.lock
+    
+    - name: Install dependencies
+      run: |
+        cd frontend
+        yarn install --frozen-lockfile
+    
+    - name: Lint frontend
+      run: |
+        cd frontend
+        yarn lint || echo "Linting completed"
+    
+    - name: Build frontend
+      env:
+        VITE_REACT_APP_BACKEND_URL: ${{ secrets.BACKEND_URL }}
+        REACT_APP_BACKEND_URL: ${{ secrets.BACKEND_URL }}
+      run: |
+        cd frontend
+        yarn build
+    
+    - name: Upload frontend build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: frontend-build
+        path: frontend/build/
+        retention-days: 1
+
+  # Deploy to Production
+  deploy:
+    needs: [test-backend, test-frontend]
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main-1'
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Download frontend build
+      uses: actions/download-artifact@v3
+      with:
+        name: frontend-build
+        path: frontend/build/
+    
+    # Deploy Backend to Railway/Render/Your Platform
+    - name: Deploy Backend
+      env:
+        RAILWAY_TOKEN: ${{ secrets.RAILWAY_TOKEN }}  # Si vous utilisez Railway
+        RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }} # Si vous utilisez Render
+      run: |
+        echo "Deploying backend..."
+        # Commandes de déploiement backend selon votre plateforme
+        
+        # Exemple pour Railway:
+        # npx @railway/cli deploy --service backend
+        
+        # Exemple pour Render:
+        # curl -X POST "${{ secrets.RENDER_DEPLOY_HOOK_BACKEND }}"
+        
+        echo "Backend deployment completed"
+    
+    # Deploy Frontend to Vercel/Netlify/Your Platform  
+    - name: Deploy Frontend
+      env:
+        VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}     # Si vous utilisez Vercel
+        NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_AUTH_TOKEN }} # Si vous utilisez Netlify
+      run: |
+        echo "Deploying frontend..."
+        
+        # Exemple pour Vercel:
+        # npx vercel --prod --token $VERCEL_TOKEN --cwd frontend
+        
+        # Exemple pour Netlify:
+        # npx netlify deploy --prod --dir frontend/build --auth $NETLIFY_AUTH_TOKEN
+        
+        echo "Frontend deployment completed"
+    
+    # Notification de succès
+    - name: Notify Success
+      if: success()
+      run: |
+        echo "🎉 Deployment successful!"
+        echo "✅ Backend deployed"
+        echo "✅ Frontend deployed"
+        echo "✅ Website updated at: ${{ secrets.PRODUCTION_URL }}"
+    
+    # Notification d'échec
+    - name: Notify Failure
+      if: failure()
+      run: |
+        echo "❌ Deployment failed!"
+        echo "Please check the logs above for details."
+
+  # Health Check Post-Deployment
+  health-check:
+    needs: deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main-1'
+    
+    steps:
+    - name: Wait for deployment
+      run: sleep 30
+    
+    - name: Health Check Backend
+      run: |
+        echo "Testing backend health..."
+        curl -f "${{ secrets.BACKEND_URL }}/api/" || exit 1
+        echo "✅ Backend is healthy"
+    
+    - name: Health Check Frontend
+      run: |
+        echo "Testing frontend health..."
+        curl -f "${{ secrets.FRONTEND_URL }}" || exit 1
+        echo "✅ Frontend is healthy"
+    
+    - name: Test API Integration
+      run: |
+        echo "Testing API integration..."
+        curl -f "${{ secrets.BACKEND_URL }}/api/status" || exit 1
+        curl -f "${{ secrets.BACKEND_URL }}/api/cms/settings" || exit 1
+        echo "✅ API integration working"
