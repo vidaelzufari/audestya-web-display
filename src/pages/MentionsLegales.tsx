@@ -14,9 +14,6 @@ const MentionsLegales = () => {
             <h1 className="font-serif text-5xl md:text-6xl font-bold mb-6">
               Mentions Légales
             </h1>
-            <p className="text-xl opacity-90">
-              Informations légales et éditoriales du cabinet Audestya Avocat
-            </p>
           </div>
         </div>
       </section>
