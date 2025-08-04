@@ -1,0 +1,36 @@
+{
+  "version": 2,
+  "name": "audestya-fullstack",
+  "builds": [
+    {
+      "src": "backend/server.py",
+      "use": "@vercel/python"
+    },
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/backend/server.py"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/frontend/$1"
+    }
+  ],
+  "env": {
+    "MONGO_URL": "@mongo-url",
+    "DB_NAME": "audestya_production"
+  },
+  "functions": {
+    "backend/server.py": {
+      "runtime": "python3.9"
+    }
+  }
+}
