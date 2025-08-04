@@ -219,7 +219,7 @@ const CMSAdmin = () => {
         <div className="container mx-auto px-4">
           <Breadcrumb items={[
             { label: 'Accueil', path: '/' },
-            { label: 'Administration CMS', path: '/cms-admin' }
+            { label: 'Administration', path: '/admin' }
           ]} />
         </div>
       </section>
