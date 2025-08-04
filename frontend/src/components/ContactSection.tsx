@@ -259,30 +259,6 @@ const ContactSection = () => {
                 </form>
               </CardContent>
             </Card>
-            
-            {/* Client Portal Link */}
-            <Card className="mt-6 border-primary/20">
-              <CardContent className="p-6 text-center">
-                <div className="space-y-4">
-                  <div className="w-16 h-16 bg-secondary/10 rounded-full flex items-center justify-center mx-auto">
-                    <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center">
-                      <span className="text-white font-bold text-sm">•</span>
-                    </div>
-                  </div>
-                  <h3 className="text-xl font-semibold text-primary">
-                    Portail Client
-                  </h3>
-                  <p className="text-muted-foreground">
-                    Enregistrez votre présence ou suivez vos demandes via notre portail client sécurisé.
-                  </p>
-                  <Link to="/portail-client">
-                    <Button className="bg-gradient-to-r from-secondary to-secondary/80 hover:from-secondary/90 hover:to-secondary/70 text-white px-6 py-2">
-                      Accéder au Portail
-                    </Button>
-                  </Link>
-                </div>
-              </CardContent>
-            </Card>
           </div>
         </div>
       </div>
