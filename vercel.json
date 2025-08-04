@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "name": "audestya-avocat-frontend",
+  "builds": [
+    {
+      "src": "frontend/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "distDir": "build"
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "$BACKEND_URL/api/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "frontend/$1"
+    }
+  ],
+  "env": {
+    "VITE_REACT_APP_BACKEND_URL": "@backend-url",
+    "REACT_APP_BACKEND_URL": "@backend-url"
+  },
+  "installCommand": "cd frontend && yarn install",
+  "buildCommand": "cd frontend && yarn build",
+  "outputDirectory": "frontend/build",
+  "functions": {
+    "frontend/src/**": {
+      "runtime": "nodejs18.x"
+    }
+  }
+}
