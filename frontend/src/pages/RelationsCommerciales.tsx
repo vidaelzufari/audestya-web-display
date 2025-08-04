@@ -6,6 +6,10 @@ import Footer from '@/components/Footer';
 import { Button } from '@/components/ui/button';
 
 const RelationsCommerciales = () => {
+  // Scroller au début de la page lors du chargement
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5">
       <Navigation />
