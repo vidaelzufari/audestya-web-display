@@ -34,6 +34,12 @@ jobs:
         run: |
           cd frontend
           npm run build
+          
+      - name: Copy SPA routing files
+        run: |
+          cd frontend
+          # Copy 404.html to build directory for GitHub Pages SPA routing
+          cp public/404.html build/404.html
         env:
           VITE_REACT_APP_BACKEND_URL: https://audestya-backend.onrender.com
           
