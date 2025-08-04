@@ -90,7 +90,14 @@ class BackendTester:
         """Test CORS headers are present"""
         print("\n🔍 Testing CORS Headers...")
         try:
-            response = self.session.get(f"{API_BASE_URL}/")
+            # Test preflight OPTIONS request for CORS
+            headers = {
+                'Origin': 'https://example.com',
+                'Access-Control-Request-Method': 'GET',
+                'Access-Control-Request-Headers': 'X-Requested-With'
+            }
+            response = self.session.options(f"{API_BASE_URL}/", headers=headers)
+            
             cors_headers = {
                 'access-control-allow-origin': response.headers.get('access-control-allow-origin'),
                 'access-control-allow-methods': response.headers.get('access-control-allow-methods'),
@@ -100,6 +107,7 @@ class BackendTester:
             if cors_headers['access-control-allow-origin']:
                 print("✅ CORS headers present")
                 print(f"   Origin: {cors_headers['access-control-allow-origin']}")
+                print(f"   Methods: {cors_headers['access-control-allow-methods']}")
                 self.test_results['cors_headers'] = True
                 return True
             else:
