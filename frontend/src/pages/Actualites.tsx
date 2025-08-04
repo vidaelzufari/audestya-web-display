@@ -4,7 +4,7 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import LinkedInPostCard from '@/components/LinkedInPostCard';
-import { Linkedin, ExternalLink, Loader2, RefreshCw, TrendingUp } from 'lucide-react';
+import { Linkedin, ExternalLink, Loader2, RefreshCw } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LinkedInPost, LinkedInService } from '@/lib/linkedin-service';
 
