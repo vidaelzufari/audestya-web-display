@@ -82,6 +82,9 @@ const Navigation = () => {
             <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
             </Link>
+            <Link to="/portail-client" className={`${getNavLinkClass('/portail-client')} py-3 px-2 rounded bg-gradient-to-r from-secondary to-secondary/80 hover:from-secondary/90 hover:to-secondary/70 text-white px-3 py-2`}>
+              PORTAIL CLIENT
+            </Link>
             <a href="/#contact" className={getNavLinkClass('#contact')}>
               CONTACT
             </a>
