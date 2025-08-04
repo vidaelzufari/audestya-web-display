@@ -2,9 +2,9 @@ name: Deploy Audestya Avocat Website
 
 on:
   push:
-    branches: [ main-1 ]
+    branches: [ main-3 ]
   pull_request:
-    branches: [ main-1 ]
+    branches: [ main-3 ]
 
 env:
   NODE_VERSION: '18'
