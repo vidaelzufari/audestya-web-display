@@ -9,16 +9,20 @@ import { LinkedinIcon, Award, Shield, Target, Users, Lightbulb, Compass, Handsha
 import lawyerPortrait from '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png';
 
 const Presentation = () => {
+  // Gérer le scroll automatique vers l'ancre après le chargement
   useEffect(() => {
-    // Gérer le scroll vers la section si un hash est présent dans l'URL
     const hash = window.location.hash;
     if (hash) {
-      const element = document.querySelector(hash);
-      if (element) {
-        setTimeout(() => {
+      // Attendre que le contenu soit rendu
+      setTimeout(() => {
+        const element = document.getElementById(hash.substring(1));
+        if (element) {
           element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
-      }
+        }
+      }, 500);
+    } else {
+      // Si pas d'ancre, aller au début de la page
+      window.scrollTo(0, 0);
     }
   }, []);
   return (
