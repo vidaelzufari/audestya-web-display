@@ -24,18 +24,16 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          cache: 'yarn'
-          cache-dependency-path: frontend/yarn.lock
           
       - name: Install dependencies
         run: |
           cd frontend
-          yarn install --frozen-lockfile
+          npm ci
           
       - name: Build
         run: |
           cd frontend
-          yarn build
+          npm run build
         env:
           VITE_REACT_APP_BACKEND_URL: https://audestya-backend.onrender.com
           REACT_APP_BACKEND_URL: https://audestya-backend.onrender.com
