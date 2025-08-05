@@ -53,18 +53,18 @@ const Footer = () => {
 
           {/* Quick links */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-secondary">Navigation</h4>
+            <h4 className="font-semibold text-base md:text-lg text-secondary">Navigation</h4>
             <div className="space-y-2">
-              <button onClick={handleAccueilClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
+              <button onClick={handleAccueilClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left text-sm md:text-base">
                 Accueil
               </button>
-              <button onClick={() => handlePageNavigation('/presentation')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
+              <button onClick={() => handlePageNavigation('/presentation')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left text-sm md:text-base">
                 Identité & Approche
               </button>
-              <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
+              <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left text-sm md:text-base">
                 Contact
               </button>
-              <button onClick={() => handlePageNavigation('/honoraires')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
+              <button onClick={() => handlePageNavigation('/honoraires')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left text-sm md:text-base">
                 Honoraires
               </button>
             </div>
