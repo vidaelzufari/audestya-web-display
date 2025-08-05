@@ -44,7 +44,12 @@ class BackendTester:
             'get_status': False,
             'cors_headers': False,
             'error_handling': False,
-            'mongodb_integration': False
+            'mongodb_integration': False,
+            'linkedin_login': False,
+            'linkedin_callback_error_handling': False,
+            'linkedin_posts_auth_required': False,
+            'linkedin_profile_auth_required': False,
+            'linkedin_invalid_token_handling': False
         }
         self.created_status_ids = []
 
