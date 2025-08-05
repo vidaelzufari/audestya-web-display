@@ -72,17 +72,17 @@ const Footer = () => {
 
           {/* Contact info */}
           <div className="space-y-4">
-            <h4 className="font-semibold text-lg text-secondary">Contact</h4>
+            <h4 className="font-semibold text-base md:text-lg text-secondary">Contact</h4>
             <div className="space-y-3">
-              <a href="tel:+33685353781" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
+              <a href="tel:+33685353781" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors text-sm md:text-base">
                 <Phone size={16} />
                 +33 6 85 35 37 81
               </a>
-              <a href="mailto:haia.elzufari@audestya-avocat.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors">
+              <a href="mailto:haia.elzufari@audestya-avocat.com" className="flex items-center gap-3 text-primary-foreground/80 hover:text-secondary transition-colors text-sm md:text-base">
                 <Mail size={16} />
                 haia.elzufari@audestya-avocat.com
               </a>
-              <div className="flex items-center gap-3 text-primary-foreground/80">
+              <div className="flex items-center gap-3 text-primary-foreground/80 text-sm md:text-base">
                 <MapPin size={16} />
                 Paris - France
               </div>
