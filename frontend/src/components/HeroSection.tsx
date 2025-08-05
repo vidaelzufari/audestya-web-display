@@ -29,12 +29,12 @@ const HeroSection = () => {
       <div className="relative z-10 container mx-auto px-6 py-16">
         <div className="max-w-5xl mx-auto text-center text-background">
           {/* Modern badge-style header */}
-          <div className="inline-flex items-center gap-6 mb-16 animate-fade-in">
-            <div className="h-px bg-background/40 w-20"></div>
-            <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-6 py-3 text-base font-medium tracking-wider">
+          <div className="inline-flex items-center gap-3 md:gap-6 mb-12 md:mb-16 animate-fade-in">
+            <div className="h-px bg-background/40 w-12 md:w-20"></div>
+            <span className="bg-background/10 backdrop-blur-sm border border-background/20 rounded-full px-4 md:px-6 py-2 md:py-3 text-sm md:text-base font-medium tracking-wider text-center">
               DISTRIBUTION, CONTRATS ET CONSOMMATION
             </span>
-            <div className="h-px bg-background/40 w-20"></div>
+            <div className="h-px bg-background/40 w-12 md:w-20"></div>
           </div>
           
           
