@@ -9,6 +9,7 @@ import os
 # In-memory storage for testing (will be replaced by MongoDB later)
 STATUS_CHECKS = []
 CMS_PAGES = []
+ARTICLES = []
 CMS_SETTINGS = {
     "id": str(uuid.uuid4()),
     "site_title": "Audestya Avocat",
