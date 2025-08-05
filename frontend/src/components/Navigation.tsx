@@ -82,9 +82,17 @@ const Navigation = () => {
             <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
               ACTUALITÉS
             </Link>
-            <a href="/#contact" className={getNavLinkClass('#contact')}>
+            <button 
+              onClick={() => {
+                const contactSection = document.getElementById('contact');
+                if (contactSection) {
+                  contactSection.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+              className={getNavLinkClass('#contact')}
+            >
               CONTACT
-            </a>
+            </button>
             
             {/* LinkedIn icon */}
             <a 
