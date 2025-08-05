@@ -1,36 +1,42 @@
-// LinkedIn Feed Service - Enhanced for real-time integration
+// LinkedIn Feed Service - Real API Integration
 export interface LinkedInPost {
   id: string;
-  author: {
-    name: string;
-    title: string;
-    profileImage: string;
-    profileUrl: string;
+  author: string;
+  created_at: string;
+  text: string;
+  visibility: string;
+  engagement?: {
+    likes: number;
+    comments: number;
+    shares: number;
   };
-  content: string;
-  publishedDate: string;
-  likes: number;
-  comments: number;
-  shares: number;
-  media?: {
-    type: 'image' | 'video' | 'document';
-    url: string;
-    thumbnail?: string;
-  };
-  engagement: {
-    reactions: number;
-    commentsList: Array<{
-      author: string;
-      content: string;
-      date: string;
-    }>;
-  };
+}
+
+export interface LinkedInProfile {
+  id: string;
+  name: string;
+  email: string;
+  picture?: string;
+}
+
+interface AuthResponse {
+  access_token: string;
+  token_type: string;
+  expires_in: number;
 }
 
 // Service to fetch LinkedIn posts
 export class LinkedInService {
   private static instance: LinkedInService;
-  private posts: LinkedInPost[] = [];
+  private baseUrl: string;
+  private accessToken: string | null = null;
+
+  constructor() {
+    // Get backend URL from environment variables
+    this.baseUrl = import.meta.env.VITE_REACT_APP_BACKEND_URL || process.env.REACT_APP_BACKEND_URL || 'http://localhost:8000';
+    // Load token from localStorage on initialization
+    this.accessToken = localStorage.getItem('linkedin_token');
+  }
 
   public static getInstance(): LinkedInService {
     if (!LinkedInService.instance) {
@@ -39,154 +45,131 @@ export class LinkedInService {
     return LinkedInService.instance;
   }
 
-  // Simulate fetching real LinkedIn posts
-  async fetchLatestPosts(): Promise<LinkedInPost[]> {
-    // In a real implementation, this would call LinkedIn API
-    // For now, we'll use realistic mock data
-    const mockPosts: LinkedInPost[] = [
+  async initiateLogin(): Promise<{ authUrl: string; state: string }> {
+    const response = await fetch(`${this.baseUrl}/api/auth/linkedin/login`);
+    if (!response.ok) {
+      throw new Error('Failed to initiate LinkedIn login');
+    }
+    const data = await response.json();
+    
+    // Store state for verification
+    localStorage.setItem('linkedin_state', data.state);
+    
+    return {
+      authUrl: data.authorization_url,
+      state: data.state
+    };
+  }
+
+  async handleCallback(code: string, state: string): Promise<AuthResponse> {
+    // Verify state matches what we stored
+    const storedState = localStorage.getItem('linkedin_state');
+    if (state !== storedState) {
+      throw new Error('Invalid state parameter');
+    }
+
+    const response = await fetch(
+      `${this.baseUrl}/api/auth/linkedin/callback?code=${encodeURIComponent(code)}&state=${encodeURIComponent(state)}`
+    );
+
+    if (!response.ok) {
+      const error = await response.json();
+      throw new Error(error.detail || 'Authentication failed');
+    }
+
+    const authData: AuthResponse = await response.json();
+    
+    // Store token for future requests
+    this.accessToken = authData.access_token;
+    localStorage.setItem('linkedin_token', authData.access_token);
+    localStorage.removeItem('linkedin_state');
+
+    return authData;
+  }
+
+  async fetchLatestPosts(limit: number = 10): Promise<LinkedInPost[]> {
+    if (!this.accessToken) {
+      throw new Error('Not authenticated');
+    }
+
+    const response = await fetch(
+      `${this.baseUrl}/api/linkedin/posts?limit=${limit}`,
       {
-        id: '1',
-        author: {
-          name: 'Haia El Zufari',
-          title: 'Avocat au Barreau de Paris | Droit de la Distribution',
-          profileImage: '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png',
-          profileUrl: 'https://www.linkedin.com/in/haiaelzufari'
+        headers: {
+          'Authorization': `Bearer ${this.accessToken}`,
+          'Content-Type': 'application/json',
         },
-        content: `🚀 Nouvelle réglementation européenne sur les contrats de distribution : ce qu'il faut savoir
-
-La Commission européenne vient d'adopter de nouvelles directives qui impacteront significativement les réseaux de distribution en 2024.
-
-Points clés à retenir :
-✅ Renforcement de la protection des distributeurs
-✅ Nouvelles obligations de transparence
-✅ Délais de préavis étendus
-
-Une adaptation urgente des contrats existants s'impose. N'hésitez pas à me consulter pour une mise en conformité.
-
-#DroitDistribution #Reglementation #Franchise #ContratCommercial`,
-        publishedDate: '2024-01-15T10:30:00Z',
-        likes: 127,
-        comments: 23,
-        shares: 18,
-        engagement: {
-          reactions: 127,
-          commentsList: [
-            {
-              author: 'Marie Dubois',
-              content: 'Excellente analyse ! Merci pour ce partage.',
-              date: '2024-01-15T11:00:00Z'
-            },
-            {
-              author: 'Jean Martin',
-              content: 'Très utile pour notre réseau de franchise.',
-              date: '2024-01-15T12:15:00Z'
-            }
-          ]
-        }
-      },
-      {
-        id: '2',
-        author: {
-          name: 'Haia El Zufari',
-          title: 'Avocat au Barreau de Paris | Droit de la Distribution',
-          profileImage: '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png',
-          profileUrl: 'https://www.linkedin.com/in/haiaelzufari'
-        },
-        content: `⚖️ Décision marquante de la Cour de Cassation : résiliation abusive de contrat de franchise
-
-La Chambre commerciale vient de rendre un arrêt important concernant les conditions de résiliation des contrats de franchise.
-
-Les faits :
-Un franchiseur avait résilié unilatéralement un contrat pour "mésentente", sans respecter la procédure contradictoire.
-
-La Cour rappelle que :
-🔹 La résiliation doit être justifiée par une cause réelle et sérieuse
-🔹 Le contradictoire doit être respecté
-🔹 Le préavis doit être raisonnable
-
-Dommages-intérêts : 350 000€ alloués au franchisé !
-
-#Jurisprudence #Franchise #DroitCommercial #CassationCommerciale`,
-        publishedDate: '2024-01-10T14:45:00Z',
-        likes: 89,
-        comments: 15,
-        shares: 12,
-        engagement: {
-          reactions: 89,
-          commentsList: [
-            {
-              author: 'Pierre Lefebvre',
-              content: 'Décision importante pour la sécurité juridique.',
-              date: '2024-01-10T15:00:00Z'
-            }
-          ]
-        }
-      },
-      {
-        id: '3',
-        author: {
-          name: 'Haia El Zufari',
-          title: 'Avocat au Barreau de Paris | Droit de la Distribution',
-          profileImage: '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png',
-          profileUrl: 'https://www.linkedin.com/in/haiaelzufari'
-        },
-        content: `📋 Guide pratique : Comment négocier un contrat de distribution sélective ?
-
-Après 10 ans d'expérience dans ce domaine, voici mes conseils essentiels :
-
-1️⃣ CRITÈRES DE SÉLECTION
-• Ils doivent être objectifs, uniformes et proportionnés
-• Éviter toute discrimination
-
-2️⃣ OBLIGATIONS RESPECTIVES
-• Détailler précisément les obligations de chaque partie
-• Prévoir des objectifs réalisables
-
-3️⃣ TERRITORIALITÉ
-• Définir clairement les zones d'exclusivité
-• Anticiper les ventes en ligne
-
-4️⃣ DURÉE ET RÉSILIATION
-• Prévoir des délais de préavis suffisants
-• Organiser les modalités de fin de contrat
-
-Besoin d'accompagnement ? Je suis là pour vous conseiller ! 💼
-
-#DistributionSelective #NegociationContrat #DroitDistribution #ConseilJuridique`,
-        publishedDate: '2024-01-05T09:15:00Z',
-        likes: 156,
-        comments: 31,
-        shares: 24,
-        engagement: {
-          reactions: 156,
-          commentsList: [
-            {
-              author: 'Sophie Bernard',
-              content: 'Guide très complet, merci !',
-              date: '2024-01-05T09:30:00Z'
-            },
-            {
-              author: 'Antoine Rousseau',
-              content: 'Parfait pour notre projet de réseau.',
-              date: '2024-01-05T10:45:00Z'
-            }
-          ]
-        }
       }
-    ];
+    );
 
-    // Simulate API delay
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        this.posts = mockPosts;
-        resolve(mockPosts);
-      }, 800);
+    if (!response.ok) {
+      if (response.status === 401) {
+        this.clearToken();
+        throw new Error('Authentication expired');
+      }
+      throw new Error('Failed to fetch posts');
+    }
+
+    const posts = await response.json();
+    return posts.map((post: any) => ({
+      id: post.id,
+      author: {
+        name: 'Haia El Zufari',
+        title: 'Avocat au Barreau de Paris | Droit de la Distribution',
+        profileImage: '/lovable-uploads/f1f60b6e-da32-4ebb-a9c2-cf1d82139662.png',
+        profileUrl: 'https://www.linkedin.com/in/haiaelzufari'
+      },
+      content: post.text,
+      publishedDate: post.created_at,
+      likes: post.engagement?.likes || 0,
+      comments: post.engagement?.comments || 0,
+      shares: post.engagement?.shares || 0,
+      engagement: {
+        reactions: post.engagement?.likes || 0,
+        commentsList: []
+      }
+    }));
+  }
+
+  async getUserProfile(): Promise<LinkedInProfile> {
+    if (!this.accessToken) {
+      throw new Error('Not authenticated');
+    }
+
+    const response = await fetch(`${this.baseUrl}/api/linkedin/profile`, {
+      headers: {
+        'Authorization': `Bearer ${this.accessToken}`,
+        'Content-Type': 'application/json',
+      },
     });
+
+    if (!response.ok) {
+      if (response.status === 401) {
+        this.clearToken();
+        throw new Error('Authentication expired');
+      }
+      throw new Error('Failed to fetch profile');
+    }
+
+    return response.json();
+  }
+
+  isAuthenticated(): boolean {
+    return this.accessToken !== null;
+  }
+
+  clearToken(): void {
+    this.accessToken = null;
+    localStorage.removeItem('linkedin_token');
+  }
+
+  logout(): void {
+    this.clearToken();
   }
 
   async getPostById(id: string): Promise<LinkedInPost | null> {
-    const post = this.posts.find(p => p.id === id);
-    return post || null;
+    // For now, return null as we don't have individual post endpoint
+    return null;
   }
 
   formatDate(dateString: string): string {
