@@ -49,10 +49,8 @@ const Actualites = () => {
             <div className="flex items-center justify-center space-x-2 mb-8">
               <div className="flex items-center bg-blue-600/10 text-blue-700 px-4 py-2 rounded-full border border-blue-200">
                 <Linkedin className="w-5 h-5 mr-2" />
-                <span className="text-sm font-medium">
-                  {isAuthenticated ? "Feed LinkedIn Connecté" : "Aperçu Actualités"}
-                </span>
-                <div className={`w-2 h-2 rounded-full ml-2 ${isAuthenticated ? 'bg-green-500 animate-pulse' : 'bg-blue-500'}`}></div>
+                <span className="text-sm font-medium">Actualités Juridiques</span>
+                <div className="w-2 h-2 bg-blue-500 rounded-full ml-2"></div>
               </div>
             </div>
 
