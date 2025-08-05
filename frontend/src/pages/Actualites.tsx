@@ -3,10 +3,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
-import LinkedInPostCard from '@/components/LinkedInPostCard';
-import { Linkedin, ExternalLink, Loader2, RefreshCw } from 'lucide-react';
+import { LinkedInAuth } from '@/components/LinkedInAuth';
+import { LinkedInPosts } from '@/components/LinkedInPosts';
+import { Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import { LinkedInPost, LinkedInService } from '@/lib/linkedin-service';
+import { LinkedInService } from '@/lib/linkedin-service';
 
 const Actualites = () => {
   const [posts, setPosts] = useState<LinkedInPost[]>([]);
