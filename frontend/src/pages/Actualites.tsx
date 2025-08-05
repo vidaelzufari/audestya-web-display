@@ -11,6 +11,7 @@ import { LinkedInService } from '@/lib/linkedin-service';
 
 const Actualites = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
   const linkedInService = LinkedInService.getInstance();
 
   useEffect(() => {
@@ -18,11 +19,28 @@ const Actualites = () => {
     window.scrollTo(0, 0);
     
     // Check authentication status
-    setIsAuthenticated(linkedInService.isAuthenticated());
+    const authStatus = linkedInService.isAuthenticated();
+    setIsAuthenticated(authStatus);
+    
+    // If not authenticated, show connection prompt immediately
+    if (!authStatus) {
+      setIsLoading(false); // Show connection UI immediately
+    }
   }, []);
 
   const handleAuthenticated = () => {
     setIsAuthenticated(true);
+  };
+
+  const handleConnectLinkedIn = async () => {
+    setIsLoading(true);
+    try {
+      const { authUrl } = await linkedInService.initiateLogin();
+      window.location.href = authUrl;
+    } catch (error) {
+      console.error('Erreur lors de la connexion LinkedIn:', error);
+      setIsLoading(false);
+    }
   };
 
   return (
