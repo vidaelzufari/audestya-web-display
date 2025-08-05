@@ -11,6 +11,9 @@ import jwt
 from linkedin_auth import linkedin_auth, LinkedInProfile
 from linkedin_posts import linkedin_posts, LinkedInPost
 
+# Environment variables
+JWT_SECRET = os.getenv("JWT_SECRET", "audestya-jwt-secret-2024-linkedin-integration")
+
 # In-memory storage for testing (will be replaced by MongoDB later)
 STATUS_CHECKS = []
 CMS_PAGES = []
