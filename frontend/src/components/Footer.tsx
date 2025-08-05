@@ -97,15 +97,15 @@ const Footer = () => {
               © 2025 Audestya Avocat. Tous droits réservés.
             </p>
             <div className="flex gap-6">
-              <Link to="/mentions-legales" className="hover:text-secondary transition-colors">
+              <button onClick={() => handlePageNavigation('/mentions-legales')} className="hover:text-secondary transition-colors">
                 Mentions légales
-              </Link>
-              <Link to="/politique-cookies" className="hover:text-secondary transition-colors">
+              </button>
+              <button onClick={() => handlePageNavigation('/politique-cookies')} className="hover:text-secondary transition-colors">
                 Cookies
-              </Link>
-              <Link to="/politique-confidentialite" className="hover:text-secondary transition-colors">
+              </button>
+              <button onClick={() => handlePageNavigation('/politique-confidentialite')} className="hover:text-secondary transition-colors">
                 Politique de confidentialité
-              </Link>
+              </button>
             </div>
           </div>
         </div>
