@@ -6,7 +6,7 @@
 Une fois votre site déployé :
 
 **Local (Preview)** : 
-`https://ffc7b7be-cdae-4301-90a1-948aeaa34ce1.preview.emergentagent.com/admin`
+`https://e4b41e06-7a1b-4435-8b5e-d321c5e7df64.preview.emergentagent.com/admin`
 
 **Production (après déploiement)** :
 `https://audestya-avocat.com/admin`
