@@ -133,20 +133,17 @@ backend:
         comment: "✅ Environment configuration working perfectly. Backend correctly uses MONGO_URL from .env (mongodb://localhost:27017), connects to test_database, and is accessible via external preview URL. CORS headers properly configured and working for cross-origin requests. MongoDB integration verified - data persists correctly with UUID-based IDs."
 
 frontend:
-  - task: "API service layer implementation"
-    implemented: true
-    working: true
-    file: "/app/frontend/src/lib/api.ts"
+  - task: "LinkedIn service frontend integration"
+    implemented: false
+    working: "NA"
+    file: "/app/frontend/src/lib/linkedin-service.ts"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Created comprehensive API service with environment variable support (VITE_REACT_APP_BACKEND_URL and REACT_APP_BACKEND_URL), includes error handling and TypeScript types."
-      - working: true
-        agent: "testing"
-        comment: "API service layer working perfectly. Environment variables properly configured, API calls successful to all endpoints."
+        comment: "Updating existing mock LinkedIn service to use real API integration with backend authentication flow"
 
   - task: "Client Status component"
     implemented: true
