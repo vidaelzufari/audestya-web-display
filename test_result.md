@@ -102,7 +102,7 @@
 # Testing Data - Main Agent and testing sub agent both should log testing data below this section
 #====================================================================================================
 
-user_problem_statement: "Connect the frontend to use the backend APIs"
+user_problem_statement: "Implement real LinkedIn API integration to replace mock data in the Actualités page"
 
 backend:
   - task: "Backend API endpoints setup"
