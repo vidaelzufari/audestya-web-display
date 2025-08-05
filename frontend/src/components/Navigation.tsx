@@ -148,9 +148,18 @@ const Navigation = () => {
               <Link to="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
                 ACTUALITÉS
               </Link>
-              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
+              <button 
+                onClick={() => {
+                  const contactSection = document.getElementById('contact');
+                  if (contactSection) {
+                    contactSection.scrollIntoView({ behavior: 'smooth' });
+                  }
+                  setIsMenuOpen(false); // Ferme le menu mobile après le clic
+                }}
+                className={`${getNavLinkClass('#contact')} py-3 px-2 rounded text-left w-full`}
+              >
                 CONTACT
-              </a>
+              </button>
             </div>
           </div>
         )}
