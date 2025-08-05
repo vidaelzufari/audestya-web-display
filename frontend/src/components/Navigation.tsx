@@ -95,24 +95,6 @@ const Navigation = () => {
             >
               <LinkedinIcon size={20} />
             </a>
-            
-            {/* Language selector */}
-            <DropdownMenu>
-              <DropdownMenuTrigger asChild>
-                <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm transition-colors flex items-center px-3 py-1.5 rounded">
-                  <Globe size={16} className="mr-1" />
-                  FR
-                </button>
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                  🇫🇷 Français
-                </DropdownMenuItem>
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                  🇬🇧 English
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
           </div>
 
           {/* Mobile menu button */}
