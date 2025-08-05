@@ -40,7 +40,7 @@ const Footer = () => {
               <h3 className="font-serif text-xl md:text-2xl font-bold">AUDESTYA</h3>
               <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
             </div>
-            <p className="text-primary-foreground/80 leading-relaxed">
+            <p className="text-primary-foreground/80 leading-relaxed text-sm md:text-base">
               Haia EL ZUFARI<br/>
               Avocat au Barreau de Paris
             </p>
