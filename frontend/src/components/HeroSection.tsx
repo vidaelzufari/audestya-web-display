@@ -46,7 +46,7 @@ const HeroSection = () => {
           </div>
 
           {/* Inspirational quote */}
-          <div className="relative bg-background/95 backdrop-blur-sm rounded-2xl p-12 mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto hover:-translate-y-3 hover:scale-[1.02] hover:shadow-elegant transition-all duration-500 group overflow-hidden" style={{ animationDelay: '0.4s' }}>
+          <div className="relative bg-background/95 backdrop-blur-sm rounded-2xl p-6 md:p-12 mb-12 md:mb-20 border border-border shadow-soft animate-scale-in max-w-4xl mx-auto hover:-translate-y-3 hover:scale-[1.02] hover:shadow-elegant transition-all duration-500 group overflow-hidden" style={{ animationDelay: '0.4s' }}>
             {/* Gradient overlay on hover */}
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             
@@ -54,10 +54,10 @@ const HeroSection = () => {
             <div className="absolute bottom-0 left-0 h-1 bg-gradient-to-r from-primary via-accent to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-left"></div>
             
             <div className="relative z-10">
-              <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
+              <blockquote className="text-base md:text-lg lg:text-xl italic mb-4 md:mb-6 text-primary leading-relaxed text-center">
                 « L'excellence n'est jamais le fruit du hasard, mais le choix d'une vision, d'une méthode et d'une exigence. »
               </blockquote>
-              <cite className="text-base font-medium text-foreground">Inspirée de la pensée d'Aristote</cite>
+              <cite className="text-sm md:text-base font-medium text-foreground text-center block">Inspirée de la pensée d'Aristote</cite>
             </div>
           </div>
 
