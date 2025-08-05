@@ -137,7 +137,7 @@ backend:
 
 frontend:
   - task: "LinkedIn service frontend integration"
-    implemented: false
+    implemented: true
     working: "NA"
     file: "/app/frontend/src/lib/linkedin-service.ts"
     stuck_count: 0
@@ -146,7 +146,10 @@ frontend:
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Updating existing mock LinkedIn service to use real API integration with backend authentication flow"
+        comment: "Updating existing mock LinkedIn service to use real API integration with backend authentication flow"  
+      - working: "NA"
+        agent: "main"
+        comment: "✅ Frontend LinkedIn integration implemented. Updated linkedin-service.ts to use real API calls, created LinkedInAuth and LinkedInPosts components for authentication flow, updated Actualites page to handle authentication state. Service now communicates with backend /api/auth/linkedin/ and /api/linkedin/ endpoints with proper JWT token handling."
 
   - task: "Client Status component"
     implemented: true
