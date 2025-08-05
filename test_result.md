@@ -233,4 +233,4 @@ agent_communication:
   - agent: "testing"  
     message: "Frontend testing completed successfully - All integration tests passed including navigation, Client Portal page, API integration, client check-in functionality, status display, and responsive design. Frontend-backend integration is fully functional."
   - agent: "main"
-    message: "Starting LinkedIn API integration with provided credentials (Client ID: 78zu1ovru2mu42). Implementing OAuth2.0 authentication flow and LinkedIn posts retrieval to replace existing mock data. Need to update backend server.py with LinkedIn endpoints and update frontend service for real API calls."
+    message: "✅ PROBLÈME RÉSOLU: L'erreur 'Failed to fetch' était causée par un crash du backend au démarrage. Les variables d'environnement LinkedIn n'étaient pas chargées avant l'initialisation du service. Ajouté load_dotenv() en haut des fichiers backend. Backend redémarré avec succès, endpoints LinkedIn opérationnels. Test endpoint /api/auth/linkedin/login: OK - retourne authorization_url et state token. L'intégration LinkedIn est maintenant prête à être testée."
