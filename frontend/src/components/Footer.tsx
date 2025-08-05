@@ -55,21 +55,18 @@ const Footer = () => {
           <div className="space-y-4">
             <h4 className="font-semibold text-lg text-secondary">Navigation</h4>
             <div className="space-y-2">
-              <Link to="/#accueil" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <button onClick={handleAccueilClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Accueil
-              </Link>
-              <Link to="/presentation" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              </button>
+              <button onClick={() => handlePageNavigation('/presentation')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Identité & Approche
-              </Link>
-              <Link to="/presentation#domaines" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
-                Domaines d'intervention
-              </Link>
+              </button>
               <button onClick={handleContactClick} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Contact
               </button>
-              <Link to="/honoraires" className="block text-primary-foreground/80 hover:text-secondary transition-colors">
+              <button onClick={() => handlePageNavigation('/honoraires')} className="block text-primary-foreground/80 hover:text-secondary transition-colors text-left">
                 Honoraires
-              </Link>
+              </button>
             </div>
           </div>
 
