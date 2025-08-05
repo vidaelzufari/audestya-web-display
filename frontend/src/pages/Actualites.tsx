@@ -10,43 +10,19 @@ import { Button } from '@/components/ui/button';
 import { LinkedInService } from '@/lib/linkedin-service';
 
 const Actualites = () => {
-  const [posts, setPosts] = useState<LinkedInPost[]>([]);
-  const [isLoading, setIsLoading] = useState(true);
-  const [expandedPosts, setExpandedPosts] = useState<Set<string>>(new Set());
-  const [isRefreshing, setIsRefreshing] = useState(false);
-
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const linkedInService = LinkedInService.getInstance();
 
   useEffect(() => {
-    loadPosts();
+    // Scroll to top on page load
+    window.scrollTo(0, 0);
+    
+    // Check authentication status
+    setIsAuthenticated(linkedInService.isAuthenticated());
   }, []);
 
-  const loadPosts = async () => {
-    setIsLoading(true);
-    try {
-      const fetchedPosts = await linkedInService.fetchLatestPosts();
-      setPosts(fetchedPosts);
-    } catch (error) {
-      console.error('Error loading posts:', error);
-    } finally {
-      setIsLoading(false);
-    }
-  };
-
-  const handleRefresh = async () => {
-    setIsRefreshing(true);
-    await loadPosts();
-    setIsRefreshing(false);
-  };
-
-  const togglePostExpansion = (postId: string) => {
-    const newExpandedPosts = new Set(expandedPosts);
-    if (newExpandedPosts.has(postId)) {
-      newExpandedPosts.delete(postId);
-    } else {
-      newExpandedPosts.add(postId);
-    }
-    setExpandedPosts(newExpandedPosts);
+  const handleAuthenticated = () => {
+    setIsAuthenticated(true);
   };
 
   return (
