@@ -55,6 +55,12 @@ class StatusCheck(BaseModel):
 class StatusCheckCreate(BaseModel):
     client_name: str
 
+# LinkedIn Models
+class AuthToken(BaseModel):
+    access_token: str
+    token_type: str = "bearer"
+    expires_in: int
+
 # CMS Models
 class ContentPage(BaseModel):
     id: str = Field(default_factory=lambda: str(uuid.uuid4()))
