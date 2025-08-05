@@ -119,28 +119,7 @@ const Actualites = () => {
 
             {/* Rien d'autre que la section LinkedIn CTA déjà présente */}
 
-            {/* LinkedIn Direct Link */}
-            <div className="mt-12 text-center">
-              <div className="bg-muted/30 rounded-lg p-6">
-                <h3 className="text-lg font-semibold text-primary mb-2">
-                  Voir toutes les publications
-                </h3>
-                <p className="text-muted-foreground mb-4">
-                  Découvrez l'intégralité de mes analyses et participez aux discussions 
-                  directement sur LinkedIn.
-                </p>
-                <Button asChild variant="outline">
-                  <a 
-                    href="https://www.linkedin.com/in/haiaelzufari" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                  >
-                    <ExternalLink className="w-4 h-4 mr-2" />
-                    Voir le profil LinkedIn complet
-                  </a>
-                </Button>
-              </div>
-            </div>
+            {/* Rien après cette section */}
           </div>
         </div>
       </section>
