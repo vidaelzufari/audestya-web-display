@@ -130,6 +130,97 @@ async def create_status_check(input: StatusCheckCreate):
 async def get_status_checks():
     return [StatusCheck(**status_check) for status_check in STATUS_CHECKS]
 
+# LinkedIn Authentication Endpoints
+
+@api_router.get("/auth/linkedin/login")
+async def linkedin_login():
+    """Initiate LinkedIn OAuth flow"""
+    state = jwt.encode({
+        "timestamp": datetime.utcnow().timestamp(),
+        "nonce": os.urandom(16).hex()
+    }, JWT_SECRET, algorithm="HS256")
+    
+    authorization_url = linkedin_auth.get_authorization_url(state)
+    return {"authorization_url": authorization_url, "state": state}
+
+@api_router.get("/auth/linkedin/callback")
+async def linkedin_callback(code: str, state: str = None, error: str = None):
+    """Handle LinkedIn OAuth callback"""
+    if error:
+        raise HTTPException(status_code=400, detail=f"LinkedIn authorization error: {error}")
+    
+    if not code:
+        raise HTTPException(status_code=400, detail="Authorization code not provided")
+    
+    # Verify state parameter to prevent CSRF attacks
+    if state:
+        try:
+            decoded_state = jwt.decode(state, JWT_SECRET, algorithms=["HS256"])
+            # Check if state is not too old (e.g., 10 minutes)
+            if datetime.utcnow().timestamp() - decoded_state["timestamp"] > 600:
+                raise HTTPException(status_code=400, detail="State parameter expired")
+        except jwt.InvalidTokenError:
+            raise HTTPException(status_code=400, detail="Invalid state parameter")
+    
+    # Exchange code for token
+    token_data = await linkedin_auth.exchange_code_for_token(code)
+    access_token = token_data["access_token"]
+    
+    # Get user profile
+    user_profile = await linkedin_auth.get_user_profile(access_token)
+    
+    # Create JWT token for frontend
+    frontend_token = jwt.encode({
+        "user_id": user_profile.id,
+        "access_token": access_token,
+        "exp": datetime.utcnow() + timedelta(hours=1)
+    }, JWT_SECRET, algorithm="HS256")
+    
+    return AuthToken(
+        access_token=frontend_token,
+        expires_in=3600
+    )
+
+def get_current_user_token(request: Request):
+    """Extract and validate JWT token from request"""
+    authorization = request.headers.get("authorization")
+    if not authorization or not authorization.startswith("Bearer "):
+        raise HTTPException(status_code=401, detail="Authorization token required")
+    
+    token = authorization.split(" ")[1]
+    
+    try:
+        decoded_token = jwt.decode(token, JWT_SECRET, algorithms=["HS256"])
+        return {
+            "user_id": decoded_token["user_id"],
+            "linkedin_access_token": decoded_token["access_token"]
+        }
+    except jwt.InvalidTokenError:
+        raise HTTPException(status_code=401, detail="Invalid token")
+
+@api_router.get("/linkedin/posts", response_model=List[LinkedInPost])
+async def get_linkedin_posts(
+    limit: int = 10,
+    user_data: dict = Depends(get_current_user_token)
+):
+    """Retrieve user's LinkedIn posts"""
+    user_id = user_data["user_id"]
+    linkedin_access_token = user_data["linkedin_access_token"]
+    
+    # Construct user URN
+    user_urn = f"urn:li:person:{user_id}"
+    
+    # Retrieve posts
+    posts = await linkedin_posts.get_user_posts(linkedin_access_token, user_urn, limit)
+    return posts
+
+@api_router.get("/linkedin/profile")
+async def get_linkedin_profile(user_data: dict = Depends(get_current_user_token)):
+    """Retrieve user's LinkedIn profile"""
+    linkedin_access_token = user_data["linkedin_access_token"]
+    profile = await linkedin_auth.get_user_profile(linkedin_access_token)
+    return profile
+
 # CMS Content Management Endpoints
 
 @api_router.get("/cms/pages", response_model=List[ContentPage])
