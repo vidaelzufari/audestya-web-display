@@ -67,10 +67,6 @@ const Actualites = () => {
               Actualités Juridiques
             </h1>
             <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-8"></div>
-            <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto mb-8">
-              Suivez en direct mes dernières analyses juridiques, décryptages de la jurisprudence 
-              et conseils pratiques en droit de la distribution.
-            </p>
             
             {/* LinkedIn Direct Feed Badge */}
             <div className="flex items-center justify-center space-x-2 mb-8">
