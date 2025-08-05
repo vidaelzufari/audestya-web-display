@@ -101,56 +101,11 @@ const Actualites = () => {
               </CardContent>
             </Card>
 
-            {/* Loading State */}
-            {isLoading && (
-              <div className="flex items-center justify-center py-12">
-                <div className="text-center">
-                  <Loader2 className="w-8 h-8 animate-spin text-primary mx-auto mb-4" />
-                  <p className="text-muted-foreground">
-                    Chargement des dernières publications...
-                  </p>
-                </div>
-              </div>
-            )}
-
-            {/* Posts Feed */}
-            {!isLoading && posts.length > 0 && (
-              <div className="space-y-8">
-                <div className="flex items-center justify-between mb-6">
-                  <h2 className="text-2xl font-bold text-primary">
-                    Publications récentes
-                  </h2>
-                  <p className="text-sm text-muted-foreground">
-                    {posts.length} publication{posts.length > 1 ? 's' : ''} disponible{posts.length > 1 ? 's' : ''}
-                  </p>
-                </div>
-                
-                {posts.map((post) => (
-                  <LinkedInPostCard
-                    key={post.id}
-                    post={post}
-                    isExpanded={expandedPosts.has(post.id)}
-                    onToggleExpand={() => togglePostExpansion(post.id)}
-                  />
-                ))}
-              </div>
-            )}
-
-            {/* Empty State */}
-            {!isLoading && posts.length === 0 && (
-              <div className="text-center py-12">
-                <Linkedin className="w-16 h-16 text-blue-600 mx-auto mb-4 opacity-50" />
-                <h3 className="text-xl font-semibold text-foreground mb-2">
-                  Aucune publication disponible
-                </h3>
-                <p className="text-muted-foreground mb-6">
-                  Les dernières publications LinkedIn se chargeront automatiquement.
-                </p>
-                <Button onClick={handleRefresh} variant="outline">
-                  <RefreshCw className="w-4 h-4 mr-2" />
-                  Réessayer
-                </Button>
-              </div>
+            {/* Authentication and Posts */}
+            {!isAuthenticated ? (
+              <LinkedInAuth onAuthenticated={handleAuthenticated} />
+            ) : (
+              <LinkedInPosts />
             )}
 
             {/* LinkedIn Direct Link */}
