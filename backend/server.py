@@ -1,10 +1,15 @@
-from fastapi import FastAPI, APIRouter, HTTPException
+from fastapi import FastAPI, APIRouter, HTTPException, Depends, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 from typing import List, Optional
-from datetime import datetime
+from datetime import datetime, timedelta
 import uuid
 import os
+import jwt
+
+# LinkedIn integration imports
+from linkedin_auth import linkedin_auth, LinkedInProfile
+from linkedin_posts import linkedin_posts, LinkedInPost
 
 # In-memory storage for testing (will be replaced by MongoDB later)
 STATUS_CHECKS = []
