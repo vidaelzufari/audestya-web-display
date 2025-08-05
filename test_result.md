@@ -105,20 +105,17 @@
 user_problem_statement: "Implement real LinkedIn API integration to replace mock data in the Actualités page"
 
 backend:
-  - task: "Backend API endpoints setup"
-    implemented: true
-    working: true
+  - task: "LinkedIn API backend integration"
+    implemented: false
+    working: "NA"
     file: "/app/backend/server.py"
     stuck_count: 0
     priority: "high"
-    needs_retesting: false
+    needs_retesting: true
     status_history:
       - working: "NA"
         agent: "main"
-        comment: "Backend has existing FastAPI endpoints: GET /api/, GET /api/status, POST /api/status. All routes properly configured with /api prefix for Kubernetes routing."
-      - working: true
-        agent: "testing"
-        comment: "✅ ALL BACKEND API TESTS PASSED! Tested all endpoints: GET /api/ returns correct Hello World message, POST /api/status successfully creates status checks with realistic client names (Marie Dubois, Jean-Pierre Martin, Sophie Lefebvre, Antoine Rousseau), GET /api/status retrieves all created records. All endpoints respond with correct status codes and data structures."
+        comment: "Starting implementation of LinkedIn OAuth2.0 authentication and posts API integration with provided credentials"
 
   - task: "Environment variables and URL configuration"
     implemented: true
