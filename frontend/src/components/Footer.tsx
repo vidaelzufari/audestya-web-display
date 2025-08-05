@@ -37,7 +37,7 @@ const Footer = () => {
           {/* Brand and description */}
           <div className="space-y-4">
             <div className="flex items-center">
-              <h3 className="font-serif text-2xl font-bold">AUDESTYA</h3>
+              <h3 className="font-serif text-xl md:text-2xl font-bold">AUDESTYA</h3>
               <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
             </div>
             <p className="text-primary-foreground/80 leading-relaxed">
