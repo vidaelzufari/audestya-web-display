@@ -213,9 +213,8 @@ metadata:
 
 test_plan:
   current_focus:
-    - "API service layer implementation"
-    - "Client Status component"
-    - "Environment variable configuration"
+    - "LinkedIn API backend integration"
+    - "LinkedIn service frontend integration"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
