@@ -43,10 +43,10 @@ const Navigation = () => {
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
-            <h1 className="font-serif text-2xl font-bold text-primary-foreground">
+            <h1 className="font-serif text-xl md:text-2xl font-bold text-primary-foreground">
               AUDESTYA
             </h1>
-            <span className="ml-2 text-secondary text-sm font-medium tracking-wider">AVOCAT</span>
+            <span className="ml-2 text-secondary text-xs md:text-sm font-medium tracking-wider">AVOCAT</span>
           </a>
 
           {/* Desktop menu */}
