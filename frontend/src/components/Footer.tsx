@@ -15,6 +15,21 @@ const Footer = () => {
     }, 100);
   };
 
+  const handlePageNavigation = (path: string) => {
+    navigate(path);
+    // Scroll to top after navigation
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+
+  const handleAccueilClick = () => {
+    navigate('/');
+    setTimeout(() => {
+      window.scrollTo(0, 0);
+    }, 100);
+  };
+
   return (
     <footer className="bg-gradient-primary text-primary-foreground">
       <div className="container mx-auto px-4 py-12">
