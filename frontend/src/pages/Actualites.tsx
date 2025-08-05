@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 import Breadcrumb from '@/components/Breadcrumb';
 import { LinkedInAuth } from '@/components/LinkedInAuth';
 import { LinkedInPosts } from '@/components/LinkedInPosts';
-import { Linkedin, ExternalLink } from 'lucide-react';
+import { Linkedin, ExternalLink, Loader2 } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { LinkedInService } from '@/lib/linkedin-service';
 
