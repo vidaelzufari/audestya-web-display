@@ -12,3 +12,20 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Sitemap
+Sitemap: https://audestya-avocat.com/sitemap.xml
+
+# Disallow admin/CMS access
+Disallow: /admin
+Disallow: /portail-client
+
+# Allow search engines to access all public pages
+Allow: /presentation
+Allow: /actualites
+Allow: /honoraires
+Allow: /reseaux-distribution
+Allow: /relations-commerciales
+Allow: /accompagnement-juridique
+Allow: /mentions-legales
+Allow: /politique-confidentialite
