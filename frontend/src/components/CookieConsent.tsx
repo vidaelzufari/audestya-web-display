@@ -57,10 +57,8 @@ const CookieConsent = () => {
     if (prefs.analytics) {
       // Initialize Google Analytics
       console.log('Loading analytics cookies...');
-      if (window.gtag && !window.gtagInitialized) {
-        window.gtag('config', 'G-SS9XZ6T6VQ');
-        window.gtagInitialized = true;
-        console.log('Google Analytics activated');
+      if (window.initializeGoogleAnalytics) {
+        window.initializeGoogleAnalytics();
       }
     }
 
