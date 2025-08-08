@@ -46,9 +46,13 @@ const CookieConsent = () => {
   const loadCookies = (prefs: CookiePreferences) => {
     // Load analytics cookies if accepted
     if (prefs.analytics) {
-      // Here you would load Google Analytics or other analytics tools
+      // Initialize Google Analytics
       console.log('Loading analytics cookies...');
-      // Example: gtag('config', 'GA_MEASUREMENT_ID');
+      if (window.gtag && !window.gtagInitialized) {
+        window.gtag('config', 'G-SS9XZ6T6VQ');
+        window.gtagInitialized = true;
+        console.log('Google Analytics activated');
+      }
     }
 
     // Load marketing cookies if accepted
