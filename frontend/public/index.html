@@ -29,9 +29,24 @@
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      
+      // Initialize gtag but don't configure GA yet
       gtag('js', new Date());
-      // Analytics will be activated only when user accepts analytics cookies
+      
+      // Global flag to track if GA is initialized
       window.gtagInitialized = false;
+      
+      // Function to initialize Google Analytics when cookies are accepted
+      window.initializeGoogleAnalytics = function() {
+        if (!window.gtagInitialized) {
+          gtag('config', 'G-SS9XZ6T6VQ', {
+            anonymize_ip: true,
+            cookie_flags: 'SameSite=None;Secure'
+          });
+          window.gtagInitialized = true;
+          console.log('Google Analytics G-SS9XZ6T6VQ initialized');
+        }
+      };
     </script>
     
     <!-- Fonts -->
