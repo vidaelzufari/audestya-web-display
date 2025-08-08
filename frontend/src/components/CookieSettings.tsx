@@ -49,10 +49,8 @@ const CookieSettings = () => {
     if (type === 'analytics') {
       if (value) {
         // Enable analytics
-        if (window.gtag && !window.gtagInitialized) {
-          window.gtag('config', 'G-SS9XZ6T6VQ');
-          window.gtagInitialized = true;
-          console.log('Google Analytics activated');
+        if (window.initializeGoogleAnalytics) {
+          window.initializeGoogleAnalytics();
         }
       } else {
         // Disable analytics (reload required)
