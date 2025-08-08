@@ -44,8 +44,23 @@ const CookieSettings = () => {
     setPreferences(newPreferences);
     localStorage.setItem('cookie-consent', JSON.stringify(newPreferences));
     
-    // Reload page to apply changes
-    window.location.reload();
+    // Apply analytics changes immediately
+    if (type === 'analytics') {
+      if (value) {
+        // Enable analytics
+        if (window.gtag && !window.gtagInitialized) {
+          window.gtag('config', 'G-SS9XZ6T6VQ');
+          window.gtagInitialized = true;
+          console.log('Google Analytics activated');
+        }
+      } else {
+        // Disable analytics (reload required)
+        window.location.reload();
+      }
+    } else {
+      // For other changes, reload page
+      window.location.reload();
+    }
   };
 
   return (
