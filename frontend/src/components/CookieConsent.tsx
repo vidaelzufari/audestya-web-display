@@ -22,6 +22,7 @@ declare global {
   interface Window {
     gtag: (...args: any[]) => void;
     gtagInitialized: boolean;
+    initializeGoogleAnalytics: () => void;
   }
 }
 
