@@ -17,6 +17,14 @@ interface CookiePreferences {
   marketing: boolean;
 }
 
+// Extend Window interface for Google Analytics
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    gtagInitialized: boolean;
+  }
+}
+
 const CookieConsent = () => {
   const [showBanner, setShowBanner] = useState(false);
   const [showSettings, setShowSettings] = useState(false);
