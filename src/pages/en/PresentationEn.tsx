@@ -130,6 +130,97 @@ const PresentationEn = () => {
         </div>
       </section>
 
+      {/* My Mission, My Vision and My Values Section */}
+      <section className="py-20 bg-gradient-to-br from-muted/20 via-background to-muted/30 relative overflow-hidden">
+        {/* Decorative Background Elements */}
+        <div className="absolute top-0 left-0 w-64 h-64 bg-gradient-to-br from-primary/5 to-secondary/5 rounded-full blur-3xl -translate-x-32 -translate-y-32"></div>
+        <div className="absolute bottom-0 right-0 w-64 h-64 bg-gradient-to-br from-secondary/5 to-accent/5 rounded-full blur-3xl translate-x-32 translate-y-32"></div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="max-w-7xl mx-auto">
+            <div className="grid lg:grid-cols-3 gap-8">
+              {/* My Mission */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-left relative z-10">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Target className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    My Mission
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      Provide companies with the legal levers to structure, secure and grow their business model.
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      Turn legal complexity into clear, concrete and useful decisions.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* My Vision */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-secondary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-center relative z-10">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Lightbulb className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    My Vision
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      I believe in the power of law as a driver for action: decide with clarity, challenge practices, assert your model, and move forward with confidence.
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      This is the dynamic I put at the service of my clients.
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* My Values */}
+              <Card className="bg-background/90 backdrop-blur-sm shadow-elegant border-0 transition-all duration-500 group hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02]">
+                <div className="absolute inset-0 bg-gradient-to-br from-accent/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <CardContent className="p-8 text-left relative z-10">
+                  <div className="mb-6">
+                    <div className="w-20 h-20 mx-auto bg-muted rounded-full flex items-center justify-center shadow-md group-hover:bg-primary transition-colors duration-300">
+                      <Compass className="w-10 h-10 text-foreground group-hover:text-white transition-colors duration-300" strokeWidth={1.5} />
+                    </div>
+                  </div>
+                  <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-6 text-center">
+                    My Values
+                  </h2>
+                  <div className="w-16 h-1 bg-gradient-to-r from-accent to-primary mx-auto mb-6"></div>
+                  <div className="space-y-6 text-lg text-muted-foreground">
+                    <p className="leading-relaxed text-justify">
+                      Authenticity — A direct relationship, without unnecessary jargon
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      Trust — A loyal, clear and transparent commitment
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      Closeness — A deep understanding of your on-the-ground reality
+                    </p>
+                    <p className="leading-relaxed text-justify">
+                      Excellence — Consistent high standards, in substance and in form
+                    </p>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="presentation" className="py-20 relative overflow-hidden">
         <div className="absolute top-10 right-10 w-32 h-32 bg-gradient-to-br from-primary/10 to-secondary/10 rounded-full blur-xl"></div>
         <div className="absolute bottom-20 left-10 w-40 h-40 bg-gradient-to-br from-secondary/10 to-accent/10 rounded-full blur-xl"></div>
@@ -164,6 +255,42 @@ const PresentationEn = () => {
                     className="w-full h-full object-cover" 
                     loading="lazy"
                   />
+                </div>
+              </div>
+
+              {/* Professional information */}
+              <div className="mt-8 pt-8 border-t">
+                <div className="grid md:grid-cols-2 gap-6">
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Main areas of practice</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Distribution, Contracts, Consumer law
+                    </p>
+                  </Card>
+
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Bar admission</h5>
+                    <p className="text-muted-foreground text-sm">
+                      Paris 2025
+                    </p>
+                  </Card>
+
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Education</h5>
+                    <div className="space-y-2 text-muted-foreground text-sm text-center">
+                      <p>Master II in European Business Law</p>
+                      <p>Université Paris XI – Jean Monnet</p>
+                      <p>Master’s in European & International Law</p>
+                      <p>Université Paris II – Panthéon-Assas</p>
+                    </div>
+                  </Card>
+
+                  <Card className="bg-muted/30 border-0 p-6">
+                    <h5 className="font-medium text-primary mb-3">Languages</h5>
+                    <p className="text-muted-foreground text-sm">
+                      French • English • Arabic
+                    </p>
+                  </Card>
                 </div>
               </div>
             </div>
