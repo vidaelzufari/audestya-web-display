@@ -1,7 +1,7 @@
 
 import { useState } from 'react';
 import { useLocation } from 'react-router-dom';
-import { Menu, X, Phone, Mail, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, LinkedinIcon, Globe, ChevronDown } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import {
   DropdownMenu,
@@ -16,12 +16,16 @@ const Navigation = () => {
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
+  // Language helpers
+  const isEN = location.pathname === '/en' || location.pathname.startsWith('/en/');
+  const prefix = isEN ? '/en' : '';
+  const stripEn = (p: string) => (p.startsWith('/en') ? p.replace(/^\/en/, '') || '/' : p || '/');
+  const currentWithHash = location.pathname + (location.hash || '');
+  const frPath = stripEn(currentWithHash);
+  const enPath = '/en' + stripEn(currentWithHash);
+
   const isActive = (path: string) => {
-    if (path === '/' || path === '#accueil') return location.pathname === '/' && (!location.hash || location.hash === '#accueil');
-    if (path === '/actualites') return location.pathname === '/actualites';
-    if (path.startsWith('#')) {
-      return location.pathname === '/' && location.hash === path;
-    }
+    if (path.startsWith('#')) return location.hash === path;
     return location.pathname === path;
   };
 
@@ -36,13 +40,25 @@ const Navigation = () => {
     return `${baseClass} ${inactiveClass}`;
   };
 
+  // Routes per language
+  const routes = {
+    home: prefix + '/',
+    presentation: prefix + '/presentation',
+    domainesLabel: isEN ? 'AREAS OF PRACTICE' : "DOMAINES D'INTERVENTION",
+    d1: isEN ? '/en/distribution-networks' : '/reseaux-distribution',
+    d2: isEN ? '/en/commercial-relations' : '/relations-commerciales',
+    d3: isEN ? '/en/external-legal-support' : '/accompagnement-juridique',
+    news: isEN ? '/en/news' : '/actualites',
+    contact: prefix + '/#contact',
+  } as const;
+
   return (
     <nav className="bg-gradient-primary shadow-elegant sticky top-0 z-50">
       {/* Main navigation */}
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <a href="/" className="flex items-center hover:opacity-80 transition-opacity">
+          <a href={prefix || '/'} className="flex items-center hover:opacity-80 transition-opacity">
             <h1 className="font-serif text-2xl font-bold text-primary-foreground">
               AUDESTYA
             </h1>
@@ -51,45 +67,45 @@ const Navigation = () => {
 
           {/* Desktop menu */}
           <div className="hidden md:flex items-center space-x-6">
-            <a href="/" className={getNavLinkClass('/')}>
-              ACCUEIL
+            <a href={routes.home} className={getNavLinkClass(routes.home)}>
+              {isEN ? 'HOME' : 'ACCUEIL'}
             </a>
-            <a href="/presentation" className={getNavLinkClass('/presentation')}>
-              IDENTITÉ & APPROCHE
+            <a href={routes.presentation} className={getNavLinkClass(routes.presentation)}>
+              {isEN ? 'IDENTITY & APPROACH' : "IDENTITÉ & APPROCHE"}
             </a>
             
             {/* Dropdown for Domaines */}
             <DropdownMenu>
               <DropdownMenuTrigger asChild>
                 <button className="text-primary-foreground hover:text-secondary font-medium text-sm transition-colors flex items-center">
-                  DOMAINES D'INTERVENTION
+                  {routes.domainesLabel}
                   <ChevronDown className="ml-1 h-4 w-4" />
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50 w-64">
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/reseaux-distribution" className="w-full">
-                    Réseaux de Distribution
+                  <a href={routes.d1} className="w-full">
+                    {isEN ? 'Distribution Networks' : 'Réseaux de Distribution'}
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/relations-commerciales" className="w-full">
-                    Relations et Pratiques Commerciales
+                  <a href={routes.d2} className="w-full">
+                    {isEN ? 'Commercial Relations & Practices' : 'Relations et Pratiques Commerciales'}
                   </a>
                 </DropdownMenuItem>
                 <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
-                  <a href="/accompagnement-juridique" className="w-full">
-                    Accompagnement Juridique Externalisé
+                  <a href={routes.d3} className="w-full">
+                    {isEN ? 'Externalized Legal Support' : 'Accompagnement Juridique Externalisé'}
                   </a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <a href="/actualites" className={getNavLinkClass('/actualites')}>
-              ACTUALITÉS
+            <a href={routes.news} className={getNavLinkClass(routes.news)}>
+              {isEN ? 'NEWS' : 'ACTUALITÉS'}
             </a>
-            <a href="/#contact" className={getNavLinkClass('#contact')}>
-              CONTACT
+            <a href={routes.contact} className={getNavLinkClass('#contact')}>
+              {isEN ? 'CONTACT' : 'CONTACT'}
             </a>
             
             {/* LinkedIn icon */}
@@ -107,15 +123,15 @@ const Navigation = () => {
               <DropdownMenuTrigger asChild>
                 <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary text-sm transition-colors flex items-center px-3 py-1.5 rounded">
                   <Globe size={16} className="mr-1" />
-                  FR
+                  {isEN ? 'EN' : 'FR'}
                 </button>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                  🇫🇷 Français
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href={frPath}>🇫🇷 Français</a>
                 </DropdownMenuItem>
-                <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                  🇬🇧 English
+                <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                  <a href={enPath}>🇬🇧 English</a>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
@@ -136,49 +152,49 @@ const Navigation = () => {
         {isMenuOpen && (
           <div className="md:hidden pb-4 bg-primary/10 rounded-lg mx-2">
             <div className="flex flex-col space-y-1 p-4">
-              <a href="/" className={`${getNavLinkClass('/')} py-3 px-2 rounded`}>
-                ACCUEIL
+              <a href={routes.home} className={`${getNavLinkClass(routes.home)} py-3 px-2 rounded`}>
+                {isEN ? 'HOME' : 'ACCUEIL'}
               </a>
-              <a href="/presentation" className={`${getNavLinkClass('/presentation')} py-3 px-2 rounded`}>
-                IDENTITÉ & APPROCHE
+              <a href={routes.presentation} className={`${getNavLinkClass(routes.presentation)} py-3 px-2 rounded`}>
+                {isEN ? 'IDENTITY & APPROACH' : "IDENTITÉ & APPROCHE"}
               </a>
               
               {/* Mobile Domaines section */}
               <div className="py-2">
-                <p className="text-primary-foreground font-medium px-2 mb-2">DOMAINES D'INTERVENTION</p>
+                <p className="text-primary-foreground font-medium px-2 mb-2">{routes.domainesLabel}</p>
                 <div className="ml-4 space-y-2">
-                  <a href="/reseaux-distribution" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Réseaux de Distribution
+                  <a href={routes.d1} className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    {isEN ? 'Distribution Networks' : 'Réseaux de Distribution'}
                   </a>
-                  <a href="/relations-commerciales" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Relations et Pratiques Commerciales
+                  <a href={routes.d2} className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    {isEN ? 'Commercial Relations & Practices' : 'Relations et Pratiques Commerciales'}
                   </a>
-                  <a href="/accompagnement-juridique" className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
-                    Accompagnement Juridique Externalisé
+                  <a href={routes.d3} className="block text-primary-foreground/80 hover:text-secondary transition-colors py-1 px-2 text-sm">
+                    {isEN ? 'Externalized Legal Support' : 'Accompagnement Juridique Externalisé'}
                   </a>
                 </div>
               </div>
               
-              <a href="/actualites" className={`${getNavLinkClass('/actualites')} py-3 px-2 rounded`}>
-                ACTUALITÉS
+              <a href={routes.news} className={`${getNavLinkClass(routes.news)} py-3 px-2 rounded`}>
+                {isEN ? 'NEWS' : 'ACTUALITÉS'}
               </a>
-              <a href="/#contact" className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
-                CONTACT
+              <a href={routes.contact} className={`${getNavLinkClass('#contact')} py-3 px-2 rounded`}>
+                {isEN ? 'CONTACT' : 'CONTACT'}
               </a>
               <div className="py-2 px-2">
                 <DropdownMenu>
                   <DropdownMenuTrigger asChild>
                     <button className="text-primary-foreground hover:text-secondary border border-primary-foreground/20 hover:border-secondary transition-colors flex items-center px-3 py-1.5 rounded text-sm">
                       <Globe size={16} className="mr-1" />
-                      FR
+                      {isEN ? 'EN' : 'FR'}
                     </button>
                   </DropdownMenuTrigger>
                   <DropdownMenuContent className="bg-background/95 backdrop-blur-sm border shadow-lg z-50">
-                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                      🇫🇷 Français
+                    <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                      <a href={frPath}>🇫🇷 Français</a>
                     </DropdownMenuItem>
-                    <DropdownMenuItem className="hover:bg-muted cursor-pointer">
-                      🇬🇧 English
+                    <DropdownMenuItem asChild className="hover:bg-muted cursor-pointer">
+                      <a href={enPath}>🇬🇧 English</a>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
