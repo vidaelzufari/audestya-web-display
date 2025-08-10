@@ -1,78 +1,174 @@
 import { Card, CardContent } from '@/components/ui/card';
+import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Textarea } from '@/components/ui/textarea';
 import { Label } from '@/components/ui/label';
-import { Button } from '@/components/ui/button';
+import { Phone, Mail, MapPin } from 'lucide-react';
 
 const ContactSectionEn = () => {
   return (
-    <section id="contact" className="py-20 bg-muted/30">
+    <section id="contact" className="py-20 bg-gradient-accent">
       <div className="container mx-auto px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-              Contact
-            </h2>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
-              I respond quickly. Share your needs and I’ll get back to you with a clear next step.
-            </p>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
+            A first conversation to set a clear and useful framework
+          </h2>
+        </div>
 
-          <div className="grid md:grid-cols-2 gap-8 items-stretch">
-            <Card className="bg-background border-0 shadow-soft">
+        <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+          {/* Contact Information */}
+          <div className="space-y-8">
+            <Card className="bg-background shadow-soft border-0">
               <CardContent className="p-8">
-                <div className="space-y-6">
-                  <div>
-                    <Label htmlFor="firstName">First name</Label>
-                    <Input id="firstName" placeholder="John" />
-                  </div>
-                  <div>
-                    <Label htmlFor="lastName">Last name</Label>
-                    <Input id="lastName" placeholder="Doe" />
-                  </div>
-                  <div>
-                    <Label htmlFor="email">Email</Label>
-                    <Input id="email" type="email" placeholder="john.doe@email.com" />
-                  </div>
-                  <div>
-                    <Label htmlFor="phone">Phone</Label>
-                    <Input id="phone" type="tel" placeholder="+33 6 00 00 00 00" />
-                  </div>
-                  <div>
-                    <Label htmlFor="subject">Subject</Label>
-                    <Input id="subject" placeholder="Briefly describe your request" />
-                  </div>
-                  <div>
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" placeholder="Tell me more about your context" rows={5} />
-                  </div>
-                  <Button className="w-full">Send</Button>
-                  <p className="text-xs text-muted-foreground text-justify">
-                    By submitting this form, you consent to the processing of your personal data to respond to your request. For more information, see the Privacy Policy.
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
+                <h3 className="font-serif text-2xl font-bold text-primary mb-6">
+                  Contact Information
+                </h3>
+                <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
 
-            <Card className="bg-gradient-primary text-primary-foreground border-0 shadow-elegant">
-              <CardContent className="p-8">
                 <div className="space-y-6">
-                  <div>
-                    <h3 className="font-serif text-2xl font-bold mb-2">Direct contact</h3>
-                    <p className="opacity-90">+33 6 85 35 37 81</p>
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-gradient-secondary rounded-full">
+                      <Phone className="w-5 h-5 text-secondary-foreground" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Phone</h4>
+                      <a
+                        href="tel:+33685353781"
+                        className="text-muted-foreground hover:text-primary transition-colors"
+                      >
+                        +33 6 85 35 37 81
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-2xl font-bold mb-2">Email</h3>
-                    <p className="opacity-90">haia.elzufari@audestya-avocat.com</p>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-gradient-secondary rounded-full">
+                      <Mail className="w-5 h-5 text-secondary-foreground" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Email</h4>
+                      <a
+                        href="mailto:haia.elzufari@audestya-avocat.com"
+                        className="text-muted-foreground hover:text-primary transition-colors break-all"
+                      >
+                        haia.elzufari@audestya-avocat.com
+                      </a>
+                    </div>
                   </div>
-                  <div>
-                    <h3 className="font-serif text-2xl font-bold mb-2">Location</h3>
-                    <p className="opacity-90">Paris - France</p>
+
+                  <div className="flex items-start gap-4">
+                    <div className="p-3 bg-gradient-secondary rounded-full">
+                      <MapPin className="w-5 h-5 text-secondary-foreground" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-primary mb-1">Location</h4>
+                      <p className="text-muted-foreground">Paris - France</p>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
+
+          {/* Contact Form */}
+          <Card className="bg-background shadow-soft border-0">
+            <CardContent className="p-8">
+              <h3 className="font-serif text-2xl font-bold text-primary mb-6">
+                Contact form
+              </h3>
+              <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+
+              <form className="space-y-6">
+                <div className="grid md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <Label htmlFor="firstName" className="text-primary font-medium">
+                      First name *
+                    </Label>
+                    <Input
+                      id="firstName"
+                      placeholder="Your first name"
+                      className="border-border focus:border-primary"
+                    />
+                  </div>
+                  <div className="space-y-2">
+                    <Label htmlFor="lastName" className="text-primary font-medium">
+                      Last name *
+                    </Label>
+                    <Input
+                      id="lastName"
+                      placeholder="Your last name"
+                      className="border-border focus:border-primary"
+                    />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="email" className="text-primary font-medium">
+                    Email *
+                  </Label>
+                  <Input
+                    id="email"
+                    type="email"
+                    placeholder="your@email.com"
+                    className="border-border focus:border-primary"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="phone" className="text-primary font-medium">
+                    Phone
+                  </Label>
+                  <Input
+                    id="phone"
+                    type="tel"
+                    placeholder="Your phone number"
+                    className="border-border focus:border-primary"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="subject" className="text-primary font-medium">
+                    Subject *
+                  </Label>
+                  <Input
+                    id="subject"
+                    placeholder="Subject of your request"
+                    className="border-border focus:border-primary"
+                  />
+                </div>
+
+                <div className="space-y-2">
+                  <Label htmlFor="message" className="text-primary font-medium">
+                    Message *
+                  </Label>
+                  <Textarea
+                    id="message"
+                    placeholder="Describe your request and needs..."
+                    rows={5}
+                    className="border-border focus:border-primary resize-none"
+                  />
+                </div>
+
+                <Button
+                  type="submit"
+                  size="lg"
+                  className="w-full bg-gradient-primary text-primary-foreground hover:shadow-glow transition-all duration-300"
+                >
+                  Send message
+                </Button>
+
+                <p className="text-sm text-muted-foreground text-center">
+                  * Required fields. Your personal data will be processed in accordance with the{' '}
+                  <a
+                    href="/en/privacy-policy"
+                    className="text-primary hover:text-secondary underline"
+                  >
+                    privacy policy
+                  </a>.
+                </p>
+              </form>
+            </CardContent>
+          </Card>
         </div>
       </div>
     </section>
@@ -80,3 +176,4 @@ const ContactSectionEn = () => {
 };
 
 export default ContactSectionEn;
+
