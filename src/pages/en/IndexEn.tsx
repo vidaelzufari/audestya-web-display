@@ -22,14 +22,14 @@ const IndexEn = () => {
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-20">
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-12 leading-tight">
-                Structure, secure, and support your decisions
+                Structuring, securing, and driving your decisions forward
               </h2>
               <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-8 mb-12">
                 <div className="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl hover:shadow-xl hover:-translate-y-3 hover:scale-[1.02] transition-all duration-500 relative overflow-hidden group">
                   <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-transparent to-secondary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                      Legal solutions anchored in your business challenges
+                      Legal solutions focused on your business priorities
                     </p>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-primary via-secondary to-primary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
@@ -38,7 +38,7 @@ const IndexEn = () => {
                   <div className="absolute inset-0 bg-gradient-to-br from-secondary/10 via-transparent to-primary/10 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
                   <div className="relative z-10">
                     <p className="text-xl md:text-2xl font-light text-primary leading-relaxed">
-                      Clarity, method, and high standards at every step
+                      Clarity, method, and high standards at every stage
                     </p>
                   </div>
                   <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-secondary via-primary to-secondary transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 origin-center"></div>
@@ -46,14 +46,14 @@ const IndexEn = () => {
               </div>
               <div className="w-32 h-1 bg-gradient-to-r from-primary via-secondary to-primary mx-auto mb-8"></div>
               <p className="text-xl text-muted-foreground leading-relaxed max-w-4xl mx-auto font-medium italic">
-                Law only has impact when it enlightens action.
+                The law only makes a difference when it drives action.
               </p>
             </div>
 
             <div className="max-w-6xl mx-auto">
               <div className="text-center mb-16">
                 <h3 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-8">
-                  Two complementary areas of intervention
+                  Two complementary areas of expertise
                 </h3>
               </div>
 
@@ -67,11 +67,11 @@ const IndexEn = () => {
                       </div>
                       <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-primary/90 transition-colors duration-300">
-                          Distribution - Contracts - Consumer
+                          Distribution - Contracts - Consumer Law
                         </h3>
                         <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
-                          Structure action, prevent risk, support your activities.
+                          Structuring operations, mitigating risk, and supporting your operations
                         </p>
                       </div>
                     </div>
@@ -81,19 +81,19 @@ const IndexEn = () => {
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Negotiation and securing of contracts, whether standard, complex or strategic
+                            Negotiating and securing contracts, from standard agreements to complex, high-stakes deals
                           </p>
                         </div>
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Structuring and legal support for distribution networks
+                            Structuring, securing, and providing legal support for distribution networks
                           </p>
                         </div>
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Drafting legal tools (framework agreements, T&Cs, commercial policies, etc.)
+                            Drafting and implementing legal instruments (framework agreements, T&Cs, commercial policies, etc.)
                           </p>
                         </div>
                       </div>
@@ -101,19 +101,19 @@ const IndexEn = () => {
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Contract audits tailored to your current priorities
+                            Targeted contract audits aligned with your current priorities
                           </p>
                         </div>
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Advice on relationships with suppliers, distributors or partners
+                            Advising on supplier, distributor, or partner relationships
                           </p>
                         </div>
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-primary to-secondary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Supervision of promotional practices and consumer protection
+                            Reviewing promotional practices and ensuring consumer compliance
                           </p>
                         </div>
                       </div>
@@ -133,11 +133,11 @@ const IndexEn = () => {
                       </div>
                       <div className="text-center">
                         <h3 className="font-serif text-3xl font-bold text-primary group-hover:text-secondary transition-colors duration-300">
-                          Externalized Legal Support
+                          Outsourced Legal Counsel
                         </h3>
                         <div className="w-16 h-1 bg-gradient-to-r from-secondary to-primary mx-auto mt-4 mb-2"></div>
                         <p className="text-muted-foreground italic mt-2 text-lg">
-                          Targeted legal support for your projects, decisions and teams.
+                          Targeted legal support for your projects, decisions, and teams.
                         </p>
                       </div>
                     </div>
@@ -147,7 +147,7 @@ const IndexEn = () => {
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Legal project management for structural initiatives
+                            Steering major legal projects
                           </p>
                         </div>
                       </div>
@@ -155,7 +155,7 @@ const IndexEn = () => {
                         <div className="flex items-start gap-4">
                           <div className="w-3 h-3 bg-gradient-to-r from-secondary to-primary rounded-full mt-2 flex-shrink-0"></div>
                           <p className="text-muted-foreground leading-relaxed text-justify">
-                            Ad-hoc assignments
+                            Ad hoc legal assignments
                           </p>
                         </div>
                       </div>

@@ -36,7 +36,7 @@ const HeroSectionEn = () => {
 
           <div className="space-y-12 mb-20">
             <p className="text-xl md:text-2xl lg:text-3xl font-light leading-relaxed animate-fade-in max-w-4xl mx-auto" style={{ animationDelay: '0.2s' }}>
-              Pragmatic, strategic legal expertise aligned with your concrete business goals
+              Pragmatic, strategic legal expertise, aligned with your business realities
             </p>
           </div>
 
@@ -44,7 +44,7 @@ const HeroSectionEn = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-secondary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
             <div className="relative z-10">
               <blockquote className="text-lg md:text-xl italic mb-6 text-primary leading-relaxed">
-                “Excellence is never the result of chance, but the choice of a vision, a method and a standard.”
+                “Excellence is never a matter of chance, but the choice of a vision, a method, and high standards.”
               </blockquote>
               <cite className="text-base font-medium text-foreground">Inspired by Aristotle</cite>
             </div>
