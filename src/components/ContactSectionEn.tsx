@@ -11,7 +11,7 @@ const ContactSectionEn = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="font-serif text-4xl md:text-5xl font-bold text-primary mb-6">
-            A first conversation to set a clear and useful framework
+            An initial conversation to set a clear and practical framework
           </h2>
         </div>
 
@@ -176,4 +176,3 @@ const ContactSectionEn = () => {
 };
 
 export default ContactSectionEn;
-
