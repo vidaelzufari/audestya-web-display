@@ -4,7 +4,6 @@ import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Linkedin, ExternalLink } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import LinkedInFeed from '@/components/LinkedInFeed';
 
 const Actualites = () => {
   return (
