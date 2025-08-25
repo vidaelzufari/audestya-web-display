@@ -46,49 +46,15 @@ const CookieConsent = () => {
   const loadCookies = (prefs: CookiePreferences) => {
     // Load analytics cookies if accepted
     if (prefs.analytics) {
-      console.log('Loading Google Analytics...');
-      
-      // Grant consent for analytics
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
-          'analytics_storage': 'granted'
-        });
-        
-        // Send the initial page view
-        gtag('config', 'G-SS9XZ6T6VQ', {
-          'send_page_view': true
-        });
-        
-        // Track current page view
-        gtag('event', 'page_view', {
-          'page_title': document.title,
-          'page_location': window.location.href
-        });
-      }
-    } else {
-      // Deny consent for analytics
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
-          'analytics_storage': 'denied'
-        });
-      }
+      // Here you would load Google Analytics or other analytics tools
+      console.log('Loading analytics cookies...');
+      // Example: gtag('config', 'G-SS9XZ6T6VQ');
     }
 
     // Load marketing cookies if accepted
     if (prefs.marketing) {
+      // Here you would load marketing/advertising cookies
       console.log('Loading marketing cookies...');
-      
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
-          'ad_storage': 'granted'
-        });
-      }
-    } else {
-      if (typeof gtag !== 'undefined') {
-        gtag('consent', 'update', {
-          'ad_storage': 'denied'
-        });
-      }
     }
   };
 
