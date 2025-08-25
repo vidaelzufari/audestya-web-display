@@ -60,8 +60,6 @@ const Actualites = () => {
                 </div>
               </CardContent>
             </Card>
-
-            <LinkedInFeed />
           </div>
         </div>
       </section>
