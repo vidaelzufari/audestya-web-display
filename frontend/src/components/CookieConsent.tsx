@@ -11,6 +11,16 @@ import {
 } from '@/components/ui/dialog';
 import { Switch } from '@/components/ui/switch';
 
+// TypeScript declaration for gtag
+declare global {
+  interface Window {
+    gtag: (...args: any[]) => void;
+    dataLayer: any[];
+  }
+}
+
+const gtag = window.gtag;
+
 interface CookiePreferences {
   necessary: boolean;
   analytics: boolean;
